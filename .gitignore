@@ -23,3 +23,8 @@ experiments/tfpt-discovery/verified_zeros_big.npy
 experiments/tfpt-discovery/odlyzko_zeros6.gz
 .vercel
 .env*
+
+# Local catalog viewer builds and captures
+rh/catalog/viewer/dist/
+rh/catalog/viewer/export-out/
+rh/catalog/viewer/screenshots/

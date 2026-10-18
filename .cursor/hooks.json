@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": ".cursor/hooks/rh_catalog_refresh.py",
+        "timeout": 40
+      }
+    ]
+  }
+}
