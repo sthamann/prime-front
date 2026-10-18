@@ -62,7 +62,7 @@ Key never enters the repo. Set `OPENAI_API_KEY` or `OPENAI_API_KEY=...` in
 `autodraft.py --llm --only-new` fills draft semantic fields; `needs_review` stays
 true; curated `part_*.json` is never overwritten. `llm_consistency.py` classifies
 all records (cached) and writes disagreements; default stops if the estimate is
-≥ $5. `build.sh gen` runs `--llm` + embeddings only when `TFPT_LLM_CATALOG=1`
+≥ $5. The independent `build.sh gen` only regenerates the script index and validates the catalog. Optional LLM drafts and embeddings are explicit separate research commands
 and the key resolves. Hard budget default $5; cached hits are free. Audit is offline.
 
 ## Cite rounds and kill classes
