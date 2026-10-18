@@ -55,3 +55,20 @@ explicit hypotheses or `sorry`; consult the source and `rh/lean/README.md`.
 The catalog's historic external references remain provenance records. Its
 active source-index configuration is portable and scoped to this repository;
 it does not scan the separate TFPT project or private task folders.
+
+## Research boundaries and reproducibility
+
+Exploratory experiments, registered Python verifications and Lean formalizations
+are distinct evidence types. The Python suite does not compile Lean, and a
+source consistency audit does not prove a mathematical claim. Physical TFPT
+sources are owned by `sthamann/tfpt`; prime/RH/factorisation sources by
+`sthamann/prime-front`. Generic helper copies and frozen historical provenance
+are explicitly scoped; neither build needs the other checkout.
+
+`python3 verification/check_project_scope.py` checks local Python dependencies,
+Lean imports and excluded source ownership. The normal source audit runs it
+in CI as well. For the finite/conditional formal support, use
+`bash scripts/audit.sh --core` from `experiments/lean4-carrier-rigidity/`.
+The separate `rh/lean/` research project in Prime Front retains its explicit
+open hypotheses and `sorry` declarations; its status is not merged into the
+sorry-free finite-support audit.

@@ -1,0 +1,31 @@
+name: Prime finite and conditional Lean support
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'experiments/lean4-carrier-rigidity/**'
+      - '.github/workflows/lean.yml'
+  pull_request:
+    paths:
+      - 'experiments/lean4-carrier-rigidity/**'
+      - '.github/workflows/lean.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean-core:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    defaults:
+      run:
+        working-directory: experiments/lean4-carrier-rigidity
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch the Mathlib cache
+        run: lake exe cache get
+      - name: Elaborate core and audit theorem signatures and axioms
+        run: bash scripts/audit.sh --core

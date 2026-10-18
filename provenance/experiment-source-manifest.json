@@ -1482,13 +1482,13 @@
       "path": "experiments/tfpt-discovery/carrier_cauchy_identity_probe.py",
       "sha256": "de1bd4197ab77387c0c384836779d40f093d1e994fd1d7dbddaaab04133590ff",
       "bytes": 43941,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/carrier_scaling_law_probe.py",
       "sha256": "6c19db417fa6d4a2a8dc684dab542d2b974a9949a183391477f5eaf172db0887",
       "bytes": 44737,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/case_edge_christoffel_probe.py",
@@ -2556,7 +2556,7 @@
       "path": "experiments/tfpt-discovery/door_b_lambda_transport_probe.py",
       "sha256": "ac3557bdeff94f4f95a88c113eee49b693cb8b04d3a27b513148c00f181f6183",
       "bytes": 60972,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/doublelimit_proof_probe.py",
@@ -2931,9 +2931,33 @@
       "owner": "prime-front"
     },
     {
+      "path": "experiments/tfpt-discovery/evolve/README.md",
+      "sha256": "30f385fd4995721700d81b466ef8c7a42a7df565112e33821e2345d2ab54fcfe",
+      "bytes": 1611,
+      "owner": "prime-front"
+    },
+    {
       "path": "experiments/tfpt-discovery/evolve/evolve_props.py",
       "sha256": "5a6c5dd5066b02078363f5f166259008e6ef4bc7cd765a9e74501f58cc47bdc3",
       "bytes": 16058,
+      "owner": "prime-front"
+    },
+    {
+      "path": "experiments/tfpt-discovery/evolve/fitness.py",
+      "sha256": "9351ace52708ca36fdd4dd9e4d67e88af9fe4b16d70d821ff344283bfd617f1e",
+      "bytes": 5891,
+      "owner": "prime-front"
+    },
+    {
+      "path": "experiments/tfpt-discovery/evolve/results/evolution_result.json",
+      "sha256": "ec5f2f999dea234371893e4f8a6187b4a9941a99829943413474ff0268882154",
+      "bytes": 52368,
+      "owner": "prime-front"
+    },
+    {
+      "path": "experiments/tfpt-discovery/evolve/results/proposal_log.json",
+      "sha256": "d901f802def3c760bbeb618ade2af402a72dea1ba448a10025b8f6d360d27de6",
+      "bytes": 25110,
       "owner": "prime-front"
     },
     {
@@ -3198,7 +3222,7 @@
       "path": "experiments/tfpt-discovery/flip_mechanics_probe.py",
       "sha256": "5773d601b66b84e11b197d8f96eb99b3a62f0c243b5eecb726ce16984eddfc93",
       "bytes": 10258,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/flip_vs_stab_probe.py",
@@ -3594,7 +3618,7 @@
       "path": "experiments/tfpt-discovery/geometric_polarization_probe.py",
       "sha256": "80a5913e0acd77e258df322b1d3af5077aac63cf41927d0081ca670a019d1b02",
       "bytes": 45429,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/geometric_sos_probe.py",
@@ -3990,7 +4014,7 @@
       "path": "experiments/tfpt-discovery/hodge_chamber_probe.py",
       "sha256": "f7637b17d70a2171f3254662a3a84bf892b3d1d16be261813c05e5d0e30193ad",
       "bytes": 6657,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/hole_nyquist_probe.py",
@@ -4584,7 +4608,7 @@
       "path": "experiments/tfpt-discovery/lehmer_resonance_probe.py",
       "sha256": "9dda1fb86ae66c536a62bbc94e0d2c3c4238f751890736eae2b6a67ae970bd7b",
       "bytes": 33443,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/lemma_window_proof_probe.py",
@@ -4686,6 +4710,12 @@
       "path": "experiments/tfpt-discovery/loewner_pick_probe.py",
       "sha256": "94e34b39718ca86cc89f07c2bccf392b188ac1534387f8d1e009a8bd7767d879",
       "bytes": 96216,
+      "owner": "prime-front"
+    },
+    {
+      "path": "experiments/tfpt-discovery/logic_audit_report.py",
+      "sha256": "019e959a9168b9981ae00626d9fa05193a26e772cd05cc4c2ba551c923fb110d",
+      "bytes": 21064,
       "owner": "prime-front"
     },
     {
@@ -4938,7 +4968,7 @@
       "path": "experiments/tfpt-discovery/mixed_channel_full_weight_probe.py",
       "sha256": "aa1fe648235f4308982834a138edc24f51800077237f479be7d975d338e27dfb",
       "bytes": 48697,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/mixed_haynsworth_probe.py",
@@ -4992,13 +5022,13 @@
       "path": "experiments/tfpt-discovery/moonshot_arch_glue_probe.py",
       "sha256": "7816c123296e19fff06395ecd13f1090d19711b44d58167d988c2b812cd98c81",
       "bytes": 36571,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/moonshot_hecke_groupoid_probe.py",
       "sha256": "44c669c90147c650f60685b1bd20586c63575f30f34d50cea5679e311032eada",
       "bytes": 34813,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/moonshot_k2k3_probe.py",
@@ -5106,6 +5136,12 @@
       "path": "experiments/tfpt-discovery/nearalign_probe.py",
       "sha256": "6834071a83a3f48198a87c9369868bf15540a029699c59d50555df05b2c26db8",
       "bytes": 87059,
+      "owner": "prime-front"
+    },
+    {
+      "path": "experiments/tfpt-discovery/needle_mechanism_probe.py",
+      "sha256": "75822273cea68d864c067566ed03424f571d41b74693aed35b957ba0209c7be6",
+      "bytes": 57549,
       "owner": "prime-front"
     },
     {
@@ -5334,7 +5370,7 @@
       "path": "experiments/tfpt-discovery/packet_garding_probe.py",
       "sha256": "9d4d02926ab77e0d2dd315184caa44f222353bad4c52ecc46d99bb6300e093eb",
       "bytes": 71553,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/pair_band_structure_probe.py",
@@ -5568,7 +5604,7 @@
       "path": "experiments/tfpt-discovery/pinch_attack_probe.py",
       "sha256": "bf38303ae7ad4ab2018159dd3be1402bbdf1853f692b7e5d1334c5708a5bf19e",
       "bytes": 57015,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/pivot_entry_lemma_probe.py",
@@ -6252,7 +6288,7 @@
       "path": "experiments/tfpt-discovery/r_microstate_identification_probe.py",
       "sha256": "84e53e108679fe35ad3cc9e1e3c14aa34f73c9df9f7f20cd28646707eed4c0fb",
       "bytes": 29242,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/race_proof_probe.py",
@@ -6576,7 +6612,8 @@
       "path": "experiments/tfpt-discovery/replication_premise_promotions_audit_probe.py",
       "sha256": "745d72b79d68878654eaee759ea21a5517898863bc033b8feee217571ab2ebf5",
       "bytes": 16286,
-      "owner": "prime-front"
+      "owner": "prime-front",
+      "archive": "provenance/tfpt-source/experiments/tfpt-discovery/replication_premise_promotions_audit_probe.py"
     },
     {
       "path": "experiments/tfpt-discovery/representation_contest_probe.py",
@@ -6660,7 +6697,7 @@
       "path": "experiments/tfpt-discovery/rid_alignment_probe.py",
       "sha256": "9a09bb4fd572add91bc56f18e2f62d2a05150e0fd3ce8b247cc86c3b40274804",
       "bytes": 34645,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/ridge_anatomy_probe.py",
@@ -6822,19 +6859,19 @@
       "path": "experiments/tfpt-discovery/seam_archimedean_kernel_probe.py",
       "sha256": "e1f3811e277166452d4148740a1515e6475a43499f9632dd9d5a280c88ee2ead",
       "bytes": 27472,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/seam_bc_primon_bridge_probe.py",
       "sha256": "68f9c52220aa8c88b155fb529b15a138bcb53ec947b152ff8102cab5d2be96bd",
       "bytes": 14507,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/seam_boost_arch_dictionary_probe.py",
       "sha256": "e7c92033979b3be2102a9160e4ec0d47b857255ec7d46e05817ebbe069c3e191",
       "bytes": 37444,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/seam_geodesic_factor.py",
@@ -6858,13 +6895,13 @@
       "path": "experiments/tfpt-discovery/seam_halfcut_dilation_arch_probe.py",
       "sha256": "9dce8443c6b28fe835740779622737bea969a8173ef61e0cce2ee75b04dc9c4d",
       "bytes": 33652,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/seam_selfdual_width_probe.py",
       "sha256": "e33ccf36f24946cf7a35d9bc22c1208c73c4c862b5b02770e38d21bde5452b30",
       "bytes": 22208,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/seam_state_derivation_probe.py",
@@ -6876,13 +6913,13 @@
       "path": "experiments/tfpt-discovery/seam_tate_phase_probe.py",
       "sha256": "9ab5621aa1728178809f629f94e50c30b19391d3cd81ec456c2cbe4e5527d81b",
       "bytes": 44190,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/seam_truncated_trace_rvm_probe.py",
       "sha256": "8de56844b83105f63065e5ff72408a22a1d11059d59a9958c76a7f3bd4a6f9c7",
       "bytes": 30972,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/seam_wiring_groebner_probe.py",
@@ -7317,6 +7354,12 @@
       "owner": "prime-front"
     },
     {
+      "path": "experiments/tfpt-discovery/strat3_gate0_census.py",
+      "sha256": "d568c24bf6d5a577fc8198fcb397884cf0b6716c7bcf2184d2766bfc4d388e9f",
+      "bytes": 11762,
+      "owner": "prime-front"
+    },
+    {
       "path": "experiments/tfpt-discovery/strat3_sonin_prolate_probe.py",
       "sha256": "838db431627e7b2cab47ae4b04ecd117a4b7673ffe64f3c26e43f511567971b7",
       "bytes": 12872,
@@ -7566,7 +7609,13 @@
       "path": "experiments/tfpt-discovery/tiny_checker.py",
       "sha256": "9e5dacfa827f451338fa0be22518d662794f26e1547938fd6080fcda762e7ec4",
       "bytes": 7658,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
+    },
+    {
+      "path": "experiments/tfpt-discovery/tiny_checker_v2.py",
+      "sha256": "244f53b99d1fb954dd246a3b0d861ab02b8744070f53e2b59b23653f972d3fef",
+      "bytes": 13228,
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/tlawcap_blocks_probe.py",
@@ -8262,7 +8311,7 @@
       "path": "experiments/tfpt-discovery/z1_jacobi_probe.py",
       "sha256": "ed41e4209994055f6ccf1f1e0289107a0a55d60210678c9d3a9b8e4041d0fc7e",
       "bytes": 44152,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/z1_lookahead_probe.py",
@@ -8286,7 +8335,7 @@
       "path": "experiments/tfpt-discovery/z1_uvarov_probe.py",
       "sha256": "9d9e475fceaf1bae84560e955cf54fb24e8329ad4d49fe2533d6ac25c2e84198",
       "bytes": 35001,
-      "owner": "shared dependency; TFPT retained"
+      "owner": "prime-front"
     },
     {
       "path": "experiments/tfpt-discovery/z1_variable_edge_mfunction_probe.py",
@@ -8454,6 +8503,18 @@
       "path": "experiments/tfpt-discovery/zone_extension_proof_probe.py",
       "sha256": "696bffac0a7e85ad7285e901c715025e25745672dcf72bb1343ee80959b3462e",
       "bytes": 38105,
+      "owner": "prime-front"
+    },
+    {
+      "path": "experiments/theory-contracts/universalraum-closure-round-20260914/weil_bridge_probe.json",
+      "sha256": "851afbe2d78921edb6968e890416460981dd946014baeda1cbb4f53acabab783",
+      "bytes": 2238,
+      "owner": "prime-front"
+    },
+    {
+      "path": "experiments/theory-contracts/universalraum-closure-round-20260914/weil_bridge_probe.py",
+      "sha256": "64b81921ba240cb0f3c83dae3cb427f4740f3ef6b3c96d0cee2b03bf8ed2bfce",
+      "bytes": 9156,
       "owner": "prime-front"
     }
   ]

@@ -34,7 +34,7 @@ for path in source.iterdir():
 PY
 }
 audit() {
-  "$PYTHON" verification/make_script_index.py --check
+  "$PYTHON" verification/audit_sync.py
   "$PYTHON" rh/catalog/build_catalog.py --check
   "$PYTHON" scripts/check_migration.py
 }

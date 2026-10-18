@@ -90,7 +90,21 @@ _ROOT = os.path.abspath(os.path.join(_HERE, "..", ".."))
 _VERIFY = os.path.join(_ROOT, "verification")
 sys.path.insert(0, _VERIFY)
 
-import v911_wiring_freedom as v911  # noqa: E402  (READ-ONLY embedded sources)
+# The physical v911 module remains in TFPT. Its source is historical input to
+# this RH meta-audit, stored here as provenance; evaluate only frozen literals.
+from types import SimpleNamespace
+_ARCHIVE = os.path.join(_ROOT, "provenance", "tfpt-source")
+_V911_PATH = os.path.join(_ARCHIVE, "verification", "v911_wiring_freedom.py")
+with open(_V911_PATH, encoding="utf-8") as _fh:
+    _historical_tree = ast.parse(_fh.read())
+_literals = {}
+for _node in _historical_tree.body:
+    if isinstance(_node, ast.Assign) and all(
+            isinstance(_target, ast.Name) and _target.id in
+            {"_SRC_0", "_SRC_1", "_SRC_2", "_PLAN"} for _target in _node.targets):
+        exec(compile(ast.Module(body=[_node], type_ignores=[]),
+                     _V911_PATH, "exec"), {"__builtins__": {}}, _literals)
+v911 = SimpleNamespace(_PLAN=_literals["_PLAN"])
 
 
 PATHS = {
@@ -99,7 +113,7 @@ PATHS = {
     "route": os.path.join(_HERE, "w2_route_independence_audit_probe.py"),
     "v909": os.path.join(_VERIFY, "v909_finite_wall_closure.py"),
     "v910": os.path.join(_VERIFY, "v910_finite_zero_transfer.py"),
-    "v911": os.path.join(_VERIFY, "v911_wiring_freedom.py"),
+    "v911": _V911_PATH,
 }
 CCCXXXV_NORMALIZATION = (3.622e-71, 1.536e-68)
 CHECKS = []
@@ -154,7 +168,7 @@ def embedded_matches():
     for name, source, exp_n, exp_fails, exp_verdict, exp_code in v911._PLAN:
         if source[:1] == "\n":
             source = source[1:]
-        path = os.path.join(_HERE, name + ".py")
+        path = os.path.join(_ARCHIVE, "experiments", "tfpt-discovery", name + ".py")
         local = read(path)
         same = local == source
         # _gate requires ``same is not False``.  A sandbox one-byte mutation

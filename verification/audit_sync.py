@@ -21,6 +21,8 @@ def main():
     registry = make_script_index.load_registry()
     clusters = make_script_index.load_clusters()
     errors = make_script_index.validate(registry, clusters)
+    import check_project_scope
+    errors.extend(check_project_scope.check(ROOT))
     registered = {r["script"] for r in registry}
     scope = json.loads((HERE / "split_scope.json").read_text())
     support = set(scope["dependency_only_modules"])

@@ -11,3 +11,6 @@ jobs:
         with:
           python-version: '3.12'
       - run: bash build.sh audit
+      - name: Formal-support source audit (no Lean compilation)
+        working-directory: experiments/lean4-carrier-rigidity
+        run: bash scripts/audit.sh --quick
