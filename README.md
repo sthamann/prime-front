@@ -1,10 +1,10 @@
 # Prime Front
 
 Independent research on prime numbers, the Weil form, spectral constructions,
-factorisation and the Riemann hypothesis. [Website](https://prime-front-zeta.vercel.app)
-· [Research diary](https://prime-front-zeta.vercel.app/research)
-· [Publications](https://prime-front-zeta.vercel.app/publications)
-· [Verification](https://prime-front-zeta.vercel.app/verification)
+factorisation and the Riemann hypothesis. [Website](https://prime.fixpoint-theory.com)
+· [Research diary](https://prime.fixpoint-theory.com/research)
+· [Publications](https://prime.fixpoint-theory.com/publications)
+· [Verification](https://prime.fixpoint-theory.com/verification)
 
 This project was separated from [TFPT](https://github.com/sthamann/tfpt) on
 18 October 2026. TFPT now focuses on its physical compiler and its own tests.
