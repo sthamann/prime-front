@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SCRIPT_TOTAL } from "@/lib/suite";
+import { SCRIPT_TOTAL } from "@/lib/historicalSuite";
 import { VerbatimRecap } from "./VerbatimRecap";
 
 export function HonestyBanner() {

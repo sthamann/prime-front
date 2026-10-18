@@ -21,3 +21,5 @@ rh/catalog/embeddings/
 rh/catalog/research_engine/generated/sources.sqlite
 experiments/tfpt-discovery/verified_zeros_big.npy
 experiments/tfpt-discovery/odlyzko_zeros6.gz
+.vercel
+.env*

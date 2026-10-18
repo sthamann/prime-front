@@ -1,0 +1,828 @@
+{
+  "sourceRepository": "https://github.com/sthamann/tfpt",
+  "sourceRef": "ba2f0fc",
+  "sourceFile": "website/components/VerificationDag.tsx",
+  "description": "Historical Prime Front verification pointers formerly grouped in the shared E8 node. These pointer associations are preserved for provenance; they do not assert a new mathematical dependency or physical derivation. Dedicated module sources now live in Prime Front.",
+  "movedPointers": [
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v535_hecke_from_geometry.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v785_hecke_check32.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v787_hecke_arrow_broadcast.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v788_positive_c2_lift.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v789_multirate_constdepth.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v790_snf_mu4_theta.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v791_positive_descent.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v793_f8sector_conductor.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v794_cp_extension_gate.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v795_halving_tails_k5.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v797_r_microstate_identification.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v801_prime_cp_intertwiner.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v804_prime_carrier_gray.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v806_hecke_local_clifford.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v811_prime_kraus_doily.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v815_kraus_spread_commutant.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v816_prime_mosco_selection.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v818_sector_floor_attack.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v819_prime_packet_rm14.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v820_prime_kraus_rm24.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v821_prime_vacuum35.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v822_prime_vacuum_dilation.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v823_prime_lagrange_floor.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v824_prime_floor_skeleton.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v825_prime_exclusion_ladder.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v826_prime_exclusion_battery2.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v827_prime_zero_locator.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v828_prime_comb_window.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v829_prime_floor_depth.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v830_prime_float_budget.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v831_prime_alias_second_moment.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v835_corner_hjelmslev_tower.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v836_commutant_sos_closure.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v837_corner_closure_quantifier.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v838_corner_expectation_position.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v839_paircorr_bridge_saturation.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v840_gue_ablation_loopgain.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v841_relation_carrier_ladder.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v842_excess_certified_skeleton.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v843_margin_law_excess_lean.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v846_schur_spectral_mother.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v847_wedge_cellcone_transport.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v848_extraction_chain.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v850_completion_tax_flow.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v851_cluster_kernel_field.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v854_relation_hodge_pfaffian.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v855_invariance_atlas.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v856_connected_current_lean.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v859_grade_no_go_elevator.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v860_phase_lever_closure.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v861_krein_normalform_lean.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v862_defect_polar_weld.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v863_redheffer_colligation.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v864_softport_kappa_law.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v865_weyl_port_readout.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v866_source_contractor_formula.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v867_radau_conditioning.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v868_divisor210_audits.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v869_cdcore_clarkphase.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v870_christoffel_gauss_frame.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v871_pole_uvarov_crossdefect.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v872_damping_compensation.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v873_pruefer_cotlar_decision.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v876_carleson_polygon_wave.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v877_complete_comb_reversal.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v879_envelope_partition_closure.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v881_carleson_port_geometry.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v882_port_source_mellin.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v883_tau_chain_parametrix.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v884_certified_head_positivity.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v885_ladder_flow_anatomy.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v886_register_gapcode_null.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v887_certified_ladder_complete.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v889_route_decisions.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v890_total_positivity_flow.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v891_moebius_firewall_kills.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v892_closure_architecture.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v893_relative_margins.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v894_diagonal_refinement.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v895_collective_comb.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v897_certified_interval_ladder.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v899_christoffel_normsquare.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v900_core_update_anatomy.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v901_tangent_schur_bfloor.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v902_wall_relocation_map.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v904_healthcode12_diagnostic.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v905_bfloor_ideal_certificate.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v906_tail_cartography.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v907_halfgap_registered_target.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v909_finite_wall_closure.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v910_finite_zero_transfer.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v912_form_convergence_theorem.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v914_pascal_region_theorem.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v915_eulerpick_certified_floors.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v916_epstein_weil_violation.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v917_driver_rate_certification.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v918_doublelimit_reduction_theorem.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v919_secular_gw_pinning.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v920_loop_equivalence_theorems.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v921_counting_dominance_closures.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v922_spacing_jet_sumrule_theorems.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v923_spectral_balance_razor_theorems.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v924_moment_laurent_rootladder.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v925_edge_cleanup_closures.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v926_fullgap_growthlaw_theorems.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v927_blockaverage_substrate_theorems.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v928_depthblock_transfer_theorems.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v929_sigmafloor_factorization.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v930_window_instrument_mechanism.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v931_jetmass_floor_theorems.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v932_toproot_theta_statement.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v933_h3_cofinal_adjudication.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v934_gonek_pricing_unconditional.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v935_thetainf_landau_bridge.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v936_manifold_invariance_exclusion.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v937_l1wpd_closure_reduction.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v938_dbn_heatflow_census.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v939_cbj_frame_adjudication.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v940_cbj_subdof_blockfloor.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v941_alignment_law_factorization.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v942_pi_pattern_transfer_specificity.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v943_mangoldt_ablation_localization.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v944_ground_residue_observability.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v945_zero_causal_stratification.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v946_census_krein_pencil.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v947_loewner_pick_dictionary.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v948_krein_sign_characteristic.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v949_commensurability_mechanism.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v950_zero_channel_capacity.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v951_cancellation_functional.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v952_turan_extremal.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v953_fewatom_reduction.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v954_nodeless_pf.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v955_tau_iiks_toda_dictionary.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v956_signedmoment_halffilling_duality.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v958_bordered_tau_readout_dictionary.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v959_coupledtau_terminal_dictionary.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v960_terminal_surface_closure.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v961_midpoint_orientation_dictionary.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v962_halffilling_pinning_theory.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v963_lstar_reduction_dictionary.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v964_lstar_coherence_census.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v965_lstar_curvature_arc.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v966_l2_reduction_chain.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v967_l2_cascade_closure.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v968_architecture_adjudication.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v969_forks_and_redteam.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v970_extraction_and_composition.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v978_terminal_density_martingale.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v979_cover_growth_k2.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v980_lstar_margin_chain.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v981_lstar_borodin_duality.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v982_dirichlet_matched_frame.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v1017_kernel_loewner_positivity.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v536_eichler_trace_layer.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v537_halfintegral_bridge.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v538_relative_trace_identity.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v539_weil_structure_family.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v540_amplitude_linear_carrier.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v541_matching_lemma_ledger.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v542_margin_chain_identities.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v543_lumped_pair_identities.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v544_long_lag_support.py"
+    },
+    {
+      "sourceNode": "E8",
+      "sourceTitle": "E₈ — the μ₄ glue (audit hull)",
+      "file": "v545_hardy_core_identities.py"
+    }
+  ]
+}

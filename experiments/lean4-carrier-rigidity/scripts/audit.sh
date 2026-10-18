@@ -251,7 +251,7 @@ fi
 section "headline theorems (Lean #check)"
 if [[ "$QUICK" == "0" ]]; then
     if grep -qE "Built TfptCarrier\.AuditCheck" /tmp/tfpt-lake-build.log 2>/dev/null \
-            || lake build TfptCarrier.AxiomCheck > /tmp/tfpt-auditcheck.log 2>&1; then
+            || lake build TfptCarrier.AuditCheck > /tmp/tfpt-auditcheck.log 2>&1; then
         log_pass "AuditCheck.lean elaborated; all headline #checks succeeded"
     else
         log_fail "AuditCheck.lean failed to elaborate; see /tmp/tfpt-auditcheck.log"
@@ -271,7 +271,7 @@ fi
 section "theorem signatures (Lean example signature-lock)"
 if [[ "$QUICK" == "0" ]]; then
     if grep -qE "Built TfptCarrier\.AuditContract" /tmp/tfpt-lake-build.log 2>/dev/null \
-            || lake build TfptCarrier.AxiomCheck > /tmp/tfpt-auditcontract.log 2>&1; then
+            || lake build TfptCarrier.AuditContract > /tmp/tfpt-auditcontract.log 2>&1; then
         log_pass "AuditContract.lean elaborated; all signature locks hold"
     else
         log_fail "AuditContract.lean failed to elaborate; see /tmp/tfpt-auditcontract.log"

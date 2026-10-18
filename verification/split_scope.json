@@ -10,7 +10,8 @@
     "v817_positive_descent_master",
     "v849_cfin_unique_cofinal_lean",
     "v853_bent_css_mangoldt",
-    "v807_lorentz_nullselector"
+    "v807_lorentz_nullselector",
+    "v705_chain_deck_sector"
   ],
   "claim_status_sha256": {
     "HECKE.GEOM.01": "2345087dcfe8d6aa18edb69c9ab5ae86155655f6bc22518961c192f34762a350",
@@ -414,6 +415,9 @@
     "HECKE.SNF_THETA.01": "96a000005dfecec44fdb1303edc795a26fc8d7adfac7e44ae8411d2e3da856f1",
     "HECKE.HALVINGTAILS.01": "d7949d67dac217e084d36efa4583fed6c25e21ad3d606e96612f628d0b29bb02",
     "HECKE.R_MICROSTATE.01": "fb58cedb26f94306f44563a3dfa69f53432b6871e989404bd9f38572e894ebf2",
-    "HECKE.LOCAL.CLIFFORD.01": "5680a1216a1fb2a9caf62df96faea25c19adde22d54f5651265b040fe1e58988"
+    "HECKE.LOCAL.CLIFFORD.01": "5680a1216a1fb2a9caf62df96faea25c19adde22d54f5651265b040fe1e58988",
+    "QGEO.CONEDYN.01": "89f90ee9979acbc84b39d2ed5438f7ae26d3ece6c572fdffcb5bca6bfac7a746",
+    "HECKE.ARROW_MESSAGE.01": "7de7a6db12da2a3f2ae5ec2b75421a343ee6235d57faa609879297feab16234f",
+    "QGEO.DECKSECTOR.01": "3434c0d74ed33aa881d6e16c8d0755ff9a287169d70baa36f70aaf647892bb7c"
   }
 }

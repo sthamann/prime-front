@@ -62,7 +62,7 @@ def main():
     ledger = _read("status_ledger.csv")
     registry = _read("script_registry.csv")
     clusters = _read("script_clusters.csv")
-    docs = _read("docs_map.csv")
+    docs = _read("docs_map.csv") if os.path.exists(os.path.join(HERE, "docs_map.csv")) else []
 
     # script -> cluster, one-liner
     reg = {r["script"]: r for r in registry}
