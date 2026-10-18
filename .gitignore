@@ -1,0 +1,23 @@
+# Local runtimes, caches and secrets
+node_modules/
+.next/
+.vercel/
+.venv/
+.lake/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.DS_Store
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+rh/catalog/cache/
+rh/catalog/embeddings/
+rh/catalog/research_engine/generated/sources.sqlite
+experiments/tfpt-discovery/verified_zeros_big.npy
+experiments/tfpt-discovery/odlyzko_zeros6.gz

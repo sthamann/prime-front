@@ -1,0 +1,1 @@
+import Link from "next/link"; export default function NotFound(){return <div className="pf-wrap pf-section"><h1 className="font-serif text-4xl">Page not found</h1><p className="my-5">This address is not part of the current research publication.</p><Link className="pf-link" href="/">Return to Prime Front</Link></div>}

@@ -1,0 +1,691 @@
+/-
+  TFPT Carrier — Signature-Lock Audit Contract
+  --------------------------------------------
+
+  Companion of `AuditCheck.lean` (which only verifies that the
+  headline names elaborate) and of `scripts/audit.sh` (which
+  checks for deferred-proof placeholders, axioms, etc.).
+
+  This module goes one step further: each headline theorem is
+  used in an `example` whose type is the *exact intended Lean
+  statement*. If a future refactor silently weakens the
+  conclusion of a headline theorem (without renaming it), this
+  file will fail to elaborate.
+
+  ----------------------------------------------------------------
+  Reading the file
+  ----------------------------------------------------------------
+
+  Every block has the form
+
+      example : <exact intended type signature> :=
+        <reference to the theorem>
+
+  The `example` does not introduce a new name; it only verifies
+  that the right-hand side has the left-hand side's type.
+
+  ----------------------------------------------------------------
+  Strictness
+  ----------------------------------------------------------------
+
+  This is strictly stronger than `#check`:
+
+  * `#check theorem_name` succeeds as long as `theorem_name`
+    elaborates *with any type*.
+  * The patterns below succeed only if `theorem_name` elaborates
+    with the *exact specified type* (up to definitional equality).
+-/
+
+import TfptCarrier.Polarization
+import TfptCarrier.InvolutionProjectors
+import TfptCarrier.CalderonInterface
+import TfptCarrier.CalderonProjector
+import TfptCarrier.BoundaryPolarization
+import TfptCarrier.MathlibBridge
+import TfptCarrier.LatticeRigidityGeneral
+import TfptCarrier.Rigidity
+import TfptCarrier.OrientedDeterminantCarrier
+import TfptCarrier.TraceProjection
+import TfptCarrier.DeterminantCharacter
+import TfptCarrier.HiggsIndexShadow
+import TfptCarrier.HiggsTopForm
+import TfptCarrier.HiggsSchemeCohomologyShadow
+import TfptCarrier.YukawaRank
+import TfptCarrier.YukawaTopForm
+import TfptCarrier.YukawaPrimitive
+import TfptCarrier.YukawaTrilinearForm
+import TfptCarrier.YukawaStageDExistence
+import TfptCarrier.BoundaryYukawaKernelInterface
+import TfptCarrier.SeamWindingInterface
+import TfptCarrier.CarrierData
+import TfptCarrier.Hypercharge
+import TfptCarrier.SeamDeckClosure
+import TfptCarrier.MobiusUniformisation
+import TfptCarrier.CohomologyGrading
+import TfptCarrier.CoxeterPrime2
+import TfptCarrier.SeamStandardPair
+import TfptCarrier.SeamApplicabilityLedger
+import TfptCarrier.SeamRigidityForcing
+import TfptCarrier.SeamEdgeChern
+import TfptCarrier.SeamResidualAxiom
+import TfptCarrier.CofinalPredefinition
+
+namespace TFPT.Carrier.AuditContract
+
+/-! ## Layer 1 — Polarization (algebraic core) -/
+
+example {A : Type*} [Ring A] [Algebra ℚ A]
+    (p : TFPT.Carrier.Polarization A) :
+    p.sixY * p.sixY - p.sixY - 6 = 0 :=
+  p.sixY_carrier_polynomial
+
+/-! ## Layer 2 — Boundary involution to projectors -/
+
+noncomputable example {A : Type*} [Ring A] [Invertible (2 : A)]
+    (c : TFPT.Carrier.InvolutionProjectors.CarrierInvolution A) :
+    TFPT.Carrier.Polarization A :=
+  c.toPolarization
+
+example {A : Type*} [Ring A] [Invertible (2 : A)]
+    (c : TFPT.Carrier.InvolutionProjectors.CarrierInvolution A) :
+    c.Pminus * c.Pminus = c.Pminus :=
+  c.Pminus_idem
+
+example {A : Type*} [Ring A] [Invertible (2 : A)]
+    (c : TFPT.Carrier.InvolutionProjectors.CarrierInvolution A) :
+    c.Pminus + c.Pplus = 1 :=
+  c.Pminus_add_Pplus
+
+/-! ## Layer 3 — Discrete rigidity -/
+
+example
+    (m n : ℕ) (hm : 0 < m) (hn : 0 < n) (qm qp : ℤ)
+    (htrace : (m : ℤ) * qm + (n : ℤ) * qp = 0)
+    (hneg : qm < 0) (hpos : 0 < qp)
+    (hgcd : Int.gcd qm qp = 1) :
+    qm = -((n / Nat.gcd m n : ℕ) : ℤ) ∧
+    qp = ((m / Nat.gcd m n : ℕ) : ℤ) :=
+  TFPT.Carrier.LatticeRigidityGeneral.primitive_trace_free_pair_general
+    m n hm hn qm qp htrace hneg hpos hgcd
+
+example
+    (qm qp : ℤ)
+    (htrace : 3 * qm + 2 * qp = 0)
+    (hneg : qm < 0) (hpos : 0 < qp)
+    (hgcd : Int.gcd qm qp = 1) :
+    qm = -2 ∧ qp = 3 :=
+  TFPT.Carrier.Rigidity.unique_carrier_pair qm qp htrace hneg hpos hgcd
+
+example (c : TFPT.Carrier.OrientedDeterminantCarrier.PrimitiveOrientedDeterminantCarrier 3 2) :
+    c.q_minus = -2 ∧ c.q_plus = 3 :=
+  c.sm_pair_eq
+
+/-! ## Layer 4 — Structural trace -/
+
+example
+    {K M : Type*} [Field K] [AddCommGroup M] [Module K M]
+    [FiniteDimensional K M]
+    (Pm Pp : M →ₗ[K] M)
+    (hm : IsIdempotentElem Pm) (hp : IsIdempotentElem Pp)
+    (a b : K) :
+    LinearMap.trace K M (a • Pm + b • Pp)
+      = a * (Module.finrank K (LinearMap.range Pm) : K)
+        + b * (Module.finrank K (LinearMap.range Pp) : K) :=
+  TFPT.Carrier.TraceProjection.trace_linear_combination_of_idempotents Pm Pp hm hp a b
+
+/-! ## Layer 5 — Determinant character -/
+
+example
+    {K : Type*} [Field K] {m n : ℕ}
+    (lam : K) (qm qp : ℤ) (hlam : lam ≠ 0) :
+    Matrix.det (TFPT.Carrier.DeterminantCharacter.torusMatrix K m n lam qm qp)
+      = lam ^ ((m : ℤ) * qm + (n : ℤ) * qp) :=
+  TFPT.Carrier.DeterminantCharacter.det_torusMatrix lam qm qp hlam
+
+/-! ## Layer 6 — Stage A rank certificates -/
+
+example
+    {K : Type*} [Field K]
+    {Eplus : Type*} [AddCommGroup Eplus] [Module K Eplus]
+    (cert : TFPT.Carrier.HiggsIndexShadow.HiggsIndexCertificate K Eplus) :
+    Module.finrank K Eplus = 2 :=
+  cert.finrank_Eplus_eq_two
+
+example
+    {K : Type*} [Field K]
+    {Eminus : Type*} [AddCommGroup Eminus] [Module K Eminus]
+    (cert : TFPT.Carrier.YukawaRank.YukawaRankCertificate K Eminus) :
+    Module.finrank K Eminus = 3 :=
+  cert.finrank_Eminus_eq_three
+
+/-! ## Layer 6b — Yukawa Stage B (top form) -/
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E] [FiniteDimensional K E]
+    (Y : TFPT.Carrier.YukawaTopForm.YukawaTopForm K E) :
+    Module.finrank K E = 3 :=
+  Y.finrank_E_eq_three
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E] [FiniteDimensional K E] :
+    Nonempty (TFPT.Carrier.YukawaTopForm.YukawaTopForm K E)
+      ↔ Module.finrank K E = 3 :=
+  TFPT.Carrier.YukawaTopForm.YukawaTopForm.nonempty_iff_finrank_eq_three
+
+/-! ## Layer 6c — Yukawa Stage C (contraction iso) -/
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E] [FiniteDimensional K E]
+    (Y : TFPT.Carrier.YukawaPrimitive.PrimitiveIndecomposableYukawaCoupling K E) :
+    Module.finrank K E = 3 :=
+  Y.finrank_E_eq_three
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E] [FiniteDimensional K E] :
+    Nonempty (TFPT.Carrier.YukawaPrimitive.PrimitiveIndecomposableYukawaCoupling K E)
+      ↔ Module.finrank K E = 3 :=
+  TFPT.Carrier.YukawaPrimitive.PrimitiveIndecomposableYukawaCoupling.nonempty_iff_finrank_eq_three
+
+/-! ## Layer 6d — Yukawa Stage D (primary trilinear form) -/
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E] [FiniteDimensional K E] [Nontrivial E]
+    (Y : TFPT.Carrier.YukawaTrilinearForm.YukawaTrilinearForm K E)
+    (hinj : Y.ContractionInjective)
+    (hsurj : Y.ContractionSurjective) :
+    Module.finrank K E = 3 :=
+  Y.finrank_E_eq_three hinj hsurj
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E] [FiniteDimensional K E] [Nontrivial E]
+    (Y : TFPT.Carrier.YukawaTrilinearForm.YukawaTrilinearForm K E)
+    (h : Y.PrimitiveIndecomposableYukawaCondition) :
+    Module.finrank K E = 3 :=
+  Y.finrank_E_eq_three_of_condition h
+
+/-- Without `Nontrivial`, the correct statement is the disjunction
+`dim E = 0 ∨ dim E = 3`. This signature lock verifies the
+transparency theorem of v9. -/
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E] [FiniteDimensional K E]
+    (Y : TFPT.Carrier.YukawaTrilinearForm.YukawaTrilinearForm K E)
+    (hinj : Y.ContractionInjective)
+    (hsurj : Y.ContractionSurjective) :
+    Module.finrank K E = 0 ∨ Module.finrank K E = 3 :=
+  Y.finrank_E_eq_zero_or_three hinj hsurj
+
+/-! ## Layer 0+ — Calderon projector (Paper 1 structural) -/
+
+example {A : Type*} [Ring A] [Invertible (2 : A)]
+    (c : TFPT.Carrier.CalderonProjector.CalderonProjector A) :
+    c.eps * c.eps = 1 :=
+  c.eps_sq
+
+noncomputable example {A : Type*} [Ring A] [Invertible (2 : A)]
+    (c : TFPT.Carrier.CalderonProjector.CalderonProjector A) :
+    TFPT.Carrier.InvolutionProjectors.CarrierInvolution A :=
+  c.toCarrierInvolution
+
+noncomputable example {A : Type*} [Ring A] [Invertible (2 : A)]
+    (c : TFPT.Carrier.CalderonProjector.CalderonProjector A) :
+    TFPT.Carrier.CalderonInterface.CalderonCertificate A :=
+  c.toCalderonCertificate
+
+/-! ## Layer 0++ — Boundary polarisation (v10 upstream layer) -/
+
+noncomputable example
+    {K : Type*} [Field K]
+    {H : Type*} [AddCommGroup H] [Module K H]
+    (P : TFPT.Carrier.BoundaryPolarization.BoundaryPolarization K H) :
+    Module.End K H := P.projector
+
+example
+    {K : Type*} [Field K]
+    {H : Type*} [AddCommGroup H] [Module K H]
+    (P : TFPT.Carrier.BoundaryPolarization.BoundaryPolarization K H) :
+    P.projector * P.projector = P.projector :=
+  P.projector_isIdempotent
+
+noncomputable example
+    {K : Type*} [Field K] [Invertible (2 : K)]
+    {H : Type*} [AddCommGroup H] [Module K H]
+    (P : TFPT.Carrier.BoundaryPolarization.BoundaryPolarization K H) :
+    TFPT.Carrier.CalderonProjector.CalderonProjector (Module.End K H) :=
+  P.toCalderonProjector
+
+/-! ## Layer 6+ — Higgs Stage B (degree-1 two-variable forms) -/
+
+example {K : Type*} [Field K] :
+    Module.finrank K (TFPT.Carrier.HiggsTopForm.DegreeOneTwoVarForm K) = 2 :=
+  TFPT.Carrier.HiggsTopForm.DegreeOneTwoVarForm.finrank_eq_two K
+
+example
+    {K : Type*} [Field K]
+    {Eplus : Type*} [AddCommGroup Eplus] [Module K Eplus]
+    (h : TFPT.Carrier.HiggsTopForm.HiggsTopForm K Eplus) :
+    Module.finrank K Eplus = 2 :=
+  h.finrank_Eplus_eq_two
+
+noncomputable example
+    {K : Type*} [Field K]
+    {Eplus : Type*} [AddCommGroup Eplus] [Module K Eplus]
+    (h : TFPT.Carrier.HiggsTopForm.HiggsTopForm K Eplus) :
+    TFPT.Carrier.HiggsIndexShadow.HiggsIndexCertificate K Eplus :=
+  h.toHiggsIndexCertificate
+
+/-! ## Layer 6++ — Higgs scheme-cohomology shadow (v10) -/
+
+noncomputable example
+    {K : Type*} [Field K] :
+    TFPT.Carrier.HiggsTopForm.DegreeOneTwoVarForm K ≃ₗ[K]
+      TFPT.Carrier.HiggsSchemeCohomologyShadow.O_one K :=
+  TFPT.Carrier.HiggsSchemeCohomologyShadow.toDegreeOneTwoVarForm
+
+example
+    {K : Type*} [Field K] :
+    Module.finrank K (TFPT.Carrier.HiggsSchemeCohomologyShadow.O_one K) = 2 :=
+  TFPT.Carrier.HiggsSchemeCohomologyShadow.finrank_O_one_eq_two
+
+noncomputable example
+    {K : Type*} [Field K]
+    {Eplus : Type*} [AddCommGroup Eplus] [Module K Eplus]
+    (h : Eplus ≃ₗ[K] TFPT.Carrier.HiggsSchemeCohomologyShadow.O_one K) :
+    TFPT.Carrier.HiggsTopForm.HiggsTopForm K Eplus :=
+  TFPT.Carrier.HiggsSchemeCohomologyShadow.toHiggsTopForm h
+
+/-! ## Layer 6d+ — Yukawa Stage D backward (v10) -/
+
+noncomputable example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E]
+    (b : Module.Basis (Fin 3) K E) :
+    TFPT.Carrier.YukawaTrilinearForm.YukawaTrilinearForm K E :=
+  TFPT.Carrier.YukawaStageDExistence.ofBasis b
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E]
+    (b : Module.Basis (Fin 3) K E) :
+    (TFPT.Carrier.YukawaStageDExistence.ofBasis b).ContractionInjective :=
+  TFPT.Carrier.YukawaStageDExistence.ofBasis_contractionInjective b
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E] [FiniteDimensional K E]
+    (b : Module.Basis (Fin 3) K E) :
+    (TFPT.Carrier.YukawaStageDExistence.ofBasis b).ContractionSurjective :=
+  TFPT.Carrier.YukawaStageDExistence.ofBasis_contractionSurjective b
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E] [FiniteDimensional K E]
+    (h : Module.finrank K E = 3) :
+    ∃ Y : TFPT.Carrier.YukawaTrilinearForm.YukawaTrilinearForm K E,
+      Y.ContractionInjective ∧ Y.ContractionSurjective :=
+  TFPT.Carrier.YukawaStageDExistence.exists_yukawaTrilinearForm_of_finrank_eq_three h
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E]
+    [FiniteDimensional K E] [Nontrivial E] :
+    (∃ Y : TFPT.Carrier.YukawaTrilinearForm.YukawaTrilinearForm K E,
+        Y.ContractionInjective ∧ Y.ContractionSurjective) ↔
+      Module.finrank K E = 3 :=
+  TFPT.Carrier.YukawaStageDExistence.stage_D_iff_finrank_eq_three
+
+/-! ## Layer 0++ — CarrierInvolution → BoundaryPolarization (v11 converse) -/
+
+/-- The converse direction of `BoundaryPolarization.toCarrierInvolution`,
+closing the equivalence between the polarisation picture and the
+involution picture for `A = Module.End K H`. -/
+noncomputable example
+    {K : Type*} [Field K] [Invertible (2 : K)]
+    {H : Type*} [AddCommGroup H] [Module K H]
+    (c : TFPT.Carrier.InvolutionProjectors.CarrierInvolution
+          (Module.End K H)) :
+    TFPT.Carrier.BoundaryPolarization.BoundaryPolarization K H :=
+  TFPT.Carrier.BoundaryPolarization.BoundaryPolarization.ofCarrierInvolution c
+
+/-! ## Layer 3b+ — Seam-winding interface (v11 upstream) -/
+
+example {m n : ℕ}
+    (s : TFPT.Carrier.SeamWindingInterface.SeamWindingData m n) :
+    TFPT.Carrier.OrientedDeterminantCarrier.PrimitiveOrientedDeterminantCarrier m n :=
+  s.toPrimitiveOrientedDeterminantCarrier
+
+example {m n : ℕ}
+    (c : TFPT.Carrier.OrientedDeterminantCarrier.PrimitiveOrientedDeterminantCarrier m n) :
+    TFPT.Carrier.SeamWindingInterface.SeamWindingData m n :=
+  TFPT.Carrier.SeamWindingInterface.SeamWindingData.ofPrimitiveOrientedDeterminantCarrier c
+
+example (s : TFPT.Carrier.SeamWindingInterface.SeamWindingData 3 2) :
+    s.q_minus = -2 ∧ s.q_plus = 3 :=
+  s.sm_pair_eq
+
+/-! ## Layer 6d++ — Boundary Yukawa Kernel interface (v11 upstream) -/
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E] [FiniteDimensional K E]
+    (b : TFPT.Carrier.BoundaryYukawaKernelInterface.BoundaryYukawaKernel K E) :
+    Module.finrank K E = 3 :=
+  b.finrank_E_eq_three
+
+noncomputable example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E]
+    [FiniteDimensional K E] [Nontrivial E]
+    (h : Module.finrank K E = 3) :
+    TFPT.Carrier.BoundaryYukawaKernelInterface.BoundaryYukawaKernel K E :=
+  TFPT.Carrier.BoundaryYukawaKernelInterface.BoundaryYukawaKernel.ofFinrankEqThree h
+
+example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E]
+    [FiniteDimensional K E] [Nontrivial E] :
+    Nonempty (TFPT.Carrier.BoundaryYukawaKernelInterface.BoundaryYukawaKernel K E) ↔
+      Module.finrank K E = 3 :=
+  TFPT.Carrier.BoundaryYukawaKernelInterface.BoundaryYukawaKernel.nonempty_iff_finrank_eq_three
+
+noncomputable example
+    {K : Type*} [Field K]
+    {E : Type*} [AddCommGroup E] [Module K E] [FiniteDimensional K E]
+    (b : TFPT.Carrier.BoundaryYukawaKernelInterface.BoundaryYukawaKernel K E) :
+    TFPT.Carrier.YukawaRank.YukawaRankCertificate K E :=
+  b.toYukawaRankCertificate
+
+/-! ## Layer 7 — Mathlib bridge -/
+
+example
+    {A : Type*} [Ring A]
+    (p : TFPT.Carrier.Polarization A) :
+    CompleteOrthogonalIdempotents ![p.Pm, p.Pp] :=
+  TFPT.Carrier.MathlibBridge.Polarization.toCompleteOrthogonalIdempotents p
+
+/-! ## Layer 8 — Bundled main theorems -/
+
+example
+    {K M : Type*} [Field K] [CharZero K]
+    [AddCommGroup M] [Module K M] [FiniteDimensional K M]
+    (cp : TFPT.Carrier.CarrierData.CarrierPremises K M) :
+    LinearMap.trace K M cp.Y = 0 :=
+  cp.trace_Y_eq_zero
+
+example
+    {K M : Type*} [Field K] [CharZero K]
+    [AddCommGroup M] [Module K M] [FiniteDimensional K M]
+    (cp : TFPT.Carrier.CarrierData.CarrierPremises K M) :
+    (6 : ℕ) • (cp.Y * cp.Y) - cp.Y - 1 = (0 : Module.End K M) :=
+  cp.carrier_polynomial_Y
+
+example
+    {K M : Type*} [Field K] [CharZero K]
+    [AddCommGroup M] [Module K M] [FiniteDimensional K M]
+    (cp : TFPT.Carrier.CarrierData.CarrierPremises K M)
+    (qm qp : ℤ)
+    (htrace : 3 * qm + 2 * qp = 0)
+    (hsign_m : qm < 0) (hsign_p : 0 < qp)
+    (hgcd : Int.gcd qm qp = 1) :
+    (qm = -2 ∧ qp = 3)
+    ∧ LinearMap.trace K M cp.Y = 0
+    ∧ (6 : ℕ) • (cp.Y * cp.Y) - cp.Y - 1 = (0 : Module.End K M) :=
+  cp.hypercharge_carrier_packet qm qp htrace hsign_m hsign_p hgcd
+
+/-! ## Concrete 5×5 model -/
+
+example : (TFPT.Carrier.Hypercharge.Y).trace = 0 :=
+  TFPT.Carrier.Hypercharge.trace_Y
+
+example : (6 : ℚ) • (TFPT.Carrier.Hypercharge.Y * TFPT.Carrier.Hypercharge.Y)
+            - TFPT.Carrier.Hypercharge.Y - 1 = 0 :=
+  TFPT.Carrier.Hypercharge.Y_carrier_polynomial
+
+/-! ## QGEO seam-deck closure (the QGEO.SYM.01 conditional theorem; v201/v210) -/
+
+/-- 4th-root character orthogonality (the mark-sum kernel). -/
+example (ζ : ℂ) (h4 : ζ ^ 4 = 1) :
+    (∑ j ∈ Finset.range 4, ζ ^ j) = if ζ = 1 then 4 else 0 :=
+  TFPT.Carrier.SeamDeckClosure.geom_sum_fourth_root ζ h4
+
+/-- Mark-local ⇒ the clock connects only equal characters (`[ρ, M_f] = 0`). -/
+example {S : Finset ℤ} (h : TFPT.Carrier.SeamDeckClosure.MarkLocal S)
+    {n n' : ℤ} (hmem : (n - n') ∈ S) :
+    TFPT.Carrier.SeamDeckClosure.cls n = TFPT.Carrier.SeamDeckClosure.cls n' :=
+  TFPT.Carrier.SeamDeckClosure.markLocal_blockDiagonal h hmem
+
+/-- The conditional QGEO closure: given the seam-deck premise, the clock
+preserves the DtN at the character level (`ω∘ρ=ω`). -/
+example (P : TFPT.Carrier.SeamDeckClosure.SeamDeckPremise)
+    {n n' : ℤ} (h : (n - n') ∈ P.modes) :
+    TFPT.Carrier.SeamDeckClosure.cls n = TFPT.Carrier.SeamDeckClosure.cls n' :=
+  P.clock_invariant h
+
+/-! ## QGEO Möbius uniformisation (QGEO.UNIFORM.01 normal form; v177) -/
+
+/-- The clock `ρ : z ↦ i z` has order dividing 4. -/
+example (z : ℂ) :
+    TFPT.Carrier.MobiusUniformisation.rho
+      (TFPT.Carrier.MobiusUniformisation.rho
+        (TFPT.Carrier.MobiusUniformisation.rho
+          (TFPT.Carrier.MobiusUniformisation.rho z))) = z :=
+  TFPT.Carrier.MobiusUniformisation.rho_pow_four z
+
+/-- The dihedral relation `σρσ = ρ⁻¹` (so `⟨ρ,σ⟩ = D₄`). -/
+example (z : ℂ) :
+    TFPT.Carrier.MobiusUniformisation.sigma
+      (TFPT.Carrier.MobiusUniformisation.rho
+        (TFPT.Carrier.MobiusUniformisation.sigma z))
+      = TFPT.Carrier.MobiusUniformisation.rhoInv z :=
+  TFPT.Carrier.MobiusUniformisation.sigma_rho_sigma z
+
+/-- Order-4 multiplier classification: `z ↦ ζ z` has order exactly 4 iff
+`ζ = ±i`. -/
+example (ζ : ℂ) :
+    (ζ ^ 4 = 1 ∧ ζ ^ 2 ≠ 1) ↔ (ζ = Complex.I ∨ ζ = -Complex.I) :=
+  TFPT.Carrier.MobiusUniformisation.mult_order_four_iff ζ
+
+/-! ## QGEO cohomology grading (QGEO.COHOM.01 character node + MODULE parity; v177) -/
+
+/-- The clock pullback character on `omega_2` is `i^2 = -1`. -/
+example (z : ℂ) :
+    TFPT.Carrier.CohomologyGrading.omega2 (Complex.I * z) * Complex.I
+      = (-1 : ℂ) * TFPT.Carrier.CohomologyGrading.omega2 z :=
+  TFPT.Carrier.CohomologyGrading.omega2_pullback z
+
+/-- The clock pullback character on `omega_3` is `i^3 = -i`. -/
+example (z : ℂ) :
+    TFPT.Carrier.CohomologyGrading.omega3 (Complex.I * z) * Complex.I
+      = (-Complex.I) * TFPT.Carrier.CohomologyGrading.omega3 z :=
+  TFPT.Carrier.CohomologyGrading.omega3_pullback z
+
+/-- The reflection parity: `sigma^* omega_1 = omega_3`. -/
+example (z : ℂ) (hz : z ≠ 0) (hz4 : z ^ 4 - 1 ≠ 0) :
+    TFPT.Carrier.CohomologyGrading.sigmaPull TFPT.Carrier.CohomologyGrading.omega1 z
+      = TFPT.Carrier.CohomologyGrading.omega3 z :=
+  TFPT.Carrier.CohomologyGrading.omega1_reflection z hz hz4
+
+/-! ## Coxeter prime-2 structural lemma (RES.COXETER.SYMMETRY.01 corollary; v409) -/
+
+/-- No prime-2-only attractor exists: every involution eigenvalue (`r²=1`) and
+every projector eigenvalue (`r²=r`) fails to be a contraction rate in `(0,1)`,
+while the seam family rate `2/3` is one. -/
+example :
+    (∀ r : ℝ, r * r = 1 → ¬ TFPT.Carrier.CoxeterPrime2.IsContractionRate r) ∧
+    (∀ r : ℝ, r * r = r → ¬ TFPT.Carrier.CoxeterPrime2.IsContractionRate r) ∧
+    TFPT.Carrier.CoxeterPrime2.IsContractionRate ((2 : ℝ) / 3) :=
+  TFPT.Carrier.CoxeterPrime2.no_prime2_only_attractor
+
+/-! ## Borchers/Wiesbrock standard-pair algebra (SEAM.EQUIV.BW.HSMI.01; v438) -/
+
+/-- The four standard-pair relations exactly, on the centred 5-mode ladder:
+    `[K,P] = P`, `J² = 1`, `J K J = −K`, `J P J = P₊`. -/
+example :
+    (TfptCarrier.SeamStandardPair.K * TfptCarrier.SeamStandardPair.P
+        - TfptCarrier.SeamStandardPair.P * TfptCarrier.SeamStandardPair.K
+        = TfptCarrier.SeamStandardPair.P) ∧
+    (TfptCarrier.SeamStandardPair.J * TfptCarrier.SeamStandardPair.J = 1) ∧
+    (TfptCarrier.SeamStandardPair.J * TfptCarrier.SeamStandardPair.K
+        * TfptCarrier.SeamStandardPair.J = -TfptCarrier.SeamStandardPair.K) ∧
+    (TfptCarrier.SeamStandardPair.J * TfptCarrier.SeamStandardPair.P
+        * TfptCarrier.SeamStandardPair.J = TfptCarrier.SeamStandardPair.Pplus) :=
+  TfptCarrier.SeamStandardPair.standard_pair_relations
+
+/-- Intrinsic Bisognano–Wichmann: the seam standard pair yields a geometric modular
+    flow (face (ii)), modulo the cited Borchers step + the one continuum input. -/
+example : TfptCarrier.SeamStandardPair.GeometricModularFlow :=
+  TfptCarrier.SeamStandardPair.geometricModularFlowFromStandardPair
+
+/-! ## Applicability ledger (SEAM.EQUIV.APPLICABILITY.01; v441) -/
+
+/-- The audit: of 12 cited-theorem hypotheses, exactly 11 are internal and 1 external. -/
+example :
+    TfptCarrier.SeamApplicabilityLedger.sources.length = 12 ∧
+    TfptCarrier.SeamApplicabilityLedger.sources.countP
+      TfptCarrier.SeamApplicabilityLedger.Src.isInternal = 11 ∧
+    TfptCarrier.SeamApplicabilityLedger.sources.countP
+      TfptCarrier.SeamApplicabilityLedger.Src.isExternal = 1 :=
+  TfptCarrier.SeamApplicabilityLedger.audit
+
+/-- The MMST applicability range `rank ≤ c ≤ D` reads `8 ≤ 8 ≤ 16`. -/
+example :
+    TfptCarrier.SeamApplicabilityLedger.rankE8 ≤ TfptCarrier.SeamApplicabilityLedger.cChiral
+      ∧ TfptCarrier.SeamApplicabilityLedger.cChiral ≤ TfptCarrier.SeamApplicabilityLedger.D :=
+  TfptCarrier.SeamApplicabilityLedger.mmst_range
+
+/-! ## Rigidity FORCING converse (SEAM.RIGIDITY.FORCING.01; v445 + v442) -/
+
+/-- The entrywise forcing, uniform in N: `iᵃ = iᵇ ↔ a ≡ b (mod 4)`. -/
+example (a b : Fin 4) :
+    TfptCarrier.SeamRigidityForcing.clock4 a = TfptCarrier.SeamRigidityForcing.clock4 b
+      ↔ a = b :=
+  TfptCarrier.SeamRigidityForcing.commutator_zero_iff a b
+
+/-- The order discriminator: the order-4 commutant `64` is strictly smaller than the
+    order-2 commutant `128` (only the four marks give `(E₈)₁`). -/
+example : 4 * (4 * 4) < 2 * (8 * 8) :=
+  TfptCarrier.SeamRigidityForcing.order_discriminator_16
+
+/-! ## Edge central-charge arithmetic (SEAM.EQUIV.EDGE.*; v447/v450/v451/v452) -/
+
+/-- The doubled edge-central-charge assembly `2·c₋ = N_Maj·|C|` (i.e. `c₋ = 16·½·1 = 8`),
+    and `c₋ = 8 = g_car + N_fam`. -/
+example :
+    2 * TfptCarrier.SeamEdgeChern.cMinus
+        = TfptCarrier.SeamEdgeChern.nMaj * (TfptCarrier.SeamEdgeChern.chern 1).natAbs
+      ∧ TfptCarrier.SeamEdgeChern.cMinus = 8 :=
+  ⟨TfptCarrier.SeamEdgeChern.two_cMinus_eq, TfptCarrier.SeamEdgeChern.cMinus_eq_eight⟩
+
+/-- The torus modular signature: `c ≡ 0 mod 8` (holomorphic) and the `T`-phase
+    `e^{−2πi c/24} = e^{−2πi/3}` has order `24/gcd(8,24) = 3`. -/
+example :
+    TfptCarrier.SeamEdgeChern.cMinus % 8 = 0
+      ∧ 24 / Nat.gcd TfptCarrier.SeamEdgeChern.cMinus 24 = 3 :=
+  ⟨TfptCarrier.SeamEdgeChern.holomorphic, TfptCarrier.SeamEdgeChern.tphase_order_three⟩
+
+/-! ## SEAM.EQUIV.01 residual reduced to ONE realization axiom + ONE cited theorem
+    (v456/v458/v459/v461/v462; G4) -/
+
+/-- The chirality direction (S3) from P1: the one-sided count `|Z2|·(∮K/π) = 2·4 = 8`,
+    and a reflection-symmetric (two-sided) boundary forces the Chern integer `C = 0`. -/
+example :
+    TfptCarrier.SeamResidualAxiom.eightC3 = 8
+      ∧ (∀ C : Int, C = -C → C = 0) :=
+  ⟨TfptCarrier.SeamResidualAxiom.c3_eight_one_sided,
+   TfptCarrier.SeamResidualAxiom.two_sided_nonchiral⟩
+
+/-- v461: strict locality is topologically forbidden — the Wannier winding `= |C| = 1 ≠ 0`
+    and `c₋ = 8 ≠ 0`, so no strictly finite-range commuting projector exists. -/
+example :
+    TfptCarrier.SeamResidualAxiom.wannierWinding ≠ 0
+      ∧ TfptCarrier.SeamResidualAxiom.cMinus ≠ 0 :=
+  TfptCarrier.SeamResidualAxiom.strict_locality_forbidden
+
+/-- v462: the finite 16-Majorana Fock space carries the spinor — `C(16,2) = 120` currents,
+    `256 = 128 + 128` Ramond states, `120 + 128 = 248`. -/
+example :
+    TfptCarrier.SeamResidualAxiom.so16Currents = TfptCarrier.SeamResidualAxiom.so16
+      ∧ TfptCarrier.SeamResidualAxiom.spinorFock = TfptCarrier.SeamResidualAxiom.spinor
+      ∧ TfptCarrier.SeamResidualAxiom.so16Currents + TfptCarrier.SeamResidualAxiom.spinorFock
+          = TfptCarrier.SeamResidualAxiom.adjE8 :=
+  ⟨(TfptCarrier.SeamResidualAxiom.fock_sectors).1,
+   (TfptCarrier.SeamResidualAxiom.fock_sectors).2.2.1,
+   (TfptCarrier.SeamResidualAxiom.fock_sectors).2.2.2⟩
+
+/-- The `248`-current content in BOTH decompositions: `248 = 120 + 128` (fermionic,
+    MMST's 120 bilinears + the spinor residual) `= 8 + 240` (lattice-VOA, v459). -/
+example :
+    TfptCarrier.SeamResidualAxiom.so16 + TfptCarrier.SeamResidualAxiom.spinor
+        = TfptCarrier.SeamResidualAxiom.adjE8
+      ∧ TfptCarrier.SeamResidualAxiom.cartan + TfptCarrier.SeamResidualAxiom.roots
+        = TfptCarrier.SeamResidualAxiom.adjE8 :=
+  ⟨TfptCarrier.SeamResidualAxiom.currents_fermionic,
+   TfptCarrier.SeamResidualAxiom.currents_lattice⟩
+
+/-- `SEAM.EQUIV.01` follows from the SINGLE realization axiom plus the SINGLE combined
+    cited theorem `seam_realisation_theorem` (the merge of MMST existence ∘ AGT extension). -/
+example : TfptCarrier.SeamResidualAxiom.SeamIsE8 :=
+  TfptCarrier.SeamResidualAxiom.seamResidualClosed
+
+/-- The mathematical cofinal theorem is available for an arbitrary
+    explicit fixed `idx`; this signature does not claim that binder
+    order proves computational independence. -/
+example {κ : ℕ → Type*} [∀ m, Fintype (κ m)] {V : Type*}
+    (idx : ℕ → ℕ) (hmono : StrictMono idx)
+    (A : TfptCarrier.CofinalPredefinition.MatrixFamily κ)
+    (hpsd : ∀ j, (A (idx j)).PosSemidef)
+    (sample : ∀ m, V → κ m → ℝ) (QW : V → ℝ)
+    (hconv : ∀ v, Filter.Tendsto
+      (fun m => TfptCarrier.CofinalWeil.ladderForm A sample m v)
+      Filter.atTop (nhds (QW v))) :
+    (∀ j v, 0 ≤ TfptCarrier.CofinalWeil.ladderForm A sample (idx j) v) ∧
+    (∀ v, Filter.Tendsto
+      (fun j => TfptCarrier.CofinalWeil.ladderForm A sample (idx j) v)
+      Filter.atTop (nhds (QW v))) ∧
+    (∀ v, 0 ≤ QW v) :=
+  TfptCarrier.CofinalPredefinition.cofinal_weil_for_fixed_idx
+    idx hmono A hpsd sample QW hconv
+
+/-- Hardened cofinal API: the exact same implication additionally
+    consumes the explicit PREDEFINED/noninterference contract field. -/
+example {κ : ℕ → Type*} [∀ m, Fintype (κ m)] {V : Type*}
+    {contract : TfptCarrier.CofinalPredefinition.NoninterferenceContract κ}
+    {A : TfptCarrier.CofinalPredefinition.MatrixFamily κ}
+    (H : TfptCarrier.CofinalPredefinition.PredefinedCofinalHypothesis
+      contract A)
+    (sample : ∀ m, V → κ m → ℝ) (QW : V → ℝ)
+    (hconv : ∀ v, Filter.Tendsto
+      (fun m => TfptCarrier.CofinalWeil.ladderForm A sample m v)
+      Filter.atTop (nhds (QW v))) :
+    (∀ j v, 0 ≤ TfptCarrier.CofinalWeil.ladderForm
+      A sample (H.core.idx j) v) ∧
+    (∀ v, Filter.Tendsto
+      (fun j => TfptCarrier.CofinalWeil.ladderForm
+        A sample (H.core.idx j) v)
+      Filter.atTop (nhds (QW v))) ∧
+    (∀ v, 0 ≤ QW v) :=
+  TfptCarrier.CofinalPredefinition.cofinal_weil_predefined
+    H sample QW hconv
+
+/-- Negative audit lock: the old scalar payload accepts a sign-mined
+    selector, while the exposed selector fails extensional
+    family-noninterference. -/
+example :
+    TfptCarrier.CofinalWeil.IsCofinalWitness
+      TfptCarrier.CofinalPredefinition.alternatingMargin
+      (TfptCarrier.CofinalPredefinition.signMinedIndex
+        TfptCarrier.CofinalPredefinition.alternatingMargin) :=
+  TfptCarrier.CofinalPredefinition.old_api_accepts_sign_mined_idx
+
+example :
+    ¬ TfptCarrier.CofinalPredefinition.FamilyNoninterfering
+      TfptCarrier.CofinalPredefinition.signMinedIndex :=
+  TfptCarrier.CofinalPredefinition.signMinedIndex_not_familyNoninterfering
+
+end TFPT.Carrier.AuditContract

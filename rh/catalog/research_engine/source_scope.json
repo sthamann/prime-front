@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "include_registered_lean": false,
+  "include_result_evidence": true,
+  "roots": [
+    {
+      "id": "prime-front-repository",
+      "path": "."
+    }
+  ],
+  "extensions": [
+    ".md",
+    ".tex",
+    ".lean",
+    ".py",
+    ".json",
+    ".jsonl",
+    ".csv",
+    ".toml",
+    ".yaml",
+    ".yml",
+    ".txt",
+    ".sty",
+    ".pdf",
+    ".npy",
+    ".npz",
+    ".sqlite",
+    ".db"
+  ],
+  "explicit_files": [
+    "rh/catalog/rh_semantic_catalog.json",
+    "rh/catalog/map/rh_concept_map.json",
+    "rh/catalog/proof_search/knowledge.json",
+    "rh/catalog/proof_search/constraints.json",
+    "rh/catalog/proof_search/generated/registry.json",
+    "rh/catalog/proof_search/generated/kernel_declarations.json",
+    "rh/catalog/research_engine/generated/papers.json"
+  ],
+  "document_text_cap": 8388608,
+  "other_text_cap": 1048576,
+  "claim_boundary": "Declared scope, not every project or every future file on the machine. All bytes hashed, text-index limits reported."
+}

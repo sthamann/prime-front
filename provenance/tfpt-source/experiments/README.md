@@ -1,0 +1,2578 @@
+# TFPT Experiments
+
+Publikationsstand (2026-09-09): Der neue Forschungsstand ist in
+[Paper, Webseite und T1–T8-Übersicht konsolidiert](theory-contracts/RESEARCH_2026-09-09.md).
+Die folgenden datierten Einträge behalten ihre ursprünglichen lokalen
+Statusformulierungen als Historie. Maßgeblich für Umfang und aktuelle
+Verifikation ist der [Publikationsbericht](theory-contracts/PUBLICATION_2026-09-09.md).
+Keine physikalische TOE- oder RH-Aufwertung.
+
+Neu (2026-09-09), **direkter mikroskopischer ganzzahlig geladener CAR-Feldvergleich**:
+[Ergebnis und T1--T8-Einordnung](theory-contracts/microscopic-charged-car-limit/ROUND_STATUS.md),
+[schriftlicher Beweis](theory-contracts/microscopic-charged-car-limit/README.md).
+Dieselbe width8/mass1/r1-Quelle und ihr tatsächliches gefülltes Vakuum:
+exakte Ladungs-Ward-Identität, lokal verschmierte Randfelder mit Adjungierten,
+Quellenisometrien auf Teilchen-/Lochsektoren, endliche Feldwörter und gemeinsame
+Energie-/Zeitkontrolle. Ganzzahlige Ladungsleiter aus Quellanregungen, kein
+angehängter Ladungsregister. Kein E8-Halbladungsfeld lambda, keine Achtkanal-
+Auswahl, gemeinsame 3+1D-Parent-/TOE-Lösung oder Entfernung des Gegenrands.
+Lokal; kein Commit/Push/Paper-/Webseiten-/Ledger-/T1--T8-/RH-Abschluss.
+
+Neu (2026-09-09), **mikroskopischer neutraler Vierpunkt-Grenzwert**:
+[Gesamtbericht](theory-contracts/microscopic-fourpoint-limit/ROUND_STATUS.md),
+[Quellenbeweis](theory-contracts/microscopic-fourpoint-limit/README.md) und
+[geordneter Current-/Kollisionsbeweis](theory-contracts/current-fourpoint-limit/README.md).
+Unveränderte width8/mass1/r1-Quelle, vollständige komplexe Vierpunktamplitude,
+Gittervergleich O(N^-3/4 (log N)^3) durch ein logarithmisches Hilfsfenster;
+vollständiger T4-L1-Limes und positive verschmierte Paar-Gramform.
+Keine geladene Feld-/Achtkanal-/4D-/TOE-Konstruktion. Quellenvergleich für
+feste neutrale signierte F-Wörter gerader Länge bis26 ebenfalls kontrollierbar,
+aber höhere Kollisionsgrenzen/Domains nicht automatisch bewiesen.
+Interne unabhängige Beweisreviews und reproduzierbare Vollquellenkontrollen;
+lokale Integration, kein Commit/Push/Paper-/Webseiten-/T1-T8-/RH-Abschluss.
+[Clock-/Rotor-Klassifikation](theory-contracts/clock-rotor-joint-charge/README.md):
+vollständige vorhandene Hoppings erzwingen gleiche L/H-Ortsgrade und reine
+Gradienten-Rotorphasen. Gemeinsame Wirkung ist Gauss-trivial; ursprüngliche
+Clock-Vielfachheiten 5,1,1,1 passen nicht zu den geraden L/H-Dopplungen.
+Kein allgemeines No-go gegen andere, insbesondere nichtlokale Liftklassen.
+
+Neu (2026-09-08), **mikroskopischer neutraler Zweipunkt-Grenzwert geschlossen**:
+[Gesamtbericht und nächste Beweise](theory-contracts/microscopic-neutral-limit/ROUND_STATUS.md).
+[Voller Quellenbeweis](theory-contracts/microscopic-neutral-limit/README.md):
+uniformer normierter komplexer Paarvergleich O(N^-1/16) und positiver L1-Limes
+im unveränderten width8/mass1/r1-QWZ-Quellsektor. Exakter J/J-Symbolmatch,
+Bottom-Restinventar und vollständige gewichtete Historien schließen den
+zuvor offenen Operatorvergleich; keine geladene Feld-/4D-/TOE-Konstruktion.
+[Clock-Wechselwirkungsherkunft](theory-contracts/clock-interaction-provenance/README.md):
+reine Gaussian-Route bleibt frei; vorhandene elektrische Rotordynamik
+erzeugt tatsächlich quartischen Kommutatoranteil -q0q1/7200. Abbildung
+dieses anderen Parents auf die Clock-Algebra samt Zustand weiter offen.
+75 Tests je normal/OO, interne Mathematikreviews; lokal, kein Commit/Push,
+kein Paper-/Webseiten-/T1-T8-/TOE-/RH-Abschluss.
+
+Neu (2026-09-08), **zwei analytische Teilbrücken und expliziter neutraler Clock-Zugang**:
+[Gemeinsamer Bericht und nächster Beweis](theory-contracts/microscopic-energy-linearization/ROUND_STATUS.md).
+[Current-Trunkierung](theory-contracts/current-truncation-bridge/README.md): ganze
+komplexe normalgeordnete Referenzamplitude endpunktuniform kontrolliert,
+auch im mesoskopen Fenster M~sqrt(N). [Quellen-Energielinearisierung](theory-contracts/microscopic-energy-linearization/README.md):
+gleiches P, globale Energiedifferenz O(N^-3/2), vollständiger Historienbeitrag
+O(N^-1/4), nach Normierung O(N^-1/16). Quellenoperatorvergleich weiterhin offen.
+[Clock-Zugang](theory-contracts/clock-neutral-access/README.md): kleinster voller
+O,N-erhaltender Kopplungsgrad vier; neutraler Randzugriff auf primitives
+Korrelationsgewicht möglich. Kopplung und besetzte Präparation Zusatzwahl,
+Quellvakuum bleibt dunkel und volles Erzeugtheitsproblem offen.
+Lokal; keine T1-T8-/TOE-/RH-/Paper-/Webseiten-Promotion, kein Commit/Push.
+
+Neu (2026-09-08), **Clock-Antwort vollständig endlich berechnet; Quellenreferenz konstruiert**:
+[Gemeinsamer Fortschritt und verbleibende Beweise](theory-contracts/clock-bilinear-response/ROUND_STATUS.md).
+Primitive Majorana-Bilineare: zwei echte zahlneutrale Transfers mit Frequenzen
+(sqrt(3)±1)t, exakte Gibbs-Korrelation und voller 256D-Fock-Gegencheck.
+Am Quellpunkt u1/t1/8 keine langsame Vakuumantwort; andere Parameterfenster
+exakt klassifiziert, aber nicht durch TFPT ausgewählt. Gesamter bisheriger
+Boundary-Feldzugang bleibt blind; Marker allein sind keine Gauge-Constraints.
+[Quellenpolarisierte Current-Referenz](theory-contracts/history-reference-transport/README.md):
+echte Rand-Quasimoden und gemeinsamer Empty-Arc-Rest; gleiche neutrale
+Referenzamplitude, deutlich kleinerer vollständiger Geschichtsfehler.
+N8/16/24/32 halber Kreis: 0.475/0.277/0.194/0.150 statt ~0.83–0.88.
+Neue explizite Referenzgrößenschranke; hinreichendes Fehlerziel o(N^-3/16)
+noch nicht bewiesen. 54 Tests je normal/OO, inklusive 28 neuer Tests.
+Lokal, Quellen erhalten, kein Commit/Push/Paper/Webseiten-/T1-T8-Abschluss.
+
+Neu (2026-09-08), **Sessions-Abgleich, voller Polarisationsvergleich und Clock-Bilineare**:
+[Ergebnisse und priorisierte Beweise](theory-contracts/polarization-history-bridge/SESSIONS_UND_NEUE_ANSATZE.md).
+Exakter mitbewegter P/Q-Rahmen erhält die volle komplexe Vakuumamplitude;
+dimensionsunabhängige Geschichts-Fehlerschranke ohne künstlichen Rand/Bulk-Schnitt,
+auch für Nullamplituden und über exakte Purifikation für gemischte Zustände.
+Mikroskopische Rate noch offen. [Involutionstypen](theory-contracts/compiler-involution-types/README.md):
+12+4 auf E8-Zeichenzuständen versus 8+8 bei invertierbarer Majorana-Signumkehr,
+kein invertierbarer linearer 16D-Ganzraum-Abgleich. Positiver Anschluss:
+[primitive C6-Grade in vorhandenen Majorana-Bilinearen](theory-contracts/compiler-involution-types/CLOCK_READOUT.md),
+je vier Grad-1/5-Komponenten trotz fehlender entsprechender Koordinatenmoden.
+Vollständige 120x120-Minoren-Gegenprüfung; physische Antwort und TFPT-Lift offen.
+153 Tests jeweils normal/OO bestanden; Quellen und fremde Arbeiten erhalten.
+Lokal, kein T1-T8-/TOE-/RH-Abschluss, kein Commit/Push/Paper/Webseitenupdate.
+
+Neu (2026-09-08), **explizite Feldnormierung und Carrier-Modul-Symmetrie**:
+[Neutraler Current-Grenzwert](theory-contracts/neutral-current-limit/README.md)
+liefert Z_t=exp(H_t/8) pro Endpunkt, positiven verschmierten Zweipunkt-Limes
+im erklärten Randmodell und Kandidatengewicht1 für acht unabhängige Kopien.
+Unveränderte volle QWZ-Determinante: zusätzlicher N128-Test mit relativem
+komplexem Fehler0.03–0.04% zum geglätteten Vergleich, NICHT zum Kontinuum.
+Filterbreiten2/6 separat geprüft; Schur-Kompensation darf nicht entfallen.
+[Carrier-Modul-Konjugation](theory-contracts/carrier-module-conjugation/README.md):
+Norm plus Z4-Charakter rekonstruiert die5+3-Markierung. Anders als die frühere
+Paarspiegelung erhält K=diag(+,-,+,-,+,-,+,-) den Carrier, tauscht die beiden
+unorientierten Clifford-Paare und liefert V_K U_s V_K^-1=U_delta U_s mit
+echtem neutralem Carry. Mikroskopischer Lift noch offen; partielle
+Teilchen-Loch-Transformation verändert ungerade uniforme Holonomien.
+r0-Nullmodenpräparation: zwei reine PH-symmetrische Randmischungen oder
+randdiagonal gemischt im deklarierten quasifreien Sektor.
+22 neue +105 Regressionen je normal/OO bestanden; kein mikroskopischer
+Feldlimit-/T1-T8-/TOE-/RH-Abschluss, kein Paper-/Webseiten-/Release-Update.
+
+Neu (2026-09-08), **Origin/Kaskade/Dynamik mit expliziter RH-Schnittstelle**:
+[Kompositionsaudit und konkrete nächste Beweisschritte](theory-contracts/origin-composition-audit/README.md).
+E8-Spiegelung verbindet die zwei unorientierten Clifford-Paare, aber verletzt
+die markierte D5+D3-Graduierung; Kokzyklusphasen vollständig geprüft.
+Historische Kaskaden-Normierung/Indexierung abgeglichen; endliche skalare
+Leiter erzeugt keine Primstellen über31. Exakter Dirichlet-Log-Komparator:
+199 Koeffizienten,139 Nicht-Primpotenz-Nullen. Quadratischer Ladungsclock
+ist nicht der logarithmische Indexclock (Dilation: Energieverschiebungen0/3/12).
+Parallel [neutrale Feldpaare aus unveränderter QWZ-Quelle](theory-contracts/neutral-pair-composition/README.md):
+vollständige Vakuumdeterminante mit Phase, exakte äußere Rampenaufhebung
+und konvergente Leckage-Log-Reihe mit Restschranke. Keine Feldlimit-,
+T1-T8-, TOE- oder RH-Promotion; Paper/Webseite unverändert, lokal.
+
+Neu (2026-09-08), **NON-RH / Vakuumkorrektur aus derselben QWZ-Quelle**:
+[Gauß-Zeitfilter, kompensierter Hintergrundwechsel und Vakuumenergieschranke](theory-contracts/gaussian-vacuum-filter/README.md).
+Phi_delta(B) mittelt die tatsächliche Zeitentwicklung. Für den ganzen
+Exponentialoperator gilt eine Hochenergie-Übergangsschranke, nicht nur
+für den ersten Störungsterm. Mit G=exp(-i*pi*x/N), B=pi*A+pi*x/N und
+delta_N=4*N^-3/4 wird der rohe Halbstring vor Filterung exakt reproduziert.
+Die korrigierte überschüssige Vakuumenergie gegenüber dem ZIELSEKTOR
+geht in unskalierten Gittereinheiten analytisch gegen null; explizite
+Majorante ab N16384. Keine entsprechende physisch skalierte Energiegrenze.
+Finite N16/32/64: roh18.326/27.367/45.450, korrigiert1.458/.750/.387.
+Asymptotisch richtige Einteilchenwirkung; finite Vollaktionsfehler noch~.7.
+Longitudinale Quasilokalität für gefilterten Arc-Anteil bewiesen; volle
+kompensierte Einrand-Netzlokalität NICHT daraus abgeleitet. Scharfer
+Intersektor-Grenzfall hat logarithmisch divergenten HS-Kreuzblock: keine
+gewöhnliche unitäre Fock-Implementierung ohne Feldrenormierung.
+Gegenrand-Kontrolle: räumliche Identität erhält beim gemeinsamen
+Hintergrundwechsel NICHT dessen Vakuumpolarisation. Nächstes Gate:
+neutrale Paare U(x)*U(y), exakte Rampenaufhebung, Vakuumdeterminante,
+kontrollierte Gegenrand/Bulk-Faktorisierung und danach geladener Lift
+mit Carry/Kokzykel, verschmiertem Feld und Adjungiertem.
+21 neue +61 Vorgängertests jeweils normal/OO bestanden. Quellen unverändert;
+keine T1-T8-/Paper-/Website-/Ledger-Promotion, kein Commit/Push/RH.
+
+Neu (2026-09-08), **NON-RH / geladener Halb-Twist am tatsächlichen QWZ-Rand**:
+[Lambda-Isometrie, echter Ladungsübertrag und verschwindender Einrand-Defekt](theory-contracts/half-twist-grade-carry/README.md).
+Die konkrete v983-Lambda wird durch eine exakte A3/D3-Isometrie zu (1/2)^8:
+Gewicht1 auf acht Kanälen. Der bisherige gemeinsame Viertel-Twist bleibt
+Gewicht1/4; erforderlich ist ein geänderter Operatoransatz. Vier Glue-Grade
+sind mit zwei NS/R-Randbedingungen vereinbar: C=i^b mal erste-Block-Parität.
+U_s^4=U_4s statt Identität; beim Z4-Überlauf entsteht echter neutraler
+Ganzzahlladungsübertrag. Keine Gleichsetzung mit Gauß-Deck/Zeit-Clock.
+Im unveränderten v988/v1033-QWZ arbeitet der Vollbreiten-Halbstring exakt;
+ein Einrand-Streifen erzeugt zusätzliche vertikale und Seam-Terme.
+Für explizite Rand-Quasimoden ist deren Wirkung jedoch <=4*rmax^w:
+nach Energieskalierung bei w=2 exakt O(N^-3) auf jedem festen
+Einteilchen-Fourierkern. Gegenrand-Quasimodenfehler bei Ny8 O(N^-15).
+Separater Vakuumtest: rohe Streifen erzeugen in endlichen Rechnungen
+wachsende Bulk-Anregungsenergie; KEINE automatische Vielteilchen-Promotion.
+Nächstes Gate: gleiche mikroskopische Quelle für Bulk-Korrektur, Ladungs-Carry,
+Kokzykel, nichtverschwindendes verschmiertes Feld UND Adjungierten-Energiegrenzen.
+23 neue +20+18 Vorgängertests jeweils normal/OO bestanden; 48 exakte
+Quellmatrix-Konfigurationen. Bekannte D8/E8-Erweiterung ist kein Neufund.
+Keine T1-T8-, Paper-, Website- oder Ledger-Promotion; kein Commit/Push/RH.
+
+Neu (2026-09-08), **NON-RH / geladene Algebra statt bloßer Compiler-Labels**:
+[Minimale Ladungsvorzeichen-Erweiterung, vollständige Clifford-Lifts und Deck-Paarung](theory-contracts/charged-cocycle-lift/README.md).
+Konkrete E8-Wurzeln y und -Jy haben denselben Gauß-Compiler-Code, aber
+entgegengesetzte Kokzykel-Kommutatorzeichen gegen eine dritte Wurzel z.
+Dieser Informationsverlust ist nicht durch Umphasung reparierbar. L/2L
+ist der kleinste additive Quotient, der alle geladenen Kommutatorzeichen
+bewahrt: acht Bits, minimaler Darstellungsraum Dimension16, vier Pauli-Paare.
+Der bisherige Compiler L/(1+J)L ist sein Konfigurationsquotient; vier duale
+Bits fehlen ihm als vollständiger Ladungsvorzeichen-Algebra. Exakt64
+quadratische lineare Lifts, davon vier sigma-verträglich; unabhängiger Zensus.
+Für J gilt JS=S-orthogonal: zwei deck-gepaarte Clifford-Faktoren M2(H)
+erzeugen zusammen M16(R), gemeinsame endliche Kommutante nur Skalare.
+Kein frei ergänzter Zuschauerfaktor, aber auch kein mikroskopischer Primabschluss.
+Kohärente Kokzykel-Hebungen mit Deckordnung4 und Familienordnung3 explizit;
+unabhängige Phasenwahl braucht eine Charakterkorrektur. Alle65536 Produkte,
+1048576 Spaltenidentitäten exakt. Vollständige Gitter-Nullmoden auf ell²(L)
+mit exakten Ladungs-/Energie-Wardidentitäten ohne Cutoff konstruiert.
+Dies ist der Ziel-Ladungsraum, NICHT dessen mikroskopische Seam-Herleitung.
+Nächstes Gate: support-erhaltende gleiche Quellenabbildung mit geladenem
+lambda, Adjungiertem und Energiegrenzen; erst danach physischer Spin/Pole.
+Beide Weyl-Sektoren bleiben. 20neue+33Vorgängertests jeweils normal/OO PASS.
+Keine T1-T8-/Paper-/Website-/Ledger-Promotion; Originalquellen unverändert.
+
+Neu (2026-09-08), **NON-RH / Rückgriff auf die TFPT-Grundstruktur**:
+[Vom vorhandenen Arf-Compiler zur Clifford-Struktur und zum freien Fermionenansatz](theory-contracts/compiler-clifford-bridge/README.md).
+Der Familien-Dreizyklus des tatsächlichen F2^4-Compilers wählt zwei orthogonale
+nichtentartete Ebenen: Arf0 im Anchor/Familiensummenraum, Arf1 im bewegten Raum.
+Die explizite verdrehte reelle Gruppenalgebra ist M2(R) tensor H = M2(H).
+Daraus folgen exakt Gamma-Matrizen mit Signatur +---, ein formales Dirac-Symbol
+und zwei entgegengesetzte Weyl-Sektoren. Die vorzeichenrichtige Sigma-Hebung
+rotiert die drei Quaternioneneinheiten. Verbindung zum BEREITS vorhandenen
+freien matrixwertigen Overlap aus v1027; der skalare U1-Parent bleibt unverändert.
+Das korrigiert eine zu enge Fokussierung auf den skalaren Prototyp, nicht dessen
+negatives Weyl-Ergebnis. Grenzen: dieselben Daten tragen auch einen euklidischen
+Clifford-Rahmen; keine physische Signatur-/Ableitungs-/Transportauswahl. Drei
+interne Familienlabels können wegen des ungeraden Hyperladungsblocks keinen
+eichkommutierenden Pauli-Spin ersetzen. v775 ROOTCLASS-MIXED bleibt in Kraft.
+Nächstes physikalisches Gate: Clifford-wertigen Transport aus den GLEICHEN
+geladenen Seamoperatoren herleiten, ohne verdeckten zusätzlichen Spinorfaktor;
+dann Eichkommutation, tatsächliche Pole/Chiralität und Kopplungsauswahl prüfen.
+18 neue +15 Vorgängertests jeweils normal/OO und sechs Grundlagenmodule PASS.
+Nur Experimente/Katalog/Notizen; keine T1-T8-/Paper-/Website-/Ledger-Promotion.
+
+Neu (2026-09-08), **NON-RH / Modellauswahl vor weiterer Spektralpräzision**:
+[Herkunftsaudit, physikalisch unterscheidbare Kopplungen und freier Weyl-Test](theory-contracts/parent-selection-audit/README.md).
+Die tatsächliche Modellkette setzt Graph, U(1)-Feldinhalt, Kopplungsbeispiel,
+Gauß-Hintergrund und magnetisches Potential; epsL=1/96 folgt dagegen aus
+den sechs Backtracks und ist kein weiterer freier Parameter. Die erlaubte
+Parentfamilie lässt unterschiedliche Dynamik zu: [W*,[H,W]]=4*kappa,
+mit unverändertem Hopping auch dimensionslos verschieden. Ein zusätzliches
+homogenes positives Plaquettenpotential wahrt die implementierten Symmetrien,
+bleibt diesem Wilson-Test unsichtbar, ändert aber die elektrische Kraftantwort.
+Das ist KEIN Gegenbeispiel unter sämtlichen TFPT-Axiomen: deren geladene
+Seam-/Bulk-Operatorzuordnung ist noch nicht vorhanden. Der freie U=1-Materieblock
+des tatsächlichen kubischen Parents ist h(k)=[[x+x²/4,x/2],[x/2,4]],
+x=sum cos(kj)/6. Bandtrennung>=55/16, keine Weyl-Knoten, Pauli-Jacobirang<=1.
+Bei festem N=Ncells ist im eingefrorenen Materieproblem das untere Band voll;
+die Nullreferenzfläche ist daher NICHT dessen physikalische Fermifläche.
+Keine Aussage gegen wechselwirkende chirale Emergenz oder die allgemeinere
+matrixwertige Signed-Wall-Familie. Nächster Auftrag: TFPT-hergeleiteter geladener
+kinetischer Operator mit Richtungs-/Spinstruktur, danach Knoten-/Anomalietest
+und Kopplungsauswahl aus derselben Quellenzuordnung. 15 neue und30 gezielte
+Regressionstests normal/OO bestanden. Keine T1-T8-, Paper-, Website- oder
+Ledger-Promotion; bestehende Forschungsquellen unverändert, kein Commit/Push.
+
+Neu (2026-09-08), **NON-RH / positive Lücken der ungekürzten Plaquette und gekoppelten 3D-Zelle**:
+[Vollständige Flussräume, Schur-/Minmax-Schranken und Gegenbeispiel zur globalen Fortsetzung](theory-contracts/plaquette-gap-certificate/README.md).
+Die ursprüngliche Einzelplaquetten-RAUMBESCHRÄNKUNG mit allen32 gerichteten
+Termen und sechsfachen Ambient-Backtracks hat einen eindeutigen neutralen
+Grundzustand und Gap in[0.0195776909527,0.0204013098746]. Voller Raum70 x Z,
+kein elektrischer Cutoff! P=NH0 bleibt unendlichdimensional; PHP=1/24+k²/50,
+B*B=1/72, QHQ>=29/8. Die Form-Schurzerlegung liefert untere Eigenwertschranken,
+echte neun-komponentige Original-H-Trialvektoren liefern obere Schranken.
+Genau drei Eigenwerte mit Multiplizität unter11/120; kein behaupteter exakter
+Entartungsnachweis der ersten beiden Anregungen. Unabhängige rationale
+Block-Spektralkontrolle mit Root-Isolation und LDL-Trägheit.
+Die gleiche Methode trägt auf der ECHT GEKOPPELTEN kubischen Elementarzelle:
+8Orte,12Kanten,120 Originalterme, alle6Flächen,5 unabhängige integer Flüsse.
+12870 neutrale Materiemasken x Z^5, nicht sechs unabhängige Plaquettenmodelle.
+B*B=1/24, QHQ>=163/48; eindeutiger Grundzustand und Gap in
+[0.0177576051837,0.0221667420299], wiederum OHNE Flussabschneiden.
+ABER: Außenkopplungen dieser Raumbeschränkungen fehlen; KEIN uniformer Bulk-Gap.
+Die globale NH0-P/Q-Methode scheitert nicht nur an einer Normabschätzung:
+Ein exakt neutraler Q-Trial auf dem L28-Torus liegt um0.774811869533 unter
+dem nackten P-Minimum epsL*N. Ein verankertes LH-Paar plus übrige Matching-
+Dimerrotationen liefert die exakte Energieformel. Faktorisiert hergeleitet,
+keine riesige Wellenfunktion oder Bulkgrundzustände numerisch ausgerechnet.
+Lokale Gegenkontrollen behalten sämtliche6000(L5)/10368(L6) Originalterme.
+Der Q-Trial liegt NICHT unter dem echten Grundzustand; keine Gaplessness-
+oder negative-GNS-Energie-Behauptung. Erforderlich bleibt eine lokale, an den
+wechselwirkenden Zustand angepasste Volumenkontrolle. 16 neue Tests plus78
+direkte Vorgängertests normal/OO PASS:94 je Modus. Nur Experimente+Katalog/
+Notizen, keine Paper/Website/Verifikation/Ledger/
+Scorecard/Commit/Push/RH- oder T1-T8-Promotion.
+
+Neu (2026-09-08), **NON-RH / schärfere Grundzustandskontrolle und niedrigenergetische Wilson-Antwort**:
+[Exakte Teilchen-Loch-Quadratergänzung und physikalische Spektralmomente](theory-contracts/ground-state-loop-response/README.md).
+Im SAME ungekürzten Parent ist der vollständige Lowblock a*A_U+beta*a²*A_U²,
+der Mischblock w*A_U mit w1/24. CAR und Tr A_U²=6N liefern eine deutlich
+schärfere neutrale Koerzivität: H>=epsL*N+kappa*sumE²/2+(D-t)NH-cN/t,
+D55/16, c1/96, für jedes t>0. Kein integriertes Ersatzmodell und kein neuer
+Parameter. Mit dem vorhandenen Dimer-Trial sinkt die thermodynamische lokale
+Flussschranke von2525/24≈105.2083 auf1706590130/3033378777≈0.5626037022;
+Highdensity<=32/9075≈0.00352617. Das sind Schranken, keine berechneten Dichten.
+Die normalisierten periodischen Grundraumprojektoren sind auch reflexions-
+und achsensymmetrisch; alle6000 Originalmonome wurden darauf geprüft.
+Für die physikalische Plaquette gilt exakt [H,W]=kappa*W*(S+2), während W
+mit allen Materiehops kommutiert. Keine OPERATOR-Normableitung von W benutzt.
+Die erste spektrale Energiemomentgrenze passiert dank uniformem zweiten Moment
+mit Gleichheit: m1=1/50. Das zweite Moment passiert NUR als obere Schranke.
+Daraus mindestens57.1383% positive Spektralmasse und positive Spektralunterkante
+<=0.03500276540; mindestens14.2845% liegen in(0,0.07000553079]. Alle Energien
+in ursprünglichen Modelleinheiten, keine eV oder neue Teilchenmassenvorhersage.
+Die Rechnung behandelt den GESAMTEN Nullenergieraum, setzt keinen eindeutigen
+Grundzustand voraus und vermeidet eine falsche Lückenbehauptung durch bloßes
+Abziehen von Omega. KEINE positive untere Gap-Schranke oder masselose Phase.
+Elektrischer Schnittflächenfluss ist wegen originaler neutraler Materiehops
+nicht exakt erhalten; kein importierter reiner-Gauge-Superselektionsbeweis.
+Exakte Kontrollen: alle256 Fockmasken auf drei ungekürzten Flusshintergründen,
+volle kubische Wilson-H-Aktionen mit6000 und10368 Termen samt Außenkopplungen.
+14 neue Tests plus64 direkte Vorgängertests normal/OO PASS:78 je Modus.
+Keine kubische Grundzustandsdiagonalisierung oder induzierte magnetische
+Effektivwirkung berechnet; Eindeutigkeit, Phase, Kontinuum und Spin2 offen.
+Nur lokale Experimente+Katalog/Notizen, keine Paper/Website/Verifikation/
+Ledger/Scorecard/Commit/Push/RH- oder T1-T8-Promotion.
+
+Neu (2026-09-08), **NON-RH / neutrale Grundzustandsdarstellungen und positive physikalische Energie**:
+[Koerzivität, lokal normale Grenzzustände und exakte Gegenproben zur alten Präparation](theory-contracts/neutral-ground-state/README.md).
+Für denselben ungekürzten Parent ist nun eine Existenzherleitung über neutrale
+periodische Grundzustände ausgearbeitet: endliches kompaktes Resolvent ohne
+Flusscutoff, normalisierter Grundraumprojektor und vollständige Paar-Normschranke
+||V||<=101N/192. Neutralität erzwingt N_L+N_H=N. Zusammen mit der variationalen
+oberen Energieschranke und Translation folgt die lokale Flusskontrolle
+<sum_3 E²><=2525/24 und <n_H><=101/766. Das sind konservative Existenzschranken,
+keine vorhergesagten Grundzustandsdichten. Endlichrangige Projektoren dienen
+nur dem Kompaktheitsbeweis; Hamiltonoperator und Dynamik werden nicht gekürzt.
+Spurnormkompakte lokale Dichtematrizen liefern subsequenzielle lokal normale,
+translationsinvariante neutrale Grenzzustände. Die Periodenränder führen im
+Inneren zur bereits konstruierten gleichen Dynamik. Stationarität und lokale
+Normalität liefern eine stark stetige GNS-Unitärgruppe auch mit Wilson-Operatoren;
+die frühere fehlende OPERATOR-Normstetigkeit wird dadurch nicht umdefiniert.
+Auf dem zyklischen Raum der neutralen physikalischen Observablen folgt
+K_phys>=0 und K_phys Omega=0 aus dem positiven endlichen Energiespektrum.
+KEIN Eindeutigkeits-, Bulk-Gap-, Lorentz-, Kontinuums- oder Compiler-Auswahlnachweis.
+Die bekannte all-low/E0-Präparation ist dagegen KEIN Grundzustand: exakte
+kubische Varianz N/96 und lokale eichinvariante Energiesenkung
+239675/551523414≈0.000434569039. Kontrolle auf125 Zellen/375 Links mit allen6000
+gerichteten Originalmonomen; tatsächliche Torus-Grundzustände NICHT diagonalisiert.
+Eine disjunkte Dimer-Trialfamilie senkt die obere Energiedichte auf≈0.01019938215.
+Zusätzlich kompletter neutraler6-Zustands-Kantensektor: alle Eigenwerte
+rational isoliert und unabhängig über LDL-Trägheit geprüft, E0≈0.01996381644;
+rationaler Grundvektor mit zertifiziertem Gewicht außerhalb des Grundraums<1.86e-18.
+Geladene Felder sind getrennt: c_L führt in den vollständigen4-Zustands-Sektor
+und liefert dort eine zertifiziert negative relative Energie. Daraus KEINE
+übertragene Vorzeichenaussage für den unbekannten kubischen Grundzustand.
+12 neue Tests normal/OO PASS einschließlich vollständiger Wiederholung,
+Ganz-Fock-Paaridentität, Gauß, ursprünglicher kubischer Energie und Spektralschranken.
+Die52 Tests der fünf direkten Vorgänger bestehen ebenfalls erneut normal/OO;
+insgesamt64 aktuelle Tests je Modus. Die langen Round50-Vollreplays wurden
+nicht erneut ausgeführt; ihre sieben eingefrorenen Quellpins sind unverändert.
+Es existiert damit eine bedingte Grundzustandsfamilie des gesetzten Parents,
+noch kein eindeutig selektiertes TFPT-Vakuum und kein numerischer Bulkzustand.
+q49/q50 bleiben Präparationsantworten, keine Vakuumvorhersagen. Nur lokale
+Experimente+Katalog/Notizen; keine Paper/Website/Ledger/Scorecard/Verifikation/
+Commit/Push- oder T1-T8-Promotion.
+
+Neu (2026-09-08), **NON-RH / Zeitentwicklungsgruppe für alle lokalen Observablen, mit präziser Stetigkeitsgrenze**:
+[Voller beschränkter Rotor-/CAR-Raum, beliebige Zeiten und physisches Wilson-Gegenbeispiel](theory-contracts/observable-dynamics/README.md).
+Im unveränderten Parent sind sämtliche126 gerichteten Monome pro Zelle
+enthalten; absolute Inzidenz J=69/32, höchstens3 Zellen je Term. Der
+Zwischenpunkt eines Zweischritts wird ausdrücklich mitgezählt. Die allgemeine
+verbundene Kommutatorreihe einer beliebigen lokalen Observable mit s Zellen
+hat Majorante b_n=(2JT)^n prod_(j<n)(s+2j)/n!. Gemeinsames kurzes Zeitfenster
+h=1/16, q=4Jh=69/128<1, unabhängig von s. Ganze Restschranke, Normgrenzwert
+und räumlich lokale Approximation sind volumenuniform. Die exakte endliche
+Gruppenregel erweitert den Grenzwert auf ALLE reellen Zeiten; ein eigener
+lokaler Approximationsturm begründet kompakte Zeituniformität ohne falsche
+Normkompaktheit von Rotororbits. Gruppe von *-Automorphismen auf der vollen
+beschränkten quasi-lokalen Algebra, einschließlich beider Fermionspecies.
+Die frühere Hochfeldkonstruktion ist derselbe Grenzwert auf ihrem Zeitfenster.
+ABER: KEINE Punkt-Normstetigkeit auf dieser ganzen Algebra! U liefert eine
+exakte Flussfolge mit Normabstand2 bei Zeiten gegen0; die Wechselwirkungskorrektur
+geht gegen0. Ein eichinvarianter Plaquetten-Wilson-Kreis liefert denselben
+Gegenbeweis sogar im neutralen Gauß-Sektor. Nicht nur ein geladenes Feldproblem.
+Der unendliche Normbefund gilt in der geerbten kinematischen C*-Norm; eine
+bestimmte unendliche physikalische Darstellung wird damit nicht ausgewählt.
+Die maximale normstetige Teilalgebra ist exakt die der freien Onsiteentwicklung;
+dort C0-Gruppe und dichter glatter Generatordomänenbereich durch Zeitglättung.
+Diese Teilalgebra ist abgeschlossen, echt und NICHT normdicht in der großen
+Algebra; U und der genannte Wilson-Operator sind nicht darin. Kein Flusscutoff.
+13 Tests normal/OO PASS, inklusive vollem deterministischen Replay, ursprünglicher
+Dreipunkt-Parentgeometrie und21 unabhängigen Hamiltonkontrollen: je16 Eingänge,
+sieben Observablen, Flüsse -2/0/+3 samt korrektem Zielsektor der Rotorverschiebung,
+Zeitjets0..8 und exakte Additions-/Inversen-/Adjungierungs-/Produktidentitäten.
+39 Tests der vier direkten Vorgängerexperimente ebenfalls normal/OO erneut
+bestanden; insgesamt52 aktuelle Tests je Modus. Round50-Quellen unverändert
+geprüft, seine langen Vollreplays in diesem Schritt nicht erneut gestartet.
+Reine lokale Theorieherleitung, kein ausgewählter Zustandsraum-Hamiltonoperator,
+kein neuer kubischer Readout, kein Kontinuum/Spin2/Parameter- oder T1-T8-Abschluss.
+Keine Paper/Website/Verifikation/Ledger/Scorecard/Commit/Push-Promotion.
+
+Neu (2026-09-08), **NON-RH / allgemeine Konvergenz der lokalen Hochfeld-Quelle im festen Parent**:
+[Alle M/E-Ereignisse, volle Fluss-/Fock-Normalform und konstruktiver lokaler Grenzwert](theory-contracts/all-electric-majorant/README.md).
+Die zuvor nur vermutete Majorante ist jetzt für beliebige Ereigniszahl
+hergeleitet: Nach n Ereignissen mit k elektrischen gilt d=2k+1 und
+B<=[n²+k(2n-1)]A. Die SUMME beider Fortsetzungen ist durch
+rho(T)=77T/96+53T²/14400 beschränkt, bei T1 gleich11603/14400<1.
+Die vollständige Operatorrekursion erhält einen gemeinsamen unitären
+Flussfaktor; bestehende elektrische Differenzen sind skalar und werden
+beim nächsten E nicht erneut als flussabhängige Faktoren differenziert.
+Alle Flüsse und alle CAR-Legs bleiben erhalten. Starke Dysonidentität
+identifiziert die Reihe mit dem endlichen physischen Hochfeld-Operator.
+Volumenuniforme Reste und endliche Pfadstützen liefern anschließend dessen
+Normgrenzwert und die Hochbesetzung für |t|<=1 auf dem unendlichen kubischen
+Gitter, in der angegebenen Algebra lokaler beschränkter Rotor-/CAR-Operatoren.
+KEINE vollständige Automorphismengruppe auf allen Observablen, kein
+Kontinuums-, Gravitations- oder TOE-Nachweis. Parameter/Präparation bleiben gesetzt.
+Eine positive n/k-Rekursion ergibt z.B. einen Rest1.085756234e-21 nach32
+vollständig aufgenommenen EREIGNISSCHICHTEN. Diese Quelle wurde kubisch
+NICHT vollständig ausgewertet; der Rest darf NICHT um q50 gelegt werden.
+Zehn Tests normal/OO PASS: allgemeine Polynomidentitäten, originale kubische
+Zeilen, unabhängige Simplexmomente, ältere Phasen-/Vorzeichenwörter, ganze
+Fock-Kommutatoren bis17 Legs, achtE mit256 Phasen und Weglassmutant,
+sowie ungeteilte physische4x6-Hamiltonjets aller sechs Eingänge bei Fluss
+0/+3/-4, Wechselwirkungsordnungen0..5 und Zeitordnungen0..12 exakt gleich.
+Nur lokale Theorieexperimente; keine Paper/Website/Ledger-Promotion.
+
+Neu (2026-09-08), **NON-RH / bedingte kubische Fehlergrenze der vollständigen siebten Quelle**:
+[Alle zwölf Ergänzungen, vollständige Restzerlegung und positive Momentfortsetzung](theory-contracts/seventh-frontier-bound/README.md).
+Für die FORMAL um alle zwölf Grad7-Wörter ergänzte Quelle folgt unter den
+unveränderten Voll-H-/E0-Annahmen ein idealer Rest O(t8), bei t1 höchstens
+7.400313083220603e-7 statt D49=2.9183911450664386e-6. Die gesamte alte
+Schranke wird zuerst als positive disjunkte Summe reproduziert; erst danach
+werden genau die Grad7-Grenzen ersetzt. 31 endliche erste Restwörter sowie
+alle ersten E nach mindestens sechs M einschließlich unendlichem Tail
+bleiben enthalten. Tensorielle M-Fortsetzung, konservative CAR-Marginal-
+Fortsetzung und positiver E-Transport vermeiden neue vollständige Rohzensen
+für die NORMschranke. Originale kubische Pfade prüfen die Fortsetzungen.
+Alle neun Tests normal/OO PASS, einschließlich kompletter Wiederholung,
+positiver Restidentitäten, ursprünglicher Hoppingzeilen und Frontier-Sprache.
+Zusätzlich vollständige4x4-Quellmatrix bei t1 unabhängig gegen die vollen
+neutralen6/geladenen4 Hamiltonsektoren geprüft: Operatorfehler höchstens
+8.4480691969e-14 inklusive numerischem Fehler. Ganze Matrixwerte und
+14492 rohe Kantenpfade gespeichert; kein neuer kubischer Wert daraus.
+Dies ist KEINE ausgeführte vollständige neue Bulkspalte und KEIN neuer
+Fehlerbalken um q49 oder q50. Der numerische Konfigurationsfehler bleibt
+separat; keine Konstruktion der vollen All-E-/Kontinuumsdynamik oder TOE.
+
+Neu (2026-09-08), **NON-RH / dritte elektrische Quelle auf dem vollen kubischen Parent**:
+[MEEE: vollständiger Rohzensus, sieben CAR-Faktoren und vierte-E-Restgrenze](theory-contracts/third-electric-cubic/README.md).
+441456 Rohpfade, davon346236 ganze Focknullwörter und nur4980 nichtnull
+Bare-Aktionen; Normzensus strikt vor der Anfangsraumprojektion. Vollständiger
+alter Kraftscan reproduziert den indizierten Zensus. 2355 Phasengruppen,
+167 Phasenkerne,859 Ausgänge der isolierten sechsfach rekonstruierten Quelle.
+Isolierte Quellnorm zum Quadrat8.739127606501832e-26, KEINE gemeinsame
+Besetzungswahrscheinlichkeit. Der einzelne alte MEEE-Rest5.131814690e-12
+wird durch MEEEM6.903852889e-13 plus MEEEE8.322343756e-16 ersetzt.
+Zusätzlich positiver E-Momenttransport für MEMME/MMEME/MMMEE mit beiden
+Folgeresten8.244594225e-9, ohne deren vollständige neue Quellsumme zu behaupten.
+14 Tests normal/OO PASS, inklusive vollständigem Replay, unabhängigem
+Rohscan, vollständigem Kantenbeitrag und Gauß-Test aller2355 Gruppen.
+Nur lokale Theorieexperimente; T1-T8 bleiben offen.
+
+Neu (2026-09-08), **NON-RH / vollständige siebte Quellordnung auf der Originalkante**:
+[Zwölf Ereignisfolgen und vollständiger physischer Matrixvergleich](theory-contracts/seventh-frontier-edge/README.md).
+Alle zwölf elektrischen Wörter mit #M+2#E=7 sind als endliche Quellen
+konstruiert, einschließlich MEEE mit sieben geordneten CAR-Faktoren.
+12392 rohe Kantenpfade; die gesamte4x6-Quellmatrix stimmt auf allen vier
+E0-Eingängen bei Zeitordnungen0..7 exakt mit exp(iH_Qt)c_H,0exp(-iH_Nt)
+überein und scheitert bei8. Die reine zweite-M-Ergänzung scheitert noch bei7;
+jedes der zwölf einzelnen Weglassen wird dort durch einen nichtnull
+physikalischen Matrixbeitrag erkannt. Vollständige rationale Matrixeinträge
+und Einzelbeiträge im Record. Sechs Tests normal/OO PASS, inklusive frischem
+End-to-end-Replay und Quellpins. Unabhängig vom separat geprüften Round50-Bulk.
+KEIN neuer kubischer Zensus, Fehlerrest oder Bulkwert; daraus keine globale
+O(t8)-, All-E- oder T1-T8-Behauptung. Nur lokales Theorieexperiment.
+
+Neu (2026-09-08), **NON-RH / Round 50, zweite Materiefortsetzung und exakter Quellcompiler**:
+[MEMMMM, MMEMMM, MMMEMM und direkte rationale Amplitudensummation](theory-contracts/second-matter-round50/README.md).
+Die neue EinE-Familie stimmt mit dem unabhängigen vollständig resummierten
+Materie-Tensorgenerator auf der Originalkante exakt bis Ordnung7 überein;
+alte Schicht scheitert bei7, neue bei8. Vollständige physische Kantenzeit-
+Kontrollen bestanden. Keine vollständige siebte Hamilton-Ordnung behauptet:
+neun weitere elektrische Wörter dieser Ordnung fehlen noch im kubischen Readout.
+Die disjunkte neue Restabschätzung ersetzt nur den dominanten alten pMM-Zweig:
+D50=1.235657830e-6 statt D49=2.918391145e-6. Alle anderen M/E-Grenzen und der
+separate numerische Konfigurationsfehler bleiben erhalten; ideal global O(t7).
+Exakte Paarung von Frequenz UND Strompräfix sowie CAR-Antisymmetrie reduzieren
+Quellen vor der weiteren Dynamik. Ein Cache darf nur finale Aktionen auslassen,
+nicht zunächst im Anfangszustand verschwindende Zwischenwörter.
+Die getrennte Phasengruppierung wurde nach gemessenem Speicherwachstum
+kontrolliert abgebrochen, ohne Bulk-Ergebnis. Auch direkte rationale
+Ausgangsamplituden erreichten die 40-Millionen-Grenze ohne Ergebnis.
+Der dritte Kandidat fasst dieselben Amplituden blockweise zu vorzeichen-
+richtigen kubischen Orbits zusammen; der zusätzliche absolute Phasenrest
+bleibt getrennt enthalten. Vollständiger Round49-Baselinevergleich PASS:
+exaktes q, Fehlerbudget und6882808 Ausgänge aus286969 Orbit-Summen.
+Der neue Zweifach-M-Quellbeitrag ist damit jetzt vollständig ausgeführt:
+q50=0.002197925217120955 und bedingtes Intervall
+**[0.00219779703790, 0.00219805340008]**,55.1753% schmaler als Round49.
+Die neue gemeinsame Spalte enthält268319552 nichtnull physische Ausgänge,
+gespeichert als11180370 Orbit-Summen. Neuer Wert gegenüber q49 um
+2.9834706255e-13 verschoben, KEIN engerer Fehlerbalken um den alten Wert.
+Gesamter Amplitudenfehler1.3670597799557773e-6, davon
+1.3140195016860657e-7 separat beibehaltener Konfigurations-/Rechenfehler.
+Ausführungsrecord und alle sieben unveränderten Quellhashes geprüft.
+Zusätzlich allgemeiner endlicher Wiederholungs-E-Momenttransport gegen
+vollständige Zuweisungen geprüft; noch kein MEEE-Bulkbeitrag daraus.
+Alle32 aktuellen Round50-Prüfungen pro Modus bestanden:31 Komponentenchecks
+plus vollständiger Test20-Replay normal4314.596s/OO4311.550s, beide Exit0.
+Die beiden frischen Vollberechnungen reproduzieren den gesamten gespeicherten
+Ergebnisdatensatz exakt, nicht nur gerundete q-Werte. 474 Vorläufertests pro
+Modus waren zuvor bestanden; sie wurden dabei nicht nochmals gezählt oder
+neu ausgeführt. Alle sieben ausführungsgepinnten Round50-Dateien unverändert
+erneut geprüft. Aktueller Ausführungsstand hier und in next.txt, nicht durch
+nachträgliches Umschreiben der ausgeführten Quellen oder ihrer Pins.
+Nur lokale Theorieexperimente+Katalog/Notizen; T1-T8 offen, kein RH/Commit/
+Push/Paper/Website/Verifikation/Ledger/Scorecard und keine empirische Promotion.
+
+Neu (2026-09-08), **NON-RH / Round 49, fehlende sechste ideale Quellordnung ergänzt**:
+[MMMME, MEME und MMEE; siebtordentlicher Idealrest und neue kubische Auswertung](theory-contracts/sixth-source-round49/README.md).
+Die ideale Quelle stimmt auf allen vier E0-Kanteneingängen als ganze
+4x6-Operatormatrix exakt bis einschließlich Zeitordnung6 mit dem unabhängigen
+vollen Hamiltonoperator überein. Die alte Quelle scheitert bei6; jedes einzelne
+Weglassen von MMMME/MEME/MMEE liefert einen nichtnull Fehler in dieser Ordnung.
+Alle14 elektrischen Ereigniswörter mit #M+2#E<=6 sind damit enthalten.
+Neue disjunkte Restzweige jeweils pM/pE; insbesondere MEMEE/MMEEE mit DREI
+elektrischen Ereignissen sind begrenzt, nicht stillschweigend gestrichen.
+Volumen-/flussuniformer IDEALrest jetzt O(t7), bei1 D49=2.918391145e-6
+statt D48=4.877043547e-6. Round44-Konfigurationsfehler separat ggf.ab t4;
+keine Behauptung derselben Ordnung für die vollständig numerische Quelle.
+Voller neuer Rohzensus: MMMME47602896, MEME1523472, MMEE1312560 Pfade über
+alle sechs ersten Richtungen. Eine Richtung tatsächlich enumeriert; ganze
+kubische Zeilen und alle Präfixe erhalten. Exakter Link-Inzidenzindex gegen
+früheren vollständigen Kraftscan geprüft, keine Hamilton-Ersetzung.
+Der neue vollständige kubische bare-low/E0-Readout bei t=1 wurde ausgeführt:
+**[0.00219763926510, 0.00219821118714]**, 39.1070% schmaler als Round48.
+Neuer rational berechneter Näherungswert q49=0.002197925216822608;
+der alte q47-Wert wurde zuvor rational EXAKT reproduziert. Kein engerer
+Fehlerbalken um eine unverändert übernommene alte Zahl. Gemeinsame physische
+Spalte mit 6882808 Ausgängen; neue Familien mit 1341/455 Phasenkernen und
+336676/3905 repräsentativen Ausgängen. Gesamter Amplitudenfehler
+3.049793095e-6, einschließlich 1.314019502e-7 Konfigurations-/Rechenfehler;
+neuer zusätzlicher Rechenfehler 5.729169352e-52 bleibt ebenfalls enthalten.
+Zusätzliche manuelle Zweilink-Kreuzkontrolle: originale 15x20-Hamilton-
+Quellmatrix, alle acht E0-Eingänge, exakte Übereinstimmung in Ordnung0..6;
+alte Quelle scheitert bei6. Kein zusätzlicher unittest-Test und kein neuer
+kubischer Bell-Readout. 20 neue plus454 Vorläufertests normal/OO bestanden:
+474 pro Modus, einschließlich zweier vollständiger, exakt identischer
+Wiederholungen der neuen kubischen Auswertung und unveränderter Vorgänger-Pins.
+Nächster dominanter Rest: weitere Materiefortsetzung der bisherigen erweiterten
+EinE-Blätter, mit Schranke 2.230026484e-6; eine neue Dynamikschicht ist nötig.
+T1-T8 offen; nur lokale Experimente+Katalog/Notizen, kein Commit/Push/Paper/
+Website/Verifikation/Ledger/Scorecard und keine empirische Promotion.
+
+Neu (2026-09-08), **NON-RH / Round 48, direkte physikalische Restabschätzung statt resummiertem Umweg**:
+[Engeres Zertifikat für die unveränderte, bereits berechnete kubische Round47-Spalte](theory-contracts/direct-defect-round48/README.md).
+Die tatsächliche endliche Quelle wird direkt gegen den vollen Hamiltonoperator
+abgeschätzt. Sein normerhaltender Duhamel-Propagator umfasst ALLE späteren
+M- und E-Ereignisse nach jedem Restquelleneintritt; keine zusätzliche
+exponentielle Hilfsraumverstärkung. Für jedes erweiterte Blatt p bleiben
+pE, pMM und pME erhalten, ebenso die älteren erstenE-/MEME/MMEE-Zweige.
+Zusätzlich werden nur auf dem GANZEN Fockraum identisch verschwindende
+Literalwörter aus dem Fehlerzensus entfernt. Anfangszustands-null reicht
+ausdrücklich NICHT; entsprechende nichtnull Operatoren bleiben erhalten.
+Neues kubisches bare-low/E0-Intervall bei t1:
+[.00219745649442,.00219839571909], 16.5466% schmaler als Round47.
+Rationaler Mittelpunkt und gesamter numerischer Fehler unverändert; KEINE
+neue Bulk-Spalte und KEINE zusätzliche numerische Materieschicht berechnet.
+Direkter Idealrest4.877043547e-6 plus Konfigurations-/Rechenfehler1.314019502e-7
+ergibt gesamten Amplitudenfehler5.008445497e-6. Ohne sichere Operator-Nullregel
+wäre der direkte Idealrest5.086433395e-6; beide Schritte getrennt dokumentiert.
+Voller Rohzensus weiterhin5000760 Seeds mit früheren Momenten exakt identisch.
+248076 kubische und4044 quintische Seeds als ganze Operatoren null erkannt;
+keine Änderung früherer Rechnungen. Neue 8-/32-Komponenten-Momentenvektoren
+berechnen die Restgrenze ohne neue Enumeration von95.8 Millionen M-Pfaden.
+Vollständige Fock-Aktion, originale kubische Zusatzpfade, unveränderte ganze
+Kantenresummation und sieben volle physikalische Kanten-Eingänge kontrollieren
+die Konstruktion. Keine Übertragung dieses Kantenchecks auf neue Bulk-Bellwerte.
+20 neue plus434 Vorläufertests normal/OO bestanden:454 pro Modus,
+einschließlich vollständiger Wiederholungen und unveränderter Vorgänger-Pins.
+Idealglobalrest weiterhin t6, neue Restgrenzen t7/t8, Konfigurationsfehler ggf.t4.
+Nächster großer Einzelschritt: MMMME (erster E nach vier M), Rest2.195096528e-6,
+neben der nächsten Materie-Restquelle. MEME/MMEE zusammen6.062610686e-8;
+alle drei fehlen noch für eine Anhebung der globalen idealen Fehlerordnung.
+T1-T8 bleiben offen. Nur lokale Experimente+Katalog/Notizen;
+kein Commit/Push/Paper/Website/Verifikation/Ledger/Scorecard und keine Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 47, resummiertes Wortziel tatsächlich im kubischen Bulk ausgewertet**:
+[Eine zusätzliche Materieschicht vollständig berechnet, alle späteren Schichten separat begrenzt](theory-contracts/bulk-word-round47/README.md).
+Für den nackten Low-/E0-Eingang bei t1 lautet das neue abgesicherte
+Besetzungsintervall [.00219736339374,.00219848884164], Faktor1.9020 enger
+als Round45. Die Quellmitte ist neu berechnet, nicht aus dem kleineren
+Round46-Idealrest um den alten Wert übernommen. Genau eine weitere
+M-Schicht auf MEMM/MMEM/MMME/MEE ist numerisch enthalten; ALLE späteren
+M-Schichten bleiben im eigenständigen, volumen-/flussuniformen Rest.
+Gesamter Amplitudenfehler6.001486861e-6 = Ideal-E-Rest2.673296379e-6
++ M-Suffixrest3.196788531e-6 + Konfigurations-/Rechenfehler1.314019502e-7.
+95,831,832 rohe zusätzliche M-Pfade einer repräsentativen ersten Richtung
+tatsächlich durchlaufen; alle sechs kubischen Bilder mit Fermion-Vorzeichen
+vor dem Quadrieren zusammengeführt. 6,481,197 gemeinsame physische Ausgänge.
+Vollständiger ursprünglicher Rohzensus vor jeder Anfangszustands-Nullregel;
+nur endgültige physische Nullausgänge und exakte Summenkürzungen verwendet.
+Die alte kubische nackte Besetzung wird in der neuen Darstellung rational
+EXAKT rekonstruiert. Unabhängige Python-Pfade, vollständige Fock-Einbettung,
+Rotationszeichen und gesamte Kanten-Resummation kontrollieren die Konstruktion.
+20 neue plus414 Vorläufertests normal/OO bestanden:434 pro Modus,
+einschließlich vollständiger deterministischer Wiederholung und unveränderter Pins.
+Keine exakte numerische Auswertung der unendlichen M-Reihe, keine neue
+kohärente/Bell-Bulk-Antwort und keine vollständige elektrische Lösung.
+Der neue M-Suffixrest beginnt bei t7, der Ideal-E-Rest weiterhin bei t6;
+der separate Round44-Konfigurationsfehler kann bereits bei t4 beginnen.
+Nächster Engpass: späterer M-Suffixrest, anschließend die älteren ersten
+E- sowie MEME/MMEE-Zweige; allgemeine Anfangszustände separat auswerten.
+T1-T8 bleiben offen. Nur lokale Theorieexperimente+Katalog/Notizen;
+kein Commit/Push/Paper/Website/Verifikation/Ledger/Scorecard und keine Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 46, Materiepropagation elektrischer Wörter resummiert**:
+[Selbstadjungierter Wort-Tensorlift, sichere Rekonstruktion und ausgewertetes Kantenmodell](theory-contracts/word-resummation-round46/README.md).
+Die weitere M-Propagation von MEMM, MMEM, MMME und MEE hat den Generator
+K_d=H_E I-sum_Creator h^T+sum_Annihilator h. Gemeinsames elektrisches Feld,
+umgekehrte Creator-Transporte und wörtliche Drei-/Fünf-Fermion-Reihenfolge
+bleiben erhalten. Ausgewertet am unveränderten vollständigen Kantenparent;
+der NEUE resummierte 3D-Bulk-Readout ist NOCH NICHT ausgeführt.
+Alle kubischen/quintischen Wörter gegen den vollen Fock-Kommutator geprüft;
+unabhängige rohe M-Suffixpfade stimmen bis Zeitordnung7 überein. Das ist
+KEINE volle Hamilton-Exaktheit bis7: ältere elektrische Reste beginnen bei6.
+Zwei falsche Abkürzungen explizit ausgeschlossen: Tensor-l2 ist nicht
+normgleich zur CAR-Quelle (kohärente Verstärkung sqrt(N-1)); auf dem
+Anfangsraum verschwindende Wörter dürfen vor Resummation nicht gestrichen
+werden. Sichere l1-Rekonstruktion und positiv begrenzte Hopping-/Flussmomente
+liefern eine volumen-/flussunabhängige neue elektrische Leckageschranke.
+Für das ideale kubische Ziel D46~2.673296379e-6 statt D45~1.128347545e-5,
+Faktor4.2208 kleiner. Kein neuer Bulk-Besetzungswert mit alter Quellmitte!
+Tatsächlich gerechnet bei t1 auf der Kante: bare
+[.00036095532874,.00036098918920]; Bell minus
+[.49999679150340,.49999805170416], plus
+[.49999850068624,.49999976088915], gesicherter Abstand >4.489e-7.
+Alle drei enthalten die unabhängige volle physikalische Sechs-Zustands-
+Entwicklung. Keine Übertragung dieser t1-Bell-Trennung auf den Bulk.
+Vier64- und sechs1024-dimensionale Hilfsentwicklungen sind reale Kosten;
+kein Beschleunigungsanspruch gegenüber dem nur sechsdimensionalen Kantenproblem.
+20 neue plus394 Vorläufertests normal/OO bestanden:414 pro Modus, samt Replay.
+Nächster Gate: tatsächliche kubische Wortquellen mit kontrollierten
+Konfigurationsaustritten und sicherer CAR-Fehlerrekonstruktion auswerten.
+T1-T8 bleiben offen; nur lokale Experimente+Katalog/Notizen, kein Commit/Push,
+Paper/Website/Verifikation/Ledger/Scorecard und keine empirische Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 45, fünfte elektrische Quellordnung mit sechstordentlichem Idealrest**:
+[Weitere Ein-E-Quellen und erster Zwei-E-Term ausgewertet; engere 3D-Besetzung und Bell-Trennung bei t0.3](theory-contracts/higher-electric-round45/README.md).
+Am unveränderten U1-Parent werden MEMM, MMEM, MMME und MEE jetzt mit allen
+Massen-/Flussphasen ausgewertet. MEE enthält ein wörtlich geordnetes
+Fünf-Fermion-Wort samt unverzichtbarer kubischer CAR-Kontraktion. Die ideale
+Quelle stimmt auf der gesamten E0-Kantenanfangsfamilie unabhängig mit dem
+vollen Hamiltonoperator bis Zeitordnung5 überein; ohne MEE scheitert genau
+Ordnung5. Voller kubischer Rohzensus: 5000760 Pfade. Eine erste Raumrichtung
+wird berechnet, alle sechs Bilder werden mit Fluss-/CAR-Vorzeichen in dieselben
+Endzustände eingesetzt und VOR dem Quadrieren gesammelt. Keine angenommene
+Rotationssymmetrie des Anfangszustands; Normzensus vor Anfangsraum-Nullregeln.
+Die elektrische Restschranke sinkt bei t1 von ~3.464e-5 auf ~1.1284e-5 und
+beginnt für die IDEALE Quelle bei Zeitordnung6. Der separate Round44-
+Konfigurationsfehler (<1.315e-7 bei1, möglicherweise ab Ordnung4) bleibt
+enthalten: keine falsche fünfte Exaktheit der numerisch projizierten Quelle.
+Nackte volle kubische Besetzung nun [.00219685812592,.00219899873816], mehr
+als dreimal enger als Round44. Bell-Eingänge mit identischen Einzelort-RDMs
+sind bei t.3 getrennt: minus [.50034548173813,.50034550547455],
+plus [.50034542873258,.50034545246899], Abstand >2.926e-8 inklusive ALLER
+Reste. Bei t1 weiterhin überlappend. Sechs unabhängige vollständige Kanten-/
+Zyklus-Readouts liegen innerhalb der neuen Intervalle. Zwei-E erweitert die
+hinreichende RDM-Obergrenze auf fünf Orte; irreduzible Fünf-Ort-Abhängigkeit
+der Endgröße ist NICHT bewiesen. 20 neue plus374 Vorläufertests samt Replay
+normal/OO bestanden:394 pro Modus. Vorgänger-Pins unverändert.
+Weitere Ein-E-Materiepropagation und die bislang nur begrenzten MEME/MMEE-
+Zweige bleiben der nächste Ansatz. T1-T8 offen; keine Vakuum-/Parameterwahl,
+chirale Kontinuum-/Spin2-Lösung, Empirie- oder öffentliche Promotion.
+Nur lokale Experimente+Katalog/Notizen, kein Commit/Push/Paper/Website.
+
+Neu (2026-09-07), **NON-RH / Round 44, resummierte volle 3D-Antwort mit kontrolliertem Konfigurationsrest**:
+[Offener kubischer Rechenschritt ausgeführt; engere Besetzung und Korrelationsnachweis bei t0.2](theory-contracts/cubic-resummation-round44/README.md).
+Die in Round43 noch nicht ausgewertete kubische Hilfsdarstellung ist jetzt
+gerechnet: zwei Spalten auf 46874 Teilchen-/Fluss-/Spezieszuständen, erzeugt
+durch elementare Wege bis Länge6. Verschiedene Schleifenflüsse bleiben
+verschieden. Alle ursprünglichen Parent-Terme, Backtracks und elektrischen
+Energien erhalten. 652522 äußere Konfigurationszeilen mit 843246 Übergängen
+liefern einen ausdrücklich berechneten Austrittsrest; anschließende beliebig
+weite Ausbreitung und weitere Umlaufflüsse werden vollständig begrenzt.
+Positive Hopping-Potenzen vermeiden eine Schranke auf die unbeschränkte
+äußere elektrische Energie. Hilfsquellenfehler bei t1 <1.315e-7, elektrischer
+Rest separat ~3.464e-5. Nackte volle kubische Besetzung nun
+[.00219466789203,.00220118831043], rund4.797-mal enger als Round42.
+Bell-Eingänge mit identischen Einzelort-Dichten I/2 sind jetzt bei t.2
+zertifiziert getrennt: minus [.50016444486793,.50016447445617],
+plus [.50016441356383,.50016444315207], Abstand >1.715e-9 inklusive ALLER
+Reste. Bei t.1 Abstand >4.369e-9; bei t.5/t1 weiterhin überlappend.
+Exakte rationale Potenzen für vier Zeiten, unabhängige Horner-Auswertung,
+ursprüngliche Hamilton-Spalten inklusive sämtlicher Austritte, volle kubische
+Materiejets bis Zeitordnung3, unterschiedliche Konfigurationsgrößen und
+gemeinsame gemischte/verschränkte Patchantworten geprüft. Keine Behauptung
+exakter vierter Quellkoeffizienten der endlichen Konfigurationsnäherung.
+20 neue plus354 Vorläufertests normal/OO bestanden:374 pro Modus.
+Nun dominiert der elektrische Rest um mehr als Faktor200 gegenüber dem
+Hilfsfehler: nächste Priorität weitere Ein-E-Propagation samt Mehr-E-Resten.
+T1-T8 weiter offen; bedingter Modellfortschritt, keine empirische Aussage
+oder Paper-/Website-/Verifikations-/Scorecard-Promotion. Kein Commit/Push.
+
+Neu (2026-09-07), **NON-RH / Round 43, Materie vollständig resummiert und auf geschlossener Schleife ausgewertet**:
+[Exakte Rotor-Einteilchen-Zeile, Zwei-Spalten-Reduktion und algebraische Grenze der Hilfsdynamik](theory-contracts/matter-resummation-round43/README.md).
+Die bestehende Materiehierarchie hat die exakte Darstellung
+F(t)=exp(i H_E t)e_H^T exp(-i(H_E I+h)t), einschließlich sämtlicher
+Präfixphasen. Auf homogener Geometrie liefern zwei Hilfsentwicklungen die
+ganze Quellzeile; die Fehlerrekonstruktion auf der E0-/Ein-Fermion-pro-Ort-
+Anfangsklasse enthält keinen versteckten Volumenfaktor. Tatsächlich
+ausgewertet auf Kante, Sechsblattstern und geschlossenem Vier-Ort-Zyklus,
+NICHT als neuer voller 3D-Bulk-Readout. Der Zyklus enthält alle ganzzahligen
+Umlaufflüsse mit explizit begrenztem Rechen-Cutoff: zwei Spalten in200
+Hilfszuständen, unabhängige volle physische Rechnung mit2310 Zuständen.
+Nackter Zyklus bei t1: Hybrid [.00072348740629,.00072473021731], voller
+Parent inklusive Flusstail [.00072410866669,.00072410866672].
+Die vorhandenen elektrischen ME/MEM/MME-Quellen bleiben enthalten.
+Analytischer Bulk-Quellenrest nun <.000034638931076, rund79.23% kleiner;
+M4 fällt weg, SPÄTERE erste elektrische Zweige werden ausdrücklich addiert.
+Noch keine numerisch ausgewertete resummierte Bulk-Antwort mit dieser Schranke.
+Exakter Gegenbeleg zur falschen vollen-Fock-Identifikation: Trotz FF†=I
+weicht der nackte Kanten-CAR-Erwartungswert um -(383/33177600)t4 ab;
+allgemeiner Koeffizient -kappa*g²*(M-d)/6. Elektrische Kopplung und
+Massendifferenz verhindern diesen kanonischen Kurzschluss. 16 neue plus338
+Vorläufertests normal/OO bestanden:354 pro Modus. Nächster Rechenschritt:
+zwei volle kubische Hilfsspalten mit unabhängigen Schleifenflüssen und
+bewiesenen Raum-/Flusstails. T1-T8 weiter offen; keine empirische Aussage,
+Paper-/Website-/Verifikations-/Scorecard-Promotion oder Commit/Push.
+
+Neu (2026-09-07), **NON-RH / Round 42, propagierte elektrische Quellen mit Rest fünfter Ordnung**:
+[Beide fehlenden vierten Zeitbeiträge berechnet; Korrelationsunterschied nun bei t0.1 zertifiziert](theory-contracts/electric-propagation-round42/README.md).
+Unveränderter U1-Parent: Materiepropagation der ersten kubischen Quelle (MEM)
+und nächste erste elektrische Branch (MME) ausdrücklich enthalten. 18792+15912
+neue Pfade, exakt gesammelt zu 57150 Gruppen, 139 Frequenzkernen und 23010
+kubischen Koeffizienten. Vollständige Kanten-Hamilton-Rechnung bestätigt alle
+Quellkoeffizienten bis Zeitordnung4 für die ganze E0-Anfangsfamilie. Der Rest
+beginnt nun bei Ordnung5 und fällt bei t1 auf <.000166811991098, rund23.5%
+unter Round41. Nackter Bulk: [.00218195851226,.00221323792966].
+Dieselben Bell-Eingänge mit identischen Einzelort-Dichten liefern bei t.1
+disjunkte volle Bulk-Intervalle, gesicherter Abstand >6.29e-10 inklusive aller
+Reste; Round41 war dort unentschieden. Bei t.5/t1 weiterhin keine Trennung.
+Strukturell bleibt der Sektor mit genau einer elektrischen Branch bei beliebig
+vielen Materieschritten kubisch und operatornormkonvergent; Drei-Ort-Dichten
+bleiben ausreichend für diesen Sektor, ohne Faktorisierung. Nur Tiefe3 wirklich
+ausgewertet, keine allordentliche numerische Antwort und keine exakte
+Drei-Ort-Schließung der vollen Dynamik. Doppelt elektrische Branches bleiben
+ausdrücklich im Rest. Volle geladene Kanten-/Drei-Ort-Familien sowie komplette
+6/20/3432-Zustands-Gauss-Bäume unabhängig geprüft. 20 neue plus318 Vorläufertests
+normal/OO grün:338 pro Modus. Nächster dominanter Rest: fünfte Materiestufe,
+rund79% bei t1, gemeinsam mit weiteren elektrischen und Mehrquellenpflichten.
+T1-T8 weiter offen; nur lokale Forschungsintegration, kein RH/Commit/Push und
+keine Paper-/Website-/Verifikations-/Scorecard-Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 41, erste nichtlineare elektrische Quelle und Korrelationsnachweis**:
+[Explizite elektrische Rückkopplung, Drei-Ort-Korrelationsgrenze und getrennte Bell-Antworten](theory-contracts/electric-source-round41/README.md).
+Unveränderter U1-Parent und dieselbe E0-/Ein-Fermion-pro-Ort-Anfangsklasse.
+Alle 156 elektrischen Kraftpfade mit kubischen Fermionoperatoren und beiden
+Phasen wirklich berechnet; die ausgelassene Weiterentwicklung bleibt begrenzt.
+Der alte erste elektrische Rest wird ersetzt, nicht doppelt gezählt. Bei t1
+sinkt die Amplitudenfehlerschranke von .000270570887988 auf .000218044017173;
+die nackte hohe Ortsbesetzung liegt in [.00217694175355,.00221782566303],
+1.2409-fach enger als Round40. Der bisher fehlende dritte Zeitkoeffizient
+wird exakt zurückgewonnen. Neu: Zwei benachbarte Bell-Präparationen mit
+IDENTISCHEN Einzelort-Dichten I/2 und Flüssen haben bei t.01 bzw t.02 disjunkte
+volle Bulk-Intervalle; gesicherter Abstand >3.7e-12 bzw >1.25e-11 inklusive
+aller Reste. Kleine bedingte Modellunterschiede, keine empirische Vorhersage.
+Bei t1 überlappen ihre Intervalle weiterhin. Eine exakte Beschreibung allein
+durch sämtliche Einzelort-Dichten ist damit für diese Anfangsklasse widerlegt.
+Ladungsselektion zeigt für DIESE Näherungsantwort eine Obergrenze von drei
+Orten pro benötigter Speziesdichte; keine Faktorisierung oder exakte Allzeit-
+Drei-Ort-Schließung. Gemeinsame 4x4/8x8-Patchantworten für kohärente/gemischte
+Eingänge; kein Ersatz des gesamten Gitterzustands durch acht Zustände.
+Unabhängig geprüft: voller Liouville-Operatorraum der Kante, ganze geladene
+E0-Eingabefamilie, komplette 6/3432-Zustands-Gauss-Baumsektoren und CAR-Phasen.
+25 neue plus293 Vorläufertests jeweils normal/OO grün (=318 pro Modus).
+Nächster Angriff: kubische Quelle weiterpropagieren und nächste elektrische
+Branch einschließen. T1-T8 weiter offen; nur lokale Forschungsintegration,
+keine Paper-/Website-/Verifikations-/Scorecard-Promotion und kein Commit/Push.
+
+Neu (2026-09-07), **NON-RH / Round 40, kontrollierte Materie-Hierarchie und Bulk-Phasenunterschied**:
+[Vierte Quellenstufe mit separatem elektrischem Rest und disjunkten Phasenantworten](theory-contracts/matter-hierarchy-round40/README.md).
+Unveränderter U1-Parent, keine neue Parameter- oder Zustandswahl. Alle Materie-
+Pfade bis Stufe4 tatsächlich berechnet: 1/6/252/9288/343440 Pfade, exakt gesammelt
+zu140372 Moden-/Flusskoeffizienten und180 skalaren Frequenzkernen. Kubische
+Schleifenpfade vorhanden; kein elektrischer oder dynamischer räumlicher Cutoff.
+Die Restschranke fällt bei t1 auf <.000270570887988. Für denselben nackten
+niedrigen E0-Anfang ergibt sich [.00217210099436,.00222283452421], rund24.17-fach
+enger alsRound39. Zwei Eingänge mit gleichen Besetzungen, aber Wurzelkohärenz
+-i/2 bzw+i/2, haben nun disjunkte volleBulk-Intervalle: Ihr Antwortunterschied
+ist unter den Modellannahmen >.00423. Keine Auswahl eines physischen Vakuums.
+Die reine Materie-Reihe konvergiert zwar, ersetzt aber nicht die volle Dynamik:
+Ihr elektrisches Fehlerbudget tendiert zu~.00013839782796. Das ist KEINE
+Untergrenze des tatsächlichen Fehlers. Ein exakter dritter Zeitkoeffizient der
+vollständigen Kante weist den ausgelassenen elektrischen Term unabhängig nach.
+Stufen5-8 nur als Fehlerschranken ausgewertet, NICHT als höhere Gitterantworten.
+24 neue plus269 Vorläufertests normal/OO grün. Nächster Angriff: erste nichtlineare
+elektrische Quelle samt Mehrpunktkorrelationen. T1-T8 weiteroffen; nur lokales
+Forschungsexperiment, keine empirische/Paper-/Website-/Lösungsstatus-Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 39, zweite lokale Quelle mit kontrollierter Rückwirkung**:
+[Engeres 3D-Bulk-Intervall und phasenabhängige lokale Antwort](theory-contracts/second-source-round39/README.md).
+Die erste explizite Niedrigmode-Rückwirkung behält die elektrischen und
+Massenphasen des unveränderten U1-Parents. Ein separater Rest kontrolliert
+sowohl höhere Materie-Iterationen als auch den nichtverschwindenden elektrischen
+Kraftkommutator. Bei t1 sinkt die Annihilatorfehlerschranke von <0.028648434
+auf <0.006444947. Für denselben nackten niedrigen E0-Anfang liefert die
+tatsächlich ausgewertete Rechnung [0.00169010920758,0.00291608976684]:
+ein rund4.35-fach engeres Intervall für die hohe Ortsbesetzung als Round38.
+Sechs erste und252 zweite Pfade ergeben218 Moden-/Flusskoeffizienten;
+kein elektrischer oder dynamischer räumlicher Cutoff, kein riesiger Raumzustand.
+Die Antwort enthält nun echte lokale komplexe Kohärenzen, auch für verschränkte
+Anfangsdichten; die phasenverschiedenen Bulk-Intervalle überlappen weiterhin.
+Unabhängig geprüft: ganze geladene Quellvektoren, alle vier lokalen E0-
+Anfangsbasiszustände der Kante gemeinsam und vollständige Baum-Gauss-Sektoren.
+25 neue plus244 Vorläufertests jeweils normal/OO grün. Keine Gleichsetzung der
+Baumbenchmarks mit voller3D-Dynamik, keine spektrale Elimination/T1-T8-Schließung.
+Nächster mathematischer Engpass: höhere Materie-Rückwirkung; sie dominiert den
+Rest. Nur Forschungsexperiment, keine empirische/Paper-/Website-Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 38, tatsächlich ausgewerteter lokaler 3D-Readout**:
+[Lokale Quellgleichung mit endlichem Zeitintervall ohne riesiges Gitterfenster](theory-contracts/local-source-round38/README.md).
+Der unveränderte unrotierte U1-Parent liefert für die hohe Ortsbesetzung eine
+exakte Quellgleichung. Freie Quellen behalten Massen- und elektrische Phasen;
+der gesamte Quellenfehler ist mit ganzen-Fock-CAR-Schranken kontrolliert:
+C²=107/2048, elektrische Kraft b=53/288, Annihilatorfehler bei t1 <0.028648434.
+Für den nackten niedrigen Anfang mit E0 ergibt die wirklich ausgeführte skalare
+Rechnung im kubischen Bulk [0.00031949062781,0.00565070454854] bei t1;
+bei t1/100 [0.00000103570437,0.00000104736828]. Volumenunabhängig, kein Raum-
+oder elektrischer Cutoff. Keine bloße t²-Ableitung als endliche Antwort verkauft.
+Die t1-Genauigkeit ist ausdrücklich schwächer als Round37s unausgeführter Plan.
+Unabhängige vollständige Gauss-Sektoren einer Kante und eines Sieben-Ort-Sterns
+mit 6 bzw3432 Zuständen tatsächlich entwickelt; Sternantwort
+[0.00219096851702,0.00219096851703] liegt im lokalen Intervall. Der Stern ist
+KEIN volles3D-Gitter; dafür gilt die analytische lokale Fehlerschranke.
+Auch der ganze geladene Quellvektor unabhängig geprüft. Entgegengesetzte
+kohärente Präparationen liefern verschiedene volle Antworten trotz gleicher
+Marginalen; nur das Intervall wird geteilt, keine Phaseninformation wegdefiniert.
+25 neue plus219 Vorläufertests normal/OO grün. Nur ein physischer Readout,
+kein gemeinsamer Vier-Quellen-Solver, keine spektrale Elimination/T1-T8-Schließung.
+Quelleniteration mit expliziter Niedrig-Rückwirkung als nächster Angriffspunkt;
+keine empirische, Paper-, Website- oder öffentliche Lösungsstatus-Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 37, räumliche 3D-Fenster und vollständige Flusstails**:
+[Explizite volumenunabhängige Fehlergrenze für lokale Präparationen und Quellen](theory-contracts/local-window-round37/README.md).
+Der unveränderte unrotierte kubische Parent liefert aus wirklichen ganzen-Fock-
+Pfadnormen j=69/64 pro Ort und b=53/288 pro elektrischem Link. Eine räumliche
+Supportketten-Schranke kontrolliert entfernte Gitterbereiche; ein separater
+Ein-Link-Dysonrest kontrolliert sämtliche ausgeschlossenen Flüsse, ohne die
+extensive Gesamtkopplung einzusetzen. Anfangsfamilie: nackte niedrige Füllung,
+alle E=0, beliebige kohärente/verschränkte/gemischte lokale Speziespräparation;
+NICHT der gedrehte Haar-Zustand mit initialem Flusstail. Originale A²-Rückwege
+bleiben am Fensterrand erhalten; neu quadrierte Fensternachbarschaft wäre falsch.
+Für vier lokale Quellzellen, R64/K12/t1 liegt die kombinierte räumliche/elektrische/
+geplante numerische Fehlergrenze <1.406352e-10, unabhängig vom Gesamtvolumen.
+ABER: Fenster mit 2.180.100 Orten, 6.489.860 Rotoren und direkter Dimension
+4^2180100 mal25^6489860; große 3D-Zeitentwicklung NICHT ausgeführt, kein Speedup.
+Tatsächlich ausgewertet: Graph-/Gauss-/Pfadstruktur echter offener/periodischer
+3D-Gitter und exakte lokale t²-Koeffizienten, unabhängig mit Laurentmatrix und
+vollständigem zweitem Cube-Jet geprüft. Ableitungen sind keine t1-Vorhersagen.
+29 neue plus190 Vorläufertests jeweils normal/OO bestanden. Allgemeine Lokalitäts-
+methoden bekannt; konkret neu sind Parentkonstanten, Fluss- und Rand-/Kostenrechnung.
+Handhabbarer lokaler Solver, spektrale Elimination und volle T1-T8-Konjunktion
+bleiben offen. Keine physische, empirische, Paper- oder Website-Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 36, gemeinsame Dynamik einer kohärenten Familie**:
+[Ein 60-Zustands-Modell für alle Überlagerungen und Mischungen dreier Flusszustände](theory-contracts/coherent-family-round36/README.md).
+Ein gemeinsamer Hermitescher Block-Krylov-Hamiltonian behandelt die gesamte
+Eingabefamilie k=-1,0,+1 des nackten gefüllten Drei-Ort-Kreises, im selben
+Gauss-Sektor und mit unveränderten Parametern. Keine drei getrennten Einzustands-
+Fits: komplexe Interferenz und beliebige positive 3x3-Dichtematrizen bleiben
+erhalten. Exakte rationale Gram-/Residualkontrolle und eine gemeinsame
+Operator-Schranke liefern Vektorfehler <1.051e-18 für 0<=t<=1; Beispiele allein
+werden nicht als Familienbeweis verwendet. K13/528 physische Komponenten halten
+für den erweiterten Anfang denselben Abstand zur Flussgrenze wie zuvor.
+Gesamtmessfehler bei t1 inklusive aller ausgeschlossenen Flüsse <9.309e-14;
+alle vier bisherigen k0-Intervalle unverändert. Vier komplexe 3x3-Antwortmatrizen
+erlauben zusätzliche Dichten ohne erneute Modellentwicklung. Das ausführbare
+Modell enthält 478 Hamilton- und 14.400 Quelleninteger, 949.010 Bytes; offline
+bleiben der volle Parent und 31.680 Basisinteger nötig, kein Gesamt-Speedupclaim.
+28 neue plus 162 Vorläufertests jeweils normal/OO bestanden. Block-Krylov- und
+Residualmethoden sind bekannt; neu ist das konkrete Familienzertifikat.
+Die Flussfamilie ist global auf einem kleinen Kreis, nicht räumlich lokal oder
+volumenuniform und kein vollständiger spektraler Niedrigenergiesektor.
+Keine physische T1-T8-, Paper-, Website- oder empirische Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 35, eigenständiges zeitlokales Hilfsmodell**:
+[20 Zustände mit kontrollierter Entwicklung und mitübertragenen Messoperatoren](theory-contracts/auxiliary-dynamics-round35/README.md).
+Der unveränderte nackte Anfang des Drei-Ort-U1-Kreises wird auf einen aus H und
+dieser Präparation erzeugten Krylovraum übertragen:20 statt488 laufende Komponenten,
+Hermitescher tridiagonaler Hamiltonian, keine Gedächtnishistorie und keine volle
+Zustandsrekonstruktion bei der laufenden Messung. Hohe Anteile bleiben erhalten;
+bereits der zweite Hilfsbasisvektor liegt vollständig im nackten hohen Sektor.
+Exakte Ganzzahlorthogonalität, kontrollierte rationale Normierung und Residual-
+Pfadsumme liefern einen Vektorfehler <3.32e-19 für0<=t<=1. Alle vier bisherigen
+Materie-/Gauge-Intervalle bleiben bei t1 identisch, Gesamtmessfehler samt allen
+ausgeschlossenen elektrischen Flüssen <9.309e-14. Zwölf/sechzehn Hilfszustände
+liefern breitere Zertifikate;20 ist keine bewiesene Minimaldimension.
+Eigenständig ausführbares Modell:58 Hamilton- und1600 Quelleninteger,109.937Bytes,
+keine Parentmatrix/Basis/hohen Vektoren oder Referenzantworten im Laufartefakt.
+Offline weiterhin voller Parent und9760 Basisinteger mit bis3969Bits; keine
+End-to-End-Beschleunigung behauptet. Krylov-/Residualmethoden bekannt; neu ist
+die zertifizierte Anwendung auf diesen Parent mit unveränderter Präparation.
+28 neue Tests plus134 Vorläufertests normal/OO, ganzer eingebetteter Vektor sowie
+t0/t1/2/Standalonelauf unabhängig geprüft. Kein spektrales Low-EFT, keine
+räumliche Lokalität aus Hilfsindex-Lokalität, keine physische T1-T8-Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 34, ausgewertete geschlossene Gedächtnisdynamik**:
+[Geschlossene Projektionsdynamik mit unveränderten physikalischen Messgrößen](theory-contracts/memory-closure-round34/README.md).
+Für den unveränderten nackten Drei-Ort-Kreis-Anfang werden nur die beibehaltenen
+Amplituden mittels vorab berechneter Gedächtnismomente entwickelt; die hohen
+Komponenten werden aus Quellenfunktionen erst zur Messung rekonstruiert.
+Alle vier Materie-/Gauge-Intervalle stimmen exakt mit der vollen Round33-Rechnung
+überein, einschließlich aller ausgeschlossenen elektrischen Flüsse; Fehler bei
+t1/K12 <=9.3081e-14. Unabhängiger Vergleich jedes reellen/imaginären Vektoranteils,
+kein Fit an Referenzwerte. Projektionsmethode bekannt; neu ist diese zertifizierte
+Auswertung am tatsächlichen Parent samt Quellen, Präparation und Kosten.
+Nackte all-low-Wahrscheinlichkeit liegt bei [0.99784311496210,0.99784311496230];
+der zweite Anfangsableitungswert -1/48 schließt einen exakt gleichen autonomen
+Hamiltonian auf DIESEM bloßen Unterraum aus, nicht EFTs mit korrigierter Präparation.
+Erster Gedächtnismoment liefert den gerichteten Wilsonpfad exakt -1/2304.
+Der feste Kreis liefert keinen automatisch abklingenden Gedächtniskern;
+bei K12 hat ein Eintrag langfristiges Zeitmittel des Betragsquadrats >=1/4267008.
+Keine kurze Gedächtnisdauer bewiesen. K12:25 beibehaltene und463 eliminierte
+Komponenten,49.375 Gedächtnis- und926.000 Quellen-Ganzzahlen plus weitere Matrizen;
+keine Beschleunigung oder kleinere Gesamtspeichernutzung behauptet.
+28 exakte Tests normal/OO; kontrollierte einfachere Niedrigenergie-/lokale3D-
+Beschreibung weiterhin offen, keine physische T1-T8-/Paper-/Website-Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 33, lokale elektrische Kontrolle und volle Echtzeit**:
+[Lokale Flusstails, vollständige Kreis-Messgrößen und induzierter Plaquettenterm](theory-contracts/local-flux-dynamics-round33/README.md).
+Der vorhandene kubische Parent liefert pro Link eine Kraftnorm <=53/288 und
+für den bisherigen gefüllten niedrigen Haar-Zustand eine größenunabhängige
+elektrische Momentgrenze samt kontrollierter partieller Flussabschneidung.
+Zusätzlich tatsächlich ausgewertete volle Drei-Ort-Kreis-Dynamik mit unbeschränktem
+physischem Kreislauffluss: 20 Materiekonfigurationen mal alle ganzen Flüsse;
+bei K12 werden488Zustände/3932Matrixeinträge mit exakter Ganzzahlarithmetik gerechnet.
+Dyson-Tail erfasst alle ausgeschlossenen Flüsse: Messfehler bei t1 <=9.3081e-14.
+Hohe Ortsbesetzung ~0.000719344644, E0-Nullwahrscheinlichkeit ~0.999283285480,
+lokale Spezieskohärenz ~-0.004046335848, reale Wilsonschleife ~2.172021e-7.
+Expliziter nackter Niedrig-/Nullfluss-Anfang, NICHT der gedrehte Haar-Zustand;
+alle hohen Fermionen bleiben erhalten, Kreis ist keine dreidimensionale Box.
+Der Parent wird vor der Flusskompression quadriert: ausgelassene Zwischenpfade
+sonst falsch entfernt, physischer Gegencheck mit positiver Energiedifferenz1/576.
+Neue führende magnetische Quadratstruktur in der gefüllten Bandkompression:
+g_square(1-ReW), g_square=a^4(M+3)/(2M^3), bei a1/12 M4 exakt7/2654208.
+Keine Behauptung einer vollständigen Wirkung oder Fehlerkontrolle höherer Ordnungen.
+25 exakte Tests; unabhängige geschlossene Niedrigdynamik/gemeinsame3D-Grenze
+weiterhin offen, keine physische T1-T8-/Paper-/Website-/Ledger-Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 32, virtuelle Readouts und lokale Energie**:
+[Kontrollierte effektive Messgrößen und physische Flussresonanz](theory-contracts/virtual-readout-round32/README.md).
+Im unveränderten Ein-Fermion-Gauss-Sektor aus Round30 werden die virtuellen
+hohen Übergänge samt Messoperator und Anfangszustandsabbildung mitgeführt.
+Hamiltonfehler höchstens 5,768e-9; unabhängige rationale Sturm-Intervalle
+begrenzen die beiden niedrigen Energiefehler auf 1,39e-13 und 2,138e-12.
+Für die lokale Ortsbesetzung bei t=1 liefert eine unabhängige rationale
+Echtzeitrechnung höchstens 1,445188e-9 Fehler für alle passend präparierten
+niedrigen Anfangsvektoren dieser Zelle. Keine Übertragung auf nackte Anfangsdaten.
+Ein separater echter U1-Kreislauffluss zeigt die Grenze des Dichtearguments:
+anfangs exakt niedriger Zustand, später lokaler hoher Readout >0,9413 trotz
+mittlerer Energie/Ort <0,010000783 und hoher Dichte <=1/163840000.
+Verbundener Eichgraph mit inhomogenem, auf Zuschauerlinks ausgeschaltetem
+Materie-Hopping; kein Gegenbeweis zur speziellen gefüllten Gitterfamilie aus Round31.
+Positiver Symmetrieschritt: auf homogenen periodischen 3D-Gittern mit dem
+gefüllten niedrigen Haar-Zustand gilt lokaler hoher Readout = mittlere hohe Dichte
+an jedem Ort und zu jeder Zeit. Damit bei M400/kappa1/100 lokal
+<=min(0,00128;0,00017|t|), uniform über alle Torusgrößen mit Seiten>=3.
+Noch kein Vergleich sämtlicher Messgrößen der vollen und reduzierten Dynamik;
+dafür bleiben virtuelle Quellen und lokale Energie-/Flusstails zu kontrollieren.
+30 exakte Tests, keine physische T1-T8-Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 31, geometrische T4-Kontrolle**:
+[Projektorgeometrie, lokale Fock-Schranken und explizite Gauss-Zustände](theory-contracts/projector-locality-round31/README.md).
+Die Änderung des niedrigen Unterraums erfüllt eine Sylvester-Gleichung;
+Schatten-Normen liefern größenunabhängige Schranken pro Eichlink auch auf
+dem vollständigen Fockraum. Ein gewichtetes Resolventenargument begrenzt
+den räumlichen Abfall des Projektors und seiner Link-Ableitungen.
+Für eine explizite, Gauss-invariante gefüllte Niedrigzustandsfamilie auf
+verbundenen U(1)-Ketten folgt eine uniforme zeitabhängige hohe Besetzungsdichte:
+bei kappa=1/100 höchstens min(0,133; 0,034|t|) für M=4,
+min(0,0133; 0,003|t|) für M=40 und min(0,00133; 0,0003|t|) für M=400.
+Die statische Grenze stammt bereits aus Round30 und wird ausdrücklich
+weiterverwendet. Neu sind lokale Fock-/Raumschranken, Zeitrate und expliziter
+Zustand; keine neue physische Parameterwahl oder Vakuumselektion abgeleitet.
+Zusätzlich explizite dreidimensionale U1-Gitterboxen mit Hop1/12 und echten
+unbeschränkten Kreislaufflüssen nach Gauss: nu_H<=min(0,128;0,0192|t|) beiM4,
+min(0,0128;0,0017|t|) beiM40 und min(0,00128;0,00017|t|) beiM400.
+Auch hier: gewählter Zustand und Parameter, keine chirale SM-/Kontinuumsidentifikation.
+28 exakte Tests, kein elektrischer Cutoff, keine Promotion eines T1-T8-Gates.
+Uniforme spektrale Spiegelentkopplung und volle chirale Dynamik bleiben offen.
+
+Neu (2026-09-07), **NON-RH / Round 30, gezielte T1-T8-Forschung**:
+[Quantisierte Eichfelder und gemeinsame Flavor-/Zustandsauswahl](theory-contracts/toe-bridge-round30/README.md).
+Der signed-wall-Ansatz erhält eine exakte kompakte Rotor-/Fock-Erweiterung
+mit dynamischer elektrischer Energie: alle CAR und Gauss-Sektoren bleiben
+erhalten, die notwendige Verbindung B wird in (E+B)² vollständig mitgeführt.
+Im exakten Beispiel beträgt der positive komprimierte Hamiltonterm 9N_low/200;
+ohne Verbindung ändert sich sogar das physische charakteristische Polynom.
+Im ausgewählten Ein-Fermion-Gauss-Sektor liefert Feshbach bei kappa=1/100
+eine absolute Fehlergrenze 27/13000000 (<2.1e-6) für beide niedrigen Energien,
+unabhängig mit rationalen Sturm-Intervallen geprüft. Keine Eichfluss-Abschneidung.
+T6/T8: die tatsächliche Restsymmetrie C_f^4 sperrt Majorana-Einträge12/23
+auch für beliebige gewöhnliche Seam-Operatoren. Ein passendes K-ungerades
+Spin-Singulett existiert bereits; ein eindeutiger symmetrischer endlicher
+Grundzustand hat jedoch keinen solchen Kondensatwert. 23 Regressionen,
+präzise T1-T8-Anforderungen im neuen README, keine physische Gate-Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 29, lokale Forschung nach dem Release**:
+[Echte Skalar-Ladungs-Kopplung und geometrischer Compiler-Test](theory-contracts/coupled-trace-round29/README.md).
+Die positive Spur des ursprünglichen Transfers liefert über Log-Konvexität
+exp(-u M) Z(0)<=Z(u)<=Z(0), mit einer expliziten endlichen Schranke M<758.
+Damit sind jetzt vier volle Zustandssummen bei u>0 eingeschlossen: auf dem
+L3/T3-Regulator von Runde28 jeweils nu=0 und nu=1/486, bei u=1/65536
+garantiert <0,868%, bei u=1/4096 <9,507% relativer Fehler. Alle ganzzahligen
+Ladungen, unbeschränkten Skalaramplituden und ursprünglichen Hop-Vorzeichen
+bleiben erhalten. Exakte Geometrisierung des onsite-Kinetikteils benötigt
+den hergeleiteten Maßterm; kein konstantes xi R ersetzt ihn. Noether erhält
+dieselben Ladungsströme für verschiedene u, legt u aber nicht fest; Ricci-
+Flachheit oder konstante Skalarkrümmung dieses Ansatzes erzwingen nur u=0.
+18 Regressionen inklusive Quellmutanten, Sektortest und Ergebnis-Replay.
+Starke Kopplung/Uniformität, gemeinsamer Compiler und physische T1-T8 offen.
+Nur lokale Forschung; keine Paper-/Website- oder empirische Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 28, lokale Forschung nach dem Release**:
+[Tatsächlich ausgewertete volle Ladungssumme](theory-contracts/poisson-charge-round28/README.md).
+Poisson-Summation erfasst sämtliche ganzzahligen Anfangsladungen im neutralen
+L3/T3-Regulatormodell, ohne Ladungsbox. Originalkanäle und E8-Vorzeichen bleiben
+erhalten. Zwei vollständig eingeschlossene Zustandssummen bei beta=a=m=1,
+g=u=0, J=1/2592: nu=0 ergibt Z≈2,406253·10^212, die echte räumliche
+Ladungswechselwirkung nu=1/486 ergibt Z≈1,388796·10^199. Beide haben unter
+0,3% garantierten relativen Fehler, einschließlich aller höheren Hop-Wörter,
+dualen Gittermoden und Rundungsfehler. 14 Tests bestehen normal und optimiert.
+Skalar-Ladungs-Kopplung u>0, starkes Hopping, Kontinuum und T1-T8 bleiben offen.
+Diese neue Runde ist lokal und noch nicht Teil der veröffentlichten Paper.
+
+Neu (2026-09-07), **NON-RH / Round 27, unpromotierte Theoriearbeit**:
+[Vollständige Referenz und kontrollierte verkürzte Erinnerung](theory-contracts/ROUND27_STATUS.md).
+Der künstliche zusätzliche Ladungsfaktor fällt aus den Vorzeichen-,
+Erinnerungs- und Hop-Fehlergrenzen heraus, ohne Originalphasen zu entfernen.
+Im bisherigen Vergleichsfall genügen jetzt K2670/P354 statt K4096/P962.
+Ein zweites, ausdrücklich schwach gekoppeltes Beispiel auf L9 zertifiziert
+25 statt 33 Zeitabstände im quadratischen Erinnerungskern mit höchstens
+0,2045% summiertem Erinnerungsfehler und insgesamt unter1% Abschneidefehler.
+Die volle Determinante bleibt erhalten; die vollständige Zustandssumme
+ist NICHT ausgerechnet. Keine effiziente Signlösung oder T1-T8-Promotion.
+
+Neu (2026-09-07), **NON-RH / Round 26, unpromotierte Theoriearbeit**:
+[Kontrollierte Verlaufssumme und tatsächliche Vorzeichen-Obstruktion](theory-contracts/ROUND26_STATUS.md).
+Für das neutrale g=0-Modell bei endlichem Volumen und Zeitregulator ist
+die vollständige vorzeichenbehaftete Verlaufssumme absolut konvergent,
+mit positivem unteren Normierungsvergleich und expliziten Fehlergrenzen
+für Zustandssumme sowie beschränkte einzeitige Ladungsobservablen.
+Ladungs- und gesamte Hop-Tails sind kontrolliert, ohne kleines J anzunehmen.
+Der exakte Schrankenplaner zertifiziert für N27/T3/beta1/J0,1 die Grenzen
+K4096/P962 für unter1% Abschneidefehler bei voller Skalar-Erinnerung.
+Die Zustandssumme ist NICHT ausgerechnet; die naive Kostenhülle ist riesig.
+Eine echte negative Vier-Hop-Schleife kann durch diagonale Basisphasen
+nicht beseitigt werden; daraus folgt kein universelles Simulations-No-go.
+Zwei Prüfer (22/14 Gruppen), 27 Voraussetzungen, 33 Regressionen.
+Keine TOE-/T1-T8-/empirische Promotion, kein Commit/Push/Release.
+
+Neu (2026-09-07), **NON-RH / Round 25, unpromotierte Theoriearbeit**:
+[Bewegte Ladungsverläufe: kontrollierte Erinnerung und exakte Determinante](theory-contracts/ROUND25_STATUS.md).
+Der skalare Wechselwirkungskern hat am endlichen euklidischen Zeitregulator
+eine explizite exponentielle Erinnerungsschranke, auch bei abrupt bewegten
+Ladungen beliebiger Größe. Für dieses bedingte Ergebnis ist kein kleines
+Hopping nötig. Ein endliches Zeitfenster erhält bei erklärtem Fehlerabstand
+die Positivität; daraus folgt noch kein Hamiltonian in physikalischer Zeit.
+Die Determinante bleibt vollständig erhalten; ihr gemischter Einfluss
+getrennter Ladungsänderungen ist zusätzlich beschränkt. Ihre exakte Rechnung
+und die induzierte Wirkung benötigen pro Zelle O(T d³) statt generisch
+O(T³ d³) Rechenoperationen, mit periodischem Zeitabschluss und signierten
+Ladungsänderungen. Die Summe aller Verläufe und volle Gravitation bleiben offen.
+Zwei Prüfer (39/25 Gruppen), 25 Voraussetzungen, 33 Regressionen.
+Keine TOE-/T1-T8-/empirische Promotion, kein Commit/Push/Release.
+
+Neu (2026-09-07), **NON-RH / Round 24, unpromotierte Theoriearbeit**:
+[Kontrollierte endliche Dichte und lokale Skalar-Elimination](theory-contracts/ROUND24_STATUS.md).
+Eine erklärte homogene Ladungs-/Skalarpräparation hat endliche Dichten,
+die exakte Massenverschiebung m_*²=m²+2u e(p) und eine volumenbeschränkte
+Fehlerschranke für volle Dynamik und positive Uhr. Das verlangt weiterhin
+J<=O(N^-2); es ist kein allgemeiner wechselwirkender Kontinuumslimes.
+Im ursprünglichen lokalen Modell lassen sich skalare Zellinneren exakt
+integrieren, wenn die Randflächen erhalten bleiben. Räumliche Reichweite,
+ladungsabhängige Determinante und zeitliche Erinnerung werden mitgeführt.
+Für bewegte Ladungen gilt dies pro Verlauf am endlichen Zeitregulator;
+die kontrollierte zeitlokale Näherung ist auf statische Profile begrenzt.
+Zwei Prüfer (33/21 Gruppen), 23 Voraussetzungen, 29 Regressionen.
+Keine TOE-/T1-T8-/empirische Promotion, kein Commit/Push/Release.
+
+Neu (2026-09-07), **NON-RH / Round 23, unpromotierte Theoriearbeit**:
+[Exakter Lokalitätstest und kontrollierter Dynamikvergleich](theory-contracts/ROUND23_STATUS.md).
+Für das tatsächliche Ladungsband mit endlich vielen skalaren Quanten ist
+der Unterschied zwischen ursprünglicher und gemittelter Zeitentwicklung
+für alle Zeiten explizit beschränkt, ohne die Wechselwirkung abzuschneiden.
+Auch die positive Wurzel-Uhr ist mit ihrer erhaltenen Energieschranke erfasst.
+Der kleine Fehler gilt im dünn besetzten, mit dem Volumen schwächer gekoppelten
+Bereich, nicht als Kontinuumsbeweis bei endlicher Dichte. Zugleich zeigt ein
+exakter Test mit lokalen neutralen Ladungsmessungen: Die globale Mittelung
+liefert keinen lokalen Stress und verletzt die angegebene einheitliche
+exponentielle Lokalitätsschranke. Gleiche niedrigmodige Kompression bedeutet
+nicht gleiche Dynamik; ein entfernter harter Paarprozess ist explizit geprüft.
+Zwei Prüfer, 21 Voraussetzungen, 28 Regressionen; keine TOE-/T1-T8-/empirische
+Promotion, kein Commit/Push/Release.
+
+Neu (2026-09-07), **NON-RH / Round 22, unpromotierte Theoriearbeit**:
+[Positive Ladungsbewegung und konstruktive Gesamtimpuls-Alternative](theory-contracts/ROUND22_STATUS.md).
+Ein explizit geändertes gemeinsames positives Modell erhält kontinuierlichen
+Gesamtimpuls und echte Ladungs-Skalar-Wechselwirkung auf dem vollständigen
+Ladungsraum. Die endliche Konstruktion mittelt ganze positive Quadrate;
+auf L=3 genügen exakt 343 gewichtete Konjugate. Der Preis sind räumliche
+Nichtlokalität und geänderte erste Wechselwirkungsterme, kein gelöster lokaler
+relativistischer Energie-Impuls-Tensor. Im unveränderten Modell ist außerdem
+ein bewegliches Ladungsband bei echt positivem Hopping kontrolliert; zwei
+exakte Resonanzen schließen die untersuchte reguläre gemischte Impulsreparatur
+auch dort aus. Drei Prüfer, 18 Voraussetzungen, 27 Regressionen; keine
+TOE-/T1-T8-/empirische Promotion, kein Commit/Push/Release.
+
+Neu (2026-09-07), **NON-RH / Round 21, unpromotierte Theoriearbeit**:
+[Vollständige Hopping-Gravitationskorrektur und exakte Impuls-Reparaturtests](theory-contracts/ROUND21_STATUS.md).
+Die zuvor nur erstordentlich bestimmte Gravitationskorrektur ist für jede
+endliche Dressing-Stärke definiert, einschließlich positiver Hopping-Energie,
+E8-Phasen und korrekter ursprünglicher Gravitations-Nullmodenbedingung.
+Ein reiner Ladungsimpuls kann die skalare Kraft bei keiner Hopping-Stärke
+ausgleichen. Ein separater Quantentest schließt bei verschwindendem Hopping
+auch beliebige reguläre erste gemischte Korrekturen zum vorgegebenen freien
+Impuls aus. Das ist kein allgemeines Verbot anderer Generatoren oder einer
+nichtperturbativen Lösung. Zwei Prüfer, 16 Voraussetzungen, 25 Regressionen;
+keine TOE-/T1–T8-/empirische Promotion, kein Commit/Push/Release.
+
+Neu (2026-09-07), **NON-RH / Round 20, unpromotierte Theoriearbeit**:
+[Lokale Ladungsbewegung im gemeinsamen positiven Modell](theory-contracts/ROUND20_STATUS.md).
+Die exakte räumliche Synchronisierung wird aufgehoben: Eine vollständige
+E8-Ladungsspezies pro Ort ermöglicht positive Nachbar-Wechselwirkung mit
+echtem Transport und exakter Gesamtladungserhaltung. Die neue skalare
+Energieübertragung, lokale Energiebilanz, Quantendomäne, Quellencompletion
+und Uhr bleiben im selben Modell berücksichtigt. Ein vollständiger
+relativistischer Energie-Impuls-Tensor folgt daraus noch nicht; der alte
+Gravitationsvertex erhält einen zusätzlichen Hopping-Term.
+Vier Prüfer, zwölf Voraussetzungen, 23 Infrastruktur-/Quellenmutationstests;
+keine mikroskopische TOE-/T1–T8-/empirische Promotion, kein Commit/Push/Release.
+
+Neu (2026-09-07), **NON-RH / Round 19, unpromotierte Theoriearbeit**:
+[Gekoppeltes positives Modell, ein vollständiger E8-Ladungsraum und physikalische Messgrößen](theory-contracts/ROUND19_STATUS.md).
+Eine positive lokale Skalar-Ladungs-Wechselwirkung liefert echte beidseitige
+Rückwirkung und einen exakten kurzzeitigen Verschränkungsnachweis. Zusätzliche
+lokale vollständige Rahmen ermöglichen genau eine E8-Kopie ohne verbleibende
+Orientierungs-/Holonomiesektoren; diese neuen Felder sind ausdrücklich gewählt.
+Native endlichreichweitige Gravitations-Ableitungsobservablen und endliche
+gemischte Messprotokolle sind kontrolliert. Quellen, Kraftrest, unbeschränkte
+Ladungssektoren und Uhr-Norm bleiben im gemeinsamen Modell berücksichtigt.
+Vier Prüfer, acht Voraussetzungen, 22 Infrastrukturtests; keine vollständige
+TOE/T1–T8-/empirische Promotion. Lokal, ohne Commit/Push/Paper-Web-Release.
+
+Neu (2026-09-06), **NON-RH / Round 18, unpromotierte Theoriearbeit**:
+[Lokale volle Zwangscompletion in ausdrücklich neuen Feldern](theory-contracts/ROUND18_STATUS.md).
+Eine kanonische Vorbehandlung entfernt die inversen räumlichen Operatoren aus
+den tatsächlichen Quellen. Blockweise Stabilisierung liefert damit einen
+vollständigen endlichreichweitigen Generator mit kontrollierter Quantendynamik
+und positiver physikalischer Reduktion. Die Zuordnung zum ursprünglichen
+Gravitations-Feldsystem bleibt nichtlokal; höhere Kopplungsordnungen ändern sich.
+Zusätzlich: exakte Quellen-Auslese mit unvermeidlicher Zusatzenergie sowie ein
+dreidimensionaler lokaler Ladungsansatz mit 24 harmonischen ganzzahligen Moden.
+Vier neue Prüfer, fünf Voraussetzungen; keine gemeinsame mikroskopische
+TOE-/T1–T8-/empirische Promotion. Lokal, ohne Commit/Push/Paper-Web-Release.
+
+Neu (2026-09-06), **NON-RH / Round 17, unpromotierte Theoriearbeit**:
+[Volle Quelldynamik, gemeinsame Uhr-Einbettung und lokale Ladungsenergie](theory-contracts/ROUND17_STATUS.md).
+Die ursprüngliche Gauß-Einbettung trägt nun auch die vollständige stabilisierte
+Quelldynamik im sequenziellen Quantengrenzwert. Eine exakte Einbettung verbindet
+Uhr, Zwangsgruppe, angepasste homogene Impulse und positive physikalische Norm.
+Separat realisiert ein U(1)^8-Rotor-Ring die volle Ladungsenergie mit lokalen
+Gauß-Bedingungen und unverändertem Kokzyklus. Seine geladenen Operatoren bleiben
+Umlaufoperatoren; die volle Zwangscompletion bleibt räumlich global.
+Drei neue Prüfer und sechs Voraussetzungen; kein gemeinsamer lokaler
+mikroskopischer 3+1D-Abschluss und keine T1–T8-/empirische Promotion.
+Lokal integriert; kein Commit, Push oder Release dieser Runde.
+
+Neu (2026-09-06), **NON-RH / Round 16, unpromotierte Theoriearbeit**:
+[Ursprünglicher Vertex und Uhr gemeinsam; Zusatzmoden und voller Ladungslift](theory-contracts/ROUND16_STATUS.md).
+Ein expliziter messbarer Variablenwechsel verbindet jetzt den tatsächlichen
+Round15-Operator mit Spur-Uhr, relationalen Impulsen und positiver gemeinsamer
+Norm, ohne den ersten Kopplungsterm zu verändern. Der lokale Quantengrenzwert
+ist auch mit dem gewichteten Uhr-Skalarprodukt verträglich; normalisierte
+Zusatzmoden besitzen kontrollierte Fehler samt Energie- und Ausdehnungskosten.
+Ein voller neutraler Ladungslift behebt die vierte-Potenz-Diskrepanz des
+Transporters, fügt aber unbegrenzte Ladungsregister und globale Energie hinzu.
+Drei neue Prüfer und sechs Voraussetzungen; keine gemeinsame mikroskopische
+TOE-Herleitung, keine empirische oder öffentliche Promotion.
+
+Neu (2026-09-06), **NON-RH / Round 15, unpromotierte Theoriearbeit**:
+[Minimale Stabilisierung, ursprünglicher Vertex, lokaler Parent und acht Kanäle](theory-contracts/ROUND15_STATUS.md).
+Die positive quartische Ergänzung ist als eindeutig kleinste stabilisierende
+Korrektur der festgelegten Klasse hergeleitet. Eine neue Quantenkonstruktion
+erhält nun auch den ursprünglichen ersten Kopplungsterm. Eine lokale dynamische
+Familie erreicht den positiven TT-Sektor in einem bewiesenen singulären
+Quantengrenzwert, behält aber zusätzliche freie Moden. Die eingefrorene
+Materieladung besitzt eine explizite Achtkanal-/GSO-Realisierung; der separate
+Halbfluss-Transporter ist nicht mit dem Skalierungsfeld identifiziert.
+Vier neue Prüfer mit getrennten Voraussetzungen und Nachweisen. Kein gemeinsamer
+mikroskopischer TOE-Nachweis, keine empirische oder öffentliche Promotion.
+
+Neu (2026-09-06), **NON-RH / Round 14, unpromotierte Theoriearbeit**:
+[Gemeinsames endliches Quanten-Constraint-Modell](theory-contracts/ROUND14_STATUS.md).
+Eine ausdrücklich gewählte Vervollständigung verbindet jetzt selbstadjungierte
+Dynamik, exakte Constraint-Erhaltung, Hilfsfeldreduktion, Spur-Uhr und positives
+physikalisches Skalarprodukt in einer gemeinsamen Konstruktion. Die notwendige
+Änderung verschwindet auf der Gravitations-Constraint-Fläche; freier Hamiltonian
+und gewählte reduzierte Wechselwirkung bleiben erhalten, der erste Kopplungsterm
+außerhalb dieser Fläche ändert sich aber tatsächlich. Kein unbekannter
+wechselwirkender Grenzoperator wird vorausgesetzt. Die mikroskopische TFPT-Auswahl,
+Lokalität und vollständigen T1–T8 bleiben offen. Sieben neue Checker plus sechs
+Voraussetzungen; lokale Integration, keine empirische oder öffentliche Promotion.
+
+Neu (2026-09-06), **NON-RH / Round 13, unpromotierte Theoriearbeit**:
+[Schwache Constraints, lokale Lösungen und exakte Uhr-Alternative](theory-contracts/ROUND13_STATUS.md).
+Die bisher offene schwache Fortsetzung der alten drei Gesamtimpulse ist am
+unveränderten Modell auf einer ganzen regulären Nulltorus-Umgebung widerlegt;
+der Beweis berücksichtigt die verschobene Constraint-Fläche. Kleine lokale
+Patches besitzen dagegen exakte Konstruktionen. Mit der bereits postulierten
+Spur-Uhr sind neue uhrabhängige Constraints und ihr gemeinsames physikalisches
+Skalarprodukt vollständig definiert, ohne den quadratischen Uhroperator zu
+ersetzen. Die globale physikalische Auswahl bleibt offen. Für unreduzierte
+Quantendomänen liegen nun kovariante Näherungen und scharfe Auswahlbedingungen
+vor, aber noch kein bewiesener selbstadjungierter Grenzwert. Kein T1–T8-Gate
+geschlossen, keine empirische Evidenz, kein Commit/Push oder öffentlicher Release.
+
+Neu (2026-09-06), **NON-RH / Round 12, unpromotierte Theoriearbeit**:
+[Relationale Observablen, Impulsdeformation und unreduzierte Quantendomänen](theory-contracts/ROUND12_STATUS.md).
+Ein endliches Referenzsystem rekonstruiert die ursprüngliche Observable-Algebra
+exakt, übernimmt aber auch deren Fernantwort. Die vollständige kanonische
+Tensorverschiebung beseitigt die Wechselwirkung nicht. Für den festgelegten
+Gesamtimpuls ist die erste Korrektur konstruierbar; ein exakt geprüfter Resonanzterm
+verhindert die glatte starke Erhaltung in zweiter Ordnung. Schwache Constraint-
+Schließung ist damit nicht ausgeschlossen. Für den tatsächlichen unreduzierten
+Quantenoperator ist nun die Existenz messbar gewählter selbstadjungierter
+Erweiterungen bewiesen, nicht deren physikalische Auswahl oder Constraint-Erhaltung.
+Alle T1–T8 bleiben offen. Lokale Integration mit Beweisen und Prüfprotokollen,
+keine empirische Evidenz, kein Paper-/Website-Release oder Commit/Push dieser Runde.
+
+Neu (2026-09-06), **NON-RH / Round 11, unpromotierte Theoriearbeit**:
+[Gemeinsame Rand-Symmetrien, gemischte Constraints und homogene Teilmodelle](theory-contracts/ROUND11_STATUS.md).
+Konstruiert sind die simultane Viereruhr-/Inversionswirkung, die Vertraeglichkeit
+von Constraint-Dressing und Hilfsfeldelimination, die vollstaendige homogene
+Hilfsfeldreduktion und das positive Skalarprodukt des bedingten Quanten-Uhrmodells.
+Die exakte endliche Translationsprojektion erlaubt eine konsistente Alternative;
+der alte kontinuierliche Gesamtimpuls wird dagegen von der gewaehlten
+Wechselwirkung nachweislich nicht erhalten. Eine exakte Quellenpruefung begrenzt
+die Lokalitaet auf der bisherigen Skalaralgebra. Kein vollstaendiges T-Gate
+geschlossen, keine empirische Evidenz; lokale Integration, kein Commit/Push.
+
+Neu (2026-09-06), **NON-RH / Round 10, unpromotierte Theoriearbeit**:
+[Lokale positive Hilfsfeld-Darstellung](theory-contracts/local-positive-auxiliary/README.md)
+des zuvor gewählten TT-Wechselwirkungsterms mit unprojizierter lokaler Quelle
+und positivem gekoppeltem Energiequadrat;
+[konkretes CY-Randbündel und lokaler Randoperator](theory-contracts/cy-seam-round10/README.md)
+mit exakter Symmetriewirkung, identischen Spektren der vier Charaktersektoren
+und kontrollierter relativer Determinante. Kein gemeinsamer mikroskopischer
+TFPT-Ursprung konstruiert, kein T-Gate geschlossen, keine empirische Evidenz.
+
+Neu (2026-09-06), **NON-RH / Round 9, unpromotierte Theoriearbeit**:
+[Vier Materie-/Gravitations-Contracts](theory-contracts/README.md)
+mit vollständigen Teilbeweisen zu Stromalgebra, endlicher unitärer
+Zwangskorrektur, klassischer Hamilton-Stabilisierung mit erhaltenem erstem
+Kopplungsterm, gewählter positiver selbstadjungierter Quantendynamik im
+endlichen reduzierten Modell, bedingtem homogenen Energieempfänger und
+Quellenantwort. Die Ergänzung ist im Allgemeinen nichtlokal; vollständige
+unreduzierte Quantendynamik, homogene Vervollständigung und ein gemeinsamer
+mikroskopischer TFPT-Ursprung sind damit nicht bewiesen.
+Kein T-Gate geschlossen, keine empirische Scorecard-Zeile.
+
+Neu (2026-09-06), **reiner Theorie-Contract, nicht in der empirischen Scorecard**:
+[Freier 3D-Skalar auf dem gestaggerten Gitter](theory-contracts/free-scalar-3d/README.md)
+mit vollständiger lokaler Herleitung, symmetrischem Spannungstensor bei
+unveränderter Energiedichte und unverändertem Strom, 68 exakten Checks,
+Bloch-Übergängen und endlicher Weyl-Operatorfassung. Unpromotiert;
+wechselwirkende Materie und nichtlineare Gravitation bleiben offen.
+
+Reproduzierbare Build-Targets, die Aspekte der TFPT-Theorie beweisen, simulieren oder
+**empirisch gegen echte, öffentliche Daten** testen. Jedes Unterprojekt ist
+eigenständig (eigene Abhängigkeiten, eigener Build, eigene CLI als Audit-Surface) und
+hat ein eigenes README mit Setup-, Run- und Detailbeschreibung. Dieses Dokument ist
+die **Gesamtübersicht aller Untersuchungen, Tests, Datenquellen und Ergebnisse**.
+
+> **Firewall (gilt überall):** Diese Experimente sind **Suchflächen und
+> Konsistenz-Checks**, keine load-bearing Claims. FRBs/Echos/Horizont-Signale sind
+> *residuale Boundary-Recovery-Muster*, **nicht** neue Gravitation und **nicht** direkte
+> Hawking-Strahlung. Frontier-Observablen (Koide, η_B, Axion, `m_p/m_e`, g−2, Kaonen)
+> sind `F_transfer`-Interfaces bzw. *downstream bridges* — **nie** primitive
+> Compiler-Outputs. Nichts wird still nach `[E]` hochgestuft.
+
+**Signatur-Querschnitt:** [`SIGNATURES.md`](SIGNATURES.md) — der vollständige
+Signaturkatalog (S-Codes S1–S12: Herleitung, Plausibilität, Sichtbarkeitsfenster) mit
+Experiment-Register (E01–E20, Datenqualität) und der Test-Matrix „welche Signatur wurde
+wo mit welchem Ergebnis gesucht".
+
+---
+
+## Inhalt
+
+| Ordner | Zweck | Status |
+| --- | --- | --- |
+| `lean4-carrier-rigidity/` | Maschineller Beweis des Carrier-Polynoms `6Y² − Y − 1 = 0` und der Hyperladungs-Spur in Lean 4. Zentrales Theorem aus Paper 2 als formal verifiziertes Computer-Theorem. | aktiv |
+| `tfpt-discovery/` | Standalone Theorie-Probes. Der DET16-Dynamiklink-Probe auditiert jetzt die Fröhlich--Pizzo-Lie--Schwinger-Hypothesen für endliche Z₂/Z₄-Offenketten (149/149 Checks), einschließlich parametischem volumenuniformem Gap-Fenster und Langstrecken-Mutant; keine numerische Schwelle wird erfunden. | aktiv |
+| `frb-tfpt-signatures/` | Preregistrierte, multi-Source, surrogat-kalibrierte FRB-Suche (FRB.01–FRB.09 + FRB.02b). **(search.txt §1,2,6)** Verdict: `not_confirmed_not_refuted`. | aktiv |
+| `cmb-birefringence-seed/` | Cross-Domain-Seed-Linie: ein `φ₀` → `β` **und** `Ω_b`; **Shared-Seed-Erweiterung** φ₀→β+Ω_b+θ13+Cabibbo (χ²/dof=1.23, kanonisch wie `seed-consistency`); **Rotation-Fingerprint** (TB/TE=tan2β, 2EB/(EE−BB)=tan4β, Frequenz-/Anisotropie-/Cross-Nulls — 5 Beine konsistent, 2 offen). **(search.txt §3, Prio 1)** | aktiv |
+| `cmb-inflation-scalaron/` | Starobinsky/Scalaron `n_s, r, A_s` aus `c₃` vs Planck/BICEP-Keck/DESI/CMB-S4; **scharf falsifizierbar** (`r≈0.0045`); **N⋆-freier Closure-Invariant** `6π²A_s(1−n_s)²/c₃⁷ = 1` (Planck: −0.13σ; Kill: robustes `r < 0.0037`). | aktiv |
+| `cmb-eb-logcomb/` | **Erste Kamm-Suche im paritäts-ungeraden EB-Kanal** (Faithful-Class-Positivkanal per Sheetflip-Brücken-Satz): `ω₊ = 2.5827` gefroren+gehasht vor Datenkontakt, PR4/NPIPE-HFI-Stacked-EB. Verdict: `null` (p = 0.81; ω₋-Kill-Leg überlebt, p = 0.74); Decider: LiteBIRD/SO-Klasse-EB. | aktiv |
+| `neutrino-mixing/` | PMNS `θ12/θ13/θ23` + CKM `δ` vs NuFIT 6.0/JUNO/LHCb — **prediction_of_record** (θ12 −0.02σ). | aktiv |
+| `nu-scalaron-falsification/` | **Falsifikationsprojekt für die Skalaron-Spur-Sprosse** `M_R = 3c₃^{7/2}M̄` (FLAV.NUSCALE.05/v986, Mechanismus [O]): eingefrorene Kette (SHA `4941b396`) → `m₃ = 0.0512 eV`, `Σm_ν = 0.0600 eV`, `m_β = 9.2 meV`, `m_ββ ∈ [1.4, 3.8] meV` (NO, Phasenintervall), Leptogenese-Leg reported. Verdict: `consistent` (DESI-UL-Marge +0.004 eV; LCDM-Posterior-Squeeze = modellabhängige Tension wie die Σm_ν-Zeile). **Ein DESI-Klasse-Update entscheidet.** | aktiv |
+| `eht-achromatic-residual/` | Achromatischer dyonischer Residual-Test `β_BH(r) ∝ 1/r²` (3 Null-Tests). **(search.txt §4)** **Echte EHT-M87-2017-Polarimetrie ingestiert** (`tfpt-eht realdata`); **Injection-Recovery-Suite** (`tfpt-eht inject`, 4/4 korrekt klassifiziert); GRMHD-Residual-Nulls datenlimitiert. | aktiv |
+| `seed-consistency/` | Shared-Seed-Stresstest: β/Ω_b/Cabibbo/θ13 → φ₀, Joint-Fit + LOO + Dominant-Pull. **v2** GLS/PPC; **v3** reactor-only aus Daya Bay/RENO/Double Chooz (komb. `sin²θ13=0.02204`, χ²/dof=1.00, θ13 −1.62σ), NuFIT-global nur Shadow. **v4 NEU (2026-07-06) — Decoder-Test:** EIN latentes u fittet alle vier Rohkanäle (χ²=4.10, dof 3, p=0.25), **AIC bevorzugt den 1-Parameter-Decoder über das saturierte Modell**, **0/14 Single-Swap-Nachbar-Decoder** schlagen die TFPT-Links, **0.0tes Perzentil von 2000 Random-Placebo-Decodern** (Median-χ²≈1200) — die Cross-Kanal-Ratios sind architekturspezifisch (Konsistenz, kein Beweis). | aktiv |
+| `gw-ringdown-echo/` | Ringdown-Echo-Amplitudenquotient `≤ (2/3)⁶`, Katalog-Feasibility auf GWTC-5.0 **(search.txt §5)**; **alle Templates rotverschiebungskorrigiert** (Detektor-Frame `M(1+z)`; vorher GW190521 ~1.6× daneben); **Stage 1** statische Echo-Suche auf echtem Strain, **die 10 lautesten Ringdowns inkl. GW250114 (SNR 78.6, O4b)** = kein Kernel-Echo; **Stage 1b** gestackte Suche über 23 Detektor-Streams = **STACKED NULL** (p=0.262, kernel-konsistent 0/23); **Stage 1c** Signatur-Battery (Energie-Lesart `(2/3)³`, Step `2/3`, μ₄-Bounce-Phasen {0,π/2,π,3π/2} = Boundary-Birefringenz-Analogon, Lags 0.5–350 ms inkl. Planck-Fenster, Joint-220+221-Subtraktion, **Off-Source-PSD**, Bonferroni ×12) = **NO_VARIANT_ECHO**; **Stage 1d v2** Punkt-Test am Theorie-Lag `2.288 M_det` (Spin-Scan, Skip-First, **Joint-QNM+Zug-Fit** gegen Kurz-Lag-Selbstabsorption) = **NO_POINT_ECHO** (best p_bonf 0.052); **Stage 1e NEU** Flächenquant-Spektralkamm (Bekenstein–Mukhanov, `ΔA=4ln3` ⇒ `f_n=n·ln3/(16π²M_det)`, Spacing-Battery-Kontrolle) = **NO_BM_COMB** (power-limitiert); **Stage 2** dynamischer Walled-Clock-MF (Bend 2.7095) inkl. GW250114 = `NO_KERNEL_RECOVERY` + Bend in EINER Recovery entartet → die unterscheidende Signatur ist der Kaskaden-Kamm (`ω=2.58`); **16-kHz-Re-Run NEU** (`point --hires`, `fetch_strain_16k.py`; 4 Events, ~12–13 Samples pro Lag-Step statt ~3) = **NO_POINT_ECHO unverändert** (best p_bonf 0.053) → der Null ist **kein** Lag-Auflösungs-Artefakt; **Stage 1h NEU** ε₉₀-**Injektions-Limits** (kalibrierte ABSOLUTE Obergrenzen, First-Echo/A220, 90% CL, Off-Source-Injektionen mit exakter Stage-1d-Pipeline): GW200129 **0.63**, GW150914 **0.69**, GW190521 1.86, GW250114 15.9 (schwacher A220-Fit); Stack konservativ **0.63** (4 kHz)/0.85 (16 kHz) — die Kernel-Decke `(2/3)⁶=0.088` liegt ~7× unter der aktuellen Single-Event-Reichweite. | aktiv (Stage 1h/2) |
+| `gw-speed-multimessenger/` | `v_GW=c` Null-Test aus GW170817+GRB170817A (namentlicher Falsifikator). | aktiv |
+| `gw-ringdown-spectroscopy/` | **Schwarzloch-direkt**: QNM `ω_R/T_H→ln3=ln N_fam`, Flächenquant `4 ln3=ln81` — strukturell exakt, **datenlimitiert**. | aktiv |
+| `pulsar-glitch-recovery/` | **Fehlende Cross-Domain-Säule** (problem_1.txt): derselbe Kernel `{1,(2/3)⁶,(1/3)⁶}` wie FRB.02/09 + GW-Echo, in echten Pulsar-Glitches (Jodrell Bank, 726 Glitches) **+ Recovery `Q`/`τ_d`** (Yu+2013, 60 Komponenten). **Sauberer Null in allen vier statischen Kanälen** (PG.01–04). **PG.05 NEU** dynamischer Recovery-Kamm (`ω=2.58`) auf echtem **Crab-`ν(t)`** (JBO-Monatsephemeride, 479 Punkte): Detektor injection-validiert, **kein** Kern-Kamm → `data_limited`. **PG.06 NEU** (schwer) dichte **J0537**-Säule (1165 NICER-Obs) + Scaffold: Kamm braucht **>~2.8 ln(τ)-Perioden** → J0537 (~1.9) range-blind → Ziel ist **Vela**. **PG.06b** echte NICER-**Vela**-Daten (665 Obs): Pipeline auf echten Photonen bewiesen (**PINT barycentriert, kein HEASoft**; **Korrektur 2026-07-21:** der ursprüngliche „Detektions"-Peak F0=11.19275 Hz (H=18.4) war ein **Rauschpeak** — wahre Frequenz **11.1861692 Hz**, H=99.7, PuMA-konsistent). **PG.06b FULL NEU (2026-07-21)** das **komplette** Archiv reduziert (665/665 Obs, 2.6 GB → **491 nutzbar → 240 Per-Obs-Detektionen → 119 segment-kohärente `ν(t)`-Punkte** (108 voll kohärent), Median σ_ν≈0.6 µHz; Barycentering gegen PINT auf 3.4 µs validiert) = **erste Röntgen-`ν(t)`-Probe des Programms**; Sanity-Gate PASS (Δν/ν 2019: 2.39e-6 vs. 2.5012e-6 publ., 2021: 1.272e-6 vs. 1.26e-6; 2024 nicht reduzierbar — nur 150-s-Schnappschüsse, 9.7 ks); eingefrorener Kamm: Reach 2019 **2.17** Perioden (< 2.8-Gate, schlägt PG.08-Vela 1.83), 2021 1.38; 2019 raw p=0.014 **aber** Bonferroni ×10 = 0.14 + Shuffle 0.40 → per präregistrierter Eskalationsregel Zufallsniveau (Audit-Flag, kein Kandidat; zweites Off-Kernel-Flag λ=e in 2021, raw 0.002/Bonf. 0.018, gleiche Nicht-Kernel-Klasse wie PG.08 J0742); Injektion (surrogat-kalibriert, echtes Sampling+Rauschen): ε_50≈0.55 (nur 2019), ε_90 nirgends unter ε=1, **0 % beim vorhergesagten ε=0.0173** → range- **und** amplitudenlimitiert (Frühfenster <3.4 d nach Glitch fehlt im Archiv; nächster Entscheider: Beobachtungen <3 d nach einem künftigen Glitch, eXTP-Klasse) → `data_limited`. **PG.07 NEU** erste echte **phasenverbundene** Vela-Recovery (2024-Riesenglitch, `Δν/ν=2.4×10⁻⁶`, `τ_d={0.39,2.45,15.1}` d, Reichweite **2.55 Kamm-Perioden** > J0537 ~1.9): Detektor auf der echten Kadenz injection-validiert (Kaskade p≈0.002, glatt verworfen p≈0.18), aber `ω=2.583` **nicht** besonders (p≈0.23; Shuffle 0.60; ln-τ-Stack 2016/2019/2021/2024 flach p≈0.53) → `data_limited`. Reichweite ist **nicht mehr** die Wand — limitiert durch das öffentliche Produkt = glattes Glitch-**Modell** (nicht das Residual-`ν(t)`) + die ~2%-Amplitude (`ε~e^{−π²/ln λ}`). **PG.08 NEU** das von PG.07 benannte fehlende Produkt beschafft: **PuMA/IAR-Tages-TOAs** (Zubieta+2024, GitHub-Release; 3 Riesenglitches, 969 Post-Glitch-TOAs, PINT-Pulse-Number-Tracking, Refit-Absorptions-Basis herausprojiziert) — **J1740−3015 erreicht 2.81 Perioden = erste echte Residual-Recovery jenseits des 2.8-Perioden-Gates**; `ω=2.583` in keinem Bein besonders (p 0.28/0.89/0.48; Shuffle + λ-Batterie einig); End-to-End-Injektion auf echtem Sampling+Rauschen: ~50% Power bei ε=0.30, **0% beim vorhergesagten ε≈1.7%** → begrenzter Null, die **Amplituden-Wand** ist jetzt bindend → `data_limited`. | aktiv |
+| `recovery-comb-domains/` | **Cross-Domain-Suche der dynamischen Kamm-Signatur** (`ω=2.58`): EIN injection-validierter Detektor (96 %/0 %, range-blind <2.8 Perioden) über **8 Kanäle** — **A1** Magnetar-Flussabfall (surface; 2 Kurven ≥ Gate → stacked NULL p≈0.99), **A2** BH-Spätzeit-Tail/QNM (horizon, data_limited), **A3** FAST/GBT-FRB-Tail (7 Bursts → stacked NULL p≈0.34) + **A3b** CHIME-Baseband (8 FRBs → NULL p≈0.67), **A4** GRB-Röntgen-Plateau (17 Swift-XRT ≥ Gate → **well-powered NULL** p≈0.13, surface), **A5 NEU** Nuclear-Transient/AGN-Scheiben-TDE-Optik-Lichtkurve (**echte ZTF-Daten J2245+3743**, z=2.554, Graham+2025; zr-Fade 3.21 Perioden ≥ Gate → kernel ω=2.58 **nicht besonders** p≈0.80, TFPT-λ-Batterie NULL Bonferroni p≈0.08, surface/Akkretion — nicht Horizont), **B4/B5** BEC-Analog/Quantensimulator (needs_experiment). Alle realen Kanäle sauber NULL; kein Claim. | aktiv |
+| `crust-cooling-comb/` | **NEU — die „zweite, floor-terminierte Datenwelt"** für den dynamischen Recovery-Kamm (`ω=2.583`): Neutronenstern-**Krustenabkühlung** `kT_eff(t)` in **8 Kühlepisoden / 6 quasi-persistenten Transienten** (KS 1731-260, MXB 1659-29 ×2, XTE J1701-462, EXO 0748-676, MAXI J0556-332 ×2, Aql X-1; 67 Epochen aus publizierten Tabellen). Jede Kurve range-blind (best 2.46<2.8) → phasen-inkohärenter Kernel-Stack `n_used=0`; **Superposed-Epoch-Stack** (3.08 Perioden) → `ω=2.583` **nicht** besonders (p≈0.45, sauberer NULL); λ-Batterie NULL (Bonferroni global p=1.0); **7/8 Episoden mit signifikantem Kern-Gleichgewichts-Floor** (passt zum protected Floor, aber generische Krustenphysik). Injection auf der echten Abtastung: `ε=15%` 100% erkannt, aber vorhergesagtes `ε~2%` nur 2% → dichtelimitiert. **Firewall:** Oberflächen-Wärmediffusion, **kein** Horizont → kein Treffer wäre je TFPT-Bestätigung. `data_limited`. | aktiv (neu) |
+| `comb-meta-limit/` | **NEU — erstes quantitatives Obergrenzen-Design** auf der Kamm-Amplitude `ε=exp(−π²/ln((3/2)⁶))=0.0173 (~2%)`. Meta-Analyse (DerSimonian-Laird + Hartung-Knapp) über die Recovery-Kanäle: **boundary/horizont-scoped** = `data_limited` (KEIN Horizont-Kanal liefert ein absolutes `ε` — GW-Einzelevent-Bend entartet, FRB-Roh-Tails abwesend/linear-intensiv, A2 unter SNR); **all-channel Universal-DSI** 95%-UL `ε<0.120` (HKSJ über die Oberflächen-log-Fluss-Kanäle A1/A4/A5, ~6.9× über der 2%-Vorhersage, **explizit NICHT TFPT**); Injection self-consistent (inject 5% → recover 4.8%, UL 5.5%, Coverage 0.92). **Re-Run 2026-07-21:** der Vela-X-ray-Kanal liest jetzt die **PG.06b-FULL**-Recovery (`pg06b_full_vela.json`, 119 Segmente; wahre F0=11.1861692 Hz — der alte „F0=11.19275"-Peak war Rauschen) als **zensierter Tier-B-Kanal** (lineares δν-Observable, Reach 2.17/1.38 < 2.8-Gate, Injektion ε₉₀ unter ε=1 nie erreicht → kein absolutes ε; Aggregat-UL unverändert 0.120, 10 Kanäle enumeriert / 3 nutzbar). `data_limited`. | aktiv (neu) |
+| `repeater-cascade/` | **NEU — der Walled Clock + eingefrorene Kamm auf FRB-Burst-Zeit-Kaskaden** (RC.01–03; preregistriert, Kernel byte-guarded identisch zum Pulsar-Kernel): 9.916 echte Bursts / 4 Quellen (FRB 20220912A Zhang+2023 VizieR, 20201124A Xu+2022/Zhang+2022, 20240114A FAST-Pol-Katalog v5, 15 CHIME-Cat2-Repeater via CANFAR DOI). **Erstmals im gesamten dynamischen Suchprogramm ist die ln-Reichweiten-Wand durchbrochen**: 9 Gate-passierende Sessions / 2 Quellen (max. Reichweite **4.80 Kamm-Perioden**) — `ω=2.583` in keiner besonders (Fisher p=0.72/0.38, BH q=0.72) → **NULL bei detektierbarer Amplitude**; RC.01 bestätigt die Bend-Entartung auf echten Kaskaden (0/37), RC.03-Leitern null nach Bonferroni (p=0.10). Injection: 94% bei ε=0.30, **0% beim vorhergesagten ε=0.0173** → Amplituden-Wand (~10⁵ Bursts/Session); vorhergesagte Amplitude bleibt `data_limited`. | aktiv (neu) |
+| `frb-kernel-couplings/` | **NEU (2026-07-06) — FRB-Kopplungs- und Operator-Proxy-Suche** (KC.01–06, prereg/addenda vor den jeweiligen Runs): KC.01 joint Energie-Zeit-Zahn **NULL** in Li+2021/Zhang+2023; KC.02 signed-`V`-Händigkeitsalternation **NULL**; KC.03 Size-Space-DSI **NULL** nach 3-Null-Batterie; KC.04 μ4 Phase-Zeit-Helix **NULL** nach drift-robuster Shift-Null; **KC.05 S8-Proxy** PA-C4-Block-Leakage **NULL** (C4-Off=0.4268, aber nicht C4-spezifisch gegenüber Z3/generischen Marks); **KC.06 S2a-Proxy** multivariates Pol-Lag-Spektrum **NULL** (`[1,0.5066,0.3844,0.0478]` nicht nahe `{1,64/729,1/729}`, p_close=0.18). **Firewall:** alles Surface-Leakage/Bridge, kein Core-Test ohne bewiesenes `B`. | aktiv (neu) |
+| `frb-parity-comb/` | **NEU (2026-07-15) — die v486-Paritäts-Selektionsregel auf signierten Zirkularpolarisations-Kaskaden** (PC.01–03, prereg `parity_comb_v1.yaml` VOR dem Datenpass; Deck/ℤ₂-Lesart der Händigkeit, Kopplung unforced wie KC.02): v486 fixiert die Transfer-Eigenvektoren — ω₁=2.5827 lebt ℤ₂-gerade (Intensität), ω₂=0.9532 ℤ₂-ungerade (signed V), Kamm-2 verblasst ×2⁶/Periode (S-b-Budget). FAST 20240114A pol v5 (6.134 Bursts, 3.474 signifikante Händigkeiten, 80 Sessions): **PC.01 NULL — die Verbots-Richtung hält** bei detektierbarer Amplitude (2 Gate-Sessions n=213/61, Reichweite 3.06/3.35 Perioden, signed-Rayleigh Fisher p=0.83, Off-Ton-Ränge 0.55/0.99; Vorzeichen-Permutations-Null hüllkurvenimmun; Injection auf echten Zeiten: 88 % @ ε=0.5, 40 % @ 0.3); **PC.02 `data_limited`** (primäres ω₂-Gate braucht 18.5 e-folds ln τ — in FAST-Sessions unerreichbar; 1 relaxed-Session p=0.29; Injection nur 22 % @ ε=0.5 — exakt das ×64-Budget); **PC.03 `data_limited`** (kein gerades ω₂-Gate; konsistent mit den New-Tone-Nulls). Kalibrierungs-Bug dokumentiert (Flip-Injection → Händigkeit-folgt-Uhr-Modell). Ein ω₁-Hit im ungeraden Kanal würde die v486-Paritätszuordnung killen. **IXPE-Bein (v1.1):** 1E 1841-045 Post-Outburst-ToO — IXPE ist linear-only ⇒ nur gerader Sektor; `data_limited` auf ganzer Linie (0.11 ω₁-Perioden Hüllkurven-Anker, 2 Bursts, 1 Kaskade unter Gate) — Post-Outburst-ToOs tragen keine Kamm-Reichweite. **NICER-Bein (v1.2):** der 2020-04-28-Burst-Sturm von SGR 1935+2154 (306k Photonen, 372-Burst-Sturmcluster über 1095 s): Familie-A-Reichweite 1.89 ω₁-/0.70 ω₂-Perioden ⇒ **NI.01 (ω₂-Verbot) `data_limited` — mit existierenden Archiven nicht entscheidbar** (bräuchte Multi-Tag-Sturm-Monitoring); NI.02 (ω₁) null-at-current-power (Fisher p=0.165, 110 Sessions); NI.03-Ehrlichkeitsbefund: Log-Density-Surrogat auf geclusterten Burst-Zeit-Sessions 98 % FP bei ε=0 (Familie B sauber: 0 % FP, powered ab ε≈0.3). | aktiv (neu) |
+| `frb-ontology/` | **NEU (2026-07-07) — die FO-Ontologie-Runde** (FO.01–06, prereg `frb_ontology_v1.yaml` + datiertes v1.1-Addendum; „was FRBs im Sinne von TFPT SEIN könnten", eine Ebene über den Zahlentests; Forschungsnotiz `next.txt` 2026-07-07 (I)): **FO.01** Transduktions-Invisibility-**Theory-Contract** (theory-contracts, nie Scorecard) **5/5 PASS** — ein kohärenter Schwellen-Verstärker mit uniformem `B` ist exakt (Uniform-Funktional 1e-14) und statistisch (KS D≈0.006–0.009 über 20k Züge) blind fürs Transfer-Spektrum → die 20+ Intensitäts-/Timing-Nulls sind die *Vorhersage* dieser Ontologie; ein ungleichgewichtetes `B` macht dieselben Züge unterscheidbar (D=0.061, p=5e-33). **FO.02** erstes FRB-Bein mit **benanntem B** (DM/RM-Linienintegrale, S15-Gate bestanden): nächtlicher Medium-Zustand von 20240114A braucht **keine** zweite Rate (AIC 8.07 vs 12.54; Kernel-Ratio nicht bevorzugt) → `data_limited` (braucht Intra-Nacht-Injektionsereignisse). **FO.03** erster FRB-Kamm mit **benannter Uhr** (S14: `τ_mod=Σ\|ΔRM\|`): 3 Gate-Sessions (2.82–3.16 Perioden), Fisher p=0.81 → **NULL** bei detektierbarer Amplitude. **FO.04** Parität-ohne-Rate `consistent` — alle drei Restvorhersagen halten: nominaler m=4-Exzess von der (datierten) Spezifizitätsbatterie als Verteilungs-Misfit typisiert (z3=3.6≈z4=4.4, 3-Komponenten-Glatt-Null p=0.64; die zwei PA-Moden liegen 60.2° auseinander, nicht 90°), Schaltzeiten ratenfrei (p=1.0), Klassenpersistenz 45/45 Sessions (p=2.8e-14) — Standard-Magnetosphärenphysik sagt dasselbe (weak). **FO.05** Episoden-Leiter (letzte ungetestete Aggregationsebene): 8 Quellen, Gap-Bonferroni p=1.0, Energie p=0.44 → **NULL**. **FO.06** Z₂-Blattklassen: Morphologie prädiziert Repetition (AUC 0.833, repliziert Pleunis+2021 — default Astro/Selektion), aber **BIC bevorzugt k=3 statt exakt 2** → null für die Blattklassen-Lesart. **FO.02b (v1.2)**: die Intra-Session-RM-Varianz (χ²_red 77–337) trägt **kein zeitliches Gedächtnis** (33/35 bzw. 12/12 Sessions unter dem injektionsvalidierten Memory-Gate; 2. Quelle 20201124A/Xu+2022 via Blinkverse) → per-Burst-Streuung, kein relaxierender Medium-Zustand. **FO.07–10 (v1.3, Operator-Struktur-Runde)**: Kovarianz-Blockstruktur real (p=0.006), aber Partition = Standard-Sektorsplit Faraday vs Emission (Rand 1.0 → consistent); polarimetrische Loch-Suche **NULL** (größte leere Scheibe 0.30 vs Joint-Null 0.55); Hankel-Effektivrang Median **0** in beiden Energie-Quellen (keine 3-Moden-Mannigfaltigkeit) → **NULL**; Zeitpfeil-Test **NULL** (Reversal-Null p=1.0) — **Burst-Energie-Sequenzen sind zeitumkehr-symmetrisch**, ein neuer Bound auf jede gerichtete Recovery-Lesart, konsistent mit der FO.01-Verstärker-Vorhersage. | aktiv (neu) |
+| `uhecr-energy-dsi/` | **NEU (2026-07-07) — der größte ln-E-Bereich der Natur**: Size-Space-DSI (S7) auf dem Auger-Open-Data-Energiespektrum (Release 3, Zenodo-DOI; 21.571 SD1500- + 54.434 SD750-Events über den Full-Efficiency-Schwellen, **0.1–144 EeV = 2.99 Kamm-Perioden** kombiniert). Glatt-Null mit **eingefrorenen Knoten** an den publizierten Spektral-Features (Second Knee/Ankle/Instep/Suppression — die PG.01/KC.03-Populationsfalle per Konstruktion geschlossen); EIN geteilter Kamm über beide Arrays. **Kernel-Kamm NULL** (Λ=0.15, ε̂=0.0018, MC p=0.49, Off-Kernel-Rank p=0.77); Z₂-Batterie null nach **per-ω-MC-Kalibrierung** (Audit on record: (3/2)³ feuerte nominal p=0.0025 unter der falschen Kernel-ω-Null — per-ω-Kalibrierung löst es auf); Injection 97 % @ ε=0.05, **23 % @ ε=0.0173** → vorhergesagte Amplitude teilweise abgedeckt, Volldaten-Auger/TA = datierter Decider. | aktiv (neu) |
+| `cmb-primordial-logcomb/` | **NEU (2026-07-07) — das einzige Naturbett mit MOTIVIERTER S14-Uhr** (Inflations-E-Folds SIND eine Log-Uhr): Typing des eingefrorenen ω=2.5827 (log₁₀=0.412) gegen die publizierte Planck-2018-X-Log-Oszillations-Suche (identisches Template in ln k). ω liegt IN der Suchband-Prior [0, 2.1]; keine Detektion publiziert; 95-%-Grenze ≈0.03 (Planck) / ≈0.029 (kombiniert SPT-3G/ACT) = Faktor **1.7 über** der Vorhersage ε=0.0173; Reach 3.12 Perioden (volles Likelihood-Fenster). **`data_limited` mit datiertem Decider:** CMB-S4-Klasse-Grenze <0.017 ohne Detektion tötet die primordiale Bridge-Lesart; Detektion BEI ω=2.583 eskaliert. Transfer-Bridge in P(k) bleibt geflaggt (S15). | aktiv (neu) |
+| `dsi-false-positive-control/` | **NEU — Detektor-Spezifitäts-Kontrolle** (die Skeptiker-Frage: „feuert der Kamm-Detektor auf JEDER generischen Omori/DSI-Kaskade?"): der **eingefrorene** Kamm-Detektor (vendored, byte-guarded gegen `recovery-comb-domains`) auf **bekannten NICHT-TFPT-Kaskaden** — 4 Aftershock-Sequenzen (USGS ComCat, 17.654 Events: Landers, Hector Mine, Tohoku, Ridgecrest) + 4 GOES-Flare-Sequenzen (1.076 Flares). 4/8 passieren das 2.8-Perioden-Gate; **Kernel-False-Positive-Rate 0/4** (Wilson95 [0, 0.49]), während die Kontrollen sehr wohl **NICHT-Kernel-DSI** zeigen (Flares λ≈2.9–3.9, Sornette-typisch) → der Detektor ist **spezifisch**, die bestehenden Kamm-Nulls sind informativ, ein künftiger Hit wäre nicht generisch billig. **NEU (2026-07-02) — Lehrbuch-Negativkontrollen:** die **Efimov-Leiter** (Cs/⁷Li/³⁹K, λ=e^{π/s₀}=22.69) passiert das Gate → **Kernel-FP jetzt 0/5** über alle gegateten DSI-Kontrollen (Wilson95 [0, 0.43]); gemessenes Efimov-λ 21.3±1.1 liegt **8.9σ** vom TFPT-λ=11.39 entfernt, der Detektor bleibt 0/25 auf dem Efimov-Kamm und lokalisiert dabei korrekt ω≈2.01; **Glas/MCT** (7 Systeme): γ spannt [2.2, 2.8] (4× Messfehler), ein gelockter universeller Bend 2.7095 wird bei ~**4.9σ** verworfen → der Bend ist systemabhängig, nicht generisch. **Firewall:** reine Detektor-Kalibrierung, nie TFPT-Evidenz. `consistent` (Kontrolle bestanden). | aktiv (neu) |
+| `e8-ladder-bed/` | **NEU (2026-07-20) — E8-Massenleiter-Blind-Recovery-Bett (der einzige öffentliche Known-Answer-Datensatz für eine Massenleiter-Pipeline)**: der Cartan-PF-Leiter-Detektor (Assignment-DP + Skalenfit + MC-Null, dieselbe Klasse wie `hfqpo-ladder`) blind auf die **publizierten Zamolodchikov-E8-Spektren** — BaCo₂V₂O₈ (Zou+ **PRL 127, 077201**; INS 4.7 T, Fig.-3a-Extraktion QA-validiert, 17 Peaks): **8/8 Rungs, χ²/dof=0.35, MC p=0.0056** (5000 Null-Leitern; singles-only p=0.0004; σ-Variante robust); CoNb₂O₆ (Amelin+ **PRB 102, 104431**; wörtliche THz-Werte): **6/8 In-Window-Rungs, χ²/dof=0.52, p=0.0038** (m₇/m₈ außerhalb des 0.6-THz-Fensters; der 0.43-THz-(m₁+m₂)-Onset korrekt unassigned). **Kontroll-Batterie alle rejected**: Scramble 0.5%/1.5%, Offset 0/8, Jitter ≤5% bei destruktiven 30%, harmonische/A₃-PF/D₈-PF/Airy-Leitern geschlagen, synthetisches Airy-Bett 0 Rungs; Cartan-PF-Selbsttest 1.5e-15 (E8-Massen = PF-Eigenvektor der E8-Cartan-Matrix, m₂/m₁=φ). **VERDIKT `validated`** (Detektor-Ebene). **Firewall:** bestätigt Zamolodchikov-E8, **nie** TFPT-Axiome — kein `[E]`, kein `\veri{}`; Scheitern killt den Detektor, nicht TFPT. Scorecard: `consistent` (`not_applicable`/`analog_positive_control`, Basket wie `qc-recovery-kernel`). | aktiv (neu) |
+| `hfqpo-ladder/` | **NEU — BH-HFQPO-3:2-Paare vs TFPT-Leiterschritt 3/2** (H1–H3, preregistriert in `hypotheses/hfqpo_v1.yaml`, Kernel byte-guarded identisch zu `recovery-comb-domains`): 4 publizierte Paare konsistent mit exakt 3/2 (χ² p=0.78), **aber** XTE J1859+226 bricht die Universalität bei **+9.2σ** **und** die verankerte Selektions-Null (Boutelier/Török-equal-rms-Fenster am 3/2-Crossing) erzeugt den 4-von-5-Cluster in **18.5%** der Trials → der Cluster ist billig; die entscheidende **×1.5-Leiterzahn-Suche** (`ν₃=(3/2)ν_u`: 661.5/414/252/363 Hz) wurde **nie publiziert** (die Zähne liegen im durchsuchten RXTE-Band), die einzigen publizierten Drittfrequenz-Strukturen sind **Integer-Linien** (92=184/2, 34/68 Hz) → GR-Harmonik/Resonanz favorisiert. **H3 Stufe 2 (2026-07-20): der präregistrierte archivische RXTE-PCA-Scan ist GELAUFEN** (77 ObsIDs / 4.42 GB / 4 Quellen; Sanity-Gate PASS 11/12 publizierte Paar-Linien reproduziert, Injektionskalibrierung PASS in allen 4 Quellen): **weder Zahn noch Integer-Linie irgendwo** (~0σ single-trial, trials-korrigiert N=8 wie preregistriert); 3σ-rms-Limits **3.06/1.61/0.53/1.26%** (Zahn, J1655/J1550/GRS1915/H1743) — in jeder Quelle ≤ Stärke der detektierten oberen Paar-Linie → **gut gepowertes Null**; Leiter-Lesart ohne Support, aber nicht gekillt (der `harmonic_hit`-Zweig feuerte auch nicht; Anti-Kernel-Record 92=184/2, 34/68 steht). Caveats: GRS 1915 nur Proxy-State (113/168-Epochen nie mit ObsID-Liste publiziert), H1743s schwache 166-Hz-Linie verfehlt (1.7σ), GRO-Hard-Band-Sensitivität 5.1%. **Firewall:** nicht-kanonisches Mapping (Leiterschritt ≠ Zwei-Oszillator-Ratio), Koinzidenz-Risiko; selbst ein Leiter-Hit wäre `[C]`. `null`. | aktiv (neu) |
+| `strange-metal-comb/` | **NEU — die erste Labor-Kamm-Suche**: log-periodischer Ripple (`ω=2.583`, `ε=0.0173`) auf der **Planckschen `σ₁(ω/T)`-Master-Kurve** (LSCO x=0.24; Seam-Temperatur `T=4c₃κ` = KMS/Planck-Bound als strukturelle Motivation): Michon+2023-Open-Data (Yareta DOI, CC-BY-4.0; 11.227 Punkte, **2.92 Kamm-Perioden — Gate geklärt**); `ω=2.583` **nicht** besonders (primär p=0.30, detrend-robust; konservative per-T-Shift-Null p=0.68, 95%-Amplituden-Floor ε≈0.19); λ-Batterie Bonferroni p=0.063 NULL; Injektionen: vorhergesagtes ε=1.73% nur **0–25%** detektiert → **underpowered bei der vorhergesagten Amplitude**; Drude-Negativkontrollen (Au p=0.33, Cu p=0.14) still; Bi-2212-Replikationsbein nicht öffentlich beziehbar. **Erster Labor-Bound auf eine log-periodische Dekoration der Planckschen Master-Kurve bei der TFPT-Frequenz.** **Firewall:** kein Boundary/Horizont — selbst ein Hit wäre nie TFPT-Bestätigung. `data_limited`. | aktiv (neu) |
+| `extended-signatures/` | **Erweiterte Signatur-Runde (EXT.1–7):** FRB Joint Echo×Pol, Anyon π/4-Kamm, GW Gravastar Joint, Horizon-Fingerabdrücke, Galois-CP+J_PMNS, Seed xi/BBN, dynamische Crab/FRB-Probes. | aktiv (neu) |
+| `quantum-testbed/` | **Stärkste Quanten-Signatur** (problem_1.txt) + Diskret→Dynamik-Abschluss (`v238`–`v245`). QT.01 Entanglement-Spektrum trägt den Kernel **exakt**; QT.02 dynamische DSI (`ω=2π/ln λ`, Amplitude `~e^{−π²/ln λ}`); QT.04 exakte gewallte Uhr (Bend `2.7095`, Floor, Wall) + Matched-Filter; **QT.05 Anyon-MTC** (16 Sektoren, Statistik-Phasen `π/4`/`π/2`, `c=8`). Intern, kein Datum. | aktiv |
+| `qc-recovery-kernel/` | **NEU — der Recovery-Kanal als ausführbarer Quantenschaltkreis** (aktiviert die geparkte Analog-Domäne ehrlich): das eingefrorene Seam-Transfer-Spektrum `{1,(2/3)⁶,(1/3)⁶}` als 5-Qubit-**Kraus-Dilatations**-Schaltkreis (Perron-Mode gate-geschützt; Energie- **und** Amplituden-Lesart). **Exakt-Tier** (Aer): Survivals exakt bis ≤2.4×10⁻¹⁵, Free-Ratio-Fit **recovert den Bend 2.709511 exakt** (Bias −3.8×10⁻¹⁴); **Noisy-Tier** (FakeBrisbane 127-Qubit-Eagle-Noise, ISA-Tiefe 158): Bend identifizierbar — Per-Mode-Decode 2.65–2.69 ab 256 Shots, blinder QT.04-Free-Ratio-Fit 2.89±0.12 ab **16.384 Shots** (3/3 Seeds), Protected-Floor-Retention 0.993. **IBM-Hardware-Lauf AUSGEFÜHRT (2026-07-03)**: `ibm_marrakesh` (156-Qubit Heron R2), 13 Schaltkreise × 16.384 Shots (Job `d93ppd6vtlqs73ftdu5g`) — **Ein-Step-Survivals real reproduziert** (2/3 bei −4.2%, 1/3 bei +8.9%), Protected-Floor-Retention 0.860, aber der blinde 12-Block-Bend-Decode ist Floor/T1-verzerrt (**1.96 vs 2.71**, −28%) → **Hardware-Tier `data_limited`** (braucht DD/Mitigation jenseits des Open-Plan-Job-Modus; echtes Heron-Rauschen > Eagle-Fake-Modell). **Firewall:** `internal_consistency`/Analog — nie externe Evidenz. `consistent` (Sim-Tiers). | aktiv (neu) |
+| `gauge-unification/` | **`sin²θ_W = 3/8` (v244/v245) vs PDG** (1/2-Loop-RGE): GUT-Wert geerbt, aber SM verfehlt Unifikation um 13%, `3/8 → sin²θ_W(M_Z)=0.2076` vs `0.23122` (universelle ~10%-GQW-Lücke, nicht TFPT-spezifisch). `data_limited`/`weak`. | aktiv |
+| `proton-decay/` | **NEU — der stärkste nah-terminige Entscheidungs-Hebel** (downstream/branch, `tension`). `τ_p` im **optionalen** gegaugten Carrier-PS→SO(10)-**Zweig B** (v266/v249; **nicht** die Default-Boundary-Lesart A). Goldener Kanal `p→e⁺π⁰`: minimaler 16H-Inhalt `τ_p=4.2×10³³ yr` **von Super-K ausgeschlossen** (>2.4×10³⁴); nur der eine E8-erlaubte 45 `+(15,1,1)` rettet den Zweig → `τ_p=1.46×10³⁵ yr` (1-Loop, konsistent) **aber** `7.7×10³³ yr` (2-Loop) < Super-K = **latente Spannung**. `M_PS` fällt auf die Scalaron-Skala (die TFPT-spezifische Koinzidenz). **Hyper-K (~10³⁵ yr, `e⁺π⁰`) entscheidet diese Dekade.** `p→ν̄K⁺` subdominant (`data_limited`). Teilt `independence_group=carrier_ps_so10_uv_branch` mit `sin²θ_W=3/8` (eine Unifikations-Story, kein Doppelzählen). **Firewall:** downstream-Branch, nie `[E]`/`\veri{}`. | aktiv (neu) |
+| `lab-residuals/` | `F_transfer`-Laborkanäle (g−2, seltene Kaonen, Axion), alle **[C]**; **Haloskop-Overlay** (`tfpt-lab haloscope`, DFSZ/KSVZ bei 23.8 µeV + Plot). **(search.txt §7,8,9)** **NEU (2026-07-02):** WP2025-σ korrigiert 63→**62** → Lattice-Pull **3.86→3.92σ**; **datierte g−2-Kill-Condition**: ein daten-getriebener HVP-Konsens auf der Lattice/WP25-Seite (CMD-3-Seite) **killt die Bridge** (+3.9σ heute, härtet Richtung 5σ mit schrumpfenden HVP-Fehlern), ein KLOE-seitiger dispersiver Konsens stellt <1σ wieder her; Watch: **MUonE** (Phase-1 2025 analysiert), **BaBar-2026-ππ** (bleibt KLOE-seitig), **TI WP-3 ~2027–28**. | aktiv |
+| `rare-kaon-bridge/` | **Flavor-Bridge als Geometrie**: `R_K`, BR(K⁺), BR(KL), `δ_CKM/γ`, Jarlskog, Grossman-Nir + SM-Nuisances. 3/5 direkte Beine konsistent; downstream. | aktiv |
+| `dark-energy-w-watchdog/` | **`w=−1`-Killwatchdog** vs DESI DR2 `w0-wa`, **overlap-aware** (kein naives SN-Stacking). Stärkste Einzelkombo 4.4σ (naives Produkt 6.6σ = Scheinsignal). **2026-Timeline (vor DR3):** die DES-Dovekie-Rekalibration (arXiv:2511.07517) senkt 4.2→**3.2σ** (Kalibrationsfehler in DES-SN5YR); die Bayes-Reanalyse (arXiv:2603.05472) **eliminiert** die DESI+CMB-only-Präferenz (**ln B=−0.57**) — **die Evolving-DE-Präferenz löst sich auf, genau wie `w=−1` es verlangt**; Union3 frequentistisch 3.8σ (2.23σ Bayesianisch) bleibt. | aktiv |
+| `fixed-point-watchdog/` | **NEU — Exakt-Fixpunkt-Watchdog** (Null-Drift-Kill-Tests auf publizierten Werten, 3 Achsen): **(A)** `Σm_ν × w`-**Pincer** — DESI DR2 quetscht den TFPT-Punkt `(w=−1, Σm_ν=0.0588 eV)` modellabhängig von beiden Seiten: ΛCDM-Effektivmassen-Posterior setzt den Floor auf **+3.1σ**, w0waCDM entspannt ν (+0.65σ), setzt aber `(w0,wa)=(−1,0)` auf 3.1–4.4σ; **joint ≈3.7σ** (unter der 5σ-Kill-Schwelle) → `tension`. **(B)** **α–Λ-Lock** (v60/v274, Verstärker `2α⁻¹≈274`): PTB-Yb⁺-Uhren `α̇/α=1.8(2.5)×10⁻¹⁹/yr` → `|d ln ρ_Λ/dt|<1.4×10⁻¹⁶/yr`; ein *echtes* DESI-`w(z)` bräuchte 3–7×10⁻¹¹/yr → der Lock schließt „TFPT + echte DE-Dynamik" um **~10^5.7** aus → `consistent` + eingebaute wechselseitige Exklusion. **(C)** **Koide-τ-Kill-Fenster**: `Q=2/3` ⇒ `m_τ=1776.9690 MeV`; PDG −0.43σ, Belle II +0.86σ; 5σ-Kill braucht `σ(m_τ)` 0.008–0.024 MeV — **Belle II full dataset entscheidet diese Dekade** → `consistent`. **(D) NEU — Sterile-Dissolution-Watchdog** (`N_fam=3` exakt, kein Platz für einen 4. leichten Zustand — E8-Familienzählung ohne freien Slot): **MicroBooNE-Zwei-Beam** (Nature 648, 64–69 (2025); arXiv:2512.07159) schließt die Single-Sterile-Deutung von LSND/MiniBooNE bei **95% CL** aus und schneidet in den Gallium/BEST-Raum; das Gallium-Defizit persistiert unerklärt (**keine** Oszillations-Signatur); JSNS² läuft (kein Exzess, arXiv:2602.06274); **SBND+ICARUS entscheiden diese Dekade** → `consistent` (prediction_of_record). **(E) NEU (2026-07-03) — Cabibbo-Dissolution + parameterfreie Neutron-Lebensdauer**: `λ_C=0.2243762` exakt + exakte Unitarität ⇒ `V_ud=0.97450`; First-Row-Defizit (+2.4σ) muss sich auflösen — λ_C dead-on am Kaon-Average (+0.08σ), superallowed ist der V_ud-Ausreißer (+2.58σ), alle Neutron/Pion-Routen <1σ; **NEU: `τ_n = 4906.4(1.7) s/(V_ud²(1+3g_A²)) = 877.53±0.71 s`** → UCNτ-Bottle **−0.38σ**, Beam-Mittel (Proton-Counting) **−4.98σ**, J-PARC-Elektronen-Beam +0.08σ — TFPT nimmt die **Bottle-Seite** des ~4σ-Beam-Bottle-Rätsels ohne Dial und **verbietet den `n→χ`-Dunkelzerfalls-Ausweg** (No-Slot wie Achse D) → `consistent`. **(F) NEU — X17-Dissolution**: kein E8-Slot für ein ~17-MeV-Boson; MEG II (2025) null im selben ⁸Be-Übergang, PADME Run III global nur 1.8–2.0σ bei 16.90 MeV, **Run IV entscheidet** → `consistent`. **(G) NEU — R_D(*)-Dissolution**: exakt-unitäre CKM-Assembly + kein Leptoquark/W′-Slot ⇒ HFLAV-CKM25-Kombination **3.8σ** (R_D +2.5σ, R_D* +2.2σ) muss sich auflösen — das schärfste stehende Dissolution-Target; **Belle II + LHCb Run 3 entscheiden** → `tension`. Anti-Doppelzählung: Pincer teilt `w_de_eos` + `nu_mass_floor`, Lock teilt `alpha_em`, Koide-Fenster teilt `koide_q_pole`, Achse E teilt `phi0_seed` (λ_C ist φ₀-abgeleitet). | aktiv (neu) |
+| `cosmic-dipole-watchdog/` | **NEU (2026-07-03) — der kosmische Zähldipol (Ellis–Baldwin) als Isotropie-Dissolution-Watchdog**: CatWISE2020-Quasare zeigen `D = 15.5×10⁻³` vs kinematisch `7.4×10⁻³` (**×2.1**, CMB-aligned ~27°) — publizierte Signifikanzen 4.4–5.7σ (Secrest+21/22, Dam+23, Wagenveld+25-Residual 5.4σ; RMP 97, 041001 (2025): „>5σ"), aber die clustering/mask-bewusste FLASK-Reassessment (arXiv:2511.00822) reduziert auf **3.27–3.63σ** — **das Error-Budget, nicht der Exzess, ist die offene Frage**. TFPT steht mit dem flachen Budget auf FLRW und erlaubt nur einen winzigen μ4/PSL(2,ℂ)-Rest → **Dissolution-Vorhersage** (Systematik/Clustering). Kill (prereg): clustering-marginalisierter Nicht-kinematischer Dipol ≥5σ, repliziert in ≥2 unabhängigen Selektionen (LSST/Euclid + SKA-MALS) → trifft den FLRW-Fuß des Kosmologie-Zweigs (nicht den Compiler-Kern). `data_limited` (watch). | aktiv (neu) |
+| `bbn-lithium-watchdog/` | **NEU (2026-07-03) — das Lithium-7-Problem unter dem eingefrorenen η**: `Ω_b = φ₀(1−1/4π)` (frozen v84) + Budget-`h` ⇒ `η₁₀ = 6.04` ohne Dial; PRIMAT-reskaliert: **D/H −0.3σ (Cooke+2018), Yp +0.5σ (Aver+2021) ankern das η — ⁷Li ×3.36 überproduziert (+9.9σ) = das universelle 20-Jahre-Lithium-Problem** (teilt jede ΛCDM-Kosmologie, NICHT TFPT-spezifisch). TFPTs datierte Dissolution-Aussage: die Lösung ist **stellar/astrophysikalisch** (Depletion/Mixing) — η kann sich nicht bewegen, kein Exotic-BBN-Slot. Kill: etablierte Lösung mit η ≥5σ neben dem TFPT-ω_b, neue BBN-Physik ≥5σ, oder D/H-Pull ≥5σ. Scorecard: `tension` (ehrlich, discriminative_power=weak, `phi0_seed`). | aktiv (neu) |
+| `qpe-recurrence/` | **NEU (2026-07-03) — der eingefrorene Kernel auf Quasi-Periodic-Eruption-Timings** (die unerklärte post-2019-Phänomenklasse am SMBH — horizon-adjazent, aber Akkretion/EMRI ⇒ **Surface-Firewall** wie recovery-comb A5; preregistriert in `hypotheses/qpe_tfpt_v1.yaml` VOR der Analyse, Kernel byte-guarded): **eRO-QPE2** (32 Arrival-Times, arXiv:2604.09788 Tab. B.1, maschinell extrahiert) + **GSN 069** (Miniutti+2023 Tab. A.1, kuratiert). **QPE.01 Rekurrenz-Ratio-Leiter: NULL in beiden Quellen mit quantifizierter Sensitivität** — eRO-QPE2: 12 Ratios, max|log r| = 0.022 dex, der 2/3-Zahn liegt **>17× die beobachtete Streuung** entfernt ⇒ ein Kernel-Step im QPE-Takt ist *ausgeschlossen*, nicht bloß unbeobachtet; der einzelne lose GSN-069-„Hit" (1.24 nahe invers-3/2) wird vom Shuffle-Null trivial reproduziert (p=1.0) ⇒ null per prereg-Regel. QPE.02 (Walled Clock) `data_limited` (nur 3 monotone Triplets — QPE-Takte alternieren konstruktionsbedingt); QPE.03 (Kamm) range-blind (best 0.80 < 2.8 Perioden). | aktiv (neu) |
+| `higgs-criticality/` | **Doppel-kritische Fläche** `λ(M_Pl)=0, β_λ(M_Pl)=0` vs SM-RGE (Buttazzo 2013 NNLO-Fit). λ=−0.0143±0.0057 (metastabil 2.5σ); downstream RGE-Bridge. | aktiv |
+| `lambda-h0-engine/` | Λ-Engine: `ρ_Λ/M_pl⁴=(3/256π⁴)e^{−2α⁻¹}` (122.95 vs 122.94 Größenordn.!), `S_dS ρ_Λ=32π⁴`, `H₀~√Λ`. | aktiv |
+| `recovery-channel/` | **Test C** (datenunabhängig): Recovery-Kernel als CPTP-Quantenkanal — CPTP/Choi, Data-Processing, QEC-Code, Page-Kurve bei `t_Page`. Packt `v155/160/161`. | aktiv |
+| `theory-contracts/` | **Reine Theorie-Contracts** (nicht in der empirischen Scorecard): QGEO-DtN-Mark-Locality (`[ρ,Λ]=0` aus Z4-Marken, Fourier-mod-4 + Negativkontrollen); **NEU (2026-07-06)** `qgeo_soff_reconstruction.py` — die **Rekonstruktions-/Tomographie-Version**: S_off-Leckage-Statistik auf einem aus K=40 verrauschten Eigenpaaren rekonstruierten Operator (μ₄-Floor ~O(σ²), Kontrollen O(1)), Clock-Winkel-Scan liest den μ₄-Orbit {π/2, π, 3π/2} als Zero-Set ab, **Instrument-Anforderung beziffert** (ε=0.001 rad Mark-Shift @ σ≤1e-3); Seam–Horizon-Replica-Contract (`seam_horizon_replica.py`, 17/17): Replica⇒EH-Form numerisch am diskretisierten Collar mit dem Seam-eigenen Kernel (echte Replica-Blätter n=2,3; BFK/Calderón konisch sauber; Attraktor-Mode IR-divergent ⇒ der Recovery-Gap macht den induzierten Newton-Koeffizienten endlich; kein kanonisches 3/4 ⇒ Anker bleibt); **NEU (2026-07-07)** `born01_deck_envariance.py` (Born-Regel-**Reduktion** auf Deck-Swap-Envarianz + matched μ₄-Weyl-Paar + 3-adisches Zählen, 6/6), `nm01_backflow_ep.py` (**kein** BLP-Backflow, **kein** Exceptional Point im Seam-Kernel — Bath/Bridge-Physik, 5/5), `comp01_unique_holomorphic.py` (Ein-Axiom-Kompression „unique holomorphic c=8": P2 wird Theorem, c=16-Oktave degeneriert θ_{E8}²=θ_{D16+}, 5/5), `flav01_winding_disc2.py` (**Diskriminantenklasse-2-Selektor** auf der Winding-Line: publiziertes `Δ(6)=39200=2·(10·14)²` + neuer Uniqueness-Scan — s=6 einziges `Δ=2y²` in [0,10000], Sibling-Kontrolle {1,3,4} fällt durch; offen: globale Diophantik `Δ(s)=2y²`, 6/6); **NEU (2026-07-14)** `corr_seam_orbifold_forcing.py` (5/5) — die **B-Seite des Korrespondenzprinzips**: `SEAM.EQUIV.01` als bedingtes Forcing-Theorem, *falls* Seam ≅ `ℂ²/Γ` dann `Γ=2I` (Signatur `(2,3,5)=(|Z2|,N_fam,g_car)` eindeutig) und `det K=1` (E8 einziger ADE mit `det(Cartan)=1`, SNF=I ⇒ Poincaré-Homologiesphäre); `h(E8)=30=2·3·5`, `|2I|=4·30=120`; Prämisse bleibt `[O]`, kein Gate geschlossen; **NEU (2026-07-14, „übersehene Werkzeuge"-Runde)** `corr_kronheimer_quiver_bridge.py` (5/5, promoted → `v479`): die R3-Brücke „Attraktor-Graph IST die du-Val-Singularität" ist Kronheimers Satz (ALE-Hyperkähler-Quotient + Torelli 1989), alle endlichen Inputs Compiler-Output; `qgeo_multilocal_four_interval.py` (6/6, promoted → `v480`): die 4 μ₄-Marks als exakt lösbare **Vier-Intervall**-Multilokal-Modulargeometrie (ρ⁴=−1 binär, Sektor-Entkopplung 1e-15, `ω∘ρ=ω` manifest, Casini–Huerta-Mischterm-Schatten); `nu03_seesaw_carrier_ladder.py` (5/5, promoted → `v481`): Carrier-Normierung `y_ν=y_t` kollabiert den Seesaw auf EINEN Parameter, M_R im PS-Fenster bei Rung 3.15, Integer-Rung `c₃³M̄` bei 1-Loop **abgelehnt** (Anti-Numerologie); `phi0_donnelly_equivariant_probe.py` (3/3, **ehrliches Negativ, KEINE Promotion**): Donnelly/Atiyah–Bott typisiert die Termklasse des φ₀-Punktur-Targets, erzwingt den Wert `48c₃⁴` aber nicht (Rationale vs π⁻⁴) — Target bleibt `[O]`. | aktiv |
+| `qgeo-eit-soff/` | **NEU (2026-07-06) — die Analog-Realisierung der S_off-Messung auf einem ECHTEN gemessenen Randoperator**: EIT misst den Rand-ND-Operator wörtlich (Labor-Λ_Σ). KIT4 Open 2D EIT Archive (Zenodo 10.5281/zenodo.1203914; ⌀28-cm-Tank, **16 Elektroden** ⇒ die μ₄-Klassen sind exakte Fourier-Unterräume, ρ = exakte 4-Elektroden-Permutation; 38 reale Messfälle). **H1 PASS:** homogener Tank = μ₄-blockdiagonaler gemessener Operator am Instrument-Floor (S_off=7.6e-5, Reziprozität 5.3e-3 → die 1e-3-Anforderung des Simulationskontrakts ist auf realer Hardware erfüllt); **H2 PASS:** alle 28 anisotropen Targets lecken generisch-isotrop (verbotene Fraktion 0.87–1.00 ≈ 12/15), keines fälscht ein μ₄-Positiv (zentrierte/annulare Targets korrekt am Floor, datierter v1.1-Anisotropie-Gate); **H3 preregistriert:** die entscheidende μ₄-positive 4-Inklusions-Konfiguration (j·π/2) ist nicht im Archiv — jedes KIT4-klassige Labor kann sie fahren, Diskriminator + Floor jetzt kalibriert. **Firewall:** Instrument-Validierung, nie TFPT-Evidenz (`internal_consistency`, wie `qc-recovery-kernel`). `consistent`/H3 `data_limited`. | aktiv (neu) |
+| `quantum-recovery-analog/` | **Geparkt**: Analog-Recovery `I_n ~ (64/729)^n`, kein direkter Datensatz. **(search.txt §10)** | geparkt |
+| `ftransfer/` | Theorieseitige `F_transfer`-Solver: Axion-Relik (**Spine-Finite-T-Solve** `Ωₐh²=0.125` + **unabhängiger Cross-Check** sudden/analytisch [0.125, 0.143]), Koide, Leptogenese-Boltzmann, QCD-Matching `m_p/m_e`. | aktiv |
+| `ccbh-dark-energy/` | **Kosmologisch gekoppelte BHs** (problem_b §B): de-Sitter-Seam-Innere `w_in=−1` ⇒ Kopplung `k=−3w_in=3` ⇒ Population `w=−1`; vs Farrah+2023 `k=3.11±0.79` (**−0.14σ**, aber CCBH-als-DE umstritten). Alternative-Lesart zu `dark-energy-w-watchdog` (`w_de_eos`). | aktiv |
+| `gravastar-compactness/` | **Gravastar/ECO** (problem_b §F): Nariai `Q_geom=3/8` = Jampolski-Rezzolla Max-Kompaktheit `C=3/8` (exakter Rational-Match `[C]`); `1/3<3/8<4/9<1/2` ⇒ horizontloser Echo-Kandidat, **beobachteter** Delay ~0.76 ms (62 M☉ × (1+z), z-korrigiert 2026-07-02) + Amplitude `≤(2/3)⁶`. Schärft `gw-ringdown-echo` (Stage-1d-Punkt-Test nutzt `M_det`). | aktiv |
+| `tfpt-correspondence/` | **NEU (2026-07-14) — TFPT-Korrespondenzprinzip: Raumzeit ↔ Schwarzes Loch als atom-verriegelte Phasengrenze** (Internal-Consistency-/Theory-Contract-Suchziel, **out of scorecard**; preregistriert in `hypotheses/correspondence_v1.yaml`): der Seam als EIN Zustand mit zwei Kanal-Lesarten (Geometrie-Kanal = Raumzeit `v358/v359`; Rand/Info-Kanal = Compiler `v221/v54`). **CORR.H1 Atom-Lock (entscheidend):** die vier Phasengrenz-Konstanten `{1/4, 1/2, 3/8, (2/3)⁶}` + Bekenstein-Koeffizient `4c₃=1/(2π)` sind **exakte Atom-Rationale**, kein freies Fit → übersteht den Numerologie-Test. **CORR.H2** kritischer Quotient `q_Bek=1` (Bekenstein-Sättigung, `S_BH=A/4`, `1/4=1/|μ4|`) exakt für jedes `M`. **CORR.H3** SdS-Fenster `Q_geom∈[3/8,1/2]` monoton (cross-ref `gravastar-compactness`). **CORR.H4** Typing-Guard: **[O]-gated auf das OFFENE Seam-Horizon-Theorem `SEAM.EQUIV.01`**, kein neuer Scale. **CORR.H5 (C, beobachtbar):** Phasengrenze `Q_geom=3/8` = horizontlose ECO → GW-Echo (Delay `2.288 M` ~0.70 ms @ 62 M☉; Amplitude `≤(2/3)⁶`), erbt die `gw-ringdown-echo`/`gravastar-compactness`-Nulls (`data_limited`). **(B) Keystone-Forcing:** `theory-contracts/corr_seam_orbifold_forcing.py` (5/5) — bedingtes Theorem: *falls* Seam ≅ `ℂ²/Γ`, dann erzwingen die Atome `(2,3,5)=(|Z2|,N_fam,g_car)` (ikosaedrische Signatur) `Γ=2I` und `det K=1` (E8, einziger ADE-Poincaré-Sphären-Link); Rest ist Theorem, Prämisse bleibt `[O]`. **Firewall:** Change-of-Bookkeeping, **nicht** neue Gravitation, **nicht** Horowitz-Polchinski (TFPT hat keine Hagedorn-/String-Skala); No-New-State (`v246`) + No-Unit (`v153`); höchstens `[C]`, nie `[E]`, nie `\veri{}`. `consistent`/`[C]`. | aktiv (neu) |
+| `cosmic-handedness/` | **Paritäts-Watchdog** (problem_b §J, Frontier): Galaxien-Spin-Händigkeit (Shamir JADES 158:105, **~3.3σ** Monopol) vs winziger `μ4`/`PSL(2,ℂ)`-Rest; Monopol-vs-MW-Aberrations-Dipol ungelöst, Galaxy-Zoo isotrop. | aktiv |
+
+Über die ursprünglichen **9 search.txt-Suchräume** hinaus jetzt erweitert um die scharfen
+**Compiler-Ebenen-Vorhersagen** (Inflation, Neutrino-Mixing, `v_GW=c`, Λ/H₀, QNM `ln3`),
+den datenunabhängigen **Recovery-Channel-Check** (Test C) und — neu aus `problem_1.txt` —
+die **dritte Cross-Domain-Säule** `pulsar-glitch-recovery` (damit ist das in `problem_1.txt`
+geforderte Dreieck **FRB-Recovery + GW-Ringdown-Residual + Pulsar-Glitch-Recovery** vollständig
+mit demselben eingefrorenen Kernel testbar). Die zentrale, getypte
+Zeilenübersicht aller (Domäne, Observable) liegt in
+[`evidence_scorecard.json`](evidence_scorecard.json) (Generator
+`build_evidence_scorecard.py`, validiert feste `stage`/`status`/`evidence_class`-Enums).
+Schärfste Konsistenzpunkte (≤0.5σ): CMB `β`/`Ω_b`/Seed-Linie, Kaon `K⁺`, Neutrino `θ12`,
+Λ-Hierarchie.
+
+---
+
+## 1. Gesamtbefund — wo welche TFPT-Signatur, wie belastbar
+
+**Es gibt keine unterscheidende Entdeckung.** Was vorliegt: Konsistenzen (Theorie
+nicht im Widerspruch, oft sagt die Standardphysik dasselbe), saubere Nullbefunde,
+**vier echte Physik-Spannungen** (θ13, A_s@N⋆=51.4, g−2 unter Lattice-HVP, Axion-Hilltop)
+— plus eine fünfte, **downstream-Branch**-Spannung (Protonzerfall im *optionalen*
+PS→SO(10)-Zweig B, `τ_p` bei 2-Loop unter Super-K; Hyper-K-entscheidbar), plus (seit
+2026-07-03) zwei ehrlich als `tension` getypte, aber **nicht TFPT-spezifische bzw.
+Dissolution-Watchdog-Zeilen**: das universelle **Li-7-Problem** am eingefrorenen η
+(+9.9σ, teilt jede ΛCDM-Kosmologie; D/H/Yp ankern) und der stehende
+**R_D(*)-Exzess** (HFLAV 3.8σ), dessen Auflösung TFPT vorhersagt — und mehrere
+noch-nicht-testbare Kanäle. Eine *belastbare* TFPT-Signatur bräuchte (a) eine
+eingefrorene Zahl, die TFPT von der Standardphysik unterscheidet, (b) in **≥2
+unabhängigen** Datenwelten, (c) mit kleinen Fehlern — das ist nirgends vollständig erfüllt.
+Die wirklich belastbaren Entscheidungen liegen jetzt bei **α⁻¹, θ12, θ13, r, A_s, β, w, EHT,
+K⁺** und den `F_transfer`-Solvern. (Neu als eigene Scorecard-Zeilen: der Headline-Fixpunkt
+**α⁻¹** — ehrlich getypt als **+1.9σ-Watch** gegen CODATA, nicht als sauberer Treffer — sowie die
+`F_transfer`-Bridges **Koide** [C] und **m_p/m_e** [O, numerologie-geflaggt]. Der eingefrorene
+Live-σ-Watchdog dafür existiert bereits in der Verifikations-Suite als
+`verification/v307_data_watchdog.py` — er bewertet α⁻¹/θ12/θ13/r/s23/δ_CKM laufend gegen
+CODATA/NuFIT/Planck; θ13 (+2.0σ) ist dort der dokumentierte Druckpunkt.)
+
+<!-- SCORECARD_STATS:START (generated by build_evidence_scorecard.py; do not edit) -->
+**Scorecard (auto-generated from `evidence_scorecard.json`): 127 Zeilen — 50 consistent, 9 tension, 30 null, 33 data_limited, 1 kill_channel, 4 parked.**
+
+- nach `evidence_class`: 20 downstream_bridge, 32 external_data, 12 internal_consistency, 3 parked, 60 search_target
+- nach `leakage_class`: 3 architecture_core, 2 core_operator, 2 detector_control, 20 downstream_bridge, 29 external_data, 10 internal_kernel, 3 parked, 17 search_target, 41 surface_leakage
+- nach `signature_code`: 3 S1, 1 S1/S10, 2 S1/S2b/S3, 1 S1/S7, 2 S10, 1 S10e, 1 S12, 1 S12/S5, 2 S13, 2 S1e, 1 S2a, 1 S2a/S4/S5/S6/S7/S8-proxy, 1 S2a/S5, 10 S2b, 1 S2b/S11, 2 S2b/S14, 1 S2b/S3, 2 S3, 1 S3/S2b, 2 S4, 1 S4/S5, 2 S5, 2 S7, 1 S8, 1 S8-data/S15, 1 S9, 2 detector-control
+- nach `independence_group`: 7 N_star_reheating, 4 alpha_em, 1 c3_topform_horizon, 2 carrier_ps_so10_uv_branch, 2 cp_mu6_phase, 2 hfqpo_ladder_tooth, 88 independent, 2 koide_q_pole, 2 nu_mass_floor, 15 phi0_seed, 2 smica_pr3_map
+- `alternative_group` (eine Frage, mehrere Lesarten — *nicht* doppelt zählen): 2 HVP_baseline, 4 Nstar_branch, 5 axion_branch, 3 w_de_eos
+- `watch_flag`: 6 (schärfster nicht-roter Kanal: dunkle Energie `w`)
+- _Korrelierte `phi0_seed`-Beine, `alternative_group`-Lesarten und `internal_consistency`-Checks zählen NICHT als unabhängige externe Treffer._
+<!-- SCORECARD_STATS:END -->
+
+### Robustheits-Stufen
+
+| Stufe | Kanäle | Lesart |
+|---|---|---|
+| **Schärfste Konsistenz** (≤0.5σ, mit Vorbehalt) | Λ-Hierarchie (**dev 0.004 Größenordnungen**, *kein* pull_sigma — Metrologie-Kohärenz), Neutrino `θ12` (**−0.02σ**), Kaon `K⁺→π⁺νν` (**−0.08σ**), CMB `Ω_b` BBN (0.04σ), CMB Seed-Linie (0.35σ), CMB `β` (0.37σ), **NEU: Neutron `τ_n` parameterfrei (877.53±0.71 s, UCNτ −0.38σ — Bottle-Seite des Beam-Bottle-Rätsels; `phi0_seed`)** | nah dran, aber teils Bridges, breite Fehler, korreliert (`phi0_seed`) oder Metrologie-Kohärenz |
+| **Konsistenz, nicht unterscheidend** | FRB.01 (keine native Dispersion), FRB.05 (`Ω_b` aus FRB-DM(z)), `v_GW=c` (GW170817), EDM `θ_eff=0`, Σm_ν, Inflation `n_s` vs Planck, A_s (profiliert), **Axion-Spine** (`Ωₐh²=0.125`, robust), **Higgs-Kritikalität** (λ(M_Pl)≈0), **Leptogenese `η_B`** (voller ODE, `6.5×10⁻¹⁰` = 1.07× @ frozen `M₁`), **δ_PMNS** (240° = δ_CKM,lead + π, v231/v233; **+1.08σ** NuFIT 6.0 NO best fit, schwach unterscheidend) | Standardphysik sagt dasselbe / interne Identität / downstream-Bridge |
+| **Interne Konsistenz** (keine externe Messung) | Recovery-Channel CPTP/QEC, Page-Kurve-Turnover bei `t_Page`, **Petz-Recovery + rank-one Baby-Universe** (`‖T^n−P_∞‖=(2/3)^{6n}`), **`S_dS·ρ_Λ=32π⁴`** (algebraische Identität, `stage=not_applicable`), **QGEO-DtN-Mark-Locality** (Theory-Contract); **Quantum-Testbed QT.01** (Entanglement-Spektrum = Kernel exakt: Surprisals `6ln(3/2)`,`6ln3`, Protected-Mode, `I_n`) **+ QT.02** (Quench-DSI bei `ω=2π/ln λ`, Amplitude `e^{−π²/ln λ}`-unterdrückt) | `evidence_class=internal_consistency` / Theory-Contract — nicht im selben Korb wie CMB/Kaon |
+| **Sauberer Nullbefund** | FRB.02, FRB.02b, FRB.04, FRB.06, FRB.07, FRB.08, FRB.09; **Pulsar PG.01/02/03** (Kernel-Comb null; `Δν/ν`-Struktur = bekannte 2-Populations-Bimodalität) **+ PG.04** (Recovery `Q` nicht an φ₀-Vielfachen, `τ_d`-Multikomponenten-Leiter null; echte Yu+2013-Daten); **NEU: QPE.01** (Rekurrenz-Ratio-Leiter null in eRO-QPE2 + GSN 069; der 2/3-Zahn liegt >17× die beobachtete Streuung entfernt — ausgeschlossen, nicht bloß unbeobachtet); **NEU: HFQPO H3 Stufe 2** (präregistrierter RXTE-Archiv-Scan 2026-07-20: weder ×1.5-Zahn noch Integer-Linie in 4 Quellen, 3σ-Limits 0.53–3.06% rms ≤ Paar-Linien-Stärke — gut gepowertes Null, Leiter ohne Support, nicht gekillt) | Muster nachweislich **nicht** da, über mehrere Quellen / der eingefrorene Kernel maskiert sich **nicht** in einem dritten, physikalisch unverwandten Datensatz |
+| **Echte Spannung** (Daten/Modell ziehen dagegen) | **θ13** (+2.0σ), **A_s** fix N⋆=51.4 (−11.3σ), g−2 unter Lattice-HVP (+3.92σ, WP2025-σ=62), Axion-**Hilltop** (~5.5× Überproduktion); *neu, aber gesondert zu lesen:* **Li-7** am frozen η (+9.9σ — **universell**, teilt jede ΛCDM-Kosmologie, `discriminative_power=weak`), **R_D(*)** (HFLAV 3.8σ — Dissolution-Watchdog-Target, Belle II/LHCb Run 3 entscheiden) | hier entscheidet sich Substanz; θ13 ist der `φ₀`-Seed-Treiber |
+| **Datenlimitiert mit Hinweis-Flag** | FRB.03 (Aktivitätsfenster, `hint_flag`) | 1/2 broad-match, n=2<5, LOO-instabil → `data_limited` (zu kalt für `hint`) |
+| **Datenlimitiert** (noch nicht testbar) | GW-Echo (**Stage-1 statisch + Stage-2 dynamisch auf echtem Strain gelaufen** = kein Kernel-Echo/`NO_KERNEL_RECOVERY`; Einzelevent strukturell limitiert → Kaskaden-Kamm nötig), **EHT-Residual** (echte Daten + Injection-Suite, GRMHD-Imaging offen), QNM `ln3`, Axion-Marker, Kaon `KL`/`R_K`, dunkle Energie `w` (4.4σ), m_ββ, **CCBH `k=3`** (−0.14σ, umstritten), **Gravastar `C=3/8`-Echo**, **kosm. Händigkeit** (~3.3σ, Frontier), **log-periodische Recovery-DSI** (`ω=2π/ln((3/2)⁶)≈2.58`; **PG.05 erstmals auf echter Crab-`ν(t)`-Wellenform gelaufen** — Detektor validiert, kein Kamm, Monatskadenz-limitiert; braucht Tageskadenz) | richtige Signatur/Vorhersage, erster Realdaten-Test gelaufen → `data_limited` |
+| **Geparkt** | Quantum-Recovery-Analog | kein physischer Datensatz |
+
+### TFPT-Signaturkatalog (search.txt) — was wo geprüft wurde
+
+| # | Signaturtyp | eingefrorener Wert | geprüft in | Ergebnis |
+|---|---|---|---|---|
+| 1 | feste Transferquotienten | `(2/3)⁶=64/729`, `(2/3)³=8/27`, Schritt `2/3` | FRB.02/02b/03/06/07, GW-Echo, **Pulsar PG.01/02/03** | Null / Hinweis / datenlimitiert (Cross-Domain-Dreieck FRB+GW+Pulsar: kein Kernel-Treffer) |
+| 2 | µ4/Z4-Phasenstruktur | 4 Klassen | FRB.04, FRB.08 | Null (Fundamental m=2, nicht m=4) |
+| 3 | globale Seed-Rotation | `β = φ₀/(4π) = 0.2424°` | CMB | konsistent (0.37σ) |
+| 4 | achromatische Horizon-Pol. | `β_BH ∝ 1/r²`, Sign-Flip | EHT | real ingest + Achromatizität erledigt; GRMHD-Residual-Nulls offen |
+| 5 | harte Nullsignatur | keine native Dispersion, `v_GW=c` | FRB.01 | konsistent (kill-test bestanden) |
+| (+) | Recovery-Clock-Dynamik | `rate(n)=−6 ln(1−n/3)`, Wall bei N_fam=3 | FRB.09 | Null |
+| (+) | `F_transfer`-Laborwerte | `Δaµ`, `BR(K)`, `m_a` | lab-residuals | Kaon konsistent, g−2 baseline-abhängig, Axion datenlimitiert |
+
+### 1.1 Reconsideration — die Signatur ist vermutlich *dynamisch* (diskrete Skaleninvarianz), kein statisches Verhältnis
+
+Alle obigen Suchen testen den eingefrorenen Kernel als **statisches Verhältnis** in einem
+Histogramm (FRB.02–09, Pulsar PG.01–04) — und liefern Null. Die `quantum-testbed`-Analyse
+(problem_1.txt §D) zeigt *warum* und *was stattdessen zu suchen ist*: ein System, das über
+eine **geometrische Moden-Leiter** (`γ_k=γ₀·λ^k`, genau die `(3/2)^k`-Struktur) zu seinem
+Fixpunkt relaxiert, hat einen **komplexen kritischen Exponenten** `α+iω` — seine
+Recovery-*Kurve* ist nicht reine Potenz, sondern log-periodisch:
+
+```
+R(t) = (Potenz) · (1 + ε·cos(ω·ln t + φ)),    ω = 2π/ln λ,    ε ~ e^{−π²/ln λ}.
+```
+
+Der Kernel erscheint also als **Log-Frequenz in der Recovery-Dynamik**, nicht als Zahl auf
+einem Lineal (der „diskret → dynamisch"-Übergang). Das Amplitudengesetz `ε~e^{−π²/ln λ}` ist
+entscheidend: nur eine **grobe** Leiter (`λ≳e²≈7`) hinterlässt eine sichtbare (~2%) Welle.
+
+**Schärfung aus dem exakten Übergangs-Reconstruction (`v124`/`v126`/`v147`).** Der TFPT-Übergang
+diskret→dynamik ist *exakt* die resummierte Uhr `rate(n)=−6 ln(1−n/3)` mit Spektrum `(1−n/3)⁶` und
+einem **Pol/Wall bei `n=N_fam=3`** — also **keine** unendliche geometrische Leiter (die anhaltende
+DSI gäbe), sondern eine **gewallte Zwei-Moden-Uhr**. Eine *einzelne* Recovery ist daher
+`R(t)=w₀+w₁e^{−6ln(3/2)·t/τ}+w₂e^{−6ln3·t/τ}` mit drei scharfen, *neuen* Signaturen: (i) die zwei
+Raten sind am **det'-sauberen Bend** `rate(2)/rate(1)=ln3/ln(3/2)=2.7095` (v147) festgenagelt — ein
+**Ein-Parameter**-Doppel-Exponential, kein freies Ratenpaar; (ii) ein **protected Floor** `w₀`
+(λ=1, das „Gesetz") → unvollständige Recovery; (iii) ein **harter Wall** (keine dritte
+Zerfallszeit). Anhaltende DSI tritt nur über eine **Kaskade** von Ereignissen auf, nie innerhalb
+einer gewallten Recovery. **Konkreter, falsifizierbarer Test (statt Histogramm):** ein
+**Matched-Filter** mit dem Fixed-Ratio-(2.7095)-Doppel-Exponential-Template + Floor auf
+zeitaufgelösten Recovery-*Wellenformen* (FRB-Tails, Pulsar-`ν(t)`-Postglitch, GW-Ringdown-Residuen)
+— gebaut und injection-validiert in `quantum-testbed` QT.04 (Kernel-Kurve → erkennt 2.71;
+Nicht-Kernel → verworfen). Das **erklärt die statischen Nulls** und ist der offene, sensitivere Hebel.
+
+**Erster Realdaten-Lauf des dynamischen Templates (GW-Ringdown, `gw-ringdown-echo` Stage 2,
+`tfpt-gw dynamic`).** Auf echtem GWOSC-Strain (GW150914, GW190521) angewandt liefert er einen
+sauberen `NO_KERNEL_RECOVERY` **und** einen schärferen, maschinell geprüften Befund: **innerhalb
+EINER monotonen Recovery ist der Bend nicht identifizierbar** — die exakte Walled-Clock-Kurve ist
+mit einem *einzigen* Exponential + Floor entartet (Zwei-Moden-R²-Gewinn ≈1.3×10⁻³, schon
+rauschfrei). Die unterscheidende dynamische Signatur ist der **log-periodische Kamm über eine
+Kaskade** (`ω=2.583`, Amplitude `ε≈2%`), den eine **Einzel**-Ringdown strukturell nicht liefert.
+**Konsequenz für den Hebel:** er gehört auf die **zeitaufgelöste Recovery-SEQUENZ einer
+Repeater-Quelle** (FRB-Repeater-Tails, Pulsar-`ν(t)`-Postglitch-Serien), nicht auf einen
+Einzelevent-Ringdown — die FRB.09/QT.04-Wellenform-Suche bleibt der eigentliche offene Hebel.
+
+**Erste Realdaten-Umsetzung des Kamm-Tests auf einer echten `ν(t)`-Wellenform (Pulsar PG.05,
+`tfpt-pulsar dynamic`).** Die Jodrell-Bank-Crab-Monatsephemeride (38 Jahre `ν`/`ν̇`) ist der einzige
+öffentliche Datensatz mit der nötigen `ln(t)`-Spanne. Der log-periodische Kamm-Detektor bei `ω=2.58`
+ist **auf genau dieser Monatskadenz injection-validiert** (Kaskade erkannt p≈0.002, glattes
+Potenzgesetz verworfen p≈0.15), findet aber in **keinem** der 7 sauberen Inter-Glitch-Segmente einen
+Kern-Kamm (`data_limited`; Monatskadenz < die ~2%-Kamm-Amplitude). Damit ist der Hebel erstmals auf
+einer echten Recovery-*Wellenform* (nicht Summary-Statistik) ausgeübt; der schärfere Test ist
+Tageskadenz-Timing eines Riesenglitches (Crab 2017) oder Vela.
+
+**PG.06 (`tfpt-pulsar nicer`, schwer/optional) — die dichte J0537-Säule + die entscheidende Range-Erkenntnis.**
+Scaffold für den dichtesten Datensatz (PSR J0537-6910, „Big Glitcher", NICER; `scripts/fetch_nicer_j0537.py`
+bestätigt 1165 Beobachtungen über ~8 Jahre). Upstream (L2-Events + **PINT**-Falten → `ν(t)`) ist auf ~GB-
+Downloads gated (HEASoft **nicht** nötig, PINT pip-installiert); Downstream (`ν(t)` → Superposed-Epoch-Stack →
+Kamm) ist injection-validiert (96 % Detektion, 0 % Fehlalarm im ausreichenden Bereich). **Maschinell geprüfte
+Kern-Erkenntnis:** der Kamm braucht **>~2.8 Perioden in `ln(τ)`** (≈3 Dekaden); ein J0537-~100-d-Intervall
+liefert nur **~1.9** → range-blind, und **Stacking hebt nur die Amplitude, nicht den `ln(τ)`-Bereich**. ⇒ Das
+entscheidende Ziel ist ein **lang-intervalliger, dicht überwachter** Pulsar (**Vela**, Glitch alle ~3 Jahre,
+täglich → ~3 Dekaden), nicht J0537. Das ist die schärfste Formulierung des offenen Hebels — und sie sagt
+präzise, *welche* Beobachtung ihn schließen würde.
+
+**PG.06b (`tfpt-pulsar vela`) — echte NICER-Vela-Daten, Pipeline auf echten Photonen bewiesen.** Der von
+PG.06 benannte Zielpulsar **Vela** (PSR B0833-45) ist im HEASARC-NICER-Archiv mit **665 Beobachtungen**
+(MJD 57941–60817, ~7.9 Jahre, ~762 ks, ~6.5 GB) vorhanden. Eine echte Beobachtung wurde
+heruntergeladen und mit **PINT barycentriert** (`get_NICER_TOAs` + Satelliten-Observatory aus dem
+`.orb`, **ohne HEASoft**) — die Reduktions-Pipeline (Download → Barycentrieren → Falten) ist damit
+**auf echten Daten bewiesen**. **Korrektur (2026-07-21, durch PG.06b FULL gefunden):** der ursprünglich
+berichtete „Detektions"-Peak **F0 = 11.19275 Hz (H = 18.4)** war ein **Rauschpeak**; die wahre
+Vela-Frequenz an dieser Epoche ist **F0 = 11.1861692 Hz (H = 99.7)**, konsistent mit der
+phasenverbundenen PuMA-Ephemeride — die Pipeline ist bewiesen, aber durch den korrigierten Fold.
+
+**PG.06b FULL (`tfpt-pulsar vela-full`, 2026-07-21) — das KOMPLETTE NICER-Vela-Archiv reduziert:
+erste Röntgen-`ν(t)`-Probe des Programms.** Manifest **vor** dem Bulk-Download eingefroren
+(alle 665 ObsIDs, präregistrierte Glitch-Fenster 2019/2021/2024, 20-GB-Abbruch-Gate); 665/665 Obs
+geladen (2.6 GB, gitignored) → **491 nutzbar → 240 Per-Obs-Detektionen → 119 segment-kohärente
+`ν(t)`-Punkte** (108 voll kohärent), Median **σ_ν ≈ 0.6 µHz** (Barycentering gegen PINT auf 3.4 µs
+validiert). **Sanity-Gate PASS:** Δν/ν 2019 = **2.39e-6** (publ. 2.5012e-6), 2021 = **1.272e-6**
+(publ. 1.26e-6); der 2024er Glitch ist nicht reduzierbar (nur ~150-s-Schnappschüsse, 9.7 ks —
+dokumentiert). **Eingefrorener Kamm (ω=2.5827069, ε_pred=0.0173):** Reach 2019 = **2.17** Perioden
+(< 2.8-Gate; schlägt den PG.08-Vela-Reach 1.83), 2021 = 1.38; 2019 raw p=0.014 **aber** Bonferroni
+×10 = 0.14 + Shuffle p=0.40 → nach der präregistrierten Eskalationsregel **Zufallsniveau**
+(Audit-Flag, **kein** Kandidat); 2021 p=0.73; ln-τ-Stack p=0.049/Shuffle 0.31. Injektion
+(surrogat-kalibriert, echtes Sampling+Rauschen): **ε_50 ≈ 0.55** (nur 2019), ε_90 nirgends unter
+ε=1 erreicht, **0 % beim vorhergesagten ε=0.0173** → als Amplitudenprobe schwächer als PG.08-Radio
+(ε_50~0.30-Klasse), aber die PG.06-Range-Blindheit wird unabhängig auf echten Daten reproduziert.
+Zweites Off-Kernel-Flag: λ=e in 2021 (raw p=0.002, Bonf. 0.018) — gleiche Nicht-Kernel-Klasse wie
+PG.08 J0742−2822, geflaggt, nicht geclaimt. **Verdikt `data_limited`** (range- UND
+amplitudenlimitiert): das Frühfenster <3.4 d nach Glitch existiert im Archiv nicht; nächster
+Entscheider sind Beobachtungen **<3 d nach einem künftigen Vela-Glitch** (eXTP-Klasse). Kein Claim;
+Firewall intakt.
+
+---
+
+## 2. FRB — `frb-tfpt-signatures/` (search.txt §1,2,6)
+
+Preregistriert (`hypotheses/frb_tfpt_v1.yaml`), eingefrorener Kernel
+(`{1,(2/3)⁶,(1/3)⁶}`, exakte Brüche per Guard-Test geschützt), multi-Source,
+surrogat-kalibriert. Aggregat-Verdict: **`not_confirmed_not_refuted`** (keine
+replizierte, unterscheidende Stütze). Pro Achse:
+
+| Achse | Signatur | Methode + Nullmodelle | Datenquelle | Ergebnis |
+|---|---|---|---|---|
+| **FRB.01** | keine native (nicht-Plasma) Dispersion | Sub-Band-ToAs aus echten Wasserfällen; Fit `t(ν)=t₀+K ν⁻²+A_scat ν⁻⁴+drift+A_TFPT ν⁻³`; **implizierte Laufzeit vs ToA-Präzision** + Cross-Source-Universalität | PSRFITS/`.ar` (FRB 20121102A `.calibP` + FRB 20201124A) → `frb01_subband_toas.csv` | **Konsistenz** (2 Quellen, 119 Bursts; implizierte Laufzeit ~10⁻¹⁹ s ≪ Präzision ~5×10⁻⁵ s) |
+| **FRB.02** | Echo-/Recovery-Quotienten | konsekutive Within-Session-Energieverhältnisse vs Kernel; 4 Nulls (within-session, local-block, AR(1)-Energy-Storm, censoring), BH-q; Observable-Semantik (Energie- vs Amplitudenkanal) | FAST 1652 + Blinkverse (4 Quellen) | **Null** (kein Theorie-Kanal-Exzess) |
+| **FRB.02b** | Free-Quotient-Null (**Anti-Numerologie**) | M0 / M_fixed(8/27) / M_free(`q*∈[0.01,0.5]`); Look-Elsewhere-korrigiert; Injection-Recovery (validiert: recovered `q≈0.290≈8/27`) | FAST 1652 + Blinkverse | **Null (M0)** — freier Quotient landet *nicht* auf einem Kernelwert (LEE-p ≥ 0.31) |
+| **FRB.03** | Aktivitätsfenster-Eigenbreiten | `W_broad/P≈8/27`, `W_core/P≈1/27`; Population + Nullmodell + Leave-one-out; HDI-Fenster aus gefalteten Phasen | CHIME (FRB 20180916B) + Literatur-Repeater | **Schwacher Hinweis**: FRB 20180916B trifft (3%/1%), aber n=2<5 Quellen, null-p=0.11, nicht LOO-stabil |
+| **FRB.04** | PA/RM-Markov-Spektrum (µ4/D4) | Übergangsmatrix-Eigenwerte vs Kernel; 5 Nulls (stationary, time/block-shuffle, **AR(1)-drift**, Dirichlet); v2 Step-Relaxation | FAST FRB 20240114A Pol (6134) + Blinkverse (3 Quellen) | **Null** (RM≈{2/3,1/3} durch AR(1)-Drift erklärt; PA durch block-shuffle reproduziert) |
+| **FRB.05** | Baryon-Fraktion `Ω_b` | Macquart-`DM(z)`-Steigung, `Ω_b`-Fit mit System-Fehlerboden | lokalisierte FRBs (ApJ adb84d Table 4; Sharma 2024) | **Konsistenz**: `Ω_b=0.0483±0.0072` (0.1σ von TFPT 0.0489) |
+| **FRB.06** | Polarisationsgrad-Quantisierung | L/I, \|V\|/I nahe Kernelbrüchen; Beta-Null **+ Placebo-Kontrolle** (killt Tail-Artefakt) | FAST + Blinkverse (3 Quellen) | **Null** (kein Bruch über Placebo) |
+| **FRB.07** | Breiten-Relaxations-Echo | konsekutive Breitenverhältnisse vs Schritt-Kernel `{2/3,1/3}` | Blinkverse (3 Quellen) | **Null** |
+| **FRB.08** | statische PA-µ4-Klassen | Rayleigh-Test auf fundamentale Klassenzahl (µ4 → m=4) | FAST FRB 20240114A | **Null** (signifikant, aber Fundamental **m=2** = Orthogonalmodus, nicht m=4) |
+| **FRB.09** | Recovery-Clock-Dynamik | (A) Kaskaden-Wall ≤ N_fam=3; (B) Gap-Verhältnis `g1/g2 = ln3/ln(3/2)=2.71`; within-session-Shuffle-Null + Placebo | FAST 1652 + Blinkverse (4 Quellen) | **Null** (Wall 0/4, Beschleunigung 0/4) |
+| *generisch* | Energie-Kaskade | GMM + Log-Periodizität + Spacing-Ladder, smooth-Null-Surrogate | FAST 1652 | diskrete log-periodische Kaskade (p=0.002), aber **nicht** kernel-spezifisch |
+
+Details, Plots und exakte Algorithmen: [`frb-tfpt-signatures/README.md`](frb-tfpt-signatures/README.md).
+
+---
+
+## 3. CMB-Seed-Linie — `cmb-birefringence-seed/` (search.txt §3, Prio 1)
+
+**Eine** eingefrorene Größe `φ₀ = (4/3)c₃ + 48c₃⁴ = 1/(6π) + 3/(256π⁴)` sagt **zwei**
+Observablen voraus, die normalerweise in getrennten Pipelines leben:
+
+```
+β_rad   = φ₀/(4π)            → β = 0.242435°     (kosmische Doppelbrechung)
+Ω_b     = (4π − 1)·β_rad     → Ω_b = 0.04894     (Baryon-Fraktion)
+⇒ feste Seed-Linie:  Ω_b / β_rad = 4π − 1 = 11.566
+```
+
+**Vier Modi** (kein einzelner künstlich-scharfer „joint Treffer"):
+
+| Modus | Inhalt | Ergebnis |
+|---|---|---|
+| `beta_only` | `β` vs ACT DR6 / Planck PR4 | konsistent (0.37σ / 0.52σ) |
+| `omega_b_only` | `Ω_b` vs Planck 2018 / BBN (unit-safe `Ω_b h²/h²`) | konsistent (0.42σ / **0.04σ**) |
+| `joint_independent` | Linie `Ω_b/β_rad` + Single-Seed-Kohärenz `φ₀^β` vs `φ₀^Ω` (Annahme cov=0) | konsistent (Linie 0.35σ, Kohärenz 0.39σ) |
+| `joint_covariance_placeholder` | dieselbe Linie, **Kovarianz nicht modelliert** | **keine kombinierte Signifikanz beansprucht** (ACT-β + Planck-Ω_b beide CMB → BBN-Bein nutzen) |
+
+**Unit-Guard:** `β` intern immer in Radiant; `Ω_b` (~0.049) nie mit `Ω_b h²` (~0.022)
+verwechselt; BBN deklariert `Ω_b h²` + `h` explizit. **Verdict: konsistent mit der
+Seed-Linie (nicht *validiert*).** Datenquellen: ACT DR6 (arXiv:2509.13654), Planck PR4
+(arXiv:2205.13962), Planck 2018 VI, PDG/Cooke+2018 (BBN).
+
+---
+
+## 4. EHT-Horizont-Collar — `eht-achromatic-residual/` (search.txt §4)
+
+Sauberste *lokale* astrophysikalische Falsifikationsfläche: der achromatische, dyonische
+Residual-Intercept `β_BH(r) = 16 c₃⁴ Q_e Q_m / r² = (1/256π⁴) Q_e Q_m / r²`. TFPT fixiert
+**nicht** die Amplitude (MHD/GR-Gewichte), sondern drei **Null-Tests**:
+
+1. **frequency null** — `χ₀^res` achromatisch (kein `λ²`-Tail)
+2. **profile null** — `χ₀^res(r) ∝ 1/r²` um den Photonenring
+3. **sign-flip null** — Vorzeichenwechsel unter effektiver `E·B`-Umkehr
+
+`DETECTION` nur, wenn **alle drei** simultan bestehen. Die Kopplung `1/(256π⁴)=16c₃⁴`
+ist exakt fixiert (dieselbe Top-Form-Koeffizientenzahl `δ_top=48c₃⁴` wie in der
+α-Kernel-Korrektur); frei ist nur die Amplitude `Q_e^eff Q_m^eff` (MHD/GR-Gewicht).
+Synthetische End-to-End-Pipeline (`demo --case signal|null|systematic`) + die drei
+Null-Tests sind implementiert und grün.
+
+#### Echte Daten ingestiert (NEU, `tfpt-eht realdata`)
+`scripts/fetch_eht_data.py` lädt die **echten** EHT-M87-2017-Polarimetrie-uvfits
+(Datenprodukt **2023-D01-01**, CyVerse DOI 10.25739/q46m-m857, GitHub
+`eventhorizontelescope/2023-D01-01`): **4 Beobachtungstage (Apr 5/6/10/11) × 2 Bänder**
+(hi ≈ 229.07 GHz, lo ≈ 227.07 GHz), D-term- + self-kalibrierte HOPS-Sätze
+(`*_hops_zbl-dtcal+selfcal.uvfits`, je ~0.5 MB).
+
+`src/tfpt_eht/real_data.py` liest sie mit `astropy.io.fits`, bildet die Zirkular-Basis-
+Stokes-Visibilities `I=(RR+LL)/2`, `Q=(RL+LR)/2`, `U=i(LR−RL)/2`, und berechnet pro Band
+die I-amplitudengewichtete Netto-EVPA `χ=½ atan2(⟨U⟩,⟨Q⟩)` und `|m|`. Ergebnis:
+
+| Tag | hi: EVPA / \|m\| | lo: EVPA / \|m\| |
+|---|---|---|
+| Apr 05 | −18.5° / 0.184 | −19.1° / 0.146 |
+| Apr 06 | −17.2° / 0.075 | −19.2° / 0.069 |
+| Apr 10 | −12.3° / 0.084 | −5.1° / 0.077 |
+| Apr 11 | −8.4° / 0.085 | −9.2° / 0.076 |
+
+→ mittlere **Band-zu-Band-EVPA-Rotation +0.9°**, implizierte **RM ≈ 5×10⁵ rad/m²**
+(M87-Kern-Größenordnung, konsistent mit ALMA). Das ist die **rohe Quell-Chromatizität**;
+der TFPT-Residual-Test (`χ₀^res = χ₀^obs − χ₀^GRMHD`, dann die drei Nulls) braucht das
+**GRMHD-subtrahierte Bild** (polarimetrisches Imaging via eht-imaging + GRMHD-Library wie
+`ipole`) → die `1/r²`- und Sign-Flip-Nulls bleiben **`data_limited`**. Die uvfits sind
+gitignored; die kleine Summary `results/eht_real_achromaticity.json` ist versioniert.
+**Schritt 1 (echter Daten-Ingest + Achromatizitäts-Diagnostik) erledigt.**
+
+#### Injection-Recovery-Suite (NEU, `tfpt-eht inject`) — die Pipeline-Validierung
+
+Da das echte GRMHD-Imaging (eht-imaging/SMILI + `ipole`) schwere externe Libraries braucht,
+ist der *jetzt* lauffähige, wertvolle Teil die **Validierung**, dass die Residual- + 3-Null-
+Maschinerie vier kontrollierte Injektionen korrekt klassifiziert (`src/tfpt_eht/injection.py`):
+
+| Injektion | erwartet | Ergebnis |
+|---|---|---|
+| `tfpt_1overr2` (echte Signalform) | DETECTION (alle 3 Nulls) | ✓ frequency P / profile P / sign P |
+| `faraday_lambda2` (λ²-Schirm) | frequency-Null **verwirft** | ✓ frequency F |
+| `dterm_leakage` (D-Term) | profile/sign-Null verwirft | ✓ profile F / sign F |
+| `evpa_offset` (Kalibrationsoffset) | profile/sign-Null verwirft (freq passt) | ✓ frequency P / profile F / sign F |
+
+**4/4 korrekt klassifiziert** → die Pipeline labelt Achromatizität, Faraday-λ²-Tail,
+D-Term-Leckage und EVPA-Offset zuverlässig auseinander. Das ist das Gate, das der echte
+M87-Lauf durchlaufen muss, sobald GRMHD-Bilder vorliegen. (Nur zwei nahe Bänder ⇒ die
+Frequency-Null bleibt Diagnose, kein finaler Achromatizitätsbeweis.)
+
+#### Pipeline-Readiness (`tfpt-eht pipeline`)
+Der Orchestrator listet die 7 Stufen und sagt **exakt, was blockiert**: Stufen 1/2/7
+(uvfits-Ingest, EVPA-Diagnostik, Injection-Validierung) **erledigt**, Stufe 6 (3 Nulls)
+**lauffähig**. **NEU (ehrlich nachgeprüft):** `eht-imaging` (`ehtim` 1.3.2) ist installiert und **liest die echten
+M87-2017-uvfits** (verifiziert: Netto-`|m|≈3.4 %`, EVPA≈−34° bei 229 GHz an kurzen Baselines). Die
+Imaging-**Bibliothek** ist also da — **aber** eine wissenschaftsfähige `χ₀^obs(r)`-Rekonstruktion ist
+**kein Einzeiler**: ein naiver one-shot-RML-Lauf **konvergiert nicht** (braucht EHT-Pipeline-Flux-Skala,
+Stations-Gains, Regularisierer-Tuning + Validierung). Stufe 3 ist daher „Bibliothek da, Experten-Setup
+nötig", kein Knopfdruck. Und der **unterscheidende Residual-Test braucht zusätzlich** das GRMHD-Modell
+(Stufe 4, `ipole`/`koral` + Simulationsdaten, nicht pip). Der `χ₀^res`-3-Null-Test bleibt daher
+**`data_limited`** — gegated auf **beidem**: sorgfältige Polarisations-Rekonstruktion **und** GRMHD-Baseline.
+Kein Vortäuschen.
+
+---
+
+## 5. GW-Ringdown-Echo — `gw-ringdown-echo/` (search.txt §5, Stage 0–2)
+
+Echo-Amplitudenquotient `A_{n+1}/A_n ≤ (2/3)⁶ ≈ 0.0878` (Obergrenze, Lag frei).
+Stage 0 war der Sensitivitäts-Census; die Strain-Level-Tests (Stage 1/1b/2) sind
+inzwischen **gelaufen** — inkl. der vom Census geforderten gestackten Suche.
+
+- Datenquelle: **echter LVK GWTC-5.0** via GWOSC-Event-API → `data/gwtc_events.csv`.
+  **390 kanonische Events** (161 neu in O4b); lokale Rohzeilenzahl **391** separat in
+  [`event_count_audit.md`](gw-ringdown-echo/event_count_audit.md) abgeglichen (die eine
+  Differenz = BNS GW170817, ohnehin aus der BBH-Selektion ausgeschlossen).
+- Selektion: 391 → **278 ringdown-fähige BBH** (`M_f ≥ 5 M☉`).
+- Stage-0-Ergebnis: gestackte Echo-SNR-Obergrenze **6.3** (realistisch `f_rd=0.3`) bzw.
+  21.1 (konservativ) vs Schwelle 5 → ein maximaler `(2/3)⁶`-Echo **wäre erreichbar** ⇒
+  der Strain-Level-Test lohnt sich (und wurde ausgeführt, s.u.).
+
+**Stage 1 — Matched-Filter-Maschinerie gebaut + injection-validiert (`tfpt-gw search`).** Die
+Pipeline (Kerr-Ringdown-Subtraktion → Matched-Filter auf Residuen, Lag/Phase frei, Quotient
+`(2/3)⁶` fix → Detection-SNR + freier-`q`-Kontrolltemplate) klassifiziert auf synthetischem
+Strain **3/3 Injektionen korrekt**: Kernel-Echo → `DETECTION` (`q̂≈(2/3)⁶`); kein Echo → `NULL`;
+falsches Ratio (0.5) → `NON_KERNEL_ECHO` (Echo da, aber **nicht** der TFPT-Kernel). Das
+Template-Lag ist objektabhängig (das `C=3/8`-ECO der `gravastar-compactness` gibt `~0.7 ms`); der
+Lag wird gescannt, das Ratio `(2/3)⁶` ist der eingefrorene Diskriminator. **`tfpt-gw realdata`**
+läuft die statische `(2/3)⁶`-Echo-Train-Suche auf **echtem 32-s-GWOSC-Strain**, inzwischen auf
+den **10 lautesten Ringdown-Events** — darunter **GW250114 (Netzwerk-SNR 78.6, O4b, lautester
+Ringdown überhaupt)**; O4+-Events haben keine 32-s-Files auf GWOSC, `scripts/fetch_strain_4096.py`
+croppt die 4096-s-Archiv-Segmente ins gleiche HDF5-Layout. **Rotverschiebungskorrektur:**
+der GWTC-Katalog liefert Quellsystem-Massen; die beobachtete Ringdown-Frequenz ist
+`f₀/(1+z)`, alle Templates nutzen jetzt `M_det = M_src(1+z)` (vorher lief GW190521, z=0.56,
+bei ~1.6× zu hoher Frequenz — alle Stufen korrigiert neu gelaufen). Ergebnis: **kein**
+kernel-Ratio-Echo koinzident in ≥2 Detektoren, in keinem Event; Niedrig-`p`-Exzesse haben
+`q̂~1` (Rest-Ringdown, vom Free-Ratio-Control verworfen). **Kein Echo-Claim.**
+
+**Stage 1b — GESTACKTE Suche über die lautesten Ringdowns (`tfpt-gw stack`).** Der vom
+Stage-0-Forecast geforderte Stack ist ausgeführt: `Z = Σρ²_max` über **23 Detektor-Streams**
+(10 Events) gegen einen Off-Source-Hintergrund-Stack (20 000 Realisierungen). **Ergebnis
+(z-korrigiert): STACKED NULL — `Z_on = 149.5` vs Hintergrund-Median 93.8, gestacktes
+`p = 0.262`, kernel-konsistente Streams 0/23.** Die Fisher-Sekundärstatistik ist von
+`q̂~1`-Rest-Ringdown-Streams dominiert, die der Free-Ratio-Control als nicht-Kernel verwirft —
+kein Kernel-Evidenz. Ein maximaler `(2/3)⁶`-Zug ist im lautesten verfügbaren Stack
+unbegünstigt; da `(2/3)⁶` eine **Obergrenze** ist, ist das `consistent` (die Schranke wird
+enger). **Kein Detection-, kein Tension-Claim.** Output: `results/echo_stack.json`.
+
+**Stage 1c — SIGNATUR-BATTERY (`tfpt-gw battery`, NEU): „könnte die Signatur anders
+aussehen?"** Post-hoc-Robustheits-Sweep über die alternativen Lesarten (Bonferroni ×12) auf
+denselben 10 Events: (a) **Ratio-Semantik** (FRB-Lektion): Amplitude `(2/3)⁶`,
+**Energie-Lesart `(2/3)³`** (GW-Energie ∝ Amplitude² ⇒ 3.4× lauterer Zug), Step `2/3`;
+(b) **Bounce-Phasen** `Δφ ∈ {0, π/2, π, 3π/2}` — die μ₄-Charaktere, das
+**Boundary-Birefringenz-Analogon** (Pfad-Birefringenz aus Paritätsverletzung `c₋=8` wirkt
+auf alle Echos eines Events gleich und kürzt sich im Inter-Echo-Ratio; nur die Phase pro
+Reflexion nicht — TFPTs natürlicher Wert ist die Viertelphase π/2); (c) **Lags 0.5–350 ms**
+(ECO ~0.7 ms bis Planck-Fenster ~0.23 s); (d) **Joint-(2,2,0)+(2,2,1)-Subtraktion** (die
+`q̂~1`-Exzesse der Primärsuche sind Overtone-/Rest-Leistung); (e)
+**Template-Agnostizismus-Kontrolle**: Streams, in denen alle 12 Varianten gleichzeitig
+feuern, sind breitbandige Rest-Leistung, kein Echo-Zug. **Ergebnis: `NO_VARIANT_ECHO` auf
+allen 10 Events** (bestes Bonferroni-p 0.0157, einzelner Stream, nicht ratio-konsistent,
+kein Zweit-Detektor) → der Primär-Null ist **robust gegen alternative Signatur-Lesarten**.
+Nicht abgedeckt (dokumentiert): Barrieren-Tiefpass pro Echo, Lag-Drift, Präzession.
+Output: `results/signature_battery.json`.
+
+**Stage 2 — DYNAMISCHER Walled-Clock-Recovery-Matched-Filter auf echtem Strain (`tfpt-gw
+dynamic`, NEU).** Schließt die **§1.1-Reconsideration** für den GW-Kanal: statt des statischen
+Ratios wird die **gewallte Zwei-Moden-Uhr** (`v124`/`v147`, QT.04) als Template gefittet —
+`R(t)=w₀+w₁e^{-(6 ln3/2)t/τ}+w₂e^{-(6 ln3)t/τ}` mit dem **det'-sauberen Bend**
+`ln3/ln(3/2)=2.7095`, Floor und Wall. `dynamic_recovery.py` weißt, subtrahiert die dominante
+QNM, bildet die **Post-Merger-Residuen-Leistungs-Hülle** (binned RMS) und fittet das
+Fixed-Bend-Template (Ratio profiliert: jede Ratio = ein nichtlinearer Raten-Scan → gut
+konditioniert, anders als ein freier 2-Exp-Fit) gegen ein Single-Exponential-Nullmodell +
+Off-Source-Hintergrund. **Realdaten-Ergebnis (GW250114, GW150914, GW190521): `NO_KERNEL_RECOVERY`** —
+abklingende Hüllen sind Rest-Ringdown (`q̂≈1`, **nicht** der Bend); gilt jetzt auch für den
+lautesten Ringdown überhaupt (GW250114). **Ehrlicher, maschinell
+geprüfter Kern-Befund:** (i) **innerhalb EINER monotonen Recovery ist der Bend entartet** — die
+exakte Walled-Clock-Kurve wird von *Floor + einem* Exponential mit Zwei-Moden-R²-Gewinn von nur
+**≈1.3×10⁻³** gefittet (selbst rauschfrei) → eine Einzel-BH-Ringdown-Residuum kann das
+Ratenverhältnis 2.7095 **nicht** tragen; (ii) die **unterscheidende** dynamische Signatur ist der
+**log-periodische Kamm über eine KASKADE** bei `ω=2π/ln((3/2)⁶)=2.583`, Amplitude
+`ε~exp(-π²/ln λ)≈0.017` (~2%, das QT.02-Unterdrückungsgesetz) — eine Einzel-Ringdown ist **keine**
+Kaskade. ⇒ Der GW-Einzelevent-Kanal ist für den dynamischen Bend **strukturell `data_limited`**;
+der sensitive Hebel ist die **zeitaufgelöste Recovery-SEQUENZ** einer Repeater-Quelle
+(FRB-Repeater / Glitch-Train), nicht eine One-Shot-Ringdown. **Kein Recovery-Claim** (Kernel =
+Obergrenze). Output: `results/dynamic_recovery.{json,png}`.
+
+---
+
+## 5b. Pulsar-Glitch-Recovery — `pulsar-glitch-recovery/` (problem_1.txt, die fehlende Cross-Domain-Säule)
+
+`problem_1.txt` benennt als **stärkste mögliche TFPT-Signatur** nicht einen Einzeltreffer,
+sondern dass **derselbe** eingefrorene Boundary-Recovery-Kernel `{1,(2/3)⁶,(1/3)⁶}` (Schritt
+`3/2`) in **drei physikalisch unverwandten** Transienten-Datenwelten auftaucht: FRB-Recovery
+(`frb-tfpt-signatures` FRB.02/09), GW-Ringdown-Residual (`gw-ringdown-echo`) **und
+Pulsar-Glitch-Recovery**. Die ersten beiden Säulen gab es; **diese Säule schließt das
+Dreieck** gegen die echte **Jodrell-Bank-Glitch-Datenbank** (Basu+2022; 726 Glitches, 222
+Pulsare, 723 mit `Δν/ν`).
+
+| Kanal | Signatur | Methode + Null | Ergebnis |
+|---|---|---|---|
+| **PG.01** | `Δν/ν` log-periodisch bei TFPT-Ratio (`(3/2)^k` oder §C `{1+φ₀,4,8,8π}`) | Rayleigh-Log-Periodogramm + gezielte Einzelratio-Tests, kalibriert gegen **drei** Nulls (Log-Normal, formerhaltendes KDE, **entscheidend** populations-kontrollierter GMM-Bootstrap) + Look-Elsewhere (Bonferroni) | **Null** — die einzige Struktur ist die Bimodalität |
+| **PG.02** | aufeinanderfolgende **Größen** schreiten mit Kernelfaktoren (`\|Δlog s\|` auf `{log 3/2,(3/2)³,(3/2)⁶}`) | Per-Pulsar-Comb-Anteil vs **Within-Pulsar-Shuffle** der rohen Größen (umordnen, *dann* Log-Ratios neu berechnen; immun gegen globale Bimodalität) | **Null** (frac 0.20 vs 0.19, p≈0.27, 68 Pulsare) |
+| **PG.03** | Inter-Glitch-**Wartezeit**-Ratios auf demselben Comb | Per-Pulsar vs Within-Pulsar-Shuffle der rohen Wartezeit-Intervalle (umordnen, dann Ratios neu berechnen) | **Null** (frac 0.22 vs 0.25, p≈0.93, 50 Pulsare) |
+| **PG.04a** | Recovery-Fraktion `Q ∈ {φ₀,2φ₀,4φ₀,8φ₀,1−φ₀}` | KDE + Uniform-Null auf dem Yu+2013-`Q`-Set | **Null** (frac 0.10 vs 0.22, p≈1.0) |
+| **PG.04b** | Multikomponenten-`τ_d` bilden Kernel-Leiter `(3/2)^k` (Multiskalen-**DSI**) | Per-Glitch `τ_{i+1}/τ_i` vs `τ_d`-Shuffle | **Null** (13 Glitches, p≈0.69) |
+
+**Befund (ehrlich).** Die Glitch-Größen sind **nicht** ein einfaches Log-Normal (KS p≈0) und
+multimodal (GMM `best_k=3`, ΔBIC≈157). Ein Log-Periodogramm findet **echte** log-periodische
+Struktur bei Ratio **≈9.96** gegen die glatten Nulls (p≈0.002) — aber das ist die **bekannte
+2-Populations-Bimodalität** (große Vela-Typen vs kleine Crab-Typen, ~1 dex auseinander): sie
+**verschwindet unter dem populations-kontrollierten Null** (p≈0.075), und das beste Ratio ist
+**kein** preregistrierter TFPT-Wert (13% neben `(3/2)⁶`). Die groben Kandidaten `8`, `8π`
+leuchten nur, weil sie auf demselben ~1-dex-Abstand reiten (`p_smooth<0.01`, aber `p_gmm>0.28`);
+`(3/2)⁶` hat ein rohes `p_gmm=0.032`, **fällt aber durch die Look-Elsewhere-Korrektur** (×7).
+Die entscheidenden, bimodalitäts-immunen **Per-Pulsar-Leitern (PG.02/03) sind null** (Größe p≈0.27, Wartezeit p≈0.93; der Within-Pulsar-Shuffle ordnet die rohen Größen/Intervalle um und berechnet die Log-Ratios neu).
+
+**PG.04 (Recovery, aktiviert).** Aus dem **echten** Yu+2013-Recovery-Set (arXiv:1211.2035
+`expTab.tex`, 60 Komponenten / 46 Glitches, inkl. der Multikomponenten-Recoveries von Vela/Crab):
+die Healing-Fraktion `Q` ist **nicht** an φ₀-Vielfachen geclustert (frac 0.10 vs ~0.22 Zufall,
+p≈1.0 — eher *weniger* als zufällig), und die Multikomponenten-Decay-Zeiten `τ_d` bilden **nicht**
+die Kernel-Leiter (p≈0.69). Damit ist PG.04 **kein** `data_limited` mehr, sondern ein echter Null.
+
+→ **Sauberer Cross-Domain-Null / Konsistenz in allen vier Kanälen.** Die Pulsar-Säule verhält
+sich exakt wie das FRB-Energie-Kaskaden-Resultat: echte *generische* Diskretheit (hier die
+astrophysikalische Bimodalität), **aber nicht** der TFPT-Kernel. Der eingefrorene Kernel
+**maskiert sich nicht** in einem dritten, unverwandten Datensatz. Die Maschinerie ist
+**injection-validiert** (`tfpt-pulsar validate`: injizierter `(3/2)³`-Comb p≈0.003 erkannt,
+synthetisch-bimodale Verteilung p≈0.93 verworfen). **Datenquellen:** Jodrell Bank Glitch
+Catalogue (Basu+2022, MNRAS 510, 4049); Yu+2013 (MNRAS 429, 688).
+
+**PG.05 — der DYNAMISCHE Recovery-Kamm auf echtem Crab-`ν(t)` (`tfpt-pulsar dynamic`, NEU).**
+PG.01–04 testen statische Ratios; PG.05 testet die **dynamische** Signatur auf einer echten,
+zeitaufgelösten Recovery-*Wellenform* — genau das, was die Summary-Tabellen nicht haben. Nach dem
+GW-Stage-2-Befund (Bend einer Einzel-Recovery ist entartet, Zwei-Moden-Gewinn ~1e-3) ist die
+*unterscheidende* dynamische Signatur der **log-periodische Kamm** bei `ω=2π/ln((3/2)⁶)=2.583` über
+eine Recovery mit weitem `ln(t)`-Bereich. Datenquelle: die **Jodrell-Bank-Crab-Monatsephemeride**
+(`crab2.txt`, 479 monatliche `ν`/`ν̇`-Punkte 1988–2026) — der einzige öffentliche Datensatz mit der
+nötigen `ln(t)`-Spanne. `nu_recovery.py` detektiert Glitches aus den `ν̇`-Stufen (10, inkl.
+2017-Riesenglitch), bildet pro sauberem Inter-Glitch-Segment die `ν̇`-Recovery und prüft, ob der
+Kern-`ω` im Periodogramm **besonders** ist (Polynom-in-`ln τ`-Baseline absorbiert den glatten
+Trend → ein reines Potenzgesetz wird nicht geflaggt). **Ergebnis: `data_limited` — kein Kern-Kamm,
+aber Detektor validiert:** injizierte geometrische Kaskade bei `ω` erkannt (p≈0.002), glattes
+Potenzgesetz korrekt verworfen (p≈0.15); über **7** saubere Segmente ist `ω` in **keinem** besonders
+(p≈0.12–0.44). Ehrlicher Scope: Monatskadenz untersamplet den schnellen (Tage-)Transienten, also
+nur die langsame Inter-Glitch-Relaxation; bei vorhergesagter Kamm-Amplitude `ε~exp(-π²/ln λ)≈2 %`
+konsistent mit „unter Monatsreichweite". **Kein Claim.** Schärfer: Tageskadenz-Timing eines
+Riesenglitches (Crab 2017) oder Vela (>2 Dekaden in `ln(t)`). **Datenquelle:** Jodrell Bank Crab
+Pulsar Monthly Ephemeris (Lyne, Pritchard & Graham-Smith 1993, MNRAS 265, 1003; monatlich aktualisiert).
+
+---
+
+## 5c. Quantum-Testbed — `quantum-testbed/` (problem_1.txt: stärkste Quanten-Signatur + Reconsideration)
+
+**Intern, kein Datum** (`evidence_class=internal_consistency`, `stage=not_applicable`). Baut den
+eingefrorenen Kernel als Quantenobjekt und prüft die vorhergesagten Muster — und nimmt die
+Reconsideration auf: *könnte die Signatur etwas anderes als ein statisches Verhältnis sein?*
+
+- **QT.01 Entanglement-Spektrum.** Der Gauß-Zustand (`Γ(t)`, v161) mit Besetzungsspektrum =
+  Kernel `{1,(2/3)⁶,(1/3)⁶}` liefert **exakte** Identitäten: Surprisals `−ln ζ = {6ln(3/2)=Δ,
+  6ln3}`, Verhältnis `ln3/ln(3/2)=2.7095` (= die FRB.09-Recovery-Clock `g1/g2`), eine **protected
+  zero-surprisal (decoherence-free) Mode** (das „Gesetz"), und Schmidt-Recovery `I_n=(2/3)^{6n}`.
+- **QT.02 Quench-DSI + Unterdrückungsgesetz.** Eine geometrische Raten-Leiter relaxiert
+  log-periodisch bei `ω=2π/ln λ`; die Amplitude ist `~e^{−π²/ln λ}` → nachweisbar **nur** für den
+  groben **Energie-Gap `(3/2)⁶`** (p≈0.002), exponentiell **unsichtbar** für den Carrier `3/2`
+  (p≈0.97); ein nicht-geometrischer Kontroll-Lauf ist Null. **Das erklärt die statischen
+  Pulsar/FRB-Nulls** und liefert die konkrete nächste Suche (Recovery-Wellenformen bei `ω≈2.58`).
+- **QT.03 Free-Fermion-OTOC.** `H_TFPT` mit Kernel-Leiter-Spektrum; quadratischer Kommutator
+  `C_ij(t)=|G_ij(t)|²` (ballistische Operator-Ausbreitung; On-Site-Return-DSI explorativ).
+- **QT.04 Exakte gewallte Uhr (`v124`/`v126`/`v147`).** `rate(n)=−6 ln(1−n/3)`, Pol bei `n=3`:
+  Zwei-Moden-Recovery + Floor, **det'-sauberer Bend `2.7095`**, Sheet-Slope `2=|Z₂|`, harter Wall.
+  Daraus ein **Matched-Filter-Wellenform-Diskriminator** (Fixed-Ratio-2.7095-Template vs. freies
+  Doppel-Exponential): Kernel-Recovery → erkennt 2.71; Nicht-Kernel (Ratio 5) → verworfen.
+- **QT.05 Anyon-MTC / Statistik-Schicht (`v241`/`v242`/`v243`).** Der Carrier-Diskriminant-MTC
+  (`Z4×Z4`, `q=(5x²+3y²)/8`): **16 Sektoren → 6 Bosonen / 2 Fermionen (`θ=−1`, Phase `π` = m=2) /
+  8 Anyonen**; **diskrete Statistik-Phasenquanten `π/4` (Spin, 8.-Einheitswurzeln) und `π/2`
+  (Braiding)**; `c=8` (Gauss-Milgram); integrable faktorisierte S, trivial auf `(E8)₁`. → eine
+  **andere Signaturklasse** als die Recovery-Ratios; das FRB.08-„Fundamental m=2" ist der
+  **vorhergesagte Fermion-Sektor**, kein Null.
+
+**Neue empirische Hooks aus dem Spektral-Action-Abschluss (`v244`/`v245`), real gegen Daten gerechnet
+im neuen Experiment `gauge-unification/`:** **`sin²θ_W = 3/8`** an der Spektralskala
+(NCG/SU(5)-Unifikation `g3=g2=√(5/3)g1`). **Ehrliches Ergebnis** (1-Loop-RGE vs PDG): `3/8` ist der
+Standard-SU(5)/SO(10)-GUT-Wert (TFPT erbt ihn); die SM-Kopplungen treffen sich bei `α1=α2` ~10¹³ GeV,
+aber `α3` verfehlt um **13%**, und `3/8 → sin²θ_W(M_Z) = 0.2076` vs gemessen `0.23122` — die
+**universelle ~10%-GQW-Lücke** (SM-Nicht-Unifikation, braucht SUSY/Thresholds, **nicht
+TFPT-spezifisch**). Plus Carrier-`16` = **eine anomaliefreie SM-Generation** (`ΣY=ΣY³=0`, ein
+Higgs-Dublett). Das sind die **genuin neuen** Signaturen der vollendeten Diskret→Dynamik-Kette
+(`v238`–`v245`) — jenseits des Recovery-Kernels; `sin²θ_W` ist `data_limited`/`weak` getypt (der
+GUT-Wert ist nicht TFPT-unterscheidend, die `M_Z`-Lücke universell).
+
+→ **Strukturelle Bestätigung**, dass der Kernel in der Algebra/Dynamik lebt — plus die scharfe,
+ehrliche Aussage, *wo* eine reale Signatur noch sitzen könnte (dynamischer Bend/Floor/Wall in
+Wellenformen + diskrete Statistik-Phasen `π/4`,`π/2`,`π` + `sin²θ_W=3/8`-Unifikation), nicht
+statische Ratios. Kein neues Datum (QT-Schicht intern; `sin²θ_W` downstream Bridge).
+
+---
+
+## 6. Labor-`F_transfer`-Residuen — `lab-residuals/` (search.txt §7,8,9)
+
+Drei unabhängige Laborkanäle, **alle `[C]`** (downstream bridges / frontier; nie `[E]`).
+Verdicts **pro Baseline/Branch gesplittet** — kein Ampel-Urteil über Modellannahmen.
+
+### Myon g−2 — `Δaµ = 45/(2¹⁹π⁹) = 2.879×10⁻⁹` (exakte Compilerzahl, Deutung = Bridge)
+| SM-Baseline | Residuum `a_exp−a_SM` | Pull | Status |
+|---|---|---|---|
+| WP2020 dispersiv | (2.62±0.45)×10⁻⁹ | +0.58σ | **viable** |
+| WP2025 Lattice | (0.39±0.64)×10⁻⁹ | +3.92σ | **tension** |
+| CMD-3-related / future | — | — | Platzhalter (datenlimitiert) |
+
+→ baseline-abhängig: passt zur alten dispersiven Anomalie, in Spannung mit der
+Lattice-HVP 2025. Quellen: Fermilab final (PRL 135 101802, 2025), Theory Initiative
+WP2020 / WP2025 (arXiv:2505.21476).
+
+### Seltene Kaonen — downstream bridge
+| Zerfall | TFPT | Daten | Pull |
+|---|---|---|---|
+| `K⁺→π⁺νν` | 9.45×10⁻¹¹ | NA62 2016–2024: (9.6⁺¹·⁹₋₁.₈)×10⁻¹¹ | **−0.08σ** (im Kill-Fenster [7,12]) |
+| `K⁺→π⁺νν` | 9.45×10⁻¹¹ | NA62 2016–2022: (13.0⁺³·³₋₃.₀)×10⁻¹¹ | −1.13σ |
+| `KL→π⁰νν` | 3.33×10⁻¹¹ | KOTO < 2.2×10⁻⁹ (90% CL) | datenlimitiert (weit unter Reichweite) |
+
+→ **sehr starke Konsistenz** mit NA62 2016–2024, aber downstream bridge (externe
+Short-Distance-Funktionen), kein Compiler-Treffer. Quellen: NA62 (arXiv:2604.12649;
+JHEP 02 (2025) 191), KOTO 2024.
+
+### Axion
+- **Haloskop-Marker** `m_a=23.8 µeV (≈5.76 GHz)`, `f_a=M_scal/128`: im HAYSTAC/CAPP-Band,
+  **nicht** bei DFSZ ausgeschlossen → **datenlimitiert**. Quellen: ADMX/HAYSTAC/CAPP.
+- **Relik-Branches** (voller Finite-T-Misalignment-Solve, `ftransfer/axion_relic/*.py`):
+  - `DM.AXION.HILLTOP.01` (θᵢ=170.4°, `Ωₐh²≈0.66`) → **Spannung (Überproduktion ~5.5×)**.
+  - `DM.AXION.SPINE.01` (θᵢ=3π/5=108° aus `N_fam/g_car=3/5`) → **gelöst, konsistent**:
+    `spine_finiteT_solve.py` liefert **`Ωₐh²=0.125`** (zentral), robust über die ganze
+    Akzeptanzband **[0.090, 0.151]** bei chi(T)-Exponent n=7…9 und g\*(T) ±10% — landet
+    *ohne Tuning* auf `Ω_DM=0.12`. Anharmonischer Faktor nur 1.19 (vs Hilltop-Runaway).
+    Der Spine-Winkel ist damit der überlebende Axion-DM-Branch; der Hilltop bleibt überproduzierend.
+  - **Unabhängiger Solver-Check** (`spine_independent_check.py`): zwei *andere* Methoden —
+    sudden/adiabatischer WKB-Readout (mit power-law **und** tanh-`χ(T)`) und die semi-
+    analytische Anharmonik-Skalierung — geben `Ωₐh² ∈ [0.125, 0.143]`, **alle im Band**. Das
+    Ergebnis ist robust gegen Methode und `χ(T)`-Parametrisierung (nicht ein Artefakt einer
+    Integration).
+  - **Haloskop-Overlay** (`tfpt-lab haloscope`): bei `m_a=23.8 µeV` (5.77 GHz) ist
+    `g_aγγ^DFSZ=3.6×10⁻¹⁵`, `g_aγγ^KSVZ=9.3×10⁻¹⁵ GeV⁻¹`. Der Punkt liegt im **HAYSTAC-Band**
+    (~2–3× KSVZ-Reichweite) → **weder KSVZ noch DFSZ ausgeschlossen**, ein Near-Future-
+    Haloskop-Ziel (Plot `results/haloscope_overlay.png`).
+
+---
+
+## 7. Geparkt + theorieseitig
+
+- **`quantum-recovery-analog/`** — geparkt. Zentrale Dynamik `I_n ~ (64/729)^n`; ohne
+  echten physischen Datensatz bewusst nicht gebaut (Analogie-Risiko). Aktivierung nur bei
+  einem realen Boundary-Recovery-Experiment mit messbarem `I_n`/Fidelity-Recovery.
+- **`ftransfer/`** — theorieseitige `F_transfer`-Solver (kein Daten-Confronting):
+  Axion-Relik (finite-T), Koide-Source-to-Pole (`53/54`), Leptogenese-Boltzmann (`η_B`),
+  QCD-Matching `m_p/m_e`.
+- **`lean4-carrier-rigidity/`** — formaler Lean-4-Beweis des Carrier-Polynoms
+  `6Y²−Y−1=0` und der Hyperladungs-Spur.
+
+---
+
+## 7b. Erweiterte Domänen — scharfe Compiler-Vorhersagen + Recovery-Channel
+
+Über die search.txt-Suchräume hinaus, motiviert aus der Origin Story / dem
+Recovery-Mechanismus. Jede Domäne ist self-contained (`pyproject.toml`, `src/<pkg>/`,
+`data/`, CLI `analyze`, README).
+
+### 7b.1 Recovery-Channel (Test C) — `recovery-channel/` (datenunabhängig)
+**Zweck.** Den Recovery-Kernel `{1,(2/3)⁶,(1/3)⁶}` *explizit* als CPTP-Quantenkanal
+`R: H_bulk → H_observable` bauen und die Standard-Quanteninfo-Axiome prüfen — die
+datenunabhängige „Informationsprojektor"-Reframing (search.txt-Folgevorschlag, Test C).
+Packt, was die Verifikations-Suite strukturell schon zeigt (`v155` quasi-free,
+`v160` Kumulanten, `v161` Bogoliubov `Γ(t)`).
+
+**Konstruktion.** Jeder Kernel-Eigenwert `λ` = Qubit-Amplitude-Damping-Kanal mit
+Anregungs-Überlebenswahrscheinlichkeit `λ` (Damping `γ=1−λ`): eine geschützte `λ=1`-Mode
+(das „Gesetz"/Attraktor) + zwei kontrahierte Moden `λ₂=(2/3)⁶≈0.0878`, `λ₃=(1/3)⁶≈0.00137`.
+
+**Checks & Ergebnis (alle bestanden):**
+- **CPTP** — Trace-Erhalt (`ΣKᵢ†Kᵢ=I`) + komplette Positivität (Choi-Matrix PSD, min-Eig
+  ≈ 0 bis Maschinengenauigkeit) für alle drei Moden.
+- **Recovery-Rate** — `Rⁿ` dämpft mit `λⁿ=(2/3)^{6n}` = Page-Recovery `Iₙ` (exakt
+  reproduziert: 8.78e-2, 7.71e-3, 6.77e-4 für n=1,2,3).
+- **Data-Processing-Ungleichung** — relative Entropie kontrahiert `S(Rρ‖Rσ)≤S(ρ‖σ)`
+  (der Kanal erzeugt nie Information).
+- **QEC** — die `λ=1`-Mode ist eine **decoherence-free / Knill-Laflamme**-Code (KL erfüllt);
+  die kontrahierten Moden verletzen KL → nicht korrigierbar; der Spektralgap `(2/3)⁶` ist
+  die Leckrate.
+- **Page-Kurve (Test B).** Mit der TFPT-Hawking-Law `P_H=c₃/(1920M²)` ist
+  `S_BH(t)/S₀=(1−t/τ)^{2/3}`; die Insel/unitäre Min-Vorschrift `S_page=min(S_BH,S_rad)`
+  dreht bei **`t/τ=1−(1/2)^{3/2}=0.6464`** — *exakt* die TFPT-Page-Zeit
+  `t_Page=(1−1/(2√2))τ` (numerisch 0.6466).
+- **Petz-Recovery + rank-one Baby-Universe (`tfpt-recovery petz`, Companion zu `v221`).** Der
+  gapped Transport `T` (CPTP, doppelt-stochastisch auf dem Cusp-Weight-3-Raum) kontrahiert
+  unter Iteration auf einen **rank-one** Projektor (den eindeutigen Fixpunkt/„Gesetz") mit der
+  **exakten** Rate `‖Tⁿ−P_∞‖=(2/3)^{6n}` (numerisch bestätigt 8.78e-2, 7.71e-3, …). Der
+  boundary-zugängliche Algebra kollabiert am Kernel-Tempo auf **eine Dimension** — die
+  TFPT-Realisierung des **1-dim Baby-Universe-Hilbertraums** (Engelhardt 2025; JHEP 12 (2025)
+  159). Dazu ein **expliziter Petz-Recovery-Operator** `R_P` (CPTP, recovers reference; nur die
+  `λ=1`-Mode für alle Zustände = KL): das `[C]` Petz-Identification, das `v221` aufgeschoben
+  hatte, jetzt realisiert. Negativkontrollen (freies Ratio → `rⁿ`; entartetes Spektrum → kein
+  rank-one) greifen.
+
+**Typisierung.** `evidence_class=internal_consistency` — interne Konsistenzprüfung,
+**keine externe Messung**; nicht im selben Evidenz-Korb wie CMB/Kaon. **Kein neues Datum.**
+
+### 7b.2 CMB-Inflation (Starobinsky/Scalaron) — `cmb-inflation-scalaron/`
+**Frozen.** Niedrig-Krümmungs-Gravitationszweig `R+R²` (Spektral-Aktion) → Starobinsky mit
+`M_scal=c₃^{7/2}M̄=3.06×10¹³ GeV` (`[E]`); `N⋆` ist Reheating-Input (`[C]`, Band [50,60];
+slow-channel-Punkt 51.4). Read-offs: `n_s=1−2/N⋆`, `r=12/N⋆²`, `A_s=N⋆²/(24π²)·c₃⁷`.
+
+| Observable | TFPT (N⋆=51.4) | Daten | Pull |
+|---|---|---|---|
+| `n_s` | 0.9611 | Planck 0.9649±0.0042 | **−0.91σ (konsistent)** |
+| `n_s` | 0.9611 | P-ACT-LB+DESI 0.9743±0.0034 | **−3.9σ (Spannung)** |
+| `r` | 0.0045 | BICEP/Keck BK18 <0.036 | unter Limit |
+| `r` | 0.0045 | CMB-S4 σ_r≈5×10⁻⁴ | **9σ Zukunfts-Falsifikator** |
+| `A_s` | 1.76×10⁻⁹ | Planck 2.10×10⁻⁹±0.03 | **−11.3σ** → bevorzugt N⋆≈56 |
+
+**Branch-Resolver (P1).** Erzwingt die Typ-Entscheidung: ist `N⋆=51.4` prediction_of_record
+(dann A_s −11.3σ Killtest) oder ist das **Band [50,60]** der Record (dann profiliert A_s auf
+**N⋆=56.1** → `n_s=0.9644` bei −0.1σ Planck, `r=0.0038`, A_s konsistent → **downstream
+bridge**)? **Bayes-Faktor** (n_s+A_s-Likelihood, flacher Bandprior): `ln(B_profiled/fixed) =
++62` (Planck) bzw. `+65` (P-ACT-LB+DESI) — die Daten bevorzugen das Band **entscheidend**
+gegenüber dem Fixpunkt, also kann A_s **nicht** als volle prediction_of_record bei N⋆=51.4
+geführt werden. **CMB-S4-Forecast:** `r=0.0045` ist ein **9σ**-Detektionsziel (σ_r≈5×10⁻⁴).
+**Entscheidung FINALISIERT** (P1): Wegen `ln B = +62` ist der **Record das Band [50,60]**;
+`N⋆=51.4` ist der **preferred slow-channel Branch** (ein Punkt im Band, nicht der Record);
+`A_s` ist eine **downstream reheating Bridge**. Konsequenz: `n_s`/`r` bei 51.4 bleiben
+prediction_of_record (im Band); `A_s` bei fixem 51.4 ist ein **−11.3σ Branch-Stress
+(`downstream_bridge`)**, *kein* Record-Killtest; die record-konsistente Lesart profiliert `A_s`
+auf N⋆≈56. Beide A_s-Modi sind eine `alternative_group=Nstar_branch` (nie doppelt zählen).
+Quellen: Planck 2018 VI, BICEP/Keck BK18, P-ACT-LB+DESI, CMB-S4-Forecast.
+
+### 7b.3 Neutrino-/CKM-Mixing — `neutrino-mixing/` (prediction_of_record)
+**Frozen** (aus `c₃`/`φ₀`): `sin²θ12=1/3−φ₀/2=0.306747`; `sin²θ13=φ₀ e^{−5/6}=0.0231`;
+`sin²θ23=1/2` (Oktant nicht selektiert); `δ_CKM=π/3+3λ²=68.65°` (CKM-CP-Phase, kanonisch
+`v88`/`FLAV.CP.01`; anderer Sektor).
+
+| Observable | TFPT | Daten | Pull |
+|---|---|---|---|
+| `sin²θ12` | 0.306747 | NuFIT 6.0 0.307±0.012 | **−0.02σ** |
+| `sin²θ12` | 0.306747 | JUNO 0.3092±0.0087 | −0.28σ |
+| `sin²θ13` | 0.0231 | NuFIT 6.0 0.02195±0.00058 | **+2.0σ** (bekannte Spannung) |
+| `sin²θ23` | 0.5 | NuFIT 6.0 0.470±0.017 | +1.76σ (Oktant offen) |
+| `δ_CKM` | 68.65° | LHCb γ 64.6°±2.8 | +1.45σ |
+| `δ_PMNS` | 240° (4π/3) | NuFIT 6.0 NO best fit 212°⁺²⁶₋₄₁ | **+1.08σ** (consistent) |
+
+→ θ12 ist ein **scharfer Treffer**; θ13 trägt die **größte ~2σ-Spannung** (teilt `φ₀` mit β → siehe
+Seed-Stresstest 7b.7). **NEU (2026-07-02, verification-seitig):** die drei ~2σ-Mixing-Spannungen
+(θ13, θ23, `V_cb`) sind als **ein** gemeinsames Dritte-Generations-Muster benannt
+(`verification/v467_thirdgen_mixing_pattern.py`, `FLAV.THIRDGEN.PATTERN.01`, post-hoc `[O]`-Kandidat,
+Record unverändert), und das bisher unvorhergesagte Splitting-Verhältnis hat einen parameterfreien
+Kandidaten `Δm²₂₁/Δm²₃₁ = |J_PMNS| = 0.029653` bei −0.19σ (`v468`, `FLAV.DM2RATIO.01`); JUNO/Belle II
+entscheiden. **NEU (v231/v233):** die leptonische CP-Phase `δ_PMNS=4π/3=240°` ist
+strukturell an `δ_CKM` gekoppelt (eine hexagonale `μ6`-CM-Einheit `ρ=e^{iπ/3}`, Sheet-aufgespalten:
+`δ_PMNS=δ_CKM,lead+π`); gegen den NuFIT-6.0-NO-best-fit `+1.08σ` (CP-verletzende Region), `[C]`
+downstream Bridge, schwach unterscheidend bis DUNE/HyperK. Quellen: NuFIT 6.0 (arXiv:2410.05380),
+JUNO (2025), LHCb γ-Kombination.
+
+### 7b.4 GW `v_GW=c` — `gw-speed-multimessenger/`
+**Frozen.** Ein gemeinsamer Lorentz-Kegel ⇒ `(v_GW−c)/c=0` exakt (namentlicher
+Falsifikator; Gravitations-Analogon zu FRB.01). **Daten:** GW170817 + GRB170817A
+(Abbott+ 2017, ApJL 848 L13): GRB kam 1.74 s nach dem Merger über ~40 Mpc → Bound
+`[−3×10⁻¹⁵, +7×10⁻¹⁶]`; naiver Zentralwert +4.2×10⁻¹⁶. TFPT-0 liegt im Bound →
+**Konsistenz (Killtest bestanden)**, keine Detektion (Standard-GR sagt dasselbe).
+
+### 7b.5 QNM-Ringdown `ln3` — `gw-ringdown-spectroscopy/` (schwarzloch-direkt)
+**Frozen** (`v57`/horizon_readouts, [C]/[P]): asymptotische Schwarzschild-QNM
+`ω_R/T_H → ln3 = ln N_fam`; Flächenquant `ΔA=4 ln3 l_p²=ln(N_fam⁴)=ln 81`. Numerische
+Identität `ln3=ln N_fam=1.0986` exakt. **Scope-Ehrlichkeit:** der asymptotische Wert lebt im
+Hoch-Oberton-Limit (`M·ω→ln3/(8π)=0.0437`), gemessen wird der n=0-Grundton (`M·ω≈0.3737`,
+Faktor 8.5 entfernt). GW150914/GW250114 zeigen nur n=0 → **datenlimitiert**; direkter Test
+braucht Hoch-Oberton-Spektroskopie. Die physisch *direkteste* BH-Recovery-Signatur und
+zugleich die am weitesten von heutiger Testbarkeit entfernte.
+
+### 7b.6 Λ/H₀-Engine — `lambda-h0-engine/`
+**Frozen** (ein EM-Fixpunkt `α⁻¹`): `ρ_Λ/M_pl⁴=(3/256π⁴)e^{−2α⁻¹}` (122.95 Größenordn.,
+unreduziert); `ρ_Λ/M̄_pl⁴=(3/4π²)e^{−2α⁻¹}` (120.15, reduziert); `S_dS·ρ_Λ=1/(128c₃⁴)=32π⁴`
+(exakte dimensionslose Identität); `H₀/M̄~e^{−α⁻¹}/(2π)`.
+
+| Größe | TFPT | gemessen (Planck Ω_Λ,H₀) | dev |
+|---|---|---|---|
+| `ρ_Λ/M_pl⁴` (Größenordn.) | 122.948 | 122.943 | **0.004** |
+| `ρ_Λ/M̄_pl⁴` (Größenordn.) | 120.147 | 120.143 | 0.004 |
+| `S_dS·ρ_Λ` | 32π⁴ = 3117.09 | (Identität) | exakt |
+| `H₀/M̄` (log₁₀) | −60.31 | −60.23 | 0.08 dex |
+
+→ ein `α⁻¹`-Motor für Λ, S_dS und H₀ — **Konsistenz / Metrologie-Kohärenz**, *keine*
+Ableitung der absoluten Skala (das ist der eine Anchor). Achtung: nicht als „Λ
+vorhergesagt" verkaufen; H₀/Ω_Λ dürfen nicht reimportiert und dann als Ergebnis gezählt
+werden.
+
+**Erweiterung 2026-07-03 — parameterfreie Flat-Budget-Closure (`pattern_candidate`,
+Sandbox-Runner `experiments/tfpt-discovery/flat_budget_closure.py`).** Statt H₀/Ω_Λ zu
+importieren, wird das Budget GESCHLOSSEN: `{Ω_b=φ₀(1−1/4π)` [frozen], `Ω_c=(2/7)(1−1/4π)`
+[**numerologie-geflaggter** Nebenbefund 2026-07-02, Alternativ-Lesart zum
+Axion-Spine-DM-Branch — nie doppelt zählen], `ρ_Λ/M̄⁴=(3/4π²)e^{−2α⁻¹}` [frozen],
+`Σm_ν=0.0588 eV` [v468-Route]`}` + Flachheit ⇒ **H₀=67.15 km/s/Mpc** (Planck18 −0.39σ,
+SH0ES22 **−5.67σ** — die parameterfreie Planck-Seite der Hubble-Spannung; DESI-DR2 −2.16σ),
+`Ω_m=0.3133` (−0.27σ), `t₀=13.86 Gyr`. Ehrliche Stress-Richtung (korreliert, nicht additiv):
+`ω_b` **−2.02σ** CMB-seitig (BBN-only −0.73σ), `ω_c` −1.19σ, t₀ +2.9σ. Scorecard-Zeile
+`cosmo / flat LambdaCDM budget closure` (composite: `phi0_seed` + α-Engine-Bein;
+`alternative_group=axion_branch` fürs Ω_c-Bein). Kill: konvergiertes lokales H₀ ≥ 71 mit
+brechender CMB/BAO-Konkordanz, oder `ω_c` ≥ 3σ hart weg von 0.1186 — killt nur das
+Closure-Muster, nicht die frozen Ω_b/Λ-Records.
+
+### 7b.7 Shared-Seed-Stresstest — `seed-consistency/` (P1, der θ13-Test)
+**Zweck.** Ist θ13 der erste Riss im Seed-Block? Ein Seed `φ₀` fixt vier Observablen in
+*getrennten* Pipelines; jede Messung wird zu `φ₀` invertiert, dann Inverse-Varianz-
+Joint-Fit + Leave-one-out (Δχ² bei Entfernung) + dominanter Pull (χ²-Anteil).
+
+| Bein | Pipeline | implied φ₀ | z(frozen) | z(joint) | Δχ²(LOO) |
+|---|---|---|---|---|---|
+| β | CMB | 0.04715 ± 0.01623 | −0.37 | −0.35 | +0.13 |
+| Ω_b | BBN | 0.05311 ± 0.00132 | −0.05 | +0.15 | +0.03 |
+| **θ13** | **reactor** | 0.05051 ± 0.00133 | **−2.00** | **−1.80** | **+3.54** |
+| Cabibbo | CKM | 0.05314 ± 0.00043 | −0.08 | +0.54 | +1.67 |
+
+→ Joint `φ₀=0.05291`, **χ²/dof=1.23 → Block hält** (mit globalem NuFIT-θ13). **θ13 ist der
+dominante Pull** (88% des χ², −1.80σ). **Akzeptanzregeln (eingefroren):** θ13 >3σ vom
+gemeinsamen Seed → PMNS-θ13 als *transfer-corrected* (μτ-Breaking) flaggen; **zwei** Beine
+>3σ → Shared-Seed-Block fällt. Aktuell keine Regel ausgelöst. Beine aus CMB/BBN/reactor/CKM
+(keine vier CMB-Schnitte). Quellen: ACT DR6, BBN D/H, NuFIT 6.0, PDG.
+
+**v2 (`tfpt-seed v2`, P1-Härtung).** θ13 wird in **reactor-only** (Daya Bay) als Fit-Bein und
+**global** (NuFIT) als *Shadow*-Sensitivität getrennt — beide nie gemeinsam im Fit (≈0.9
+korreliert). Eine **Kovarianzmatrix** treibt einen GLS-Joint-Fit (diagonal per Konstruktion,
+Off-Diagonals bleiben der ehrliche Ort für geteilte Systematiken); dazu **Leave-one-
+experiment-family-out** und ein **Posterior-Predictive-Check**. Ergebnis: reactor-θ13
+χ²/dof=1.37, **PPC p=0.25**, θ13 dominiert mit **90% des χ²** bei −1.92σ; reactor-only und
+global liefern **dasselbe Verdikt** (Block hält). Genau die richtige Diagnose: der Seed ist
+kohärent, aber θ13 ist der erste ernsthafte Risskandidat.
+
+**v3 (`tfpt-seed v3`, reactor-only aus den Einzelexperimenten).** Statt eines pauschalen
+reactor-θ13 nutzt v3 die **drei unabhängigen Detektoren** getrennt — Daya Bay
+(`0.02175±0.00065`), RENO (`0.02282±0.00165`), Double Chooz (`0.02619±0.00317`) — zeigt den
+implizierten `φ₀` jedes Experiments und bildet eine saubere reactor-only-Kombination
+**`sin²θ13=0.02204±0.00059`**. Nur diese geht in den Fit; NuFIT-global bleibt **Shadow**
+(nie beide im Fit — der globale Fit enthält die Reactor-Daten bereits). Ergebnis:
+**χ²/dof=1.00, PPC p=0.39**, θ13 dominant bei **−1.62σ** (88% χ²), Shadow(global) χ²/dof=1.23
+→ **gleiches Verdikt**. Die volle Reactor-Kombination (leicht höher als Daya Bay allein)
+entspannt den θ13-Zug — kein Statistik-Origami, keine vier CMB-Beine, global und reactor-only
+nie doppelt gefüttert. JUNO-θ13 wird ergänzt, sobald stabil.
+
+### 7b.8 EHT-Real-Data-Lauf — `eht-achromatic-residual/` (P1, echte Daten)
+Voll dokumentiert in **§4** (echte 2023-D01-01-Polarimetrie, 4 Tage × 2 Bänder,
+Band-zu-Band-EVPA +0.9°, RM~5×10⁵ rad/m²; Residual-Nulls `data_limited` bis GRMHD-Imaging).
+
+### 7b.9 CCC-Crossover-Disc — `ccc-crossover-disc/` (preregistriert, **kein Datenpass**)
+**Frozen 2026-08-24** (CCC.SEAM.CROSSOVER-Thread, Runden DLIII–DLV; drei Freeze-Hashes
+`1df51166…`/`a795401a…`/`4cafe045…`, Guards in `tests/`). Suche nach Crossover-Relikt-Scheiben
+in CMB-Karten unter der zyklischen **[C]**-Lesart: Template = **kausale Top-Hat-Scheibe**,
+Radius `θ_max = η_rec/(η₀−η_rec) ≈ 1.16°` (eingefrorene Formel, Scan-Band 1.0–1.3°),
+Kantenprofil-Kontrast ≤ 3.3×10⁻⁴ (κ aus der v526-KMS-Normierung `β_angle=2π=1/(4c₃)`
+hergeleitet, Konventionsband deklariert). Diskriminatoren: scharfe Kausalkante (vs. der
+von HawkingNet leer gescannten Gauss-Klasse), Vorzeichen-Paarungs-Statistik
+(Sheet-Paritätsbit), Radiusband. Kill-Kriterien K1–K6, Null-Batterie und Entscheidungsregel
+in `hypotheses/ccc_disc_v1.yaml`. **Verdikt: `data_limited (preregistered — no data pass yet)`**;
+kein Scorecard-Row bis `results/results.json` existiert. Firewall: Search-Target der
+[C]-Lesart — ein Null beschädigt den Compiler-Kern nicht; kein direkter Hawking-Fluss.
+
+---
+
+## 7c. Entscheidungs-Tests (P1/P2: eigene Runner + Watchdogs)
+
+### 7c.1 Dunkle-Energie-`w`-Watchdog — `dark-energy-w-watchdog/` (P1, NEU)
+TFPT: `w=−1` exakt (Λ = konstantes Vakuum, `S_dS·ρ_Λ=32π⁴`). Konfrontiert den Punkt
+`(w0,wa)=(−1,0)` mit den DESI-DR2-CPL-Kombinationen über die 2-D-Mahalanobis-Distanz
+(`ρ(w0,wa)≈−0.9`, reproduziert die publizierten Signifikanzen auf ~0.2σ):
+
+| Kombination | 2-D-Distanz von w=−1 | publiziert |
+|---|---|---|
+| DESI+CMB+Pantheon+ | 3.07σ | 2.8σ |
+| DESI+CMB+Union3 | 3.87σ | 3.8σ |
+| DESI+CMB+DES-SN5YR | **4.37σ** | 4.2σ |
+
+**Overlap-aware:** Die drei SN-Compilations teilen Low-z-SNe ⇒ *Alternativen*, nicht
+unabhängig. Headline = **stärkste Einzelkombo 4.4σ**; das naive Produkt **6.6σ** wird
+explizit als *Scheinsignal* markiert (genau die Falle, die der Review warnt). **Kill:** `w≠−1`
+bei ≥5σ in einer einzelnen systematik-kontrollierten, overlap-aware-Kombination → trifft die
+Λ/H₀-Engine. Aktuell **armed, nicht ausgelöst** (`data_limited`).
+
+### 7c.2 Rare-Kaon-Flavor-Bridge — `rare-kaon-bridge/` (P1, NEU)
+Testet die Flavor-Bridge als **Geometrie**, nicht einen Einzeltreffer:
+
+| Bein | TFPT | Daten | Pull |
+|---|---|---|---|
+| `BR(K⁺→π⁺νν)` | 9.45×10⁻¹¹ | NA62 (9.6⁺¹·⁹₋₁.₈)×10⁻¹¹ | **−0.08σ** ✓ |
+| `δ_CKM / γ` | 68.65° | LHCb γ 64.6°±2.8 | **+1.45σ** ✓ |
+| Jarlskog `J` | 3.03×10⁻⁵ | PDG (3.08±0.13)×10⁻⁵ | **−0.07σ** ✓ |
+| `R_K=BR(KL)/BR(K⁺)` | **0.35238** | (KOTO-II) | nahe SM 0.40, respektiert Grossman-Nir (data_limited) |
+| `BR(KL→π⁰νν)` | 3.33×10⁻¹¹ | KOTO < 2.2×10⁻⁹ | unter Limit (data_limited) |
+
+→ 3/5 Beine direkte Datentreffer, Geometrie konsistent; aber **downstream Bridge** (`|Vcb|`,
+`|Vub|`, Short-Distance = externe Nuisances). Diskriminator: KOTO misst BR(KL) → R_K.
+
+### 7c.3 Higgs-Nahe-Kritikalität — `higgs-criticality/` (P2, NEU)
+TFPT-Vorhersage: die **doppel-kritische Fläche** `λ(M_Pl)=0` **und** `β_λ(M_Pl)=0`. Mit dem
+Buttazzo-2013-NNLO-Fit (arXiv:1307.3536, Gl. 61) extrapoliert + 1-Loop-`β_λ` aus den
+M_Pl-Kopplungen: **`λ(M_Pl)=−0.0143±0.0057`** (`lambda_pull_sigma=2.5`),
+**`β_λ(M_Pl)=+1.9×10⁻⁴`** (`near_zero`) — bemerkenswert nahe an (0,0), aber die exakte
+Doppel-Kritikalität ist mild gespannt. **Stabilitäts-Posterior** (MC über `M_t/M_h/α_s`,
+n=2×10⁵): **P(metastabil)=0.994**, P(stabil)=0.006 (≈2.5σ, reproduziert die publizierten
+2.8σ); `λ(M_Pl)`-Median −0.0143, 68%-CI [−0.020, −0.009]. Verdikt von `M_t` dominiert.
+**Konsistent** mit der Near-Criticality-Bridge, downstream RGE [C]; ein moderner 3–4-Loop-
+Stack + MC-vs-Pol-Topmasse wäre der Paper-fähige nächste Schritt.
+
+### 7c.4 Axion-Spine-Finite-T — `ftransfer/axion_relic/spine_finiteT_solve.py` (P1, gelöst)
+Voll dokumentiert in §6 (Axion): θᵢ=3π/5 → **`Ωₐh²=0.125`**, robust [0.090, 0.151] über
+chi(T)/g\*-Variationen → **konsistent, kein Tuning**. Damit ist der Spine der überlebende
+Axion-DM-Branch (Hilltop überproduziert).
+
+### 7c.5 QGEO-DtN-Mark-Locality — `theory-contracts/qgeo_dtn_mark_locality.py` (P2, Theory-Contract)
+**Bewusst NICHT in der empirischen Scorecard** (reine Mathematik). Z4-Marken bei `θ=jπ/2`
+geben `f=Σ_{j} g(θ−jπ/2)` mit Fourier-Support **nur `n≡0 mod 4`** ⇒ `[ρ,Λ]=0` ⇒ `ω∘ρ=ω`;
+numerisch (N=64) auf ~1e-16 bestätigt, **mit Negativkontrollen** (Z3-Marken und 4 generische
+Marken brechen den Kommutator, `[ρ,Λ]/|Λ|≈0.4–0.5`). **Contract hält.**
+
+### 7c.6 Weitere getypte Scorecard-Watchdogs + offene P2-Solver
+- **Neutrino-Absolutsektor:** `Σm_ν=5.88×10⁻² eV` (NO, **consistent**); `m_ββ=1.52×10⁻³ eV`
+  (NO, **data_limited**).
+- **Leptonische CP-Phase (`neutrino-mixing`, NEU geschärft):** `δ_PMNS=4π/3=240°` ist via
+  `v231/v233` strukturell an `δ_CKM` gekoppelt — eine hexagonale `μ6`-CM-Einheit `ρ=e^{iπ/3}`,
+  Sheet-aufgespalten (`ρ³=−1`): `δ_PMNS = δ_CKM,lead + π`. Gegen NuFIT 6.0 NO best fit
+  (`212°⁺²⁶₋₄₁`, inkl. Super-K) **+1.08σ → consistent**, in der CP-verletzenden Region (CP-Erhaltung
+  bei NO nur innerhalb 1σ); der nicht-präferierte No-SK-Fit (`177°`) zieht auf +3.32σ. **`[C]`
+  downstream Bridge** (Deck bleibt `Z/4`, CP in der hexagonalen Phasenfaser), schwach
+  unterscheidend bis DUNE/HyperK. `independence_group=cp_mu6_phase` (mit `δ_CKM` — keine zwei
+  unabhängigen Treffer). Dieselbe `4π/3` ist die Dirac-Phase im `η_B`-Solve.
+- **EDM-Null (`θ_eff=0`):** Neutron-EDM + Elektron-EDM beide **consistent** (PSI nEDM /
+  JILA/ACME-Limits). Kill: robustes EDM-Signal inkompatibel mit `θ_eff=0`.
+- **Leptogenese `η_B`** (Scalaron-Decuple, `ftransfer/leptogenesis_boltzmann/fboltzmann_solve.py`):
+  **gelöst → konsistent.** Der **volle BDP-Boltzmann-ODE-Solve** (integrierte Effizienz
+  `κ_f=0.092`, vs BDP-Fit 0.074 → validiert den Strip) liefert am **eingefrorenen** Schwerskala
+  `M₁=M_scal φ₀²/AΛ=8.6×10⁹ GeV` mit `δ_νCP=4π/3` ein **`η_B=6.5×10⁻¹⁰`** vs beobachtet
+  `6.1×10⁻¹⁰` — **Faktor 1.07, ohne freien `M_R`-Dial**. Bleibt `[C]` (Washout `m̃₁=m₃/AΛ`
+  verankert; `M₁` über die Scalaron-Route, README 7c.6). Der frühere `data_limited`-„Solve
+  pending" ist erledigt.
+- **GW-Strain-Echo** (Stage 1): erst nach echter Strain-Pipeline + Kerr-Subtraktion +
+  Injection- + Free-q-Kontrollen; bleibt `catalog_feasibility` (siehe §5). **P2, offen.**
+- **Rare-Kaon tree-only CKM:** die `|Vcb|`/`|Vub|`-Nuisances in §7c.2 sind PDG-Werte
+  (tree-dominiert); eine reine tree-level-Bridge (γ aus tree-B-Zerfällen, `|Vcb|`/`|Vub|`
+  exklusiv-tree) ist der nächste Schärfungsschritt, sobald KOTO `BR(KL)` liefert.
+- **Higgs 3–4-Loop-RGE:** die `higgs-criticality`-Bridge nutzt den Buttazzo-2013-NNLO-Fit;
+  ein moderner 3–4-Loop-Stack + MC-vs-Pol-Topmasse für eine paperfähige Posterior-Stabilitäts-
+  grenze ist **P2, offen** (die MC-Posterior P(metastabil)=0.994 ist schon implementiert).
+
+---
+
+## 7d. Black-Hole-Cosmology-Signaturen aus `problem_b.txt` (neu)
+
+Drei datenkonfrontierbare Signaturen aus dem Black-Hole-Cosmology-Teil von `problem_b.txt`
+(die übrigen Ideen dort sind exakte `verification/`-Mathematik, kein Datentest). Jede ist
+self-contained und bewusst **konservativ getypt** — keine wird zur Entdeckung erklärt.
+
+### 7d.1 CCBH `k=3 → w=−1` — `ccbh-dark-energy/` (downstream bridge)
+TFPT-Lesart „black hole local, de Sitter global": das Nariai-Seam-Innere **ist** das
+de-Sitter-Vakuum (`w_in=−1`, `S_dS·ρ_Λ=32π⁴`). Mit Croker-Weiner `k=−3w_in` folgt die
+kosmologische Kopplung `k=3` **exakt**, also Populations-EoS `w_eff=−k/3=−1` (echte
+kosmologische Konstante).
+
+| Bein | TFPT | Daten | Pull |
+|---|---|---|---|
+| Kopplung `k` | `3` (exakt) | Farrah+2023 `3.11±0.79` | **−0.14σ** |
+| Dichte `Ω_de` | `0.68` (CCBH, k=3) | Planck `Ω_Λ=0.6889` | −0.09σ (modellunsicher) |
+
+→ `k=3` passt zum Farrah-Zentralwert, **aber die CCBH-als-DE-Deutung ist umstritten**
+(Lacy/Amendola/Andrae&El-Badry/Mistele) → **downstream bridge, `data_limited`**. Es ist der
+**Mechanismus** hinter dem `w=−1`, das `dark-energy-w-watchdog` gegen DESI prüft —
+**alternative Lesart einer Frage** (`alternative_group=w_de_eos`, nie doppelt zählen).
+**Kill:** robustes `k≠3` bei ≥3σ in einer systematik-kontrollierten SMBH-Wachstumsprobe.
+
+### 7d.2 Gravastar/ECO `C=3/8` — `gravastar-compactness/` (search target)
+Zwei unabhängige Konstruktionen landen auf demselben Rational und demselben de-Sitter-Ende:
+TFPT-Nariai `Q_geom=3/8` (de-Sitter-Limes `1/2`) und Jampolski-Rezzolla 2026
+(arXiv:2509.15302) Max-Kompaktheit `C=3/8` (Horizont `1/2`).
+
+- **Normalform-Check (ehrlich):** exakter Rational-Match `3/8` + geteiltes Ende `1/2`, aber
+  **keine** bewiesene `C↔Q_geom`-Abbildung → `[C]`, struktureller Echo, keine Identität.
+- **Kompaktheitsfenster:** `1/3 < 3/8 < 4/9 < 1/2` ⇒ Oberfläche bei `R=8M/3 < 3M`: **über**
+  der Photonensphären-Schwelle (lichtfangend, Echo-fähig), **unter** Buchdahl und Horizont →
+  horizontloser Echo-Kandidat.
+- **Echo-Template:** Tortoise-Round-Trip-Delay `Δt=2.288 M` mit **Detektor-Frame-Masse**
+  `M(1+z)` (z-Korrektur 2026-07-02) → **beobachtet** ~0.76 ms (GW150914, z=0.09), ~2.91 ms
+  (GW190521, z=0.82); Amplitude `≤ (2/3)⁶`. Liefert `gw-ringdown-echo` die fehlende
+  **Zeitskala** zum fixierten Amplitudenverhältnis — der Stage-1d-Punkt-Test fährt genau
+  dieses (Δt, Ratio)-Paar. **EHT-Schatten** `b_c=3√3 M` ist **Kerr-entartet** →
+  Echos, nicht der Schatten, sind der Diskriminator. → `data_limited`.
+
+### 7d.3 Kosmische Händigkeit — `cosmic-handedness/` (Frontier-Watchdog)
+TFPT trägt nur `μ4`-Clock + `PSL(2,ℂ)≅SO⁺(3,1)`-Boundary-Orientierung ⇒ höchstens **winziger**
+globaler Rest, also **approximate Parität** — *keine* ~20%-Asymmetrie. Shamir 2025 (JADES)
+meldet `158:105` (~3.3σ Monopol), Galaxy-Zoo (Land+2008) ist isotrop. Eine rohe Zählasymmetrie
+ist ein **Monopol**; eine MW-Rotations-Aberration ein **Dipol** — die Trennung braucht
+himmelsaufgelöste Zählungen (nicht in den Aggregatdaten). → **Frontier, `data_limited`**;
+nicht hochgestuft („Kathedrale auf einem Pixelhaufen"). **Flag:** ein paritäts-ungerader
+globaler Spin-**Monopol**, der MW-Aberration + Selektion über Surveys hinweg übersteht.
+
+---
+
+## 8. Datenquellen (konsolidiert)
+
+| Domäne | Datensatz | Bezug / Provenienz | speist |
+|---|---|---|---|
+| FRB | CHIME/FRB Catalogue 1 | VizieR | FRB.03/04 (Drift, Folding) |
+| FRB | FRB 20121102A FAST 1652 Bursts | Li+2021, Nature 598 267 (VizieR) | FRB.02/02b/09, Energie-Kaskade |
+| FRB | FRB 20121102A (Aggarwal 2021) | IOPscience | Cross-Check |
+| FRB | lokalisierte FRB-`DM(z)` | ApJ adb84d Table 4; Sharma 2024 | FRB.05 (Ω_b) |
+| FRB | CHIME-Polarisation (Pandhi 2024) | IOPscience | RM/PA-Stresstests |
+| FRB | FAST FRB 20240114A Pol-Katalog (6134) | ScienceDB (user-supplied) | FRB.04/06/08 |
+| FRB | Blinkverse-DB (Multi-Source) | blinkverse.top | FRB.02/02b/04/06/07/09 Replikation |
+| FRB | rohe Wasserfälle (`.ar`/`.calibP`) | FRB 20201124A (1863), 20240114A (2729), 20121102A | FRB.01 Sub-Band-ToAs → `frb01_subband_toas.csv` |
+| CMB | Doppelbrechung `β` | ACT DR6 (arXiv:2509.13654), Planck PR4 (arXiv:2205.13962) | CMB `beta_only`/Linie + Shared-Seed |
+| CMB | `Ω_b` | Planck 2018 VI; BBN D/H (PDG/Cooke+2018) | CMB `omega_b_only`/Linie + Shared-Seed |
+| CMB | `sin²θ13`, Cabibbo `\|V_us\|` | NuFIT 6.0; PDG 2024 | Shared-Seed (θ13 + Cabibbo) |
+| CMB | `n_s`, `r`, `A_s` | Planck 2018 VI; BICEP/Keck BK18; P-ACT-LB+DESI; CMB-S4 (Forecast) | Inflation/Scalaron |
+| ν | PMNS `θ12/θ13/θ23` | NuFIT 6.0; JUNO (2025) | neutrino-mixing |
+| CKM | `δ`/`γ` | LHCb γ-Kombination | neutrino-mixing (CKM δ) |
+| GW | LVK GWTC-5.0 (390 kanonisch) | GWOSC Event-API | GW Echo-Census |
+| GW | GW170817 + GRB170817A | Abbott+ 2017 ApJL 848 L13 | `v_GW=c` Null-Test |
+| GW | Ringdown `M_f`,`a_f`,`f_220` | GW150914 (Isi+2019), GW250114 (GWTC-5.0) | QNM `ln3` (datenlimitiert) |
+| Kosmo | `Ω_Λ`, `H₀` | Planck 2018 VI | Λ/H₀-Engine |
+| Lab | Myon g−2 `a_exp` + SM-HVP | Fermilab PRL 135 101802 (2025); TI WP2020/WP2025 (arXiv:2505.21476) | g−2-Baseline-Matrix |
+| Lab | `BR(K⁺→π⁺νν)`, `KL`-Limit | NA62 (arXiv:2604.12649; JHEP 02 2025 191); KOTO 2024 | Kaon-Bridge |
+| Lab | γ (CKM), Jarlskog `J`, `\|Vcb\|`/`\|Vub\|` | LHCb γ 2024; PDG 2024 | rare-kaon-bridge (R_K, δ_CKM, J) |
+| Lab | Axion-Haloskop-Coverage | ADMX/HAYSTAC/CAPP | Axion-Marker |
+| EW | SM `λ(M_Pl)`, `β_λ(M_Pl)`-Fit | Buttazzo+2013 (arXiv:1307.3536, NNLO) | higgs-criticality (Doppel-kritische Fläche) |
+| EHT | M87 2017 Polarimetrie (uvfits) | **EHT 2023-D01-01** (CyVerse 10.25739/q46m-m857), real | EHT Achromatizität (real) + Injection-Suite; Residual-Nulls offen |
+| ν | Σm_ν, m_ββ | DESI+CMB, KATRIN, LEGEND/nEXO | Neutrino absolutes Spektrum (scorecard) |
+| ν | δ_PMNS (leptonische CP) | NuFIT 6.0 (arXiv:2410.05380); DUNE/HyperK | neutrino-mixing (`δ_PMNS=240°`) |
+| cosmo | dunkle Energie `w0-wa` | DESI DR2 (arXiv:2503.14738) + CMB + Pantheon+/Union3/DES-SN5YR | `w=−1` overlap-aware Watchdog |
+| lab | EDM-Limits (n, e) | PSI nEDM; JILA/ACME | EDM-Null (`θ_eff=0`, scorecard) |
+| cosmo | SMBH-Kopplungsindex `k` | Farrah+2023 (ApJL 944 L31); Planck `Ω_Λ` | ccbh-dark-energy (`k=3 → w=−1`) |
+| GW/grav | Max-Kompaktheit `C=3/8`; LVK-Ringdown | Jampolski-Rezzolla 2026 (arXiv:2509.15302); GWTC | gravastar-compactness (ECO-Echo-Template) |
+| cosmo | Galaxien-Spin-Händigkeit | Shamir 2025 (MNRAS 538 76, JADES); Land+2008 (Galaxy Zoo) | cosmic-handedness (Paritäts-Watchdog) |
+| Pulsar | Glitch-Katalog `Δν/ν`,`Δν̇/ν̇`,Epoche (726 Glitches) | Jodrell Bank Glitch Catalogue (Basu+2022, MNRAS 510 4049) | pulsar-glitch-recovery (PG.01/02/03) |
+| Pulsar | Recovery `Q`/`τ_d` (60 Komponenten, 46 Glitches) | Yu+2013 (MNRAS 429 688; arXiv:1211.2035 `expTab.tex`) | pulsar-glitch-recovery (PG.04) |
+| Pulsar | Crab `ν(t)`/`ν̇(t)` (479 Monatspunkte, 1988–2026) | Jodrell Bank Crab Monthly Ephemeris (Lyne+1993, MNRAS 265 1003; `crab2.txt`) | pulsar-glitch-recovery (PG.05 dyn. Kamm) |
+| Transient | ENT/AGN-Scheiben-TDE ZTF-DR-Lichtkurve (J2245+3743, ~1440 g/r/i-Epochen MJD 58242–60967) | IRSA ZTF light-curve service (anonym); Objekt: Graham+2025, Nat. Astron., arXiv:2511.02178 | recovery-comb-domains (A5 dyn. Kamm ω=2.58 + TFPT-λ-Batterie) |
+| EW | `α_em(M_Z)`, `sin²θ_W(M_Z)`, `α_s(M_Z)` | PDG 2024 | gauge-unification (`sin²θ_W=3/8` vs RGE) |
+
+Große/öffentlich-neu-ladbare Rohdaten sind **gitignored**; nur kleine
+abgeleitete/Provenienz-Dateien (z. B. `frb01_subband_toas.csv`, `gwtc_events.csv`,
+`measurements.json`) werden versioniert, damit die Tests ohne GB-Downloads reproduzierbar bleiben.
+
+---
+
+## 9. Methodik / Red-Team-Prinzipien
+
+- **Preregistrierung & eingefrorener Kernel:** Hypothesen + Kernelwerte + Nullmodelle + Erfolgskriterien vor dem Lauf festgelegt (FRB: `hypotheses/*.yaml`, exakte Brüche per Guard-Test); Spine-Axion-Winkel vor dem Lauf eingefroren.
+- **Surrogat-kalibrierte Nullmodelle:** Within-Session-/Block-/Zeit-/Frequenz-Shuffle, AR(1)-Energy/Drift, Censoring, Dirichlet — pro Test mehrere, konservativ (max-p).
+- **Placebo-Kontrollen & Look-Elsewhere:** FRB.06 (arbiträre Kontrollbrüche), FRB.02b (freier Quotient gegen fixen TFPT-Quotienten, LEE-korrigiert, Injection-Recovery).
+- **Multi-Source-Replikation:** „Support" nur bei ≥2 unabhängigen Quellen (BH-q < 0.01, unterscheidend, semantisch valide).
+- **Observable-Semantik:** Energie- vs Amplitudenkanal korrekt zugeordnet (Energie → `64/729`, Amplitude → `8/27`); Fehlpaarung = geflaggte Audit-Anomalie.
+- **Kill-Bedingungen** pro Zeile explizit (z. B. `BR(K⁺)` außerhalb [7,12]×10⁻¹¹; gemeinsame über-Präzisions-Dispersion über Quellen; β bricht die Linie bei ≥3σ).
+
+### 9.1 Scorecard-Schema (`evidence_scorecard.json`, Generator `build_evidence_scorecard.py`)
+
+Eine getypte Zeile pro `(domain, observable)`. Felder:
+`domain · observable · tfpt_value · data_value · pull_sigma · claim_type · bridge_type ·
+stage · source · kill_condition · status` **plus die Metadaten**
+`independence_group · discriminative_power · decision_horizon · evidence_class · hint_flag`.
+
+**Feste Enums (Generator bricht bei Verstoß):**
+- `stage ∈ {prediction_of_record, downstream_bridge, search_target, catalog_feasibility,
+  strain_level_test, parked_analog, not_applicable}` (`not_applicable` = interne
+  Konsistenz-Checks/Identitäten ohne empirische Stufe, z. B. Recovery-Channel, Page-Kurve,
+  `S_dS·ρ_Λ=32π⁴`)
+- `status ∈ {consistent, hint, tension, null, kill_channel, data_limited, parked}`
+- `evidence_class ∈ {external_data, internal_consistency, downstream_bridge, search_target,
+  parked}`
+
+**Warum die Metadaten (Anti-Schein-Stärke):**
+- `independence_group` — **korrelierte Beine zählen nicht als unabhängig.** `phi0_seed`
+  (β, Ω_b, θ12, θ13, Cabibbo, Seed-Linie, FRB.05 — alle `φ₀`-abgeleitet), `alpha_em`
+  (Λ-Hierarchie, S_dS — aus `α⁻¹`), `N_star_reheating` (Inflation),
+  `c3_topform_horizon` (EHT, aus `16c₃⁴`), `independent` (Rest). Aktuell **8 Zeilen
+  `phi0_seed`** — ein Cluster, keine acht unabhängigen Treffer (Zahl auto-generiert, siehe §1).
+- `alternative_group` — **eine Frage, mehrere Lesarten** (nie gleichzeitig „consistent" und
+  „tension" aus demselben Thema zählen): `Nstar_branch` (A_s fixed vs profiliert),
+  `HVP_baseline` (g−2 WP2020 vs WP2025-Lattice), `axion_branch` (Haloskop/Hilltop/Spine).
+- `evidence_class` — `internal_consistency` (recovery-channel/Page-curve/S_dS-Identität:
+  interne Checks, *keine* externe Messung) wird vom `external_data`-Korb getrennt.
+- `watch_flag`/`watch_level` — der schärfste **nicht-rote** Kanal: dunkle Energie `w`
+  (`watch_flag=true`, `high`; 4.4σ stärkste Einzelkombo, aber systematik-limitiert → noch
+  `data_limited`, nicht `tension`).
+- `discriminative_power ∈ {internal, weak, medium}` — `weak`, wo die Standardphysik denselben
+  Wert vorhersagt (Ω_b, Λ-Hierarchie, v_GW=c).
+- `decision_horizon ∈ {near_term, mid_term, long_term}`.
+- `hint_flag` — true z. B. für FRB.03 (zu kalt für `status=hint`, daher `data_limited`).
+- Composite-/Branch-Felder: `chi2_dof`, `max_leg_pull_sigma`, `dominant_leg` (Shared-Seed);
+  `lambda_pull_sigma`/`beta_lambda_pull_sigma`/`status_note` (Higgs-Kritikalität);
+  `log_order_deviation` (Λ-Hierarchie, statt eines pull_sigma).
+
+**README-Statistik wird ausschließlich aus dem JSON generiert** (Marker-Block
+`<!-- SCORECARD_STATS -->`, vom Generator geschrieben) — keine handgepflegten Zähler.
+Aktueller Stand siehe §1.
+
+---
+
+## 10. Reproduzieren
+
+```bash
+# gemeinsames venv (mpmath/numpy/scipy/sympy/astropy)
+. experiments/tfpt-discovery/.venv/bin/activate
+
+# FRB (voller Lauf -> results/ + Plots)
+cd experiments/frb-tfpt-signatures && PYTHONPATH=src python -m frb_tfpt.cli analyze --seed 0
+
+# CMB Seed-Linie
+cd experiments/cmb-birefringence-seed && PYTHONPATH=src python -m tfpt_cmb.cli analyze
+
+# Labor-Residuen
+cd experiments/lab-residuals && PYTHONPATH=src python -m tfpt_lab.cli analyze
+
+# GW Echo-Census (Katalog ggf. neu laden) + Stage-1 Matched-Filter (Injection-Recovery)
+cd experiments/gw-ringdown-echo && python scripts/fetch_catalog.py && PYTHONPATH=src python -m tfpt_gw.cli analyze
+cd experiments/gw-ringdown-echo && PYTHONPATH=src python -m tfpt_gw.cli search   # Stage-1 MF, 3/3 Injektionen
+cd experiments/gw-ringdown-echo && python scripts/fetch_strain.py GW150914 GW190521 && PYTHONPATH=src python -m tfpt_gw.cli realdata  # Stage-1 statisch (2/3)^6 auf echtem Strain
+cd experiments/gw-ringdown-echo && python scripts/fetch_strain_4096.py GW250114_082203  # O4+: 4096s-Segment croppen
+cd experiments/gw-ringdown-echo && PYTHONPATH=src python -m tfpt_gw.cli dynamic --events GW250114_082203 GW150914 GW190521  # Stage-2 Walled-Clock
+cd experiments/gw-ringdown-echo && PYTHONPATH=src python -m tfpt_gw.cli stack --events GW250114_082203 GW230814_230901 GW240920_124024 GW231226_101520 GW241127_061008 GW200129_065458 GW190521_074359 GW240621_195059 GW150914 GW190521  # Stage-1b Stack
+
+# Seam-Horizon-Replica-Contract (reine Theorie, kein Scorecard-Row)
+cd experiments/theory-contracts && python3 seam_horizon_replica.py
+
+# echte EHT-Polarimetrie laden + Achromatizität + Injection-Suite + Pipeline-Readiness
+cd experiments/eht-achromatic-residual && python scripts/fetch_eht_data.py && PYTHONPATH=src python -m tfpt_eht.cli realdata
+cd experiments/eht-achromatic-residual && PYTHONPATH=src python -m tfpt_eht.cli inject
+cd experiments/eht-achromatic-residual && PYTHONPATH=src python -m tfpt_eht.cli pipeline
+
+# Seed-Stresstest (theta13-Treiber) — v1 + v2 (GLS/PPC) + v3 (reactor-only DB/RENO/DC)
+cd experiments/seed-consistency        && PYTHONPATH=src python -m tfpt_seed.cli analyze
+cd experiments/seed-consistency        && PYTHONPATH=src python -m tfpt_seed.cli v2
+cd experiments/seed-consistency        && PYTHONPATH=src python -m tfpt_seed.cli v3
+
+# erweiterte Domänen (Compiler-Ebene + Recovery-Channel)
+cd experiments/recovery-channel        && PYTHONPATH=src python -m tfpt_recovery.cli analyze
+cd experiments/recovery-channel        && PYTHONPATH=src python -m tfpt_recovery.cli petz      # Petz-Map + rank-one Baby-Universe
+cd experiments/cmb-inflation-scalaron  && PYTHONPATH=src python -m tfpt_inflation.cli analyze   # + Branch-Resolver/Bayes
+cd experiments/neutrino-mixing         && PYTHONPATH=src python -m tfpt_neutrino.cli analyze
+cd experiments/gw-speed-multimessenger && PYTHONPATH=src python -m tfpt_gwspeed.cli analyze
+cd experiments/gw-ringdown-spectroscopy && PYTHONPATH=src python -m tfpt_ringdown.cli analyze
+cd experiments/lambda-h0-engine        && PYTHONPATH=src python -m tfpt_lambda.cli analyze
+
+# Entscheidungs-Tests (P1/P2)
+cd experiments/dark-energy-w-watchdog  && PYTHONPATH=src python -m tfpt_w.cli analyze
+cd experiments/rare-kaon-bridge        && PYTHONPATH=src python -m tfpt_kaon.cli analyze
+cd experiments/higgs-criticality       && PYTHONPATH=src python -m tfpt_higgs.cli analyze   # + Stabilitäts-Posterior
+cd experiments/lab-residuals           && PYTHONPATH=src python -m tfpt_lab.cli haloscope    # 23.8 µeV Overlay
+cd experiments/ftransfer/axion_relic   && python spine_finiteT_solve.py      # ~25 s
+cd experiments/ftransfer/axion_relic   && python spine_independent_check.py  # unabhängiger Cross-Check
+cd experiments/ftransfer/leptogenesis_boltzmann && python fboltzmann_solve.py  # voller ODE: eta_B=6.5e-10 @ frozen M1
+cd experiments/theory-contracts        && python qgeo_dtn_mark_locality.py
+
+# problem_b black-hole-cosmology Signaturen (neu)
+cd experiments/ccbh-dark-energy        && PYTHONPATH=src python -m tfpt_ccbh.cli analyze
+cd experiments/gravastar-compactness   && PYTHONPATH=src python -m tfpt_gravastar.cli analyze
+cd experiments/cosmic-handedness       && PYTHONPATH=src python -m tfpt_handedness.cli analyze
+
+# problem_1 Pulsar-Glitch-Recovery (dritte Cross-Domain-Säule) + Recovery PG.04
+cd experiments/pulsar-glitch-recovery  && python scripts/fetch_glitches.py   # JBO-Größen (CSV committed)
+cd experiments/pulsar-glitch-recovery  && python scripts/fetch_recovery.py   # Yu+2013 Q/tau_d (CSV committed)
+cd experiments/pulsar-glitch-recovery  && python scripts/fetch_crab_ephemeris.py  # Crab nu(t) (CSV committed, PG.05)
+cd experiments/pulsar-glitch-recovery  && PYTHONPATH=src python -m tfpt_pulsar.cli validate   # Injection-Recovery
+cd experiments/pulsar-glitch-recovery  && PYTHONPATH=src python -m tfpt_pulsar.cli analyze     # PG.01/02/03/04 (statisch)
+cd experiments/pulsar-glitch-recovery  && PYTHONPATH=src python -m tfpt_pulsar.cli dynamic      # PG.05 dynamischer Kamm auf echtem Crab nu(t)
+cd experiments/pulsar-glitch-recovery  && python scripts/fetch_nicer_j0537.py                  # PG.06: 1165 NICER-J0537-Obs bestätigen/listen
+cd experiments/pulsar-glitch-recovery  && PYTHONPATH=src python -m tfpt_pulsar.cli nicer        # PG.06 Scaffold (PINT-Upstream gated, Downstream injection-validiert)
+cd experiments/pulsar-glitch-recovery  && python scripts/fetch_nicer_vela.py                   # PG.06b: 665 NICER-Vela-Obs listen
+cd experiments/pulsar-glitch-recovery  && PYTHONPATH=src python -m tfpt_pulsar.cli vela --download  # PG.06b: echte Vela-Obs laden + PINT-Fold (Vela-Pulsation nachgewiesen)
+
+# Cross-Domain-Suche der dynamischen Kamm-Signatur (omega=2.58) ueber 8 Kanaele
+cd experiments/recovery-comb-domains   && PYTHONPATH=src python -m tfpt_combdomains.cli fetch-ent  # A5: echte ZTF-Lichtkurve J2245+3743 (IRSA)
+cd experiments/recovery-comb-domains   && PYTHONPATH=src python -m tfpt_combdomains.cli analyze  # A1 Magnetar/A2 BH-Tail/A3+A3b FRB-Tail/A4 GRB-Plateau/A5 ENT-TDE/B4 BEC/B5 Qubit
+
+# problem_1 Quantum-Testbed (Entanglement + Quench-DSI + OTOC + walled clock + anyon-MTC; intern)
+cd experiments/quantum-testbed         && PYTHONPATH=src python -m tfpt_qtest.cli analyze       # QT.01-05
+
+# v244/v245 sin^2 theta_W = 3/8 Gauge-Unifikation vs PDG (1/2-loop RGE)
+cd experiments/gauge-unification       && PYTHONPATH=src python -m tfpt_gut.cli analyze
+
+# zentrale Scorecard regenerieren
+python experiments/build_evidence_scorecard.py
+```
+
+### R487 outer-bridge structure seal
+
+`tfpt-discovery/outer_bridges_probe.py` audits the fixed-support
+autocorrelation interface, the two-piece dense-extension reduction,
+the literal Mathlib `riemannZeta` endpoint, available Mellin
+infrastructure, and the honest Lean sorry census 9.  It is structural
+research documentation only and makes no RH claim.
+
+```bash
+python experiments/tfpt-discovery/outer_bridges_probe.py --smoke
+```
+
+`tfpt-discovery/outer_bridges2_probe.py` seals the r489 continuation:
+uniform-plus-`L¹` fixed-support topology, compact `L²`
+autocorrelation witness, sorry-free finite-comb and standard polar
+integral continuity, and one remaining dense-completion package.
+
+```bash
+python experiments/tfpt-discovery/outer_bridges2_probe.py --smoke
+```
+
+`tfpt-discovery/outer_bridges3_probe.py` seals the r491 correction and
+reduction: positive polar `2 cosh` normalization, concrete full arch
+functional, explicit support-fitting dyadic sampler, and the exact
+three-part completion remainder.  Verdict:
+`HIDDEN_GAP_FOUND / DENSITY_BRIDGE_REDUCED`.
+
+```bash
+python experiments/tfpt-discovery/outer_bridges3_probe.py --smoke
+```
+
+### R494 kernel-Loewner operator certificate
+
+`tfpt-discovery/kernel_loewner_probe.py` executes the three-gate
+`PRIME.RDAGGER.KERNEL_LOEWNER.01` contract at `L=0.3`: three
+identity calibrations, the zero-extension Loewner lemma with both
+translation boundary strips, and a 401-dimensional Legendre
+finite-section certificate with the exact Hilbert--Schmidt rest
+charged three times (finite rest plus both off-blocks).  Verdict:
+`PROVED(c=2.1000e-3)`.  The uncut Galerkin sequence remains labelled
+as upper-bound diagnostics; this is a fixed-support Weil theorem,
+not an RH claim.
+
+```bash
+python experiments/tfpt-discovery/kernel_loewner_probe.py --smoke
+```
+
+### R495 adversarial kernel-Loewner red team
+
+`tfpt-discovery/kernel_redteam_probe.py` independently attacks the
+R494 `L=0.3` floor through five non-calibration digamma/x-space
+cross-tests, exact rational zero-extension boundary-strip tests, a
+deliberately false doubled-`c_L` world, and a Clenshaw--Curtis
+Nyström/Hilbert--Schmidt computation separate from the sealed R494
+quadrature.  It explicitly measures both off-blocks and the
+block-diagonal rest beyond Legendre degree 400.  Verdict:
+`CONFIRMED(c=2.1000e-3)`; this is a fixed-support Weil theorem audit,
+not an RH claim.
+
+```bash
+python3 experiments/tfpt-discovery/kernel_redteam_probe.py --smoke
+```
+
+### R553 Gabor config-first (quantifier repair)
+
+`tfpt-discovery/gabor_config_first_probe.py` is an experiments-only
+scout of the r551 wall with reversed quantifiers: increment-compliant
+off-line configurations `Z` are frozen first, then the witness chooses
+`h` seeing `Z`.  Score is the r541 leftover plus extra off-line mass.
+Firewall: no RH claim, no Lean/ledger/paper/`next.txt` edit.
+
+```bash
+python3 experiments/tfpt-discovery/gabor_config_first_probe.py --smoke
+```
+
+### R554 Gabor mixture witness
+
+`tfpt-discovery/gabor_mixture_witness_probe.py` asks whether a finite
+Gabor mixture (positive, signed, or H-nulling) beats the r553 cluster
+configs under the same leftover scale.  Experiments-only: no RH claim,
+no Lean/ledger/paper/`next.txt` edit.
+
+```bash
+python3 experiments/tfpt-discovery/gabor_mixture_witness_probe.py --smoke
+```
+
+### R560 Gabor honest Weil game (config first, full form)
+
+`tfpt-discovery/gabor_honest_weil_game_probe.py` is the r559-referee
+decider: the same 52-row increment-compliant catalog as r554, scored
+with the homogeneous form `W_honest = Q_off + R_on` (no `R_ref`
+hinge, no −3.56 credit).  Budget losses (none on this catalog) would
+additionally get `W_sharp` from the frozen first-100 ordinates plus
+a Trudgian tail.  Verdict: `HONEST_WITNESS_WINS(all=52,
+worst_margin=-6.03e123)`.  Experiments-only: no RH claim, no
+Lean/ledger/paper/`next.txt` edit.
+
+```bash
+python3 experiments/tfpt-discovery/gabor_honest_weil_game_probe.py --smoke
+```
+
+### R561 Gabor uniform dominance (constructive (a,ω) rule)
+
+`tfpt-discovery/gabor_uniform_dominance_probe.py` is the symbolic
+successor of r560: a closed dominance inequality for
+`W_honest = Q_off + R_on` with an explicit (a,ω)-rule.  The r541
+lock `a=(σ²/64)/8`, `ω=γ−πa/σ` is not Z-uniform (frozen centre-tie
+leftover/E ≈ +0.0096, phase factor ≡ 1, envelope ratio → 1 as a→0;
+lock loses all 8 `antiphase_k43` cells).  Isolation-shrink from that
+lock empties the vanishing window `I_exc=[ω−ε(a),ω+ε(a)]`,
+`ε(a)=√(2a log max(1/a, 4 K_bin))`, and the named bound is
+conservative and negative on the r560 catalog (52) plus the three
+danger families (24).  Verdict: `DOMINANCE_UNIFORM`.  Experiments-only:
+no RH claim, no Lean/ledger/paper/`next.txt` edit.
+
+```bash
+python3 experiments/tfpt-discovery/gabor_uniform_dominance_probe.py --smoke
+```
+
+### R563 Gabor dominance red-team (isolation-shrink)
+
+`tfpt-discovery/gabor_dominance_redteam_probe.py` is an adversarial
+search for an increment-compliant `Z` that breaks the sealed r561
+isolation-shrink rule or its named reduced bound.  Families: `d_min→0`
+(including the `δ=0` same-`γ` edge), mass-pack just outside `I_exc`,
+`σ/γ` extremes, secondary plus-lobe at `t=−ω`, seeded DE (2 rounds).
+Verdict: `REDTEAM_BREAKS` — equal-`σ` twin at `−ω` gives `W/E≈+0.0096`;
+`θ_left` does not cover the plus-lobe for `ω>0`.  On `γ>0`-only cells
+the rule still holds (0/46 breaks).  Experiments-only: no RH claim,
+no Lean/ledger/paper/`next.txt` edit.
+
+```bash
+python3 experiments/tfpt-discovery/gabor_dominance_redteam_probe.py --smoke
+```
+
+### R565 Gabor scramble-gate (late r469 declaration)
+
+`tfpt-discovery/gabor_scramble_gate_probe.py` is the late r469
+anti-list-§3 declaration for the Gabor/dominance route: the full
+r541/r548 Weil form `W = Pole − Comb + Arch − Z_on − Q_off` is
+scored on σ ∈ {0.01, 0.25, 0.49} × γ ∈ {14, 1000, 10000} at the
+r541 lock and the r561 isolation-shrink, under true Λ, eight
+label-permutations, PNT smears, and Comb=0.  Verdict:
+`GATE_PASS(mode=needs_no_cancellation)` — 18/18 cells
+`INSENSITIVE` (worst |ΔW|/|W| = 7.2e-15); the bound does not
+use prime cancellation, so scramble-invariance is admissible
+(unlike the 31 dead routes).  Experiments-only: no RH claim,
+no Lean/ledger/paper/`next.txt` edit.
+
+```bash
+python3 experiments/tfpt-discovery/gabor_scramble_gate_probe.py --smoke
+```
+
+### R567 Gabor canonical dominance
+
+`tfpt-discovery/gabor_canonical_dominance_probe.py` is the r566
+repair of the signed-refuted r561 rule: weighted canonical
+`(σ,γ,m)` with `γ>0`, `ω>0`, no numeric `a`-floor.  Verdict:
+`CANONICAL_DOMINANCE_HOLDS(cells=119, worst_margin=0.990408,
+bound_conservative=all)`.  Experiments-only: no RH claim, no
+Lean/ledger/paper/`next.txt` edit.
+
+```bash
+python3 experiments/tfpt-discovery/gabor_canonical_dominance_probe.py --smoke
+```
+
+---
+
+## 11. Konventionen
+
+* Jedes Experiment ist self-contained: eigene Abhängigkeiten, eigener Build, eigene
+  CLI als Audit-Surface (`<pkg>.cli analyze`).
+* Keine SI-Werte als versteckte Eingabe — alles fließt aus den TFPT-Axiomen
+  (`c₃ = 1/(8π)`, `φ₀ = 1/(6π) + 3/(256π⁴)`, Carrier-Polynom `6Y²−Y−1=0`).
+* **Firewall / Typing:** Frontier-Observablen sind `F_transfer`-Bridges, **nie**
+  primitive Compiler-Outputs; Status pro SM-Baseline/Branch gesplittet; nichts wird
+  still nach `[E]` hochgestuft.
+* Standalone unter `experiments/` — **nicht** im Verification-Suite/Ledger/Website,
+  keine load-bearing Claims.

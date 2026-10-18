@@ -1,0 +1,1 @@
+The Gabor result snapshot was modified locally before the separation. It is preserved here without changing the sealed campaign fixture or promoting its mathematical status. It remains available for a deliberate later research reconciliation.

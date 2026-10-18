@@ -1,0 +1,415 @@
+{
+  "source_repository": "https://github.com/sthamann/tfpt-theoryv4",
+  "source_commit": "ba2f0fc",
+  "purpose": "Byte-identical historical sources before RH/prime extraction. Mixed papers retain physics context; not current Prime Front claims.",
+  "files": [
+    {
+      "source": "parity_toeplitz_classification.tex",
+      "sha256": "b3059e89157c9f6b2c3daa0e6b1193a0f048965ba7aeef382fb80e5e4dee11b2",
+      "bytes": 193646,
+      "archive": "provenance/tfpt-source/parity_toeplitz_classification.tex"
+    },
+    {
+      "source": "tfpt_4_frontier.tex",
+      "sha256": "ec70e29fb9bcb917efe51b1845db61eface33d61ba7c9cc28fc13ba8bbdeedc9",
+      "bytes": 101229,
+      "archive": "provenance/tfpt-source/tfpt_4_frontier.tex"
+    },
+    {
+      "source": "tfpt_research_contracts.tex",
+      "sha256": "123a6267db8c39af7f16db00ec43faea6fe73fb2a829f4621fa4e71c1aa9ebf2",
+      "bytes": 1078379,
+      "archive": "provenance/tfpt-source/tfpt_research_contracts.tex"
+    },
+    {
+      "source": "tfpt_1_architecture_e8.tex",
+      "sha256": "ca5460de7fe54d7362dcfbc9d650cc349811d6bada906317baadd7297d2e89eb",
+      "bytes": 361775,
+      "archive": "provenance/tfpt-source/tfpt_1_architecture_e8.tex"
+    },
+    {
+      "source": "note_e8_gaussian_code.tex",
+      "sha256": "80d565bc20095744fce1f3a6b3a9c9341855e2a34510726326796f2aa22d979b",
+      "bytes": 37102,
+      "archive": "provenance/tfpt-source/note_e8_gaussian_code.tex"
+    },
+    {
+      "source": "big_picture_2026-08-02_de.tex",
+      "sha256": "ffebff33619a7352b83d75c8f12f12a0b84d4ddfcd5ff7f45de9267d2d5b507c",
+      "bytes": 172749,
+      "archive": "provenance/tfpt-source/big_picture_2026-08-02_de.tex"
+    },
+    {
+      "source": "multilevel_toeplitz_lowerbound.tex",
+      "sha256": "ccca3f8bfc67692d3437426440568cfe1239ae76271453c1bc0e1cd3b2a8e935",
+      "bytes": 74004,
+      "archive": "provenance/tfpt-source/multilevel_toeplitz_lowerbound.tex"
+    },
+    {
+      "source": "tfpt_horizon_readouts.tex",
+      "sha256": "ff1692968354eb4b907ec203a3d528c000401d59b41621377b3d9af0b0433509",
+      "bytes": 54975,
+      "archive": "provenance/tfpt-source/tfpt_horizon_readouts.tex"
+    },
+    {
+      "source": "origin_theory.tex",
+      "sha256": "4a2ac752cf9beb65452d5c1aad3a9dc22b0d3fee24e8247c064ed654f910d95f",
+      "bytes": 167102,
+      "archive": "provenance/tfpt-source/origin_theory.tex"
+    },
+    {
+      "source": "note_hilbert_polya_truncations.tex",
+      "sha256": "4008843bc74f1d11ffd3aa122ae9e7123fed431a3ca789b6f1b9762a1d8b4c25",
+      "bytes": 49504,
+      "archive": "provenance/tfpt-source/note_hilbert_polya_truncations.tex"
+    },
+    {
+      "source": "tfpt_5_redteam.tex",
+      "sha256": "36a8ed68266efa66f8f8af52c7bbaab27ef9958e9fa48943bbdecad4a83d6842",
+      "bytes": 78950,
+      "archive": "provenance/tfpt-source/tfpt_5_redteam.tex"
+    },
+    {
+      "source": "note_w1_suzuki_identification.tex",
+      "sha256": "4ee37599b552a936c5814a139d4b4331dd3dafebd29b80ec8e76dc30d9085989",
+      "bytes": 23353,
+      "archive": "provenance/tfpt-source/note_w1_suzuki_identification.tex"
+    },
+    {
+      "source": "introduction.tex",
+      "sha256": "53124cde07b7c3c04d3873d4f6ba9d782285ad357cebc73efadafc0458f4d1df",
+      "bytes": 113186,
+      "archive": "provenance/tfpt-source/introduction.tex"
+    },
+    {
+      "source": "changelog.tex",
+      "sha256": "b3cff21aa2690fc3139d034a96afd6b420b7ff640542c3c007c53e8fbde6815d",
+      "bytes": 1968942,
+      "archive": "provenance/tfpt-source/changelog.tex"
+    },
+    {
+      "source": "tfpt_2_standard_model.tex",
+      "sha256": "bc80e9bb7a37c2cac5e2b0c1bb593adfbf2bcf4bea682fa6d5879d1d37719a75",
+      "bytes": 291738,
+      "archive": "provenance/tfpt-source/tfpt_2_standard_model.tex"
+    },
+    {
+      "source": "note_w3_detector_structure.tex",
+      "sha256": "f709b7df1b1b06365bc4813bdd9041552ce8871eb4449436f0dbbcd41f4faaa5",
+      "bytes": 36560,
+      "archive": "provenance/tfpt-source/note_w3_detector_structure.tex"
+    },
+    {
+      "source": "tfpt_prime_front.tex",
+      "sha256": "1ecd25f75d5d4fb14671a8456885d100d76b31b799ac1c78fc8e8782a616d957",
+      "bytes": 1711936,
+      "archive": "provenance/tfpt-source/tfpt_prime_front.tex"
+    },
+    {
+      "source": "tfpt_3_e8_audit_bootstrap.tex",
+      "sha256": "c3b1396bcaf79c64b0b78ef119499a0f68723273d8108426706e366319cf64d2",
+      "bytes": 801198,
+      "archive": "provenance/tfpt-source/tfpt_3_e8_audit_bootstrap.tex"
+    },
+    {
+      "source": "TFPT_Universalraum_Sitzungsdokumentation_2026-09-20_v2.tex",
+      "sha256": "d52d9e89b777780d9108d2e29efc1303d5766d8e720ca6eb1b5bd7ea8c87ed9a",
+      "bytes": 191802,
+      "archive": "provenance/tfpt-source/TFPT_Universalraum_Sitzungsdokumentation_2026-09-20_v2.tex"
+    },
+    {
+      "source": "tfpt_universalraum_einfach_2026-09-12.tex",
+      "sha256": "36164bcb466a31cfd0cf85c2d851b9d00772f5276eed181eac60a733398b70d5",
+      "bytes": 8405,
+      "archive": "provenance/tfpt-source/tfpt_universalraum_einfach_2026-09-12.tex"
+    },
+    {
+      "source": "TFPT_Universalraum_Sitzungsdokumentation_2026-09-20.tex",
+      "sha256": "ff1eac0c91e20285919417bfa87e8ac3ca6461c1bd068a1e635a89d56543e81c",
+      "bytes": 112839,
+      "archive": "provenance/tfpt-source/TFPT_Universalraum_Sitzungsdokumentation_2026-09-20.tex"
+    },
+    {
+      "source": "tfpt_safeguards.tex",
+      "sha256": "d05f7902709ea0cff0d4bba2449f99a1d61575f9bb86182844080047e07aced7",
+      "bytes": 23244,
+      "archive": "provenance/tfpt-source/tfpt_safeguards.tex"
+    },
+    {
+      "source": "tfpt_universalraum_synthesis_2026-09-12.tex",
+      "sha256": "b8954e14b4d12e14189ebcde69fc941a867036c81fe6971fcd07b38701405780",
+      "bytes": 1213,
+      "archive": "provenance/tfpt-source/tfpt_universalraum_synthesis_2026-09-12.tex"
+    },
+    {
+      "source": "origin_theory.pdf",
+      "sha256": "147fc0de56a57752e9194f3310ecf135fd9bb576117cbec1a7f0593c95021f34",
+      "bytes": 1147810,
+      "archive": "provenance/tfpt-source/origin_theory.pdf"
+    },
+    {
+      "source": "TFPT_Gesamtsynthese_Stand_2026-09-30.pdf",
+      "sha256": "80a12467db15bb1c5716686b79d4f72cc6fb788ff1c6b0eb3235b66f99a96068",
+      "bytes": 1370273,
+      "archive": "provenance/tfpt-source/TFPT_Gesamtsynthese_Stand_2026-09-30.pdf"
+    },
+    {
+      "source": "tfpt_horizon_readouts.pdf",
+      "sha256": "79d0a800058e98f8e7d94cb9d6b51e5a4c3e1402a00977a6a49da5c314324a73",
+      "bytes": 934661,
+      "archive": "provenance/tfpt-source/tfpt_horizon_readouts.pdf"
+    },
+    {
+      "source": "note_hilbert_polya_truncations.pdf",
+      "sha256": "9784fec36e69c0a0966326e3bc1be8877572e50d555f2362ea23ba5b28d15c10",
+      "bytes": 472984,
+      "archive": "provenance/tfpt-source/note_hilbert_polya_truncations.pdf"
+    },
+    {
+      "source": "multilevel_toeplitz_lowerbound.pdf",
+      "sha256": "265a4e2779b9797d62f19083ea228b479376fcc591594c05098f40420cd19044",
+      "bytes": 475619,
+      "archive": "provenance/tfpt-source/multilevel_toeplitz_lowerbound.pdf"
+    },
+    {
+      "source": "TFPT_Gesamtstand_Drei_Wege_2026-09-22.pdf",
+      "sha256": "66a8ea1aadc6b7f589054c62f49f0181101c334f42810b73e326605001e273d3",
+      "bytes": 116430,
+      "archive": "provenance/tfpt-source/TFPT_Gesamtstand_Drei_Wege_2026-09-22.pdf"
+    },
+    {
+      "source": "TFPT_Gesamtauswertung_der_Session_19-20_September_2026.pdf",
+      "sha256": "cba66687ad471eed50159eb82bb31928dfbe48fdbbfb4ccf4d40f7d401c77b9e",
+      "bytes": 334178,
+      "archive": "provenance/tfpt-source/TFPT_Gesamtauswertung_der_Session_19-20_September_2026.pdf"
+    },
+    {
+      "source": "big_picture_2026-08-02_de.pdf",
+      "sha256": "e11ffa7c8e410126d790e390881377dc5c1beb60e59e38dc6920064f8e9cd980",
+      "bytes": 719833,
+      "archive": "provenance/tfpt-source/big_picture_2026-08-02_de.pdf"
+    },
+    {
+      "source": "note_e8_gaussian_code.pdf",
+      "sha256": "4c0b901e32c859fcb78ea3e342208924b750e2474b3d77af09279a6937cc447b",
+      "bytes": 370071,
+      "archive": "provenance/tfpt-source/note_e8_gaussian_code.pdf"
+    },
+    {
+      "source": "tfpt_research_contracts.pdf",
+      "sha256": "29bc4bdeb1bbb4f4a60939e6a783a09966e03ba3e32a084bb6b27535114f0899",
+      "bytes": 2948326,
+      "archive": "provenance/tfpt-source/tfpt_research_contracts.pdf"
+    },
+    {
+      "source": "tfpt_1_architecture_e8.pdf",
+      "sha256": "b539d1d6538016e5eaead639bf3a817408183b02f68bb846d8d0b7c15174cca4",
+      "bytes": 1495385,
+      "archive": "provenance/tfpt-source/tfpt_1_architecture_e8.pdf"
+    },
+    {
+      "source": "TFPT_Gesamtstand_und_Loesungsweg_20260921.pdf",
+      "sha256": "15a357708f4c435a07a9f2617754b95a82d5217c09c0b75c621b8b6eff9e311d",
+      "bytes": 487917,
+      "archive": "provenance/tfpt-source/TFPT_Gesamtstand_und_Loesungsweg_20260921.pdf"
+    },
+    {
+      "source": "tfpt_4_frontier.pdf",
+      "sha256": "6d53c6f8ded88fb990e1ff136b23fc9cd673d9cdd8589e335b757079e9ecd914",
+      "bytes": 856854,
+      "archive": "provenance/tfpt-source/tfpt_4_frontier.pdf"
+    },
+    {
+      "source": "parity_toeplitz_classification.pdf",
+      "sha256": "c8cca9fb83f83e7388a0baae712d650ab422aaceba97dfecd6d51b429a8a3c93",
+      "bytes": 855293,
+      "archive": "provenance/tfpt-source/parity_toeplitz_classification.pdf"
+    },
+    {
+      "source": "tfpt_safeguards.pdf",
+      "sha256": "85684095f1f99d79e0afa67446fa3588fe0522f8f0128928af2749b096aa84c7",
+      "bytes": 619094,
+      "archive": "provenance/tfpt-source/tfpt_safeguards.pdf"
+    },
+    {
+      "source": "TFPT_Universalraum_Sitzungsdokumentation_2026-09-20.pdf",
+      "sha256": "fd5d98e2c106714b545e22e255829dff5bb72c6aa56afbc28f9f4189a2146937",
+      "bytes": 429929,
+      "archive": "provenance/tfpt-source/TFPT_Universalraum_Sitzungsdokumentation_2026-09-20.pdf"
+    },
+    {
+      "source": "TFPT_Gesamtstand_Quellenfrage_2026-09-22.pdf",
+      "sha256": "973579209f9bc8cd7d8da29c792fcbae34c4d065cec111667f633bc3e4dda7a1",
+      "bytes": 137067,
+      "archive": "provenance/tfpt-source/TFPT_Gesamtstand_Quellenfrage_2026-09-22.pdf"
+    },
+    {
+      "source": "TFPT_Dreifamilien_und_Zustand_20260921.pdf",
+      "sha256": "715f5ea105075098413397a8fd4707be6c00d82544620102114f86e87fec79fd",
+      "bytes": 97909,
+      "archive": "provenance/tfpt-source/TFPT_Dreifamilien_und_Zustand_20260921.pdf"
+    },
+    {
+      "source": "TFPT_Universalraum_Sitzungsdokumentation_2026-09-20_v2.pdf",
+      "sha256": "695f7ae53a0950a7cd3c4a4ad52574a3cb706d112af0a814cc55837efec26900",
+      "bytes": 548543,
+      "archive": "provenance/tfpt-source/TFPT_Universalraum_Sitzungsdokumentation_2026-09-20_v2.pdf"
+    },
+    {
+      "source": "tfpt_3_e8_audit_bootstrap.pdf",
+      "sha256": "f6a86cc9c77917c93ef6066f4a568933b1494e569165adde7dab02f277804a5b",
+      "bytes": 2049169,
+      "archive": "provenance/tfpt-source/tfpt_3_e8_audit_bootstrap.pdf"
+    },
+    {
+      "source": "tfpt_prime_front.pdf",
+      "sha256": "35c5f8f4d608f77458502d5b105de54e5061eef3c179d890bd27b03363a97804",
+      "bytes": 3371189,
+      "archive": "provenance/tfpt-source/tfpt_prime_front.pdf"
+    },
+    {
+      "source": "note_w3_detector_structure.pdf",
+      "sha256": "92f6b4fe5e4ccca3510ec27fbdf3ac76684e04efbdaa0cb65a81f35e9bfebaa3",
+      "bytes": 377744,
+      "archive": "provenance/tfpt-source/note_w3_detector_structure.pdf"
+    },
+    {
+      "source": "introduction.pdf",
+      "sha256": "6b9c9942bd3562d212b4534f8661562b9d29738c8c190930d07e831d8a0d5bca",
+      "bytes": 5489703,
+      "archive": "provenance/tfpt-source/introduction.pdf"
+    },
+    {
+      "source": "note_w1_suzuki_identification.pdf",
+      "sha256": "47c89fb839bfeb7ff212a40a60a8405c5731089d480db47b1ce5bc8f8b76b721",
+      "bytes": 367035,
+      "archive": "provenance/tfpt-source/note_w1_suzuki_identification.pdf"
+    },
+    {
+      "source": "tfpt_5_redteam.pdf",
+      "sha256": "f342cb2dfbf5a3c38c0da881c7d0e8f17f0871d53dd4ebd3d4d473465134c275",
+      "bytes": 870724,
+      "archive": "provenance/tfpt-source/tfpt_5_redteam.pdf"
+    },
+    {
+      "source": "tfpt_2_standard_model.pdf",
+      "sha256": "b8b7fdb24bd9aae29b2009d392b12ea727848b5ea1caed5c469068be9e625078",
+      "bytes": 1343528,
+      "archive": "provenance/tfpt-source/tfpt_2_standard_model.pdf"
+    },
+    {
+      "source": "changelog.pdf",
+      "sha256": "18b333f889eeb2bc8fb91b42ecff0de61846bae3efa7e2aceb9c73382331fbe9",
+      "bytes": 3332428,
+      "archive": "provenance/tfpt-source/changelog.pdf"
+    },
+    {
+      "source": "tex-artefacts/tfpt_figures.tex",
+      "sha256": "03cc60cee04e5fa40f003416627618d9d3c2bf0b4f960b712a8608efe1442c8d",
+      "bytes": 9695,
+      "archive": "provenance/tfpt-source/tex-artefacts/tfpt_figures.tex"
+    },
+    {
+      "source": "tex-artefacts/toe_round7_quantum_tensor_curvature.tex",
+      "sha256": "2427c7bec1c1fb5f38a579d2871c6174f03956bfbba07bdfbb0c77e8e151bc15",
+      "bytes": 21229,
+      "archive": "provenance/tfpt-source/tex-artefacts/toe_round7_quantum_tensor_curvature.tex"
+    },
+    {
+      "source": "tex-artefacts/toe_research_20260909.tex",
+      "sha256": "361c3843779f78c66ff7e19b610152f38d5dc4f6623ed9017c9d515f1dc94433",
+      "bytes": 11486,
+      "archive": "provenance/tfpt-source/tex-artefacts/toe_research_20260909.tex"
+    },
+    {
+      "source": "tex-artefacts/toe_round7_covariant_curvature.tex",
+      "sha256": "76beadfd44c4de94b516b5ee46bbdf0f04c7b139c4c1e1b4ffa5f9782c2702e2",
+      "bytes": 14912,
+      "archive": "provenance/tfpt-source/tex-artefacts/toe_round7_covariant_curvature.tex"
+    },
+    {
+      "source": "tex-artefacts/toe_round7_proofs.tex",
+      "sha256": "e74c2ac409cc6cf94885d2ad7084bb3ff24b7038883a0f8c787ec40ea293cb29",
+      "bytes": 2306,
+      "archive": "provenance/tfpt-source/tex-artefacts/toe_round7_proofs.tex"
+    },
+    {
+      "source": "tex-artefacts/toe_round7_matter_coupling.tex",
+      "sha256": "ee6ffffd298f37e50cc9e4ed2590bb0dc7927aa29a655e770763f9f2be7875c8",
+      "bytes": 22298,
+      "archive": "provenance/tfpt-source/tex-artefacts/toe_round7_matter_coupling.tex"
+    },
+    {
+      "source": "tex-artefacts/toe_round7_charged_disorder.tex",
+      "sha256": "53bb0f2602c52caadbd14a0c2ed1dd3577c59656d3781acb3958b00d0d6609d0",
+      "bytes": 15524,
+      "archive": "provenance/tfpt-source/tex-artefacts/toe_round7_charged_disorder.tex"
+    },
+    {
+      "source": "tex-artefacts/toe_round27_full_reference.tex",
+      "sha256": "13197be4fa99bcce399fa2f969d3efd421508daaaf37cdf1ebea0fa0f3785f01",
+      "bytes": 10461,
+      "archive": "provenance/tfpt-source/tex-artefacts/toe_round27_full_reference.tex"
+    },
+    {
+      "source": "tex-artefacts/tfpt_status.tex",
+      "sha256": "c6580221bb32cea4515c9428a81d4360ce31a48fecbf74b71eee717677b7fc83",
+      "bytes": 7008,
+      "archive": "provenance/tfpt-source/tex-artefacts/tfpt_status.tex"
+    },
+    {
+      "source": "tex-artefacts/toe_universalraum_synthesis_20260912.tex",
+      "sha256": "782c6e44ced3da3aeee89c6e89a0825322d1b455c9bb58f49f570929a22782fa",
+      "bytes": 21838,
+      "archive": "provenance/tfpt-source/tex-artefacts/toe_universalraum_synthesis_20260912.tex"
+    },
+    {
+      "source": "tex-artefacts/verification.tex",
+      "sha256": "e0c29fe05b5d5f711fd10a3d49ff1e8c94b6a33262ed85218afd11cfa208753b",
+      "bytes": 1115232,
+      "archive": "provenance/tfpt-source/tex-artefacts/verification.tex"
+    },
+    {
+      "source": "tex-artefacts/tfpt_style.tex",
+      "sha256": "fff44ed6ad4fe344bd3489528d743fbc6a73213cf9d68ce0ef87b3752b575663",
+      "bytes": 9498,
+      "archive": "provenance/tfpt-source/tex-artefacts/tfpt_style.tex"
+    },
+    {
+      "source": "tex-artefacts/toe_round7_parent_mirror.tex",
+      "sha256": "6298b81cce080b2208a88fc252789c40c87171beee29d190292dac3153157a5c",
+      "bytes": 16763,
+      "archive": "provenance/tfpt-source/tex-artefacts/toe_round7_parent_mirror.tex"
+    },
+    {
+      "source": "tex-artefacts/tfpt_docset.tex",
+      "sha256": "0520f0b885b1424e3062f67a5602d206f7f4704ed150bff5a340ac465b3faa78",
+      "bytes": 3989,
+      "archive": "provenance/tfpt-source/tex-artefacts/tfpt_docset.tex"
+    },
+    {
+      "source": "tex-artefacts/toe_round4_proofs.tex",
+      "sha256": "a7359f2ac472a5ed3618bb594562d42651ffc1cca465f53086e4839a3cad599a",
+      "bytes": 21941,
+      "archive": "provenance/tfpt-source/tex-artefacts/toe_round4_proofs.tex"
+    },
+    {
+      "source": "tex-artefacts/tfpt_references.tex",
+      "sha256": "659726185a10fc9c6aca50cb3da850c7bc30e2c2ebce92c442d96f1c085ba48a",
+      "bytes": 6213,
+      "archive": "provenance/tfpt-source/tex-artefacts/tfpt_references.tex"
+    },
+    {
+      "source": "tex-artefacts/predictions.tex",
+      "sha256": "584614c0ed5d2fd59f7da2f72f7170af7ee3c046bfe97deee7ec40b7aa2514c5",
+      "bytes": 3652,
+      "archive": "provenance/tfpt-source/tex-artefacts/predictions.tex"
+    },
+    {
+      "source": "tex-artefacts/version.tex",
+      "sha256": "2ab10a1c3b2ce6a4db1f1bf15b62352d4a16b7b3a4c239a0b0044b8b661c628c",
+      "bytes": 1417,
+      "archive": "provenance/tfpt-source/tex-artefacts/version.tex"
+    }
+  ]
+}

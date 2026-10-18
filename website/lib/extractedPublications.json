@@ -1,0 +1,37 @@
+[
+  {
+    "file": "extracted_changelog",
+    "title": "changelog",
+    "source": "extracted_changelog.tex"
+  },
+  {
+    "file": "extracted_introduction",
+    "title": "introduction",
+    "source": "extracted_introduction.tex"
+  },
+  {
+    "file": "extracted_tfpt_1_architecture_e8",
+    "title": "tfpt 1 architecture e8",
+    "source": "extracted_tfpt_1_architecture_e8.tex"
+  },
+  {
+    "file": "extracted_tfpt_2_standard_model",
+    "title": "tfpt 2 standard model",
+    "source": "extracted_tfpt_2_standard_model.tex"
+  },
+  {
+    "file": "extracted_tfpt_3_e8_audit_bootstrap",
+    "title": "tfpt 3 e8 audit bootstrap",
+    "source": "extracted_tfpt_3_e8_audit_bootstrap.tex"
+  },
+  {
+    "file": "extracted_tfpt_4_frontier",
+    "title": "tfpt 4 frontier",
+    "source": "extracted_tfpt_4_frontier.tex"
+  },
+  {
+    "file": "extracted_tfpt_research_contracts",
+    "title": "tfpt research contracts",
+    "source": "extracted_tfpt_research_contracts.tex"
+  }
+]
