@@ -1,0 +1,76 @@
+{
+  "notice": "Historical mappings transferred with their exact source references. The old RH.SPLIT/RH.BUNDLE associations are retained as provenance only; those IDs describe TFPT Riemann–Hilbert modules and are not active Prime Front claim associations.",
+  "aspects": [
+    {
+      "id": "aspect:rh-scope-boundary",
+      "type": "theory_aspect",
+      "label": "RH branch is a separate target from TFPT closure",
+      "summary_de": "Prime-front und Hilbert–Pólya-Notizen trennen geometrische/arithmetic identities, finite truncation tests and measurements from the unproved RH statement.",
+      "summary_en": "The prime-front and Hilbert–Pólya notes separate geometric/arithmetic identities, finite truncation tests, and measurements from the unproved RH statement.",
+      "epistemic": "partial_arithmetic_results; RH_proof_open",
+      "scope": "TFPT/RH interface and independent RH target",
+      "topic_ids": [
+        "topic:rh",
+        "topic:e8",
+        "topic:validation"
+      ],
+      "claim_ids": [
+        "RH.SPLIT.01",
+        "RH.BUNDLE.01"
+      ],
+      "mapping_rationale": "The source states an honest RH distance and names a boundary for what the geometry cannot establish about zeros.",
+      "source_refs": [
+        {
+          "path": "tfpt_prime_front.tex",
+          "line_start": 851,
+          "line_end": 870,
+          "review_note": "Two boundaries: what the geometry cannot do for the zeros."
+        },
+        {
+          "path": "tfpt_prime_front.tex",
+          "line_start": 5677,
+          "line_end": 5720,
+          "review_note": "The honest RH distance, in six checkable statements."
+        }
+      ]
+    },
+    {
+      "id": "aspect:hilbert-polya-truncation-wall",
+      "type": "research_question",
+      "label": "Hilbert–Pólya truncations and the measured tightness wall",
+      "summary_de": "Die Trunkierungsnotiz trennt algebraabhängige Trunkierungszustände von einer gemeinsamen Testalgebra; eine gemessene Tightness-Barriere ist kein Beweis für die vollständige RH-Aussage.",
+      "summary_en": "The truncation note distinguishes algebra-dependent truncation states from a common test algebra; a measured tightness wall is not a proof of the full RH statement.",
+      "epistemic": "finite_truncation_and_measurements; global_target_open",
+      "scope": "Hilbert–Pólya truncation programme",
+      "topic_ids": [
+        "topic:rh",
+        "topic:validation"
+      ],
+      "claim_ids": [
+        "RH.SPLIT.01",
+        "RH.BUNDLE.01"
+      ],
+      "mapping_rationale": "K3 is explicitly described as measured tightness, and the wall is stated in four equivalent languages; no theorem of RH follows from that framing.",
+      "source_refs": [
+        {
+          "path": "note_hilbert_polya_truncations.tex",
+          "line_start": 286,
+          "line_end": 305,
+          "review_note": "Windows and truncations; Measurements."
+        },
+        {
+          "path": "note_hilbert_polya_truncations.tex",
+          "line_start": 495,
+          "line_end": 520,
+          "review_note": "K3 collapses to measured tightness."
+        },
+        {
+          "path": "note_hilbert_polya_truncations.tex",
+          "line_start": 590,
+          "line_end": 640,
+          "review_note": "The wall in four equivalent languages."
+        }
+      ]
+    }
+  ]
+}
