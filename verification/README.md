@@ -1,6 +1,6 @@
 # Prime Front verification
 
-After the 2026-10-18 ownership split this project registers **326 modules** and maintains **405 ledger rows**. These are source counts, not a count of independent proofs.
+After the 2026-10-18 ownership split this project registers **326 modules** and maintains **410 ledger rows**. These are source counts, not a count of independent proofs.
 
 The suite preserves the original module and claim identifiers. Five mixed modules retain their original IDs with separate scopes: v705 (full prime application here; physical NS/deck D1–D3 in TFPT), v807 (full prime-window study here; exact RR/Serre algebra also in TFPT), v817 (prime packet instance here), v849 (cofinal Weil mirror here), and v853 (Mangoldt incidence identity here). tfpt_constants.py and v310/v774 are dependency copies; their presence does not turn TFPT physical premises into RH conclusions.
 

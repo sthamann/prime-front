@@ -1,0 +1,724 @@
+# TFPT verification atlas
+
+> **Generated** by `make_script_atlas.py` (`bash build.sh gen`) from the ledger + registry + clusters + docs map. Do not edit by hand.
+
+`326` registered scripts · `410` ledger claims · `10` clusters.
+
+**How to read:** each script line is `vN_name  [markers]  CLAIM.IDs  — one-liner`; the sub-line shows `deps` (resolved to the scripts they come from), `supersedes`, and the papers that cite it. The four-class markers are `[E]` exact/proven, `[C]` conditional, `[O]` open/axiom, `[X]` kill-test.
+
+## Clusters (themes / branches)
+
+### `core` — Compiler core & the E₈ glue  (326 scripts)
+_Why the two axioms build E₈, why the carrier rank is forced, and the integer skeleton that follows._
+
+- **v535_hecke_from_geometry** [E/C/O] `HECKE.GEOM.01` — Kneser #iso_lines = sigma3*#P3 (135/1120/19656/137600); nu_p = a Id + b T_p with a_p = b-sigma3 => a3=-4, a5=-2; dim V = 7 = 5+2 oldforms; pi_cusp = (28-T3)/32; 2-adic levels only
+  - deps: v1, v89, E8.DEGREE.MODULAR.01, T27, T31, T32
+- **v536_eichler_trace_layer** [E/C/O] `HECKE.GEOM.EICHLER.01` — Witt λ_Eis; two-sided λ_geom=λ_Eis+a_p² (p=3 live, p=5 freeze); Type-A/B densities N_A=min(240(1+p³),#iso−1); signed a_p=−c(p)/8 (−4,−2,+24); O(1) assembler p≤31 (23 checks, ~30 s)
+  - deps: v535_hecke_from_geometry, v535, T33, T36, T37, T42
+- **v537_halfintegral_bridge** [E/C] `HECKE.GEOM.HALFINT.01` — unique Sh_{t=2}(g)=-8 f8 in 70-monoid; T(p^2) eigen a_p(f8); U4(g)=0 / outside Kohnen 1982; Waldspurger R=23.1873585645... constant on 10 d≡1 mod 8 (20 checks, ~90 s)
+  - deps: v535_hecke_from_geometry, v536_eichler_trace_layer, v535, v536, T38, T41, T44, T45
+- **v538_relative_trace_identity** [E/C/O] `HECKE.GEOM.RTF.01` — Tr_V(ν_p∘π) bilateral independent (geom=spec) at p=3,5,7×5 projectors; Eichler orbit dictionary λ_Eis+a_p²; period side = lattice count with R=23.1873585645… (18 checks, ~14 s)
+  - deps: v535_hecke_from_geometry, v536_eichler_trace_layer, v537_halfintegral_bridge, v535, v536, v537, T53
+- **v539_weil_structure_family** [E/C/O] `RTF.GNS.WEIL.01` — GNS fibre isolation (mix 5e-16); GL(1) core G₀=(1+Y)/(1−Y)=ζ_p(w−3)²/ζ_p(2w−6); Prime_F=2P_ζ−2P_ζ(g♭); TWO isolated obstructions (minus doubling; non-automorphic Corr); Q_fam≥0 on
+  - deps: v538_relative_trace_identity, v538, T55, T61, T62, T63
+- **v540_amplitude_linear_carrier** [E/C] `RTF.GNS.AMP.01` — Dirac D²=family kernel exact + Hecke-equivariant; polarisation b=N₊−N₋, Θ pure σ₃-eigenform with Cohen seed Θ(d)=−48·L(−1,χ_d); CL deletion universal = square-class double counting
+  - deps: v539_weil_structure_family, v538_relative_trace_identity, v538, v539, T67, T68, T69, T70
+- **v541_matching_lemma_ledger** [E/C/O] `RTF.GNS.LEDGER.01` — window proof 7S<40A on ALL j≤10⁶ (0 violations, exact margin X=0.082159, ρ_crit=1.144); ledger Q_Weil=Q_cert+Δ_arch+Δ₂ closes exactly (Δ_pole≡Δ_conv≡0 proven); −ψ=(χ₋₄+¼χ₈+¼χ₋₈)·Θ
+  - deps: v540_amplitude_linear_carrier, v539_weil_structure_family, v538_relative_trace_identity, v538, v539, v540, T78, T79
+- **v542_margin_chain_identities** [E/O] `PRIME.MARGIN.IDENT.01` — nine per-instance identities/theorems recomputed on small frame-A windows (24 seam instances n=3…97, ρ=1.25…4.00, every inverted matrix ≤ 300; 43 graded/fine grid pairs; 400 random
+  - deps: v541_matching_lemma_ledger, v538_relative_trace_identity, v541, T128, T129, T130, T131
+- **v543_lumped_pair_identities** [E/O/X] `PRIME.MMATRIX.IDENT.01` — seven per-instance identities/theorems recomputed on small frame-A windows (20 seam windows n=4…59, ρ=1.25…4.00, h=25…299, every factorised matrix ≤ 300 → 40 symmetric matrices; 8
+  - deps: v542_margin_chain_identities, v541_matching_lemma_ledger, v542, T134, T136
+- **v544_long_lag_support** [E/X] `PRIME.LONGLAG.SUPP.01` — six per-instance structure statements on the same 20 frame-A windows (h=25…299, 3…25 prime-power atoms, 20555 positive off-diagonal edges, 455 loaded stripes, 39 bracketed lumped c
+  - deps: v543_lumped_pair_identities, v542_margin_chain_identities, v543, T136, T137
+- **v545_hardy_core_identities** [E/O/X] `PRIME.HARDY.IDENT.01` — eight per-instance identities / certified forms recomputed on small frame-A windows (11 windows n=8…139, h=58…285 ≤ 300, core m=57…284, 193…5102 positive off-diagonal edges, 10…87
+  - deps: v543_lumped_pair_identities, v544_long_lag_support, v542_margin_chain_identities, v543, v544, T139, T140, T141
+- **v546_capacity_chain_identities** [E/O] `PRIME.CAPCHAIN.IDENT.01` — the identity-shaped core of the capacity cycle T142–T145 recomputed on small frame-A windows (12 windows n=4…139, h=26…285 ≤ 300, D spanning 7.6e-03…2.8e-02; covering kernel positi
+  - deps: v545_hardy_core_identities, v543_lumped_pair_identities, v545, T142, T143, T144, T145
+- **v547_level_lemma_identities** [E/O] `PRIME.LEVEL.LEMMA.01` — the a-priori side of T146's level lemma recomputed on small frame-A windows (12 windows n=4…139, m=26…285 ≤ 300, D spanning 7.6e-03…2.8e-02; 9 random PD forms for the form-independ
+  - deps: v546_capacity_chain_identities, v545_hardy_core_identities, v546, T146
+- **v548_green_szego_identities** [E/O] `PRIME.GREEN.SZEGO.IDENT.01` — the identity/certificate core of T147+T148 recomputed on small frame-A windows (12 windows n=4…139, m=26…285 ≤ 300, D spanning 7.6e-03…2.8e-02; 7 random PD forms; weight-class mode
+  - deps: v547_level_lemma_identities, v546_capacity_chain_identities, v547, T147, T148
+- **v549_gauge_parity_identities** [E/O] `PRIME.GAUGE.PARITY.IDENT.01` — the identity/certificate core of T149+T150 recomputed on small frame-A windows (12 windows n=4…139, m=26…285 ≤ 300, D spanning 7.6e-03…2.8e-02; 48 gauge assemblies — Jacobi, const,
+  - deps: v548_green_szego_identities, v547_level_lemma_identities, v548, T149, T150
+- **v550_odd_sector_identities** [E/O] `PRIME.ODD.SECTOR.IDENT.01` — the identity/certificate core of T151 recomputed on small frame-A windows (12 windows n=4…139, m=26…285 ≤ 300, D spanning 7.6e-03…2.8e-02; parity control models at m = 241 and m =
+  - deps: v549_gauge_parity_identities, v548_green_szego_identities, v549, T150, T151
+- **v551_ritz_ceiling_certificate** [E/O] `PRIME.RITZ.CEIL.01` — the certificate core of the GREEN.ALIGN probe recomputed on the 12 deepest in-cap frame-A windows (n = 29…139, m = 96…291 ≤ 300, D = 7.2e-03…1.8e-02; a no-go size ladder m = 48…288
+  - deps: v550_odd_sector_identities, v549_gauge_parity_identities, v550, T153, T154
+- **v552_angle_instruments** [E/O] `PRIME.ANGLE.INSTR.01` — min over v ⊥ W of vᵀL_Pv ≥ μᴾ₁₃ − λ_max(M^(1/2)(I − GGᵀ)M^(1/2)), an identity plus one certified Rayleigh bound valid for every m and every subspace — never exceeds the exact size-
+  - deps: v551_ritz_ceiling_certificate, v550_odd_sector_identities, v551, T155, T157
+- **v553_exact_form_identities** [E/O] `PRIME.EXACT.FORM.IDENT.01` — every trial an upper bound on the entry 1/s) plus the positive Cholesky ladder g_K from ONE Cholesky of the leading 16×16 block — all 16 terms strictly positive, partial sums monot
+  - deps: v552_angle_instruments, v551_ritz_ceiling_certificate, v552, T158, T159
+- **v554_sampling_harmonics_identities** [E/O] `PRIME.SAMPLING.HARM.01` — the closed theorem cores of T160+T161 recomputed on small frame-A windows (the 12 deepest in-cap zones n = 29…139, m = 96…291 ≤ 300 — v551…v553's declared surface — plus a declared
+  - deps: v553_exact_form_identities, v552_angle_instruments, v553, T160, T161
+- **v555_pareto_tv_identities** [E/O] `PRIME.PARETO.TV.01` — the closed theorem cores of T162+T163 recomputed on small frame-A windows (the 12 deepest in-cap zones n = 29…139, m = 96…291 ≤ 300 — v551…v554's declared surface — with the one ar
+  - deps: v554_sampling_harmonics_identities, v553_exact_form_identities, v554, T162, T163
+- **v556_gauge_ppr_identities** [E/O] `PRIME.GAUGE.PPR.01` — the closed theorem cores of T164+T165 recomputed on small frame-A windows (the 12 deepest in-cap zones n = 29…139, m = 96…291 ≤ 300 — v551…v555's declared surface — with the one ar
+  - deps: v555_pareto_tv_identities, v554_sampling_harmonics_identities, v555, T164, T165
+- **v557_cascade_vector_identities** [E/O] `PRIME.CASCADE.VECT.01` — the closed theorem cores of T166+T167 recomputed on small frame-A windows (the 12 deepest in-cap zones n = 29…139, m = 96…291 ≤ 300 — v551…v556's declared surface — with the one ar
+  - deps: v556_gauge_ppr_identities, v555_pareto_tv_identities, v556, T166, T167
+- **v558_bilinear_rank_identities** [E/O] `PRIME.BILINEAR.RANK.01` — the closed theorem cores of T168+T169+T170 recomputed on small frame-A windows (the 12 deepest in-cap zones n = 29…139, m = 96…291 ≤ 300 — v551…v557's declared surface — with the o
+  - deps: v557_cascade_vector_identities, v556_gauge_ppr_identities, v557, T168, T169, T170
+- **v559_phase2_capstone** [E/C/O] `PRIME.PHASE2.CAPSTONE.01` — the capstone VERIFIES the map and CLAIMS NOTHING NEW: the whole sixteen-link reduction chain from the I5 floor to the R1 shape reproduced as ONE machine-checked pass on the declare
+  - deps: v558_bilinear_rank_identities, v557_cascade_vector_identities, v558, T171, T151, T152, T153, T154
+- **v560_frame_deficit_identities** [E/C/O] `PRIME.FRAME.DEFICIT.01` — the closed theorem cores of T172 (FRAME.BEYOND), T173 (FRAME.RATE) and T174 (CANCEL.IDENTITY) recomputed on a small declared surface (a 4×3 (anchor, h) rectangle of gap-blind frame
+  - deps: v559_phase2_capstone, v558_bilinear_rank_identities, v559, T172, T173, T174
+- **v562_dense_limit_identities** [E/O] `PRIME.DENSE.LIMIT.01` — the exact cores of T176 (DENSE.LIMIT), the endgame of the phase-2 measurement programme, recomputed on a small declared surface (18 prime-power anchors in [40, 565] × the declared
+  - deps: v560_frame_deficit_identities, v559_phase2_capstone, v559, v560, T174, T175, T176
+- **v563_paper2_readouts** [E] `PRIME.PAPER2.READOUT.01` — the check closure of the classification paper (Paper II, parity_toeplitz_classification): every number the paper quoted from an exploration probe without a recomputing module is re
+  - deps: v562_dense_limit_identities, v560_frame_deficit_identities, v559_phase2_capstone, v555, v558, v560, v562, T170
+- **v569_lambda_pencil_onemode** [E] `PRIME.PENCIL.ONEMODE.01` — the Priority-5 question of the self-code review answered on the reachable surface: across ALL 70 declared frame-A windows the pencil identities det(B−S) = det B (1−λ₁)(1−λ₂), D(B,S
+  - deps: v563_paper2_readouts, DIAMOND.PARA.SELFCODE.01, v563, v566
+- **v570_separation_floor** [E/O/X] `PRIME.PENCIL.SEPFLOOR.01` — two one-line theorems (P = det S/det B > 0, T = tr Z > 0 ⇒ λ₁ ≥ √P; P ≤ 0 ⇒ λ₁ ≥ T) turn the spectator separation into a closed per-window floor: min floor = 2.130 ≥ 1.05 on ALL 70
+  - deps: v569_lambda_pencil_onemode, v563_paper2_readouts, v563, v566, v569
+- **v573_pair_band_structure** [E] `PRIME.PAIRBAND.01` — on the declared surface every near band (< 16 lag cells) and the diagonal of the Cauchy–Binet pair kernel drag NEGATIVE, the whole positive excess of det S lives beyond 16 lag cell
+  - deps: v570_separation_floor, v569_lambda_pencil_onemode, v563_paper2_readouts, v563, v570
+- **v576_cheb_loewner_edge** [E/C/O] `PRIME.CHEBLOEWNER.01` — the polarized cross-weight formula is EXACT against the corpus definition (symbolic N ≤ 11, 1e−11 on the surface: the whole K = 2 read block analytically closed); the reflection-ed
+  - deps: v563_paper2_readouts, v573_pair_band_structure, v570_separation_floor, v563, v573
+- **v577_nullray_census** [E] `PRIME.NULLRAY.01` — the pencil locking mode is CORRELATED with the Pythagorean null ray (2,−1) on all 70 declared windows (raw angle 23.5–33.8°, median 28.1°, B-metric similar — all below the 45° isot
+  - deps: v576_cheb_loewner_edge, v569_lambda_pencil_onemode, v563, v569, v576
+- **v579_macro_kernel_signs** [E/C/O] `PRIME.MACROKERNEL.01` — sign K∞(σ,τ) matches the real two-lag kernel on every resolved grid cell (332/332 at h = 300); the diagonal det W∞(σ) is negative on ~72% of (0,1) (same-scale pairs couple negative
+  - deps: v576_cheb_loewner_edge, v573_pair_band_structure, v570_separation_floor, v563, v573, v576
+- **v580_occupation_map** [E/O] `PRIME.OCCUPATION.01` — det S = (1/2)ΣΣ c_at(d₁)c_at(d₂) D(W(d₁),W(d₂)) EXAKT (Lag-Seiten-Polarisationsidentität, 1e−9 auf 4 Fenstern); das Vorzeichen JEDER signifikanten Besetzungszelle folgt sign K∞ auf
+  - deps: v579_macro_kernel_signs, v573_pair_band_structure, v576_cheb_loewner_edge, v563, v573, v579
+- **v581_locking_transport** [X] `PRIME.TRANSPORT.01` — 40 Verdopplungspaare auf der deklarierten Fläche: der Drift der Locking-Richtung ist klein (0.3–6.7° pro Oktave, Median 2.35°), fällt aber NICHT (Fit h^{+0.36} gegen die Schranke h
+  - deps: v577_nullray_census, v579_macro_kernel_signs, v563, v577, v579
+- **v582_density_dominance** [E/C] `PRIME.DENSITYDOM.01` — der geglättete Comb (gleitendes Mittel, 2%-Fenster) reproduziert det S zu 99.8–99.9% auf jedem regulären Fenster (98.7–99.3% bei 5%; glatt abfallend auf 81–89% bei 20%): der Träger
+  - deps: v580_occupation_map, v570_separation_floor, v573_pair_band_structure, v563, v570, v580
+- **v583_pnt_model** [C] `PRIME.PNTMODEL.01` — das klassische Zwei-Term-Gesetz mass(u) = 4e^{u/2} − 2(ζ'/ζ)(1/2) (Pol-Term + s=1/2-Konstante, KEINE Nullstellen) als Gitter-Modell durch die unveränderte v563-Pipeline reproduzier
+  - deps: v582_density_dominance, v570_separation_floor, v563, v570, v580, v582
+- **v585_pnt_locking_split** [C] `PRIME.LOCKSPLIT.01` — DIE DOMINANZ IST DICHTE, DAS LOCKING IST ARITHMETIK: das primzahlfreie v583-Modell durch den Paper-II-Defekt δ = det(B−S)/((B−S)_11(B−S)_22) gejagt verfehlt den echten Lock um 2–4
+  - deps: v583_pnt_model, v569_lambda_pencil_onemode, v570_separation_floor, v563, v569, v583
+- **v586_pnt_lock_direction** [C/O] `PRIME.LOCKDIR.01` — der echte Locking-Eigenvektor des Pencils B⁻¹S stimmt mit dem primzahlfreien v583-Modell auf max 0.331° (Median 0.030°, zerfallend ~h^−1.16) auf allen 69 regulären Fenstern überein
+  - deps: v585_pnt_locking_split, v583_pnt_model, v577_nullray_census, v569_lambda_pencil_onemode, v563, v569, v577, v583
+- **v587_w_closed_form** [E] `PRIME.WCLOSED.01` — NEUE EXAKTE FORMEL: das diagonale Lag-Gewicht des Korpus ist der EINE geschlossene Ausdruck W_kk(d) = (2/N)[(N−1−d)cos(w_k d) + sin(w_k(d+1))/sin(w_k)] (maschinen-exakt 1.9e−15 geg
+  - deps: v576_cheb_loewner_edge, v583_pnt_model, v579_macro_kernel_signs, v563, v576, v579, v583
+- **v588_closed_delta** [E] `PRIME.CLOSEDDELTA.01` — BEIDE SEITEN DES DEFEKTS SIND EINE FUNKTION: G_ij(β) = Σ e^{−βd}W_ij(d) (exakte geometrisch-trigonometrische Summen über die v587-Formeln); die S-Seite ist der POL-Exponent β = −D/
+  - deps: v587_w_closed_form, v583_pnt_model, v585_pnt_locking_split, v563, v583, v585, v587
+- **v589_zero_comb** [C] `PRIME.ZEROCOMB.01` — die Rest-Massen-Oszillation der Atomtafel ist der Explizite-Formel-Comb −4Σ sin(γu)/γ (Korrelation 0.82, Slope 1.28 = Trunkierungsdefizit mit 200 gedämpften Nullstellen; punktweise
+  - deps: v588_closed_delta, v585_pnt_locking_split, v583_pnt_model, v563, v583, v585, v588
+- **v591_pole_rank_one** [E] `PRIME.POLERANKONE.01` — die Laplace-Nenner faktorisieren vollständig (D11 = (a²+4π²)², D22 = (a²+16π²)², D12 = deren Produkt), der Pol-Teil ist exakt separabel S^pole = −32π²ae^a·ggᵀ mit g_k = k/(a²+4π²k²
+  - deps: v588_closed_delta, v586_pnt_lock_direction, v577_nullray_census, v577, v586, v588
+- **v592_continuum_det_law** [E/C] `PRIME.DETLAW.01` — det S(a) geschlossen, der e^{2a}-Koeffizient IDENTISCH null (v591-Rang-1-Cancellation), führendes Gesetz det S ~ 640π²e^a/a³ exakt (der e^a-Term mit exaktem Koeffizienten trägt die
+  - deps: v591_pole_rank_one, v588_closed_delta, v570_separation_floor, v589_zero_comb, v570, v588, v591
+- **v593_cutoff_completion** [E] `PRIME.CUTOFF.01` — der Finite-N-Gap der Kontinuums-Determinante (v592: 0.19–0.50) war der Integrations-CUTOFF: mit S_ij(a,σ₀) = −2a∫_{σ₀}^1 e^{aσ}g_ij dσ (weiterhin elementar geschlossen) treffen die
+  - deps: v592_continuum_det_law, v587_w_closed_form, v583_pnt_model, v583, v587, v592
+- **v594_unconditional_cert** [E/C/O] `PRIME.UNCONDCERT.01` — partielle Summation (maschinen-verifiziert) + die publizierte unbedingte Schranke |ψ(x)−x| < 0.94√x (Büthe 2018, bis 10¹⁹, via verifizierte Nullstellen; die Fläche liegt 16 Größeno
+  - deps: v592_continuum_det_law, v589_zero_comb, v583_pnt_model, v583, v589, v592
+- **v595_mapping_completion** [E] `PRIME.MAPCLOSE.01` — das v593-Residuum war die σ-ABBILDUNG: mit dem exakten Wörterbuch (a_eff = ND/2, Grenzen [u₀/(ND), 2α/(ND)]; ND = 2α + O(D)) treffen die geschlossenen Formeln Einträge UND Determin
+  - deps: v593_cutoff_completion, v592_continuum_det_law, v587_w_closed_form, v583, v587, v593
+- **v596_lock_projection** [E/C] `PRIME.LOCKPROJ.01` — entlang der GESCHLOSSENEN Locking-Richtung (v591-Gesetz, parameterfrei) cancelt das Nullstellen-Funktional den geschlossenen Dichte-Wert in einer FAST-IDENTITÄT: |q_real/q_model| M
+  - deps: v591_pole_rank_one, v586_pnt_lock_direction, v589_zero_comb, v595_mapping_completion, v583, v589, v591, v595
+- **v618_uniform_constant** [E] `PRIME.UNIFC.01` — **C = 1 AUF DER DEKLARIERTEN FLÄCHE EINGEFROREN, MIT DER GESCHÄRFTEN VORZEICHEN-DICHOTOMIE**: die deklarierte Frame-A-Fläche reproduziert (69 Floor-Fenster, h = 142..1445), q_model
+  - deps: v596_lock_projection, v586_pnt_lock_direction, v582_density_dominance, v563, v591, v596
+- **v619_flip_mechanics** [E] `PRIME.FLIPMECH.01` — **DIE ZWEI C=1-VERLETZER SIND TRUNKIERUNGS-ARTEFAKTE, UND C = 1 IST AUSNAHMSLOS AUF DER VOLLSTÄNDIGEN KAMM-FLÄCHE**: die Atom-Nachfrage ist u ≤ 2α, die Primpotenz-Datenkappe U_max
+  - deps: v618_uniform_constant, v596_lock_projection, v563, v596, v618
+- **v625_prime_shadow** [E/C] `PRIME.SHADOW.01` — **DER PRÜFBARE KERN DER „PRIMZAHLEN ALS SCHATTEN DER FERTIGEN GEOMETRIE-LESART IST EXAKT**, verifiziert auf der Compiler-eigenen Glue-Kette (μ₄ → D5⊕A3 → E8; Theta-Ebene E8 = D8 ∪
+  - deps: EXTREV.LATTICE.01, v618_uniform_constant, v1, v47, v624
+- **v627_hodge_chamber** [E/O] `PRIME.HODGECONE.01` — **ALLE 67 VOLLSTÄNDIGEN FENSTER LIEGEN IM POSITIVEN KEGEL DES COVER-POLARISATIONSGITTERS, AUF EINEM BLATT** (die gemessene Hälfte des geometrischen Positivitäts-Pfads aus v624). [E
+  - deps: EXTREV.LATTICE.01, v618_uniform_constant, v582_density_dominance, QGEO.EQORDER.01, v563, v624
+- **v630_suzuki_contact** [E/C/O] `PRIME.WEIL.CONTACT.01` — **DIE ATOM-SCHICHT DER TFPT-FENSTERFORM IST WÖRTLICH SUZUKIS PRIM-MASS** (erste ausgeführte Scheibe des PRIME.WEIL.OPERATOR.01-Vertrags, W1). [E, exakt] Positionen U_ALL = log(Prim
+  - deps: EXTREV.LATTICE.01, v618_uniform_constant, v563, v624
+- **v631_w1_dictionary** [E/C] `PRIME.WEIL.DICT.01` — **DER v630-REST IST DER POL-TERM, UND NACH SEINER ABTRENNUNG IST DIE GLATTE KONVERSION DER SKALAR −4D** (die glatte W1-Hälfte schließt auf Mess-Ebene; Konversion HERGELEITET, nicht
+  - deps: v630_suzuki_contact, v591_pole_rank_one, EXTREV.LATTICE.01, v563, v591, v630
+- **v635_p_canonicity** [E] `PRIME.PCANON.01` — **IM VOLLEN [−4,4]-ZENSUS (EXAKT 40 LÖSUNGEN VON QᵀJ_det Q = J_fix) IST P MODULO DER NATÜRLICHEN ORDNUNG-8-SYMMETRIE DIE EINDEUTIGE FROBENIUS-MINIMALE, OPERATOR-KOMPATIBLE KLASSE —
+  - deps: v627_hodge_chamber, EXTREV.LATTICE.01, v563, v600, v624, v627
+- **v636_p_construction** [E] `PRIME.PCONSTRUCT.01` — **P IST BIS AUFS VORZEICHEN DIE FROBENIUS-MINIMALE GANZZAHLIGE KONGRUENZ, DIE DEN C_V-NULLRAHMEN (KERN + FIXGERADE = DIE ZWEI MINIMALEN ISOTROPEN STRAHLEN VON J_fix) AUF DIE KANONI
+  - deps: v635_p_canonicity, v627_hodge_chamber, EXTREV.LATTICE.01, v600, v604, v624, v635
+- **v637_fine_c1_bridge** [-] `PRIME.FINEC1.01` — **EIN EHRLICHES NEGATIV ALS GETYPTES ERGEBNIS: NACH h-KONTROLLE TRAGEN DIE FEINEN HODGE-INVARIANTEN KEINE UNABHÄNGIGE INFORMATION ÜBER DIE C=1-MARGE** (partielle Spearman φ/qn: ρ =
+  - deps: v635_p_canonicity, v618_uniform_constant, v627_hodge_chamber, v563, v591, v618, v635
+- **v640_w1_boundary** [E] `PRIME.WEIL.BOUNDARY.01` — **DER v631-D6-REST IST SYMBOLISCH GESCHLOSSEN: DIE EXAKTE RANDGLEICHUNG A_arch = (1/4)g″_glatt − (5/4)(log π − ψ(¼))δ₀** (Residuen < 1e−22 auf den Zelten d = 0,1,2, Punkt- UND Gale
+  - deps: v631_w1_dictionary, v630_suzuki_contact, v591_pole_rank_one, v563, v591, v630, v631
+- **v641_w1_portability** [E/X] `PRIME.WEIL.PORTABLE.01` — **DAS EINGEFRORENE WÖRTERBUCH (ALLE FORMELN GESCHLOSSEN IN D, KEIN KNOPF) LÄUFT UNVERÄNDERT AUF DREI FRISCHEN FENSTERN h = 285/540/997: DAS PRÄREGISTRIERTE KILL-KRITERIUM IST NIRGE
+  - deps: v631_w1_dictionary, v640_w1_boundary, v563, v631, v640
+- **v642_w1_matrix** [E] `PRIME.WEIL.MATRIX.01` — **AUF OPERATOR-EBENE SCHLIESST DAS WÖRTERBUCH DIE VOLLE QUADRATISCHE FORM (h = 184, M = 368): 16-Moden-Blocknorm-Abstand eingefroren 6.7e−1 → hergeleitet 2.7e−3 → nach Maß-Ebenen-R
+  - deps: v631_w1_dictionary, v640_w1_boundary, v641_w1_portability, v591_pole_rank_one, v563, v631, v640
+- **v643_w1_theorem** [E] `PRIME.WEIL.THEOREM.01` — **DAS PROJEKTIONS-LEMMA SCHLIESST DEN LETZTEN W1-REST, DAS WÖRTERBUCH KOLLABIERT AUF EINEN SKALAR +1/D FÜR BEIDE SCHICHTEN (vorzeichen-positivitätskompatibel), DIE URSPRUNGSKONSTAN
+  - deps: v631_w1_dictionary, v640_w1_boundary, v641_w1_portability, v642_w1_matrix, v591_pole_rank_one, v563, v631, v640
+- **v644_w2_form_density** [C] `PRIME.WEIL.W2.01` — Form-Dichte der geschachtelten Fenster-Räume im ungeraden Formsektor von Suzukis A_a, in ehrlichen Scheiben — **FEM-Dichte KLASSISCH verifiziert (H¹-Raten 1.000, L²-Raten 2.000 übe
+  - deps: v643_w1_theorem, PRIME.WEIL.OPERATOR.01, v563, v643
+- **v648_sign_uncertainty** [E/C/O] `PRIME.SIGNUNC.01` — **DAS WÖRTERBUCH IST ECHT UND 25-STELLIG VERANKERT (der d = 1-Mellin-Streifen IST der kritische Streifen; Phasensteigung = L = log π − ψ(¼) = das W1-δ₀-Gewicht), ABER DER QUANTITAT
+  - deps: PRIME.WEIL.OPERATOR.01, v618_uniform_constant, v619_flip_mechanics, v643_w1_theorem, v563, v591, v618, v631
+- **v655_w2_mosco** [C/O] `PRIME.WEIL.MOSCO.01` — **DIE RESOLVENTEN-FAMILIE (A_M + 1)⁻¹ IST CAUCHY ENTLANG DER VERFEINERUNG (Raten ~ 1.0 auf allen 5 Testvektoren) UND IHRE H_log-NORMEN BLEIBEN UNIFORM BESCHRÄNKT** — die zwei messb
+  - deps: v644_w2_form_density, PRIME.WEIL.OPERATOR.01, v563, v643, v644
+- **v656_margin_link** [E/C] `PRIME.MARGINLINK.01` — **DAS PRÄREGISTRIERTE TOR BESTEHT (rank-kubische h-Kontrolle: ρ_partial = +0.477, p = 1e−4; (h,α)-Robustheit ρ = +0.701), ABER DER MECHANISMUS IST EINE IDENTIFIKATION, KEIN UNABHÄN
+  - deps: v618_uniform_constant, v648_sign_uncertainty, v586_pnt_lock_direction, v563, v591, v596, v618, v637
+- **v657_rid_alignment** [E/C] `PRIME.RIDGEOM.01` — **DIE EXAKTE 2D-FORMEL r_id = (1 − q·tan²θ)/(1 − tan²θ) (max dev 3.4e−10 auf allen 67 Fenstern) MIT STRUKTUR-VORZEICHEN AUF JEDEM FENSTER (θ < 45°, B < 0, q > 1) — DAS DEFIZIT IST
+  - deps: v656_margin_link, v618_uniform_constant, v563, v591, v618, v637
+- **v658_w3_uniform_bound** [E/C] `PRIME.W3BOUND.01` — Risiko-Survey — **DER TREND IST q-GETRAGEN (Slope-Anteile q +0.64 / tan² +0.36; Identität β_P = β_q + β_t exakt), DIE KREUZUNGSRISIKO-MODELLE SETZEN h* ~ 3.4e3 (POW) / 9.1e3 (LOG)
+  - deps: v657_rid_alignment, v656_margin_link, v563, v591, v618
+- **v659_w3_landscape** [C] `PRIME.W3LAND.01` — **λ_min > 0 AUF ALLEN 635 LANDSCHAFTS-PUNKTEN (Positivität geht NIRGENDS verloren, auch in keiner Nadel!), ALLE P > 1-EXKURSIONEN SIND θ → 90°-ROTATIONS-ARTEFAKTE DER 2D-REDUKTION,
+  - deps: v658_w3_uniform_bound, v657_rid_alignment, v668_ground_truth, v563, v591, v618
+- **v660_theta_predicate** [E/C] `PRIME.THETAPRED.01` — **EHRLICHES PRÄREGISTRIERTES ERGEBNIS: THETA-PRED-FAIL — 47/52 NADELN SIND DIAGONAL-CROSSINGS DER DEFLATIERTEN 2×2 (Leak ≈ 1.0: KEIN 2-LEVEL-PARTNER), DAS PRÄDIKAT f = λ_lock − μ₁
+  - deps: v659_w3_landscape, v657_rid_alignment, v563, v591, v618
+- **v661_garding** [C] `PRIME.GARDING.01` — der benannte fehlende W2-Baustein, VERMESSEN — **c > 0 AUF JEDER STUFE (c(736, 1) = 0.180, c(736, 4) = 0.676) UND a-UNIFORM BEI FESTEM M-VERHÄLTNIS (die eigentliche W2-Anforderung,
+  - deps: v655_w2_mosco, v644_w2_form_density, v563, v643, v644
+- **v662_garding_edgeband** [C] `PRIME.GARDEDGE.01` — **BEIDE WIDERLEGT: die gefaltete H_log-Norm heilt den Drift NICHT (c_fold(736,1) = 0.18151 ≈ ungefaltet), der Kanten-Cutoff ist VERLUSTFREI (C_edge ≤ C-Budget: der Drift ist keine
+  - deps: v661_garding, v655_w2_mosco, v563, v643
+- **v663_garding_envelope** [E/C] `PRIME.GARDENV.01` — **DAS TOTAL-SYMBOL WÄCHST, SUB-LOG, GEMESSEN a-UNIFORM: s_tot ≥ c₀·w*(t) − C₀ MIT (c₀, C₀) ≈ (0.021, 0.055) AUF DER GANZEN FAMILIE — „FLACH“ WAR EIN t-BEREICHS-ARTEFAKT** (der v662
+  - deps: v662_garding_edgeband, v661_garding, v655_w2_mosco, v563, v643
+- **v665_keiper_li** [E] `PRIME.KEIPERLI.01` — **KAMM (2000 Nullstellen, γ_max = 2515.3) vs NULLSTELLENFREIE ARITHMETIK (Kontur-Extraktion; λ₁ = 1 + γ/2 − log(4π)/2 EXAKT, dev 0.0; Binomial = Kontur auf 7.8e−92) — KONSISTENT FÜ
+  - deps: v643_w1_theorem, v563, v589, v591, v643
+- **v666_turing_cert** [E] `PRIME.TURINGCERT.01` — **DER KAMM IST VOLLSTÄNDIG UNTERHALB γ_max = 2515.3: alle 1999 Mittelpunkt-Sprossen im S-Band (max |S_est| = 0.5151 < 2.5), TURING-INTEGRALE BEI 5 % DER LEHMAN-SCHRANKE (persistent
+  - deps: v665_keiper_li, v589
+- **v667_baez_duarte** [C] `PRIME.BAEZDUARTE.01` — ein EXTERNES Vergleichs-Galerkin für die Suzuki-Route — **VASYUNIN-GRAM AUF 1.7e−31 GEGEN DIREKTE INTEGRATION, C_BD = 2 + γ − log 4π UNABHÄNGIG AUS DEM NULLSTELLEN-KAMM + RvM-TAIL
+  - deps: v661_garding, v659_w3_landscape, v666_turing_cert, v563, v589
+- **v668_ground_truth** [E/C] `PRIME.GROUNDTRUTH.01` — die positive UND die negative Kontrolle der Weil-Positivitäts-Maschinerie, EIN Modul aus BEIDEN Probes — **IHARA-GT-CONFIRMED: auf drei BEWIESENEN Ramanujan-Graphen ist die Toeplit
+  - deps: v659_w3_landscape, v658_w3_uniform_bound, v563, v618
+- **v669_fejer_density** [E/C] `PRIME.FEJERDENS.01` — der W2-Dichte-Abschluss — **DIE EXAKTE IDENTITÄT s_tot = 2π(F_a ⋆ dN) (Weil-Formel auf das Zelt-Testpaar; punktweise 2.9e−6, t-gemittelt 7.2e−8 gegen den Turing-zertifizierten Kamm
+  - deps: v663_garding_envelope, v661_garding, v666_turing_cert, v655_w2_mosco, v563, v589, v643
+- **v670_w3_block_deflation** [E/C] `PRIME.BLOCKDEFL.01` — der benannte Nachfolger des Rank-1-Rotations-Prädikats, EHRLICH GESCHEITERT — **FIDELITY-LADDER p90 = 50.53/49.49/49.44/49.35° FÜR K = 1/2/4/8 (die 5°-Bar wird NIE erreicht), LEAK-
+  - deps: v660_theta_predicate, v659_w3_landscape, v657_rid_alignment, v563, v591, v618
+- **v671_lehmer_resonance** [C] `PRIME.LEHMERNULL.01` — sind die W3-Nadeln das Fenster-Analogon der Lehmer-Paar-Phänomenologie? **EIN SAUBERES NEIN: roh ±0.7 ist reine h-Leiter, die h3-Partials kollabieren auf +0.195/−0.123/−0.125 mit A
+  - deps: v659_w3_landscape, v667_baez_duarte, v666_turing_cert, v563, v589, v618
+- **v672_li_corollary** [E/C] `PRIME.LICOROLLARY.01` — **gₙ(u) = ½·e^{−|u|/2}·L⁽¹⁾ₙ₋₁(|u|) EXAKT hergeleitet (Laguerre!; ĝₙ = 2sin²(nθ/2) ≥ 0: der Li-Koeffizient IST ein quadratischer Formwert der Weil-Form am Generator Gₙ), und das h
+  - deps: v665_keiper_li, v643_w1_theorem, v563, v589, v591, v643, v648
+- **v673_li_e4** [E] `PRIME.LIE4.01` — der exakte E8-↔-Kamm-Konsistenztest — **Λ(E₄, s) = (2π)^{−s}Γ(s)ζ(s)ζ(s−3) VERVOLLSTÄNDIGT (FE s ↔ 4−s exakt auf 2.4e−41), RESIDUEN ±1/240 EXAKT: die E8-240 IST der Residuen-Normie
+  - deps: v625_prime_shadow, v665_keiper_li, v672_li_corollary, v563, v589, v625
+- **v674_packet_garding** [E/C] `PRIME.PACKETGARD.01` — die Paket-zu-Punkt-Lücke der W2-Route, gebaut und vermessen — **DIE PROJEKTIONS-PAKETNORM ENTKOMMT DER 1/log-DRIFT NICHT (typed-residual-Check mit invertierter Erwartung, v642/v662
+  - deps: v669_fejer_density, v663_garding_envelope, v661_garding, v655_w2_mosco, v563, v643
+- **v675_needle_mechanism** [E/C/X] `PRIME.NEEDLEMECH.01` — nach dem dreifachen Negativ (v670 nicht low-rank, v671 nicht nullstellen-getrieben, v667 nicht im BD-Frame) die letzte offene W3-Mechanismus-Frage — **ALLE VIER ASSEMBLY-KANDIDATEN
+  - deps: v670_w3_block_deflation, v671_lehmer_resonance, v667_baez_duarte, v659_w3_landscape, v668_ground_truth, v563, v591, v596
+- **v676_c1_mechanism** [E/C/X] `PRIME.C1MECH.01` — **C = 1 IST AUF DER DEKLARIERTEN FLÄCHE EIN DISKRETISIERUNGSSATZ: q_r = EXAKTE NULLSTELLEN-SEITEN-LESUNG DES LOCK-PROFILS (Weil-Formel auf dem kompletten Kamm; Median-Residuum 1.1e
+  - deps: v618_uniform_constant, v596_lock_projection, v669_fejer_density, PRIME.WEIL.OPERATOR.01, v563, v591, v596, v618
+- **v677_w3_structure_theorem** [E/C] `PRIME.W3STRUCT.01` — die Äquivalenzkette als SATZ — **S1: odd-Toeplitz = Cantoni–Butler-Kompression (eigenwertweise 1.5e−15), der SANDWICH-SATZ statt naiver DST-Diagonalität (Paritätsdefekt gemessen 0.
+  - deps: v669_fejer_density, v668_ground_truth, v659_w3_landscape, v618_uniform_constant, v563, v589, v669
+- **v678_zero_gap_theorem** [E/C] `PRIME.ZEROGAP.01` — der beste explizite UNBEDINGTE Lücken-Satz „jedes Intervall (t, t + H_min(t)] enthält eine Nullstellen-Ordinate“ dokumentiert und maschinell verifiziert — **S-DIFFERENZEN-ROUTE mit
+  - deps: v674_packet_garding, v669_fejer_density, v666_turing_cert, v563, v589
+- **v680_pinch_attack** [E/C] `PRIME.PINCHBREAK.01` — der v678-11.7%-Pinch war ein BUCHFÜHRUNGS-ARTEFAKT der einseitigen Erfassung — **ZENTRIERTES CAPTURE VERDOPPELT DIE SCHWELLE: derselbe Zero-Gap-Satz zweiseitig ausgegeben (dist(t,
+  - deps: v678_zero_gap_theorem, v669_fejer_density, v666_turing_cert, v563, v589
+- **v681_coverage_hole** [E/C/O] `PRIME.HOLECLOSED.01` — die letzte Lücke der punktweisen W2-Kette, (2500, 7.27e6) = 3.46 Dekaden, auf den drei benannten Pfaden attackiert und mit Split-Typisierung GESCHLOSSEN — **H3 ALS HAUPTHEBEL: der
+  - deps: v680_pinch_attack, v678_zero_gap_theorem, v669_fejer_density, v666_turing_cert, v563, v589
+- **v682_lk_split_theta** [E/C] `PRIME.LKSPLIT.01` — OFFENSIVE 1 des Uniform-Positivitäts-Programms (PRIME.UNIFPOS.01): der nicht-zirkuläre Split B = L + K der deployten Fensterform konstruiert und auf der 5-Fenster-Familie × M-Leite
+  - deps: PRIME.WEIL.OPERATOR.01, v677_w3_structure_theorem, v680_pinch_attack, v681_coverage_hole, v563, v643
+- **v683_rank3_functionals** [E/C] `PRIME.RANK3FUNC.01` — der arithmetische Flaschenhals EXAKT gehoben: der Primeinfluss auf den tragenden 2×2-Gram-Block sind DREI lineare Funktionale S_j(a) der Comb-Gewichte (exakt: Assembly vs. unabhäng
+  - deps: v563_paper2_readouts, v587_w_closed_form, v576_cheb_loewner_edge, v563, v576, v587
+- **v684_rank3_zeroside** [E/C] `PRIME.RANK3ZERO.01` — das K_M-Funktional durch die explizite Formel: **die exakte Nullstellen-Identität D = BND − RTERM + Σ z(γ) (Residuum ≤ 6.9e-06 am Referenzfenster, 22 491 Nullstellen bis T = 2e4 bu
+  - deps: v683_rank3_functionals, v589_zero_comb, v680_pinch_attack, v681_coverage_hole, v563, v589
+- **v685_rank3_uniformity** [E/C/O] `PRIME.RANK3UNIF.01` — der Uniformitäts-Quantor GESCHLOSSEN (das Satz-Resultat der Rang-3-Kette): **die symbolische Envelope K_env(a,h) ≤ 0.9798 < 1 für ALLE vollständigen Fenster a ≥ 3.434 (62 von 67; k
+  - deps: v684_rank3_zeroside, v683_rank3_functionals, v563
+- **v686_geometric_sos** [E/C/O/X] `PRIME.GEOMSOS.01` — der erste Machbarkeits-Schlag an der geometrischen Positivitätsquelle ('Q = Σ|l_j(v)|² aus TFPT-Geometrie, ohne ζ, ohne Nullstellen'): **die ZIRKELFREIE SPUR: Λ_geo(n) = Λ_L(n)/(1+
+  - deps: v625_prime_shadow, v613, v624, v625, v627, v643, v673
+- **v687_extremal_kernel** [C] `PRIME.KERNELCLASS.01` — kann ein optimierter positiver bandbegrenzter Kern gleichen Typs die W2-Capture-Schwelle über A1 = 0.10076 heben? **STRUKTURSATZ: NEIN — das Pinning-Zertifikat 2πF_a₀(mπ/a₀) = 0 EX
+  - deps: v678_zero_gap_theorem, v669_fejer_density, v680_pinch_attack, v681_coverage_hole, v563
+- **v688_interpolation_detector** [E/C] `PRIME.INTERP.01` — der kalibrierte Off-Line-Detektor von v677 S3 zum VOLLSTÄNDIGEN, explizit konstruktiven Falsifikator gemacht: **der Im-Kernel-Matched-Filter detektiert JEDES Off-Line-Quadrupel ab
+  - deps: v677_w3_structure_theorem, v678_zero_gap_theorem, v680_pinch_attack, v681_coverage_hole, v563, v589
+- **v691_hecke_sos** [E/C/X] `PRIME.HECKESOS.01` — OFFENSIVE 4 (Vertrag PRIME.W3.HECKE.SOS.01): Suche nach der prim-lokalen Faktorisierung A = B*B + P (P ⪰ 0) ohne Nullstellen-Input; sechs wörtliche Akzeptanzkriterien adjudiziert —
+  - deps: v677_w3_structure_theorem, v682_lk_split_theta, v683_rank3_functionals, v686_geometric_sos, PRIME.Z1.OPERATOR.01, v563
+- **v692_rank3_lockgram** [E/C] `PRIME.RANK3LOCKGRAM.01` — OFFENSIVE 2d: der deployte 2×2-Lock-Block als fast-kollineare Gram-Matrix — **Â₂ = positives Nullstellen-Gram G_Z (pro Nullstelle psd, Cauchy–Schwarz manifest) + psd Rang-1-Pol-Lay
+  - deps: v685_rank3_uniformity, v684_rank3_zeroside, v677_w3_structure_theorem, v563
+- **v693_rank3_density_close** [E/C] `PRIME.RANK3DENSITY.01` — OFFENSIVE 2e — **Zitat-Ledger exakt: [A1] Platt–Trudgian 2021 (RH bis 3e12), [A2] Hasanalizade–Shen–Wong 2022 (expliziter RvM-Count), [A3] Funktionalgleichungs-Halbierung, [A4] exp
+  - deps: v692_rank3_lockgram, v684_rank3_zeroside, v685_rank3_uniformity, v563
+- **v694_interpolation_lemma_closure** [E/C/O] `PRIME.INTERPCLOSURE.01` — **(iii) RETENTION: exakte Projektions-Identität Im Φ_x(z0) = ||(I−Π)m||², geschlossenes O(k²)-Zertifikat, r_f ≥ 0.548 auf der Familienfläche (≥ 0.266 adversarial); GRENZFALL entdec
+  - deps: v688_interpolation_detector, v677_w3_structure_theorem, v678_zero_gap_theorem, v563, v589
+- **v695_z1_trace_operator** [E/O/X] `PRIME.Z1MEASURE.01` — existiert ein selbstadjungierter, GEOMETRISCH konstruierter Operator (zeta-frei, nullstellenfrei, AST-erzwungen), dessen Polynomspuren die Weil-Fenstermomente erzeugen? — **Kandida
+  - deps: PRIME.Z1.OPERATOR.01, v691_hecke_sos, v563, v621, v622, v623, v625, v643
+- **v696_z1_jacobi** [E/X] `PRIME.Z1JACOBI.01` — Verblunsky/CMV/Jacobi aus der positiven Kamm-Folge c + Pol — **der kanonische Operator EXISTIERT: CMV-Unitär (367×367) + Jacobi-selbstadjungiert (Wheeler auf Chebyshev-Momenten), R
+  - deps: v695_z1_trace_operator, PRIME.Z1.OPERATOR.01, v563
+- **v697_z1_uvarov** [E] `PRIME.Z1UVAROV.01` — exakte Punktmassen-/Einzel-Lag-Einfüge-Maschinerie für die Z1-Koeffizienten-Antwort — **DUALITÄT BEWIESEN: die Atome sind LAG-Einfügungen, NICHT Orthogonalitätsmaß-Punktmassen (die
+  - deps: v696_z1_jacobi, v695_z1_trace_operator, PRIME.Z1.OPERATOR.01, v563
+- **v698_z1_flow_recursion** [E/O] `PRIME.Z1FLOWREC.01` — ist der ganze Primkamm vom Arch+Pol-Fluss erzwungen? — **POSITIONEN ERZWUNGEN: Slot-Fenster 0.5–2 Zellen (6/6 scharf), Jitter-Null 30/30, Adversary-Defizit −516 Lags — die Primpote
+  - deps: v697_z1_uvarov, v696_z1_jacobi, v695_z1_trace_operator, PRIME.Z1.OPERATOR.01, v563
+- **v699_cone_dynamics** [X] `QGEO.CONEDYN.01` — die Review-7.3-Frage („die Lorentz-Form DYNAMISCH statt statisch nutzen“) auf den Prime-Front-Determinanten-Koordinaten y(a) = (S11, S22, S12)(a) mit J_det der Signatur (1,2) ausge
+  - deps: v683_rank3_functionals, v563, v624, v627
+- **v701_big_picture_hunt** [E/X] `PRIME.KEYSTONE.01` — billige Maschinen-Reads für die Frage „liegt der fehlende Rest des RH-Programms schon im Korpus?“ — **der KEYSTONE [E]: die deployte Fensterform B ist EXAKT die Sinusmomentform von
+  - deps: v695_z1_trace_operator, v677_w3_structure_theorem, v691_hecke_sos, v563
+- **v702_z1_lookahead** [O] `PRIME.Z1LOOKAHEAD.01` — das Lookahead-Problem: autonome zeta-freie Rekonstruktion des Primkamms aus dem Γ-Fluss — **FLOW-VERIFIER-NOT-GENERATOR: der volle wahre Kamm ist fluss-VERIFIZIERT (913 ≥ 898, jede
+  - deps: v698_z1_flow_recursion, v697_z1_uvarov, PRIME.Z1.OPERATOR.01, v563
+- **v703_chain_tolerance_scaling** [X] `PRIME.CHAINTOL.01` — wie scharf beschränkt die Z1-Fluss-Induktion die Zählmassen? — **TOLERANCE-RH-GRADE: die pro Schritt nötige Massentoleranz schrumpft auf RH-Niveau (OVER-RH auf den feinen Fenstern)
+  - deps: v698_z1_flow_recursion, v702_z1_lookahead, v563
+- **v704_chain_mass_law** [O] `PRIME.CHAINMASS.01` — sagt eine GESCHLOSSENE Formel (kein Slot-Fit, kein Fenster-Skalar) die Zählmassen aus dem Fluss vorher? — **G1-OPEN: das beste geschlossene Gesetz ist C2 (Null-Reflexionskoeffizien
+  - deps: v703_chain_tolerance_scaling, v697_z1_uvarov, v563
+- **v705_chain_deck_sector** [E] `QGEO.DECKSECTOR.01` — Original v705 prime arch-density/digamma application of NS-circle deck sectors; finite conditional scope retained.
+  - deps: v701_big_picture_hunt, QGEO.ORBIFOLD.01, v623, v628
+- **v706_chain_weyl_mass** [E] `PRIME.WEYLMASS.01` — ist das exakte Massengesetz eine Auswertung der m-/Schur-Funktion des Hintergrund-Operators? — **WEYL-NULL: die Punktauswertungs-Lesart ist FALSIFIZIERT (K2-Median 0.3993)** — MIT
+  - deps: v704_chain_mass_law, v696_z1_jacobi, v563
+- **v707_chain_section_edge** [E/O] `PRIME.SECTIONEDGE.01` — **EDGE-EXACT-SELECTION-OPEN: die Kantenformel ist eine RESOLVENT-IDENTITÄT (Christoffel–Darboux-Form), exakt auf 3e-13 [E]; die Voll-Leiter-Kante pinnt die Masse auf 2.6e-04**; die
+  - deps: v697_z1_uvarov, v704_chain_mass_law, v563
+- **v708_chain_position_functional** [O] `PRIME.POSFUNC.01` — welches Funktional fixiert die Korridorposition ~0.53? — **FUNCTIONAL-OPEN: das beste ist das LEVINSON-ENERGIE-EXTREMUM E_{N−1}: Median 0.9986, max. Abweichung 11.7% — und es TRANS
+  - deps: v707_chain_section_edge, v563
+- **v709_chain_zero_layer** [-] `PRIME.ZEROLAYER.01` — ist das S-F-Selektionsresiduum eine Nullstellen-Schicht? — **LAYERING-REJECTED: in allen getesteten Projektionen trägt das Residuum KEINE Nullstellen-Signatur (beste corr 0.042 = S
+  - deps: v708_chain_position_functional, v563, v589
+- **v710_chain_two_stage_hecke** [E/X] `PRIME.TWOSTAGE.01` — der zweistufige Hecke-Selektor fürs G1-Residuum — **der Memo-Kill FEUERTE (max. Gesamtabweichung 6.15% > 2%-Bar) — das zusammengesetzte geschlossene Gesetz ist tot wie deklariert;
+  - deps: v708_chain_position_functional, v686_geometric_sos, v563
+- **v711_chain_firstbirth_scaling** [-] `PRIME.FIRSTBIRTH.01` — fit-freie Messung der Erstgeburts-Selektionsfehler-Skalierung mit der Fensterauflösung — **CONTINUUM-SELECTOR-MEASURED: der Erstgeburtsfehler KONVERGIERT unter Verfeinerung — Promo
+  - deps: v710_chain_two_stage_hecke, v707_chain_section_edge, v563
+- **v712_rank3_transverse_deck** [E/C/O/X] `PRIME.RANK3TRANSV.01` — Transversal-Skalarisierung × Deck-Triplikation für die zehn offenen T-B-Fenster bei Zitationshöhe 3e12 — **der P4-Satz: die v692-Margen-Identität wird transversal SKALARISIERT (die
+  - deps: v692_rank3_lockgram, v693_rank3_density_close, v684_rank3_zeroside, v563
+- **v713_l1_montage** [E/O] `PRIME.L1MONTAGE.01` — die erste explizite Montage des KONTINUUMS-Kandidaten des Z1-Operators und der Maschinentest seiner deklarierten Limes-Gates — **L1-ASSEMBLED-MEASURED: der Kandidat ist MONTIERT (S
+  - deps: v705_chain_deck_sector, v697_z1_uvarov, v695_z1_trace_operator, PRIME.Z1.OPERATOR.01, v563
+- **v714_moonshot_hecke_groupoid** [E] `PRIME.MOONSHOT.01` — der E8-Hecke-Gruppoid-Turm: ist die ATOM-SCHICHT des Weil-Maßes gruppoid-intern? — **MOONSHOT-GO: (i) die primitiven Grade des Z[i]-E8-Hecke-Turms sind EXAKT die Gauß-Primnormen (M
+  - deps: v713_l1_montage, v695_z1_trace_operator, PRIME.Z1.MOONSHOT.01, v563
+- **v716_moonshot_arch_glue** [E] `PRIME.MOONSHOT.02` — der gemeinsame Arch-Sektor-Test: liefert die archimedische Stelle DESSELBEN Z[i]-E8-Kommensurabilitäts-Gruppoids den Arch-Turm des Weil-Maßes? — **MOONSHOT-STAGE2-GLUED: ein Objekt
+  - deps: v714_moonshot_hecke_groupoid, PRIME.Z1.MOONSHOT.01, v705_chain_deck_sector, v695_z1_trace_operator, v563
+- **v717_moonshot_state** [E] `PRIME.MOONSHOT.03` — die Positivitäts-STRUKTUR des verklebten Objekts: ist das Weil-Funktional ein ZUSTAND auf der Gruppoid-Algebra? — **STATE-ON-TRUNCATIONS: auf jeder Trunkierung KONSTRUKTIV ein GNS-
+  - deps: v716_moonshot_arch_glue, v701_big_picture_hunt, v696_z1_jacobi, v668, v563
+- **v718_moonshot_spectral** [-] `PRIME.MOONSHOT.04` — die Spektral-Identifikation: konvergieren die Eigenwerte der Trunkierungen des verklebten Objekts auf die ζ-Nullstellen? — **SPECTRUM-CONVERGES-MEASURED: h = 1433 trifft 100% der 3
+  - deps: v716_moonshot_arch_glue, v717_moonshot_state, v696_z1_jacobi, v668, v563
+- **v719_moonshot_traceformula** [E] `PRIME.MOONSHOT.05` — die Spurformel des verklebten Objekts, Glied für Glied gegen die klassische Weil-Formel — **SATZ1-LEDGER-EXACT: die endliche Spurformel ist EXAKTE Gauß-Quadratur auf jeder Trunkier
+  - deps: v716_moonshot_arch_glue, v717_moonshot_state, v718_moonshot_spectral, v563
+- **v720_moonshot_k2k3** [E/C] `PRIME.MOONSHOT.06` — die zwei Konvergenz-Sätze der Ledger-Liste, gemessen und auf klassische Analysis kollabiert — **K2K3-COLLAPSED-CLASSICAL: K3 kollabiert auf gemessene Tightness (Kompakta Cauchy, Ba
+  - deps: v716_moonshot_arch_glue, v717_moonshot_state, v718_moonshot_spectral, v719_moonshot_traceformula, v563
+- **v721_k1_node_capture** [E] `PRIME.K1CAPTURE.01` — das Knoten-Einfang-Lemma hinter der Etappe-4-Spektralmessung, aus klassischer Quadratur-Theorie gebaut und ehrlich adjudiziert — **K1-LEMMA-CAPTURE-ONLY: Markov-Stieltjes-Sandwich
+  - deps: v718_moonshot_spectral, v696_z1_jacobi, PRIME.FALSIFIER.01, v668, v678
+- **v727_l1_identification** [E] `PRIME.L1IDENT.01` — Identifikation des vagen Limes via Momentenproblem-Determiniertheit und die maximale Präzisierung der Mauer — **L1-DETERMINED-WALL-TYPED: Determiniertheit ist KLASSISCH (Gauß-gedäm
+  - deps: PRIME.Z1.MOONSHOT.01, v720_moonshot_k2k3, v717_moonshot_state, v720, v717
+- **v728_k1b_superresolution** [-] `PRIME.K1BPIN.01` — WARUM sitzen die Gauß-Knoten ~900× unter dem klassischen Einfang-Radius? — **K1B-ATOM-PINNING: der Memo-Mechanismus (Christoffel-Lokalität + Asymmetrie-Störung) ist TOT — die zwei
+  - deps: v721_k1_node_capture, v718_moonshot_spectral, PRIME.FALSIFIER.01, v696
+- **v729_strat2_rp_universality** [X] `PRIME.RPUNIV.01` — Reflexions-Positivität, Bulk-Universalität, Pinning-Labor — **A: RP-DEAD-ON-TRUNCATIONS — die naive Osterwalder–Schrader-Route ist auf Messniveau tot (Total-Fenster bricht plain UN
+  - deps: v717_moonshot_state, v728_k1b_superresolution, v696
+- **v730_strat2_pinning_lemma** [E] `PRIME.PINLEMMA.01` — das explizite PINNING-LEMMA hinter der K1b-Super-Auflösung — **L-PIN-1 (Residuum-Schranke, Wilkinson-Typ) + L-PIN-2 (Kato–Temple), einzeilige Beweise: 0 Verletzungen im synthetisch
+  - deps: v728_k1b_superresolution, v721_k1_node_capture, v696
+- **v731_strat2_gap_universality** [C/X] `PRIME.GAPUNIV.01` — Lücken-Schicht-Universalität mit feinerer K-Leiter und lokalen Szegő/Totik-Bedingungen, nullstellenfrei — **GAP-UNIV-KILLED: die starke Messform der Lücken-Universalität ist TOT —
+  - deps: v729_strat2_rp_universality, v730_strat2_pinning_lemma, v696
+- **v732_strat3_sonin_prolate** [X] `PRIME.SONIN.01` — endliche Sonin-Prolate-Kompression auf TFPT-Fenstern, der direkte Connes–Consani-Transfer-Test — **SONIN-RANK-GROWS (präregistrierter KILL feuert): bad_rank wächst 19 → 86 über die
+  - deps: v716_moonshot_arch_glue, v718_moonshot_spectral, v563
+- **v733_strat3_gate0_census** [E/O] `PRIME.GATE0.01` — der S = {∞,2,3,5}-lokale Orbit-Algebra-Zensus — **GATE0-WEAK-FUNCTOR: exakter Funktor-Kandidat vom σ-abgestiegenen TFPT-Gruppoid in Connes' S-lokale periodische Orbit-Unteralgebra
+  - deps: v714_moonshot_hecke_groupoid, v714
+- **v734_s1_canonical** [E] `PRIME.S1CANON.01` — das kanonische System des Limes-Objekts mit dem Suzuki-Anker: die Mauer in der VIERTEN Sprache — **S1-CANONICAL-SUZUKI-BRIDGED: Krein-Korrespondenz EXAKT (Weyl-Identität 1.6e-15 üb
+  - deps: v727_l1_identification, v716_moonshot_arch_glue, v696
+- **v735_strat3_ucp_inductive** [E] `PRIME.UCPLIMIT.01` — kovariante UCP-Abbildungen entlang der Neun-Fenster-GNS-Leiter: die Zustands-Transport-Route, ehrlich geschlossen — **UCP-STAGNATES: alle acht benachbarten Abbildungen existieren E
+  - deps: PRIME.Z1.MOONSHOT.01, v718_moonshot_spectral, v718
+- **v738_hecke_mod_ramified** [E/C/X] `PRIME.HECKEMODRAM.01` — **HECKE-MOD-RAMIFIED-CHANNELS: der Transport ist über ALLE 5907 Untermoduln des v714-Turms exakt wohldefiniert UND σ-funktoriell (kein Kill); ungerade Schichten wirken als Grad·id
+  - deps: v714_moonshot_hecke_groupoid, PRIME.Z1.MOONSHOT.01, GNET.RAMIFIED.01, v714, v722
+- **v739_rank3_jet** [E/X] `PRIME.RANK3JET.01` — **RANK3-JET-DEAD: der Jet-Read ist exakt (der Lock-Block als Erster-Jet EINER Funktion, 4.6e-16; Loewner-Koordinaten; Schwarzian-Form [1−r₁₂²]_odd = (3/8)·S[g̃](1)·ε⁴ im Odd-Sektor
+  - deps: v683_rank3_functionals, v683, v684, v692, v696
+- **v740_kms_extension_switch** [E/X] `PRIME.KMSEXT.01` — **KMS-EXTENSION-DEAD: β=1-KMS ist auf Gate-0s Laurent-Unitären mit Grad ≠ 0 algebraisch unmöglich — T(u_p u_p*) = 1 vs T(u_p* σ_i(u_p)) = 1/p, exakte Defekte 1/2, 2/3, 4/5 (p = 2,
+  - deps: PRIME.KMS.INDUCTIVE_STATE.01, v733_strat3_gate0_census, v716, v718
+- **v741_kms_toeplitz_semigroup** [E/X] `PRIME.KMSTOEPLITZ.01` — **KMS-TOEPLITZ-DEAD: die BC-Isometrie-Korrektur repariert die algebraische KMS-Obstruktion VOLLSTÄNDIG (randkorrigierte KMS-Identitäten exakt; normierter Randfehler 1e-2 → 1e-9 im
+  - deps: v740_kms_extension_switch, v735_strat3_ucp_inductive, PRIME.KMS.INDUCTIVE_STATE.01, v740, v718, v735
+- **v742_channel_interference** [E] `PRIME.CHANNELINT.01` — **INTERFERENCE-COLLECTIVE: die W3-Marge ist EINE kollektive Skalar-Bilanz (arch + ram-odd gegen split + inert), streng monoton über alle 35 deployten Fenster (glattes Running, kons
+  - deps: v738_hecke_mod_ramified, v738, v563
+- **v743_schur_cone_recursion** [E/X] `PRIME.SCHURCONE.01` — **SCHUR-CONE-DEAD: der Möbius/Schur-Update ist exakt (Residuum 2.9e-41) und die T*JT-Identität hält exakt [E]; der Einzeiler-Kill: eine Schicht-Karte ist kegelbewahrend ⟺ die Schic
+  - deps: PRIME.PD.PERSISTENCE.01, v563
+- **v744_hecke_channel_columns** [-] `PRIME.CHANNELSOS.01` — **HECKE-SOS-CHANNELS-PARTIAL: keine kanonische Spalten-Wahl faktorisiert das Fenster-Gram (cos-Hälfte indefinit; PSD-B*B-Vervollständigung verbraucht 5–6 Größenordnungen über der W
+  - deps: v738_hecke_mod_ramified, v742_channel_interference, FTR.IHARA.01, v738, v742, v563
+- **v747_automaton_multiway_tower** [E] `E8.MULTIWAY.01` — die Zuse/Wolfram-Lesart ausgemessen, nicht erzählt — **Diamant EXAKT (Multiway-Konfluenz = Hecke-Kommutativität = CRT, ein Theorem); der EINE neue Fingerabdruck: Branchial-Spektrum
+  - deps: v714_moonshot_hecke_groupoid, v702_z1_lookahead, E8.ORBITPACKET.01, v714, v702, v736
+- **v748_automaton_sigma_orbifold_confluence** [E] `E8.ORBIFOLDCONF.01` — **der σ-Quotient ist ÜBERALL konfluent (Zwei-Zeilen-Lemma: σ ist Multiway-Automorphismus — es gibt KEINE Orbifold-Nicht-Konfluenz auf Rewrite-Niveau, auch nicht an der verzweigten
+  - deps: v747_automaton_multiway_tower, v747, v702
+- **v749_simpler_tower** [E] `PRIME.TOWERNEST.01` — DAS Struktur-Upgrade der PD-Persistenz-Formulierung — **TOWER-NESTED-REDUCES: in X eine aufsteigende Kette (X-Nestung exakt auf 6.7e-18 — Limes-Positivität = EIN Grenzobjekt pro Ke
+  - deps: PRIME.PD.PERSISTENCE.01, v727_l1_identification, v716, v718, v696, v563
+- **v750_simpler_gluing** [E/C] `PRIME.GLUEDETECT.01` — **GLUING-DETECTOR: die Verklebungs-Identität sieht δ = 0.01 (jedes δ > 0 detektierbar) — SCHÄRFER als der PD-Bruch bei δ* = 0.02; die Hüllkurven-Steigung MISST δ; die Starrheits-Th
+  - deps: PRIME.PD.PERSISTENCE.01, PRIME.FALSIFIER.01, v718, v696
+- **v751_ward_monotone** [E] `PRIME.WARDMONO.01` — **WARD-MONOTONE-MIXED: das Komponenten-Running ist deterministisch in RICHTUNG (100%, parameterfreie ζ/L-Konstanten); die Drift-Anatomie EXAKT — die ∓u/2-Drifts kommen aus p² ≡ 1 m
+  - deps: v742_channel_interference, PRIME.PD.PERSISTENCE.01, v742, v563, v692
+- **v753_ramified_polarity** [E] `PRIME.HECKEPOLARITY.01` — die 15 ramifizierten Hecke-Hyperebenen sind EXAKT die h̄-Orthogonalräume — **POLARITY-MATCH: die 15 Norm-2-Hecke-Untermoduln (v738) = exakt die y-Orthogonalräume der v752-Geometrie
+  - deps: E8.PROJHAMMING.01, v738_hecke_mod_ramified, v738, v752
+- **v754_ramodd_twostep** [E] `PRIME.HECKETWOSTEP.01` — der n→4n-Down-Up-Pass IST exakt K² — **TWOSTEP-EXACT: der normalisierte Zwei-Schritt-Transport der realen ramifizierten ungeraden Schichten (n = 2, 8, 32, 128, …) = EXAKT K² = (4/4
+  - deps: E8.PROJHAMMING.01, v738_hecke_mod_ramified, v753_ramified_polarity, v738, v752, v753
+- **v755_simpler_schur_recursion** [E] `PRIME.SCHURREC.01` — der erste RH-Angriff, der exakt zur korrekt formulierten Wand passt — **SCHUR-RECURSION-ALIVE: S_k ⪰ 0 GEMESSEN auf allen 8 ram-odd-Stufen der Turm-Nestung (n_k = 2^{2k+1}; λ_min f
+  - deps: PRIME.PD.PERSISTENCE.01, v749_simpler_tower, v754_ramodd_twostep, v749, v754, v563, v716
+- **v756_kms_incidence_stinespring** [E] `PRIME.KMSSTINESPRING.01` — Schritt 3 des Mastervertrags auf der ramifizierten Schicht GELÖST — **KMS-INCIDENCE-CP-COVARIANT: 105 explizite Kraus-Terme realisieren K = B/7 als vollständig positive unitale Abb
+  - deps: PRIME.KMS.INDUCTIVE_STATE.02, E8.PROJHAMMING.01, v754_ramodd_twostep, v738, v752, v754
+- **v758_simpler_certificate** [E] `PRIME.CERTROOT.01` — das montierte Zertifikat [Kontinuums-Wurzel ⊕ Kraus] ist NICHT montierbar: die Mauer IST der fehlende linke Faktor — **CERT-CONTINUUM-ROOT-DEAD: der arch+pol-Block ist auf KEINER S
+  - deps: v755_simpler_schur_recursion, v754_ramodd_twostep, v756_kms_incidence_stinespring, PRIME.PD.PERSISTENCE.01, v755, v754, v756, v706
+- **v759_handoff_fixed_window_resolution** [E] `PRIME.HANDOFFRES.01` — festes Fenster, wachsende Frequenzauflösung — **RESOLUTION-BOUNDARY (Fall B auf allen drei Fenstern): E_total ist q-INVARIANT unter Nf = q(2M+1), q ∈ {1,2,4,8}, auf ~1e-13 (max |dE
+  - deps: v767_handoff_frequency_gram, v768_handoff_tail_weil, v716, v767
+- **v760_antialias_exact** [E] `PRIME.ANTIALIAS.01` — **ANTIALIAS-CORRECTED: exakte Identitäten für BELIEBIGE M-Zell-Koeffizienten (Parseval ≤ 2.0e-14, alle 2M−1 Momente ≤ 3.5e-13, Gram-Identität ≤ 5.9e-13, Gram-Invarianz über {2M−1,
+  - deps: v767_handoff_frequency_gram, v759_handoff_fixed_window_resolution, v716, v767
+- **v761_atom_pole_abel** [E/C] `PRIME.ABELPAIR.01` — die gepaarte Atom-Pol-Abel/Stieltjes-Transformation mit UNBEDINGTER eta-Schranke, EIN Modul aus zwei Probes — **ABEL-PAIRED-BOUND (kombinierte Adjudikation): Stieltjes/Abel-Split e
+  - deps: v759_handoff_fixed_window_resolution, v767_handoff_frequency_gram, W1.SUZUKI (v630, v631, v640, v642, v643), v716
+- **v762_dense_weil_core** [E] `PRIME.DENSECORE.01` — **DENSE-CORE-CANONICAL: Zulässigkeit pro Klasse VERORTET (v677 S2(i)/IK Thm 5.12: Hüte direkt zulässig, Steigung −1.854; die nackte Box VERFEHLT das r^−2-Kriterium (−0.942, benannt
+  - deps: PRIME.W3.STRUCTURE (v677), PRIME.TOWERNEST.01 (v749), v563, v767
+- **v763_yosida_handoff** [E/O] `PRIME.YOSIDAQF.01` — **YOSIDA-PARTIAL / QF-DEAD: Q1 — die beschränkte Yosida-Formulierung trägt die Handoff-Raten (|b_Y − b_G| ≤ 1e-13, Sandwich 0 ≤ diag ≤ 1 auf allen 360 Auswertungen, NIRGENDS eine 1
+  - deps: v766_handoff_bulk, v768_handoff_tail_weil, PRIME.PD.PERSISTENCE.01, v563, v755, v766, v768
+- **v765_handoff_redteam** [E] `PRIME.HANDOFFREDTEAM.01` — **REDTEAM-GREEN-COMBINED: Firewall SAUBER (null Blacklist-Treffer über alle 21 Quellpfad-Funktionen — kein Eigen/Cholesky/Nullstellen/Prim-Kanal vom Target in die Quelle); Baseline
+  - deps: v767_handoff_frequency_gram, v768_handoff_tail_weil, v716, v767
+- **v766_handoff_bulk** [E] `PRIME.HANDOFFBULK.01` — der lokale Bulk-Kovarianz-Entscheider — **HANDOFF-BULK-CONVERGES: die eps-regulierte Resolvente G^eps = (A_X + eps I)^{-1} ist die zulässige Operator-System-Auswertung; zirkelfreie
+  - deps: PRIME.PD.PERSISTENCE.01, v749_simpler_tower, v755_simpler_schur_recursion, v563, v749, v755
+- **v767_handoff_frequency_gram** [E] `PRIME.HANDOFFGRAM.01` — das wachsende Frequenz-PSD-Quell-Gram — **HANDOFF-GRAM-CONVERGES: Kandidat A (Review-Zähler) verfehlte EHRLICH das eingefrorene Raten-Gate (Zellzahl unter dem Anti-Alias-Grad, Stei
+  - deps: PRIME.KMS.INDUCTIVE_STATE.02, E8.MOONSHOT.GLUE (v716), v563
+- **v768_handoff_tail_weil** [E] `PRIME.HANDOFFTAIL.01` — **TAIL-WEIL-PARTIAL + COMPAT-EPS3-CONVERGES: der Quadratur-Tail TERMINIERT ALGEBRAISCH (Alias-Zensus (M−1)+Spread ≤ 2M auf allen 5 Fenstern; max Tail 2.4e-13 — es gibt KEINEN Quadr
+  - deps: v766_handoff_bulk, v767_handoff_frequency_gram, v749_simpler_tower, v563, v716, v749, v755, v766
+- **v769_qf_contract_necessity** [-] `PRIME.QFGAUGE.01` — **QF-GAUGE + GATE3PRIME-DEAD: Gate 3s Voll-Leiter-Cauchy-Forderung an q_f war beweisbar STÄRKER als der Diagonal-Vertrag braucht (Epsilon-Netz-Teilfolge, Dichte 0.144, macht alle 1
+  - deps: PRIME.GRAM.DIAGONAL.01, v763_yosida_handoff, PRIME.KMS.INDUCTIVE_STATE.02, v563, v755, v763, v766
+- **v770_qf_spectral_bundle** [-] `PRIME.QFBUNDLE.01` — **QF-BUNDLE-PARTIAL + QF-SETTLES-POSITIVE: der Kato/Polar-Transport des Rang-6-Fastkerns ist WOHLDEFINIERT mit breiten Margen (Rang 6 stabil auf 888..972, Lücke 6/7 = 0.34..0.56, W
+  - deps: v769_qf_contract_necessity, v763_yosida_handoff, v563, v755, v766
+- **v771_qf_representation_census** [E/O] `PRIME.QFCENSUS.01` — ist E_qf der kanonische E8-Defektraum E_7 (+) E_{-2} (6 = 1 + 5)? — **QF-REPRESENTATION-OPEN: die Label-Seite ist SCHARF (B B^T = 4I + 3J exakt, Spektrum (1, 9, 5); von 64 alternie
+  - deps: E8.PROJHAMMING.01, v753_ramified_polarity, v738_hecke_mod_ramified, v756_kms_incidence_stinespring, v763_yosida_handoff, v563, v716, v738
+- **v772_qf_feshbach_effective** [E] `PRIME.QFFESHBACH.01` — **FESHBACH-PARTIAL + EDGE-KEEPS-MOVING: die d = 6-Reduktion ist EXAKT (Rekonstruktion 8.8e-13 gegen unabhängige dichte Löser; Matrix-Herglotz zertifiziert; Band separiert 0.1008) —
+  - deps: v770_qf_spectral_bundle, v563, v755, v766, v770
+- **v773_qf_cell_cocycle** [E] `PRIME.QFCOCYCLE.01` — der geordnete Möbius/Redheffer-Zell-Kozykel auf dem tiefenabhängigen Band d(X), unter den eingefrorenen STAKES (stirbt dieses Modul, schließt die Gram-Route ohne weitere Varianten)
+  - deps: v772_qf_feshbach_effective, v770_qf_spectral_bundle, PRIME.GRAM.DIAGONAL.01, PRIME.Z1.OPERATOR.01, v563, v755, v758, v766
+- **v780_z1_compactness_trilogy** [O] `PRIME.Z1.COMPACTNESS.01` — **Z1-SIGNATURE-PARTIAL + Z1-TRIPLE-PARTIAL + Z1-VAREDGE-PARTIAL (Gates 3/4 + 1/4 + Legs 3/6 mit EXAKT den präregistrierten Fails; Guards+Controls 20/20 + 23/23 + 23/23; ~270 s): di
+  - deps: PRIME.Z1.OPERATOR.01, PRIME.KMS.INDUCTIVE_STATE.02, v773_qf_cell_cocycle, v772_qf_feshbach_effective, v771_qf_representation_census, v770_qf_spectral_bundle, v696, v718
+- **v785_hecke_check32** [E] `HECKE.CARRIER_CHECK32.01` — **CHECK32-THEOREM (20/20, ~40 s): f8 = eta(2t)⁴ eta(4t)⁴ ≡ E_odd = Σ_{n ungerade} sigma3(n) qⁿ (mod 32), koeffizientenweise bis q^100000 = 25000× die Sturm-Schranke 4 — Sturm 1987
+  - deps: v535_hecke_from_geometry, v535, ARF.SPINORCOMPILER.01
+- **v786_prime_packet480** [E/X] `PRIME.PACKET480.01` — **PACKET480-ADDRESS-ONLY (28/28; FROZEN_SPEC vor allen Daten gehasht; der Kill feuert wie präregistriert): Header(p) = (p mod 30, a_p mod 32) ist EXAKTE 7-Bit-Adress-Arithmetik — C
+  - deps: v785_hecke_check32, v223, v774, v775, v702, v702_z1_lookahead
+- **v787_hecke_arrow_broadcast** [E] `HECKE.ARROW_MESSAGE.01` — **ARROW-LEDGER-STRUCTURED + BROADCAST-EXACT (48/48 + 21/21): jeder einzelne Hecke-Pfeil unter den Korpus-Spuren trägt sein volles Label-Tupel, exakt — die 15 ramifizierten Pfeile S
+  - deps: v738, v754, v756, v752, v535, v535_hecke_from_geometry, ARF.ROOTCLASS.01
+- **v788_positive_c2_lift** [-] `HECKE.POSITIVE_C2_LIFT.01` — **C2LIFT-THEOREM (42/42, ~200 s): A = (E_odd + f8)/2 = (1/16) theta2(2t)⁴ theta3(4t)⁴ und B = (E_odd − f8)/2 = (1/16) theta2(2t)⁴ theta2(4t)⁴ sind POSITIVE Theta-Reihen (nichtnegat
+  - deps: v785_hecke_check32, v535, v535_hecke_from_geometry
+- **v789_multirate_constdepth** [E] `HECKE.MULTIRATE2ADIC.01` — **MULTIRATE-THEOREM / SPINLIFT-VERIFIED + CONSTDEPTH-THEOREM (23/23 + 24/24, ~200 s): v_2(1 + p³ − a_p) ≥ 5 + 2[chi_{−4}(p) = 1] + [chi_8(p) = 1] für ALLE 78497 ungeraden Primzahle
+  - deps: v785_hecke_check32, v537_halfintegral_bridge, v535, v537, v541_matching_lemma_ledger
+- **v790_snf_mu4_theta** [E] `HECKE.SNF_THETA.01` — **SNF-FINGERPRINT + MU4-PARTIAL (18/18 + 17/17): die Korrektur-Theta H(q) = q³ psi(q²)⁴ psi(q⁴)⁴ hat die Darstellungs-Identität 256 R(n) = #{ungerade (u,v) ∈ Z⁸ : Q = 4n} (direkte
+  - deps: v689, v752, v638, v535, v536, v537, ARF.ROOTCLASS.01
+- **v791_positive_descent** [O] `PRIME.POSITIVE_DESCENT.01` — **DESCENT-PARTIAL (30/30 inkl. 5 Muss-Kontrollen; die deklarierte Lauf-1 -> Lauf-2-Kalibrierung wörtlich getragen): der Paket-GNS-Zustand auf N[C2] ⊗ N[F2⁴] ⊗ N[mu4] ist MANIFEST p
+  - deps: v788_positive_c2_lift, v780_z1_compactness_trilogy, v738, v742, v752, v755, v756, v563
+- **v793_f8sector_conductor** [E] `PRIME.SECTOR_CONTINUA.01` — **F8SECTOR-PSD + CONDUCTOR-FUNCTORIAL (15/15 + 16/16): der f8-Sektor, unter dem register-trivialen GL1-Kontinuum bei −132..−151 gebrochen (v791 F2), ist mit seinem EIGENEN Kontinuu
+  - deps: v791_positive_descent, v791, v563, v716, v755, v766, v535_hecke_from_geometry
+- **v794_cp_extension_gate** [-] `PRIME.CP.EXTENSION.01` — Netz-Formalisierung + tiefe Margen-Trend-Entscheidung — **CPGATE-UNDECIDED-FALLING (17/17, adjudizierender Lauf 2 mit zwei deklarierten Reparaturen): N1 Restriktions-Exaktheit (tie
+  - deps: v791_positive_descent, v780_z1_compactness_trilogy, v793_f8sector_conductor, v791, v793, v780, v770, v563
+- **v795_halving_tails_k5** [E/O] `HECKE.HALVINGTAILS.01` — **TAILS-IDENTIFIED + K5-MECHANISM-FOUND (20/20 + 17/17): EXAKTE Identitäten v_2(D_p) = 6 + v_2(X7) bzw. 8 + v_2(X1) mit termweise-ganzzahligen Divisorsummen (Komposita eingeschloss
+  - deps: v789_multirate_constdepth, v785_hecke_check32, v789, v785
+- **v797_r_microstate_identification** [E/X] `HECKE.R_MICROSTATE.01` — das ehrliche Negativ — **R-NO-ARROW-REALIZATION (14/14; gefrorenes Wörterbuch, der offengelegte Pilot produzierte nur Kills): R(p) = 1, 4, 10, 24, 43, 68 (der Sheet-Switch-Paketzäh
+  - deps: v787_hecke_arrow_broadcast, v790_snf_mu4_theta, v788_positive_c2_lift, v787, v790, v788, v738, v535
+- **v801_prime_cp_intertwiner** [E/O] `PRIME.CP.INTERTWINER.01` — Forderung (3) von PRIME.POSITIVE_DESCENT.01 endlich-Niveau GELÖST — **CP-INTERTWINER-EXISTS (29/29): Φ(a) = V* π(a) V aus den 105 Kraus-Beinen (Unitalität Σ E_{x_e x_e} = 7 I exakt
+  - deps: v791_positive_descent, v793_f8sector_conductor, v780_z1_compactness_trilogy, v794_cp_extension_gate, v787_hecke_arrow_broadcast, v791, v793, v756
+- **v804_prime_carrier_gray** [E/O/X] `PRIME.CARRIER.GRAY.01` — **GRAY-INTERTWINER-EXISTS (23/23): die Gray-Karte kodiert C2 × μ₄ affin in den R-Klassen-Torsor (reguläre Z4×Z2-Wirkung; ein Gruppen-Iso ist UNMÖGLICH — Exponent 4 vs 2, alle 64 Ho
+  - deps: v801_prime_cp_intertwiner, v786_prime_packet480, ARF.ROOTCLASS.01, v738, v786, v775, v563, v755
+- **v806_hecke_local_clifford** [E] `HECKE.LOCAL.CLIFFORD.01` — **LOCAL-CLIFFORD-BREAKS (16/18, die zwei FAILs sind die vorregistrierten Entscheider-Gates selbst; Kontrollen 4/4): die vier p mod 8-Klassen-Kämme zerlegen sich EXAKT ins mod-8-Cha
+  - deps: v789_multirate_constdepth, v793_f8sector_conductor, v563, v716, v755, v766, v789, v793
+- **v807_lorentz_nullselector** [E/O] `PRIME.LORENTZ.SPINOR.01` — **LORENTZ-COORDS-REVEAL + NULLSELECTOR-ALGEBRAIC (22 Checks / 3 vorregistriert-ehrliche FAILs + 14/14): M(5,−3,4) = 2(1,2)ᵀ(1,2) EXAKT (sympy) — das Compiler-Tripel ist ein Rang-1-
+  - deps: E8.ONEOBJECT.01, v683_rank3_functionals, v576, v586, v563, v781, v23, v499
+- **v811_prime_kraus_doily** [E/C] `PRIME.KRAUS.DOILY.01` — **KRAUS-DOILY-PROTOCOL (21/21): 105 = 15 diagonal + 90 ausserdiagonal; die kanonische 45+60 = Umkehr-Quotient (die 90 Beine doppelt-überdecken die 45 Flaggen 2:1, Deck = die *-Invo
+  - deps: v801_prime_cp_intertwiner, E8.GAUSSIAN.CODE.01, v756, v801, v783, v752, v738, v111
+- **v815_kraus_spread_commutant** [E] `PRIME.AORB.REFINEMENT.01` — **SPREAD-SIGMA-BROKEN + COMMUTANT-EXTENDS + AORB-NOT-MAXIMAL (21/21 + 24/24): σ wirkt auf die 6 Spreads als ZWEI 3-Zyklen, null fix (outer-S6-erzwungen); keine invariante Vergröber
+  - deps: v811_prime_kraus_doily, v801_prime_cp_intertwiner, v738, v756, v783, v801, v563, v755
+- **v816_prime_mosco_selection** [-] `PRIME.MOSCO.SELECTION.01` — Mosco-Formkonvergenz + Friedrichs-Minimalität liefern den eindeutigen Limes-Kandidaten genau dort, wo die Moment-Selektion bei 22 oszillierte — **MOSCO-SELECTS (6/6 Beine, 23/23 Gu
+  - deps: v780_z1_compactness_trilogy, v762_dense_weil_core, v791_positive_descent, v762, v563, v696, v755, v766
+- **v817_positive_descent_master** [O] `TFPT.POSITIVE_DESCENT.MASTER.01` — Prime packet-state finite summability and countercontrols; generic TFPT master provenance is preserved.
+  - deps: v791_positive_descent, GNET.MARTINGALE.LIMIT.01, v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v791, v802, v793
+- **v818_sector_floor_attack** [E/O] `SECTOR.FLOORATTACK.01` — exakte Margen-Faktorisierung, O(1)-treue Interlacing-Erfassung, symbolisches Rotationsgesetz, h^{−3/2}-Verstärker-Hüllkurve: der Boden reduziert sich auf EINE Verhältnis-Ungleichun
+  - deps: v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v780_z1_compactness_trilogy, v794_cp_extension_gate, v807_lorentz_nullselector, v563, v583, v586, v773
+- **v819_prime_packet_rm14** [-] `PRIME.PACKET.RM14.01` — **RM14-EXACT (21/21, Lean-Begleiter PacketRM14.lean kernel-geprüft, 30 Theoreme): die Zeilenhülle von B = das punktierte RM(1,4)* = [15,5,7], Enumerator EXAKT 1 + 15z⁷ + 15z⁸ + z¹⁵
+  - deps: ARF.BOUNDARY.CODE.01, SEAM.CODE.TYPEII.01, E8.RAMIFIED.JETCODE.01, v752, v753, v774, v798
+- **v820_prime_kraus_rm24** [E/C/X] `PRIME.KRAUS.RM24.01` — **KRAUS-RM24-RULE-CANONICAL + PLANEFRAMES-EXACT (16/16 + 14/14): der wörtliche Anspruch stirbt ZWEIMAL (Träger-Gewichte 1/2/3 < Distanz 4; Sp(4,2)-Orbits 15+90 vs 45+60 — keine äqu
+  - deps: v811_prime_kraus_doily, v819_prime_packet_rm14, v815_kraus_spread_commutant, v738, v756, v801
+- **v821_prime_vacuum35** [E/C] `PRIME.VACUUM35.01` — 140 = 105 + 35, die E7-Spektral-Vervollständigung 112 + 21 = 133 als Matrix-Identität, der Weitzenböck-Linksfaktor und die exakte ±B-Kürzung — **VACUUM35-EXACT (22/22): RM(2,4) = [
+  - deps: v819_prime_packet_rm14, v758_simpler_certificate, v752, v758, v774, v170, v79, v463
+- **v822_prime_vacuum_dilation** [E/X] `PRIME.CONTINUUM.UNSHORTEN.01` — die Vakuum-Vervollständigungs-Lesart des Kontinuums ist in BEIDEN Transkriptionen TOT, mit der c*-Pencil-Schranke als eingefrorenem Zaun — **UNSHORTEN-DEAD + DILATION-DEAD (17/19 +
+  - deps: v821_prime_vacuum35, v758_simpler_certificate, v793_f8sector_conductor, v758, v563, v716, v755
+- **v823_prime_lagrange_floor** [E] `PRIME.FLOOR.LAGRANGE.01` — **LAGRANGE-CONCENTRATED + PAIR-CERTIFIED (7/8 mit dem EINEN präregistrierten Alt-Budget-FAIL S3.CERT + 9/9): jede Nullstellen-Schicht der v692-Master-Identität ist EXAKT Rang-1 (ge
+  - deps: v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v818_sector_floor_attack, v563, v684, v692, v818
+- **v824_prime_floor_skeleton** [E] `PRIME.FLOOR.SKELETON.01` — **FLOOR-PARTIAL + TAIL-CLOSED-ALL-H (12/12 + 9/9): STÜCK 2 UNIFORM-VERIFIED — der ANALYTISCHE h→∞-Limes des Fixpaars X_∞(α) = 16απ² sin(αγ₁) sinh(α/2)[Klammer] (Dirichlet-geschloss
+  - deps: v823_prime_lagrange_floor, v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v818_sector_floor_attack, v563, v684, v692, v818, v823
+- **v825_prime_exclusion_ladder** [-] `PRIME.EXCLUSION.LADDER.01` — verifizierte PSD-Sprossen via Tent-Read-Guinand-Identität in rigorose Quadrupel-Ausschlussregionen invertiert, bis X = 24.81 verlängert und die Sättigung des rank-4-Instruments typ
+  - deps: v825_prime_exclusion_ladder.py;v826_prime_exclusion_battery2.py;v827_prime_zero_locator.py;v828_prime_comb_window, v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v563, v755, v780
+- **v826_prime_exclusion_battery2** [-] `PRIME.EXCLUSION.BATTERY2.01` — der Ausschluss-Boden der zertifizierten Leiter fällt von Ξ ~ 0.2187 auf die unzensierte fallende Ξ_v2-Serie (tiefste 0.0816, Steigung −1.39): das v825-Plateau war INSTRUMENT-relati
+  - deps: v825_prime_exclusion_ladder, v825_prime_exclusion_ladder.py;v826_prime_exclusion_battery2.py;v827_prime_zero_locator.py;v828_prime_comb_window, v825, v563, v755
+- **v827_prime_zero_locator** [-] `PRIME.EXCLUSION.LOCATOR.01` — das Breitenprofil W(γ) = δ_mb(γ) des zertifizierten Turms PEAKT an wahren ζ-Ordinaten, und die präregistrierte v2-Regel besteht den Out-of-Sample-Test auf einem disjunkten unberühr
+  - deps: v826_prime_exclusion_battery2, v825_prime_exclusion_ladder.py;v826_prime_exclusion_battery2.py;v827_prime_zero_locator.py;v828_prime_comb_window, v825, v826, v563, v755
+- **v828_prime_comb_window** [-] `PRIME.EXCLUSION.WINDOW.01` — der Schlussstein des Detektor-Strangs: auf dem disjunkten Fenster γ ∈ (60, 120] liefert DASSELBE zertifizierte Positivitätsobjekt beide Beine — Lokator ORTET 21 der 25 ζ-Ordinaten
+  - deps: v827_prime_zero_locator, v826_prime_exclusion_battery2, v825_prime_exclusion_ladder.py;v826_prime_exclusion_battery2.py;v827_prime_zero_locator.py;v828_prime_comb_window, v825, v826, v827, v563, v755
+- **v829_prime_floor_depth** [O/X] `PRIME.FLOOR.DEPTHKILL.01` — **ENVELOPE-HOLDS-DEEP + FAMILY-SCALES (16/17 mit dem EINEN präregistrierten S5.HLAW-FAIL + 12/12): die Kill-Gates K1 (ρ h^{3/2} ≥ c = 4.85, KEIN Refit) und K2 (cos²θ ≥ 1/2) bei X =
+  - deps: v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v824_prime_floor_skeleton, v823_prime_lagrange_floor, v563, v692, v755, v818, v823
+- **v830_prime_float_budget** [-] `PRIME.FLOOR.BUDGET.01` — der verbleibende Beweis-Blocker ehrlich typisiert — **BUDGET-LINEAR-CLOSES-ALL + ENVELOPE-ASYMPTOTIC-PARTIAL (10/10 + 19 Checks mit den FÜNF präregistrierten asymptotischen FAILs A
+  - deps: v829_prime_floor_depth, v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v824_prime_floor_skeleton, v563, v823, v824, v825, v829
+- **v831_prime_alias_second_moment** [E/C/O/X] `PRIME.FLOOR.ALIASMOMENT.01, PRIME.FLOOR.PAIRCORR.01` — **ALIAS-CORRELATION-PAIRCORR (15 Checks mit den SIEBEN präregistriert-ehrlichen Prämissen-Umsturz-FAILs S1.SIGN/W2B/W2C/W2D/S4.GEOM/C1/C2 — das FAIL-Muster IST der Befund; wörtlich
+  - deps: v831_prime_alias_second_moment, v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v830_prime_float_budget, v829_prime_floor_depth, v563, v684, v823, v829
+- **v835_corner_hjelmslev_tower** [E] `PRIME.CORNER.CHARACTER.01` — aber kein Register-Lift baut die Identifikation: die strukturelle Hälfte der Ecken-Route SCHLIESST auf endlicher Ebene, die arithmetische Wand VERLAGERT sich in den Identifikations
+  - deps: v831_prime_alias_second_moment, v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v563, v738, v756, v791, v798, v803
+- **v836_commutant_sos_closure** [E] `PRIME.COMMUTANT.SOS.01` — die zweite unabhängige Route der Ecken-Ära DEFINITIV GESCHLOSSEN durch exakte Zertifikate — **COMMUTANT-SOS-INFEASIBLE (29/29): das Ziel T_GL1 = Σ V_j* T_χj V_j + Σ C_k* C_k mit ni
+  - deps: v831_prime_alias_second_moment, v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v563, v619, v738, v755, v756, v815
+- **v837_corner_closure_quantifier** [E] `PRIME.CORNER.OPENDOORS.01` — die zwei offenen Türen der Charakter-Ecken-Kanalklasse schließen durch entgegengesetzte Mechanismen, und der Quantor erweitert sich ebenen-exakt durch den Hjelmslev-Turm bis m ≤ 3
+  - deps: v831_prime_alias_second_moment, v835_corner_hjelmslev_tower, v563, v738, v835, v836
+- **v838_corner_expectation_position** [E/X] `PRIME.CORNER.EXPECTATION.01` — die vierte Wand-Koordinate typisiert — **EXPECTATION-CLOSED + POSITION-CARRIER-TRADEOFF (13/13 + 13/13): (i) ALLE 5276 Untergruppen von G = C2 × F2⁴ × Z4 enumeriert, alle 74259 Erw
+  - deps: v831_prime_alias_second_moment, v837_corner_closure_quantifier, v563, v738, v835
+- **v839_paircorr_bridge_saturation** [C] `PRIME.FLOOR.BRIDGEMAP.01` — **BRIDGE-FULLY-BEYOND + GUE-SATURATING (9/9 + 7/7; Scholarship-Korrektur überall: Montgomerys F(α) auf |α| < 1 ist RH-KONDITIONAL): TEIL A: die Forderung von PRIME.FLOOR.PAIRCORR.0
+  - deps: v831_prime_alias_second_moment, v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v830_prime_float_budget, v563, v684, v823, v829, v830
+- **v840_gue_ablation_loopgain** [-] `PRIME.FLOOR.GUEABLATION.01` — die Selbsterhaltung der Wand IST die Sättigung — **SATURATION-STRUCTURAL + LOOP-SHORT (10/10 + 8/8): TEIL A (Falsifikationsversuch auf v839): ALLE 6 quell-nativen Guinand-zulässige
+  - deps: v831_prime_alias_second_moment, v839_paircorr_bridge_saturation, v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v563, v684, v823, v829, v830
+- **v841_relation_carrier_ladder** [O/X] `PRIME.RELATION.MULT.01` — die Ecken-Route ÖFFNET WIEDER mit der richtigen Input-Klasse (die multiplikativen Relationen zwischen Ereignissen) — **RELATION-CARRIER-EXISTS + EXCESS-NONNEGATIVE (18/18 + 13/13):
+  - deps: v831_prime_alias_second_moment, v837_corner_closure_quantifier, v838_corner_expectation_position, v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, v563, v738
+- **v842_excess_certified_skeleton** [-] `(no ledger claim)` — strikt positive Intervall-Einschließungen von τ_X auf ALLEN 67 erreichbaren Sprossen, der zertifizierte Diskriminator, und das Skalengesetz, das die Wand als den unendlichen Quanto
+- **v843_margin_law_excess_lean** [-] `PRIME.MARGIN.LAW.01` — τ = e1(α)·h^(−3/2)·τ_pnt(α) mit der Hüllkurven-Konstante EXAKT reproduziert über zwei unabhängige Koordinatensysteme, und die logische Geographie der Wand kernel-geprüft — **MARGIN
+  - deps: v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, v841_relation_carrier_ladder, v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v831_prime_alias_second_moment, v563, v818, v829, v841
+- **v846_schur_spectral_mother** [E] `PRIME.SCHUR.GRAM.01` — die manifest positive relationale Gram existiert, aber die Ecken-Identität scheitert in Spur UND Form an exakt dem erzwungenen Cauchy-Schwarz-Diagonalpreis, und der Preis ist GEOME
+  - deps: v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, v843_margin_law_excess_lean, v841_relation_carrier_ladder, v831_prime_alias_second_moment, v563, v583, v841, v842
+- **v847_wedge_cellcone_transport** [-] `PRIME.WEDGE.LAGRANGE.01` — **WEDGE-PARTIAL + CONE-BROKEN + RAY-EDGE-CONFIRMED (13 + 9 Checks; die ZWEI eingefrorenen ehrlichen FAILS S5.SCR und S5.C3 BEHALTEN und pattern-gated, NICHT nachjustiert): TEIL A (
+  - deps: v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, v843_margin_law_excess_lean, v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v563, v758, v773, v807, v818
+- **v848_extraction_chain** [O] `PRIME.EXTRACTION.CHAIN.01` — die Implikationskette 'kofinale endliche Positivität (H) ⇒ Weil-Positivität ⇒ (Weil-Kriterium) das Ziel' ist gemessen/zitiert theorem-fähig mit QUANTOR-REDUKTION, und die arithmeti
+  - deps: v818_sector_floor_attack.py;v823_prime_lagrange_floor.py;v824_prime_floor_skeleton.py;v829_prime_floor_depth.py;v830_prime_float_budget.py;v831_prime_alias_second_moment.py;v843_margin_law_excess_lean, v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, v841_relation_carrier_ladder, v563, v630, v643, v655, v716
+- **v849_cfin_unique_cofinal_lean** [E] `CFIN.UNIQUE.01` — Original v849 CofinalWeil mirror: cofinal nonnegative limits and PSD implication; H_cof remains a hypothesis.
+  - deps: AX.P2.01, NORMALFORM.CFIN.01, MESSAGE.LADDER.01, v774, v833, v844, v845
+- **v850_completion_tax_flow** [E] `PRIME.PSD.COMPLETION.TAX.01` — die zwei No-Go-Schließungen auf KLASSEN-Ebene: JEDE positive 2-Sektor-Dilatation, die die Arithmetik durch den fixierten Kamm-Kopplungsblock routet, zahlt Diagonalsteuer tr P + tr
+  - deps: v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, v846_schur_spectral_mother, v843_margin_law_excess_lean, v831_prime_alias_second_moment, v563, v818, v843, v846
+- **v851_cluster_kernel_field** [O] `PRIME.CELLCONE.KERNELFIELD.01, PRIME.CELLCONE.GRADEDKERNEL.01` — die Cluster-Entwicklung existiert und resummiert EXAKT (sympy-Teleskopierung auf dem Booleschen Verband; Möbius-Elimination: getrennte Paare tragen identisch Null; 2^16-Subset-Ward
+  - deps: v847_wedge_cellcone_transport, v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, v843_margin_law_excess_lean, v563, v818, v847, v851_cluster_kernel_field, v848_extraction_chain
+- **v853_bent_css_mangoldt** [E] `ARF.BENT.CSS.01` — Original v853 von Mangoldt incidence/commutator theorem and class-group discriminator; no RH claim.
+  - deps: ARF.VACUUM.SYNDROME.01, v841_relation_carrier_ladder, v535, v774, v785, v800, v819, v820
+- **v854_relation_hodge_pfaffian** [-] `PRIME.RELATION.HODGE.01` — der Faktorisierungs-Komplex ist real und exakt (d₁d₂ = 0 mit max |Eintrag| = 0; b₀ = 1 zusammenhängend; b₁ = 16/21/22 getragen von den Gleich-Primzahl-Exponenten-Chords; b₂ = 158/4
+  - deps: v841_relation_carrier_ladder, v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, v853_bent_css_mangoldt, v563, v841, v853
+- **v855_invariance_atlas** [E] `PRIME.CRITERIA.ATLAS.01` — DER INVARIANZ-ATLAS: die Nachfrage EXAKT in Selberg-Hierarchie-Koordinaten umgeschrieben (D0 = dHead2 − dChain2, null Buchhaltungsverlust, 1e-9) und gegen on-range-VERIFIZIERTE ele
+  - deps: v831_prime_alias_second_moment, v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, v843_margin_law_excess_lean, v848_extraction_chain, v563, v818, v843, v848
+- **v856_connected_current_lean** [E/C/X] `PRIME.RELATION.CONNECTED_COVARIANCE.01` — die Connected-Current-Architektur ENTSCHIEDEN: die global zentrierte KMS-Kovarianz ist das ERSTE Design, das der Nuklear-Steuer entgeht (der Rückfall-Kill feuert NICHT: ratio ≈ 0.3
+  - deps: v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, PRIME.RELATION.MANGOLDT.01, v850_completion_tax_flow, v848_extraction_chain, FORM.PRIME.COFINAL.WEIL.01, v563, v850, v853
+- **v859_grade_no_go_elevator** [X] `PRIME.EULER.SCHUR.SEMIGROUP.01` — DAS GRADUS-GESETZ (der konzeptionelle Kern des Tages): der gesamte Friedhof direkter Positivitäts-Architekturen an der Primzahl-Front reduziert sich auf EIN kernel-geprüftes Homoge
+  - deps: v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, PRIME.RELATION.MANGOLDT.01, v856_connected_current_lean, v563, v853, v856
+- **v860_phase_lever_closure** [-] `PRIME.PHASE.LEVER.01` — die zertifizierte Familien-Schließung der endlichen Phasen-Rettungen: auf ALLEN 67 Rungen der deployten kanonischen Frame-Familie zahlt das Privat-Best-Phasen-Budget das Arch-Defiz
+  - deps: v856_connected_current_lean, v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, v563, v850, v856
+- **v861_krein_normalform_lean** [E] `PRIME.KREIN.NORMALFORM.01` — die Operator-Form der Wand: die deployte Fensterform bekommt eine EXAKTE Krein-Normalform Q_h(t) = ||B₊t||² − ||B₋t||² (Ward ≤ 1e-15 auf jedem Rung, BEIDE Schnitte; B trägt √|Λ| —
+  - deps: v842_excess_certified_skeleton.py;v843_margin_law_excess_lean.py;v846_schur_spectral_mother.py;v847_wedge_cellcone_transport, PRIME.RELATION.MANGOLDT.01, FORM.PRIME.KREIN.DEFECT.01, v563, v853, v856
+- **v862_defect_polar_weld** [X] `PRIME.KREIN.DEFECT_ONE.01` — der Rang der Wand ist EINS: der Defekt-Operator Δ = I − C*C hat auf jedem erreichbaren Rung GENAU EINE weiche Mode (λ₁ == τ-Marge per exakter Pencil-Identität, rel ≤ 3e-8; Separati
+  - deps: v861_krein_normalform_lean, FORM.PRIME.KREIN.DEFECT.01, v563, v861
+- **v863_redheffer_colligation** [E] `PRIME.REDHEFFER.COLLIGATION.01` — die Kolligations-Architektur: beide quell-gebauten 16-Slot-Maschinen sind EXAKT unitär (Defekt ≤ 1e-12), die Vakuum-Port-Redheffer-Schließung wohlgestellt (||D|| = 1/4 exakt) und j
+  - deps: v861_krein_normalform_lean, PRIME.RELATION.MANGOLDT.01, v563, v861
+- **v864_softport_kappa_law** [E] `PRIME.SOFTPORT.FESHBACH.01` — die Skalar-Reduktion der Wand: die exakte Feshbach/Schur-Reduktion macht aus der Matrix-Positivität EINE Port-Impedanz (τ > 0 ⇔ s > 0, sobald ein Port einen stabilen Anteil der wei
+  - deps: v862_defect_polar_weld, v861_krein_normalform_lean, v563, v861, v862
+- **v865_weyl_port_readout** [-] `PRIME.WEYL.PORT.01` — die arithmetische Impedanz: die Teiler-Turm-Weyl-Last trägt den Kamm bei O(1) (Massen-Verdopplung bewegt die Weyl-Funktionen bei Median |dm|/|m| = 0.757/0.456 — die Kamm-Blindheit
+  - deps: v863_redheffer_colligation, v861_krein_normalform_lean, v563, v861, v863
+- **v866_source_contractor_formula** [O/X] `PRIME.SOURCECONTRACTOR.NORM.01, PRIME.KREIN.CONTRACTOR.01` — DIE FORMEL (die Schlagzeile der Kampagne): der Douglas-Kontraktor faktorisiert EXAKT als ziel-freier geschlossener Quell-Ausdruck C = W₋·F·G₊⁻¹·Fᴴ·W₊ (max rel 1.4e-14 auf Konstrukt
+  - deps: FORM.PRIME.KREIN.DEFECT.01, v862_defect_polar_weld, v864_softport_kappa_law, v563, v861, v862, v864, v866_source_contractor_formula
+- **v867_radau_conditioning** [X] `PRIME.SOFTPORT.RADAU.01` — die Quadratur-Reichweite: Gauss-Radau-Zertifikate für s > 0 EXISTIEREN auf JEDEM Rung (die Golub-Meurant-Einschließung L_m ≤ r'G⁻¹r ≤ U_m gewardet auf jedem Rung und jeder Tiefe, m
+  - deps: v864_softport_kappa_law, v866_source_contractor_formula, v563, v864
+- **v868_divisor210_audits** [C] `E8.DIVISOR210.CANONICITY.01` — der harte Kanonizitäts-Guard für die 210-Entdeckung von v863: die Boolesche/Walsh/μ-Schicht ist GEMESSEN GENERISCH, exakt wie gewarnt (210/210 Quadrupel von Primzahlen < 30 bestehe
+  - deps: v863_redheffer_colligation, NORMALFORM.CFIN.01, v849_cfin_unique_cofinal_lean, v845, v849, v863
+- **v869_cdcore_clarkphase** [X] `PRIME.CONTRACTOR.CDCORE.01` — der Kern ist BENANNT: K₊ ist EXAKT der Christoffel-Darboux-Kern eines expliziten Quellmaßes in x = 2cos(Dτ) — der Verschiebungsrang kollabiert vom wachsenden τ-Budget (12–14, das √
+  - deps: v866_source_contractor_formula, FORM.PRIME.KREIN.DEFECT.01, v563, v861, v866
+- **v870_christoffel_gauss_frame** [-] `PRIME.CONTRACTOR.CHRISTOFFEL.01` — die Faktorisierung und die Frame-Entscheidung: C = D₋UD₊ assembliert EXAKT (≤ 1.3e-14 auf allen schweren Sprossen) mit D± stabil kontraktiv (‖D₊‖ ≤ 0.9654 per Variationstheorem P2
+  - deps: v869_cdcore_clarkphase, v864_softport_kappa_law, v866_source_contractor_formula, v563, v864, v866, v869
+- **v871_pole_uvarov_crossdefect** [X] `PRIME.JACOBI.POLE.UVAROV.01` — der Maß-Relations-Abschluss (zwei ehrliche Kills mit typisierten Residuen): KEINE der drei klassischen Spektral-Transformationen (Uvarov-Masse, Christoffel-Multiplikation, Geronimu
+  - deps: v869_cdcore_clarkphase, v870_christoffel_gauss_frame, v866_source_contractor_formula, v563, v869, v870
+- **v872_damping_compensation** [E] `PRIME.CD.DAMPING.COMPENSATION.01` — die Schlagzeile der Runde: der Defekt spaltet EXAKT in zwei quellgebaute Terme, I − C*C = T₁ + T₂ (max rel 1.0e-12 auf ALLEN 42 Sprossen; T₁ = I − U*U die INDEFINITE Kreuzmaß-Jacob
+  - deps: v870_christoffel_gauss_frame, v871_pole_uvarov_crossdefect, v864_softport_kappa_law, v866_source_contractor_formula, v831_prime_alias_second_moment, v563, v864, v869
+- **v873_pruefer_cotlar_decision** [X] `PRIME.PRUEFER.COMPENSATION.01` — der eingefrorene Prüfer/Cotlar-Vertrag der Runde 34 (16 fixe Phasenzellen bei kπ/8 aus NUR-QUELLE-Prüfer-Phasen der beiden Arm-Jacobi-Ketten, entrywise Paarung, Gefahrenfamilien {0
+  - deps: v866_source_contractor_formula, v872_damping_compensation, v869_cdcore_clarkphase, v870_christoffel_gauss_frame, v563, v869, v870, v872
+- **v876_carleson_polygon_wave** [O] `PRIME.PHASE.POLYGON.01, PRIME.RESIDUAL.QUADRATURE.01, PRIME.PI.RESONANCE.ANATOMY.01, PRIME.CARLESON.PRIME.01` — die Carleson-Welle: der CARLESON-WARD macht die Pfeile (i)–(iii) der Prime-Carleson-Kette MASCHINEN-EXAKT (λ_max(M₋) == ‖C‖² = 1 − τ bei rel 1.5e-13/1.3e-15: ‖C_h‖ ≤ 1 ⇔ G₋ ≤ G₊ ⇔
+  - deps: v866_source_contractor_formula, v873_pruefer_cotlar_decision, v563, v866, v873, v867_radau_conditioning, v867, v876_carleson_polygon_wave
+- **v877_complete_comb_reversal** [-] `PRIME.DEEPALPHA.SIGN.01, PRIME.PRUEFER.COMPENSATION.02, PRIME.TRUNCATION.AUDIT.01` — die Schlagzeile der Runde: die UMKEHRUNG** — die negativen Krein-Böden bei kz 142/177/243 (−331/−135/−215) waren KAMM-TRUNKIERUNGS-Artefakte (core.build_window kappt STILL bei ATOM
+  - deps: v824_prime_floor_skeleton, v873_pruefer_cotlar_decision, v876_carleson_polygon_wave, v563, v842, v873, v877_complete_comb_reversal, v866_source_contractor_formula
+- **v879_envelope_partition_closure** [-] `PRIME.PARTITION.CLOSURE.01` — der analytische Kern der Route gerettet, der Dekompositions-Weg VOLLSTÄNDIG geschlossen. DER KERN: Multiplikation mit cos θ wirkt EXAKT tridiagonal auf dem ungeraden Frame (der Spi
+  - deps: v866_source_contractor_formula, v877_complete_comb_reversal, v876_carleson_polygon_wave, v563, v873, v877
+- **v881_carleson_port_geometry** [E/O/X] `PRIME.CD.PICKDEFECT.01, PRIME.CARLESON.TESTING.01, PRIME.PORT.SCHUR.01, PRIME.PORT.INTEGRABLE.01, PRIME.PORT.LIMIT.01, PRIME.PORT.SCALAR.01, PRIME.PORT.COCYCLE.01, PRIME.PORT.RIEMANNHILBERT.01, PRIME.ERRORTERM.SCALE.01` — vier Seiten EINES Objekts (11/11 + 5/5 + 8/8 + 5/5)** — das wörtliche Rang-2-Pick-Ziel WIDERLEGT und ersetzt: exakte Rang-2-Jacobi-Verschiebung (4.3e-14, source-only, Holdouts); Ga
+  - deps: v876_carleson_polygon_wave, v866_source_contractor_formula, v866, v869, v879, v881_carleson_port_geometry, v876, v879_envelope_partition_closure
+- **v882_port_source_mellin** [E/C/O] `PRIME.SQRT.UNIFORM.01, PRIME.PORT.MELLIN.01, PRIME.PORT.ATOMS.01, PRIME.CASE.SUMRULE.01` — unter r = √(n/X) uniformisiert das gewichtete Primmaß zu Lebesgue dr (Kolmogorov 0.0005 bei X = 1e7); die Randmasse der letzten Log-Einheit = 1−e^{−1/2} = 0.393469 (gemessen 0.3936
+  - deps: v882-internal, v882_port_source_mellin, v881_carleson_port_geometry, v563
+- **v883_tau_chain_parametrix** [E/O] `PRIME.PORT.LATTICE.PARAMETRIX.01, PRIME.PORT.LEADING.SIGN.01` — die Schur-Determinanten-Identitäten σ_h = det(I−E)/det(B) und det(I−E) = det(I−R)·det(I−D_P) maschinen-exakt (4.8e-13): sign(τ_h) = sign(σ_h) = die Wand mit τ_h := det(I−D_P); die
+  - deps: v882_port_source_mellin, v881_carleson_port_geometry, v563, v882, v883_tau_chain_parametrix.py;v955_tau_iiks_toda_dictionary
+- **v884_certified_head_positivity** [E/O] `PRIME.PORT.CERTIFIED.HEAD.01, PRIME.PORT.TAIL.01` — σ_h > 0 BEWIESEN auf kz 9 (h=184), 12 (151), 13 (168): unabhängiger mpmath-Nachbau der Fenster-Lags (dps 60/100, konservatives Fehlermodell eps_c = 10× dps-Disagreement, Cross-Ward
+  - deps: v866_source_contractor_formula, v563, v866, v883_tau_chain_parametrix, v884_certified_head_positivity
+- **v885_ladder_flow_anatomy** [E] `PRIME.PORT.ISOFLOW.01, PRIME.PORT.LADDER.TRANSFER.01, PRIME.PORT.PRIMELADDER.01, PRIME.PORT.LAX2.01` — der gauge-fixierte IIKS-Generator-Fluss schließt in GRAD 2 (Residuen-Mediane 0.244/0.248 mit {Y²f, Y²g}; Grad 1 fällt bei 0.498/0.457) — isomonodromie-kompatible Lax-Struktur, ehrl
+  - deps: v881_carleson_port_geometry, v883_tau_chain_parametrix.py;v955_tau_iiks_toda_dictionary, v563, v885_ladder_flow_anatomy, v883_tau_chain_parametrix, v877
+- **v886_register_gapcode_null** [E] `PRIME.DIVISOR210.GAPCODE.01` — und der Code ist DAS SIEB, keine TFPT-Signatur (24/24 unter Spec v2)** — die Registerbits {2,3,5,7} sind exakt die ersten vier Paritätschecks des Siebs (Coderate 48/210, 16 Syndrom
+  - deps: v868_divisor210_audits, v868, v882
+- **v887_certified_ladder_complete** [E] `PRIME.PORT.CERTIFIED.LADDER.01` — σ_h > 0 ist jetzt auf ALLEN 42 erreichbaren Sprossen BEWIESEN: dieses Modul schließt die letzten zwei Sprossen h = 859/878 (validated-precision mpmath-Cholesky dps 120/200 mit Präz
+  - deps: v884_certified_head_positivity, v563, v866, v884
+- **v889_route_decisions** [E/C/X] `PRIME.PORT.DIAGSEP.01, PRIME.CASE.ZONESPLIT.01, PRIME.CASE.PNTGAMMA.01, PRIME.CASE.SIGNEDHOMOTOPY.01` — die Wand stirbt zu 100% durch Off-Diagonal-Kohärenz (Diagonalprofil am Kill-Punkt eingefroren; Trennung > 10 tief, ehrlich DIAG-INTERMEDIATE typisiert); θ* = 0.700 eingefroren (Auß
+  - deps: v881_carleson_port_geometry, v563, v881, v882_port_source_mellin, v883_tau_chain_parametrix, v882, v889_route_decisions
+- **v890_total_positivity_flow** [E/O] `PRIME.PORT.HIROTA.01, PRIME.PORT.TAU.MOEBIUS.01` — FLAGGEN-POSITIVITÄT (Sylvester; Typisierung per Runde-51-Review korrigiert — klassische Totalpositivität aller Minoren ist NICHT behauptet): alle 12 FÜHRENDEN Haupt-Minoren von I −
+  - deps: v883_tau_chain_parametrix.py;v955_tau_iiks_toda_dictionary, v881_carleson_port_geometry, v563, v883, v890_total_positivity_flow
+- **v891_moebius_firewall_kills** [E/X] `PRIME.PORT.MOEBIUS.KILLS.01` — fit- und gauge-freie Kreuzverhältnisse: CR-DEAD (gepoolter Median 0.128; das 0.0015-Residuum war von der Pro-Sprossen-Normalisierung erzeugt), Anker fragil, Cocycle gebrochen; sour
+  - deps: v881_carleson_port_geometry, v563, v881
+- **v892_closure_architecture** [E/C/O/X] `PRIME.PORT.RELCONG.01, PRIME.PORT.PIVOTFACTOR.01, PRIME.PORT.EULER.ROUCHE.01, PRIME.PORT.DEEPCORE.SCHUR.01` — die exakte hermitesche Kongruenz A₊ = A^{1/2}(I+H)A^{1/2} (6.5e-14) mit NICHT-ZERFALLENDER Vererbungsmarge η (min 0.0050, Slope +0.108 vs τ −2.74; ρ war irreführend — nicht-normal;
+  - deps: v895_collective_comb, v890_total_positivity_flow, v563, v890, v892_closure_architecture, v881_carleson_port_geometry
+- **v893_relative_margins** [E/O] `PRIME.PORT.ETASOURCE.01, PRIME.PORT.RELFLAG.01` — SCALE-MATCHED: Inkrement und Operator kollabieren in der gefährlichen Richtung GEMEINSAM (Slopes −3.716/−3.456, Residuen-corr 0.974, 94% geteilte Varianz) — η ist skalenfrei, weil
+  - deps: v892_closure_architecture, v563
+- **v894_diagonal_refinement** [C/O] `PRIME.CASE.PAIRCORR.CONTRACT.01` — der exakte Prim-Kern K_{h,m} (Regruppierung 4.5e-15, BAND-LIMITIERT: n90 = 7-26 Moden — einseitige Explizite-Formel-Positivität an den Port-Frequenzen; LaTeX-Statement eingefroren;
+  - deps: v889_route_decisions, v882_port_source_mellin, v563, v889
+- **v895_collective_comb** [E/X] `PRIME.PORT.FACTORAVOID.01, PRIME.PORT.DEEPCORE.01` — die Norm-Schranken-Satzform existiert NICHT (ρ ≥ 1 auf 17/31, immer über die harmlose Seite); das echte Gesetz ist EINSEITIG (max(−min μ) = 0.9950 < 1 auf allen 31 Schritten = PD-V
+  - deps: v890_total_positivity_flow, v563, v890, v891_moebius_firewall_kills, v883_tau_chain_parametrix, v891
+- **v897_certified_interval_ladder** [E] `PRIME.PORT.BALLLADDER.01` — das informelle ε_c-Fehlermodell ist von der Leiter PENSIONIERT: σ_h > 0 mit RIGOROSEN mpmath.iv-Intervall-Shifts auf ALLEN 42 erreichbaren Sprossen h = 142–878 (15 exakt-rationale
+  - deps: v887_certified_ladder_complete, v884_certified_head_positivity, v563, v866, v884, v887
+- **v899_christoffel_normsquare** [E/C/X] `PRIME.PORT.CHRISTOFFEL.RATIO.01, PRIME.CASE.KERNEL.SOS.01, PRIME.CASE.EDGEDEFECT.01` — die EXAKTE Identität 1/d₁₂ = 1 + v⋆·K_σ(y⋆) (deflationierte Christoffel-Form, unabhängige Route 2e-11; ehrliche Fence: λ_min(I−G) = τ exakt — Koordinatenwechsel, keine unabhängige
+  - deps: v893_relative_margins, v892_closure_architecture, v563, v893, v894_diagonal_refinement, v894, v899_christoffel_normsquare
+- **v900_core_update_anatomy** [E/O] `PRIME.PORT.NORMALIZED.CORE.01, PRIME.PORT.GRAPH.REGION.01` — das EXAKTE Update X′ = c(X + U) bei 8.3e-16 mit effektiv ZWEIDIMENSIONALEM Input (c = τ/τ′ + EIN Matrix-Modus mit 97.5% Energie); die ehrlichen Negative als Randbedingungen registr
+  - deps: v892_closure_architecture, v893_relative_margins, v563, v892, v893, v900_core_update_anatomy
+- **v901_tangent_schur_bfloor** [E] `PRIME.PORT.TANGENT.SCHUR.01, PRIME.PORT.BFLOOR.01, PRIME.PORT.SIGNFREE.NORMALIZATION.01` — der EXAKTE quellseitige Split: mit B PD ist die Wand PD ⟺ n − q > 0 (zwei Skalare n = vᵀMv, q = bᵀB⁻¹b; alle Identitäten gewardet, PD-Äquivalenz boolesch exakt 39/39, kein tau', ke
+  - deps: v900_core_update_anatomy, v892_closure_architecture, v563, v900, v901_tangent_schur_bfloor, v897
+- **v902_wall_relocation_map** [E] `PRIME.CASE.EDGE.CHRISTOFFEL.01, PRIME.PORT.GRAM.COMPLETION.01, PRIME.PORT.RADAU.WEIGHT.01` — explizit als Mechanismus-Karte getypt, KEIN Fortschritt** — die exakte Positive-Gewichte-Umschreibung 1/d₁₂ = 1 + Σ W Q² − β (W > 0 exakt bei 9.7e-14 ohne Toleranz, jeder β-Term ≥
+  - deps: v899_christoffel_normsquare, v563, v899, v902_wall_relocation_map
+- **v904_healthcode12_diagnostic** [E] `PRIME.ARITH.HEALTHCODE12.01` — DIAGNOSTIK, NULL RH-Inhalt in beide Richtungen** — das wahre Wort ist alle-(+) auf 37/37 Voll-Fenster-Sprossen (= der zertifizierte Sylvester-Zensus repackaged, KEIN neuer Inhalt;
+  - deps: v899_christoffel_normsquare, v897_certified_interval_ladder, v563, v897, v899
+- **v905_bfloor_ideal_certificate** [E/O] `PRIME.PORT.BFLOOR.PG.01, PRIME.PORT.BFLOOR.PG.IVAL.01` — die Kette B ⪰ ½P_G + c_dom·I und P_G ⪰ c_G·I, JEDE Ungleichung exakt-rational (LDL, v897-Zertifikatsklasse) entschieden auf allen 39/39 erreichbaren Steps: Float-Kette min c_B = 0.
+  - deps: v901_tangent_schur_bfloor, v563, v897, v901, v905_bfloor_ideal_certificate
+- **v906_tail_cartography** [E/O] `PRIME.PORT.TAILSIGN.01, PRIME.PORT.TAILSIGN.02, PRIME.PORT.PG.SCHUR.01, PRIME.PORT.TAIL.ABEL.01, PRIME.PORT.TAIL.SEGSPLIT.01, PRIME.PORT.TAIL.OSCPAIR.01` — explizit als Mechanismus-/Negativ-Kartographie getypt, KEIN Fortschritt** — FÜNF tote Routen mit benannten Sitzen: das Tail-Vorzeichen ist NET-ONLY, nicht punktweise (sup q_v posit
+  - deps: v901_tangent_schur_bfloor, v563, v901, v906_tail_cartography, v905_bfloor_ideal_certificate, v905
+- **v907_halfgap_registered_target** [E/O] `PRIME.PORT.HALFGAP.01, PRIME.PORT.DEEP.HOLDOUT.01` — ein FALSIFIKATIONS-Instrument, explizit KEINE Evidenz für RH** — die Ziel-Ungleichung n_h − q_h ≥ ½·mu1(h) ist auf der 67-Sprossen-Fläche REGISTRIERT: Konstante EXAKT ½ eingefroren
+  - deps: v901_tangent_schur_bfloor, v905_bfloor_ideal_certificate, v563, v901, v905, v907_halfgap_registered_target, v906_tail_cartography
+- **v909_finite_wall_closure** [E/C] `PRIME.WALL.FINITE_CLOSURE.01` — der komponierte Zensus B ∧ W1 ∧ W2 auf 39/39 gematchter Fläche + 8/8 tiefen Sprossen aus zitierten Inputs** — B-Hälfte (P_G-Kette, CLIII/v905 intervall-zertifizierter Klassen-Floor
+  - deps: v905_bfloor_ideal_certificate, v907_halfgap_registered_target, v901_tangent_schur_bfloor, v563, v905, v907
+- **v910_finite_zero_transfer** [E] `PRIME.WALL.FINITE_ZERO_TRANSFER.01` — die Nullstellen-Ökonomie der fertigen Wand** — pro deployter Sprosse der minimale Verified-Zero-Cutoff T_req(h), an dem das W2-Zertifikat schließt: eingefrorene Voll-Leiter-Gesetze
+  - deps: v909_finite_wall_closure, v563, v909
+- **v912_form_convergence_theorem** [E/C] `PRIME.FORM.CONVERGENCE.THEOREM.01` — die per-Element-Konvergenz-Prämisse der Extraktionskette ist UNBEDINGT BEWIESEN, mit expliziter Rate O(D² log(1/D)) = O(2^{-2j} j) und expliziten Konstanten**: bisher als GEMESSEN
+  - deps: v848_extraction_chain, FORM.PRIME.COFINAL.WEIL.01, v563, v630, v643, v716, v762, v848
+- **v913_signed_alignment_localization** [E/O] `PRIME.NOGO.SIGNED.ONLY.01` — ein NO-GO-/TYPISIERUNGS-Modul: keine Positivität, kein Intervall, kein Zertifikat, KEIN Marker bewegt**. DIE LOKALISIERUNG: jedes Argument, das die deployte Budget-Ungleichung (L)
+  - deps: v848_extraction_chain, v909_finite_wall_closure, v912_form_convergence_theorem, v563, v848, v909, v912, note chain CCCLIX/CCCLXVI/CCCLXVIII/CCCLXXI/CCCLXXII
+- **v914_pascal_region_theorem** [E] `PRIME.PASCAL.REGION.THEOREM.01` — die größte BEWIESENE Positivitätsregion der Primfront-Kampagne, als zertifiziert-endliches Resultat promoviert**. DIE AUSSAGE, bewiesen allein aus zitierten externen Inputs: mit a
+  - deps: PRIME.BUGHUNT2.R86.R105.01 note CDIX, rounds 103/106/108/109 (notes CI/CII), v594 (pinning style)
+- **v915_eulerpick_certified_floors** [E/O] `PRIME.EULERPICK.CERTIFIED.FLOORS.01` — auswärts gerundete Intervall-Positivitätszertifikate für die ersten vier Sprossen der Falsifikationsleiter, mit offengelegtem Recompute/Pin-Split**. DAS OBJEKT (V0c, Runde 92 audit
+  - deps: PRIME.EULERPICK.CERTIFIED.LADDER.01 note CCCXCVI, PRIME.EULERPICK.N4.SIEVE.01 note CDI, PRIME.SCREW.VERBLUNSKY.INVARIANT.01 note CCCXCIII (V0c), round 108 (note CDX reach cap), v563 (B_PSI pin), v594 (Buethe pin)
+- **v916_epstein_weil_violation** [E] `PRIME.KR4.EPSTEIN.COLLAPSE.01` — ein expliziter sha-gepinnter Einheits-Testvektor (Länge 1038, sha b01436d53d2cbbee), dessen Weil-Paarung mit den Quelldaten von Q = x²+5y² ZERTIFIZIERT NEGATIV ist: V = −1.9697e-2
+  - deps: PRIME.KR4.DEFECTJET.01 note CDXX (round-120 instrument), rounds 90/117/118 (screw dictionary, window formula, depth machinery), round 123 note CDXXIV (the frozen probe), PRIME.KR4.DRIVER.CERT.01 (the round-125 driver certification consuming this census)
+- **v917_driver_rate_certification** [E/C] `PRIME.KR4.DRIVER.CERT.01` — die Treiber-Nullstelle ρ = 0.9329696975 + 15.6682495313i von ξ_Q, quellseitig aus dem Λ_Q-Sieb lokalisiert (Δγ = 6.6e-5), FEUERT im gepeelten Raten-Kanal bei Tiefe m* = 14 mit zert
+  - deps: PRIME.KR4.EPSTEIN.COLLAPSE.01 (v916: the round-123 collapse, driver location and census), PRIME.KR4.DEFECTJET.01 note CDXX (round-120 depth instrument), rounds 117/118 (radius-4 algebra, window formula, budget machinery), round 125 note CDXXVI (the frozen probe)
+- **v918_doublelimit_reduction_theorem** [E/O] `PRIME.DOUBLELIMIT.REDUCTION.THEOREM.01` — die tragende Reduktion des Runden-128–151-Beweisbogens (13/13, DOUBLELIMIT-REDUCTION-THEOREM), als zertifiziert-endlicher Satz promoviert**. DIE AUSSAGE, mit elementaren Inputs bew
+  - deps: round 122 NF-closure (note CDXXIII), round 128 note CDXXX (the frozen probe), round 130 bughunt3 note CDXXXII (independent re-derivation), rounds 103/106 Pascal machinery (v914 class), PRIME.SECULAR.GW.PINNING.01 (v919: the round-131 cross-instrument d_1 bracket)
+- **v919_secular_gw_pinning** [E/O] `PRIME.SECULAR.GW.PINNING.01` — die beiden zentralen zertifizierten Objekte der Runde 131, beide in Bughunt IV unabhängig reproduziert, mit offengelegtem Recompute/Pin-Split promoviert**. SCHICHT 1, SECULAR-EXACT
+  - deps: PRIME.DOUBLELIMIT.REDUCTION.THEOREM.01 (v918: the round-128 serial pair {L1, WPD} this round instruments), round 131 note CDXXXIII (the frozen probe), round 149 bughunt4 note CDLIII (independent reproduction), round 123 eta-admissibility law, rounds 112/122 (band typing, INBAND_F)
+- **v920_loop_equivalence_theorems** [E/O] `PRIME.LOOP.EQUIVALENCE.THEOREMS.01` — die negativen/strukturellen Resultate, die Doppelzählung im Beweisgraphen für immer verhindern, als zertifiziert-endliche Sätze promoviert**. RUNDE-140-SÄTZE, alle exakt nachgerech
+  - deps: round 137 E1/E2 + OFF identity (cited), round 135 D1-D4 (cited), rounds 138/139/141 Q/U/V machinery (cited), round 140 note CDXLIV + round 142 note CDXLVI (the frozen probes), round 149 bughunt4 note CDLIII (re-gates + the F1 witness), PRIME.COUNTING.DOMINANCE.CLOSURES.01 (v921: the TAILVIS counting resolution)
+- **v921_counting_dominance_closures** [E/C] `PRIME.COUNTING.DOMINANCE.CLOSURES.01` — die reinen Klassik-Zitat-Sätze des Bogens, als zertifiziert-endliche Sätze promoviert**. RUNDE-133-SÄTZE: M (Ball-Zähl-Slack-Dominanz, REINE ZÄHLLOGIK: disjunkte geordnete Bälle +
+  - deps: PRIME.SECULAR.GW.PINNING.01 (v919: the exact node count K-1 Theorem T consumes + the (A_0, tau) pins T3 recomputes from), PRIME.LOOP.EQUIVALENCE.THEOREMS.01 (v920: the B1/TAILVIS machinery this round closes counting-side), round 133 note CDXXXVI + round 143 note CDXLVII (the frozen probes), round 132 W1/P1 + raw census (cited), round 149 bughunt4 note CDLIII (independent closed forms + T1 re-derivation)
+- **v922_spacing_jet_sumrule_theorems** [E/C/O] `PRIME.SPACING.JETSUMRULES.THEOREMS.01` — die Sekulärableitungs-/Spacing-Produkt-Identität, die Jet-Summenregeln beider Ordnungen, die A₀-Kürzung und das Gitterschwanz-Zertifikat, als zertifiziert-endliche Sätze promoviert
+  - deps: round 131 secular identity (v919, cited: F, E_N, census nodes), round 135 note CDXXXIX + round 154 note CDLVIII (the frozen probes), round 149 bughunt4 note CDLIII (family-wide audit, 0 MAJOR), round 158 note CDLXII (Lean hardening: SpacingProduct + JetSumRules), PRIME.LOOP.EQUIVALENCE.THEOREMS.01 (v920: the W/J machinery consuming these identities), PRIME.SPECTRAL.BALANCE.RAZOR.01 (v923: the downstream spectral algebra)
+- **v923_spectral_balance_razor_theorems** [E/C/O] `PRIME.SPECTRAL.BALANCE.RAZOR.01` — die vollständige exakte Spektral-Balance-Algebra auf dem QSUBGAP-g-Floor; in Runde 158 Lean-gehärtet**. RUNDE-157-SÄTZE, exakt nachgerechnet: SB1 (Spurschleife τ TrH == tf/FULLGAP
+  - deps: PRIME.LOOP.EQUIVALENCE.THEOREMS.01 (v920: W1 pinch, W2 QSUBGAP loop, W3 interlacing -- cited, not re-claimed), PRIME.SPACING.JETSUMRULES.THEOREMS.01 (v922: the secular/jet identities), round 146 Y1-Y4 + round 150 R1-R4/S1/betapos strings (cited), round 157 note CDLXI + round 161 note CDLXV (the frozen probes), round 158 note CDLXII (Lean hardening: PinchIdentity + SpectralBalance), round 153 RES1/RES2 (the self-reference class GF4 pins)
+- **v924_moment_laurent_rootladder** [E] `PRIME.MOMENT.LAURENT.ROOTLADDER.01` — die entflohene Zensuswurzel-Leiter EXAKT in Momentkoordinaten gelöst; in Runde 158 Lean-gehärtet**. DIE SÄTZE, im Lauf exakt nachgerechnet: L1 (DIE LEITER IST MOMENTENDATEN: y S ==
+  - deps: round 154 P1-P7 + T-WINDOW (cited: the tower certificate L5 extends), round 143 T4 rank-one dictionary (cited: SR1 re-derives its trace identity), PRIME.SPACING.JETSUMRULES.THEOREMS.01 (v922: the jet/secular identities), PRIME.EDGE.CLEANUP.CLOSURES.01 (v925: the sliver residual closed per-zero), round 156 note CDLX (the frozen probe), round 158 note CDLXII (Lean hardening: MomentLaurent), rounds 157/159/160/161 (downstream consumers)
+- **v925_edge_cleanup_closures** [E/C] `PRIME.EDGE.CLEANUP.CLOSURES.01` — die SIMPLICITY-Subsumtion + Null-Kosten-Vermeidung (Zensuszeile Z8 eliminiert, 10 → 9), der Q-SWAMP-GESAMTSCHLUSS (357 Turing-Klasse-Lokalband-Zertifikate IM LAUF NACHGERECHNET aus
+  - deps: PRIME.COUNTING.DOMINANCE.CLOSURES.01 (v921: Theorem A whose conditionality this row sharpens, the Q-swamp obstruction it carried), PRIME.MOMENT.LAURENT.ROOTLADDER.01 (v924: the cascade whose sliver residual this row closes), round 147 AD1 + cell lemma + LM split (cited), round 141 V2 (cited), round 159 note CDLXIII (the frozen probe), rounds 133/138/144 (Theorem-A assemblage, Turing-exit naming, BW25 pin)
+- **v926_fullgap_growthlaw_theorems** [E/O] `PRIME.FULLGAP.GROWTHLAW.THEOREMS.01` — das exakte Leave-one-out-Instrument (GL1-Pinch + GL2-Arrowhead), die Einzeilen-Preis-Äquivalenz (GL3: D3 kollabiert aufs Rasiermesser), die Raten-Buchführung (GL4) und die Leiter/Q
+  - deps: round 131 secular + crossover T = 2 pi x (v919, cited), round 150 R2 + round 161 GF1-GF5 (v923, cited), round 142 W3 (v920, cited), round 162 note CDLXVII (the frozen probe), round 164 bughunt5 note CDLXIX (the independent free-exponent/AIC attack + GL re-gates, ported in-module with attribution), PRIME.BLOCKAVERAGE.SUBSTRATE.01 (v927: the block ladder consuming these anchors)
+- **v927_blockaverage_substrate_theorems** [E/O] `PRIME.BLOCKAVERAGE.SUBSTRATE.01` — die Frozen-Block-Zertifikationsmaschinerie des Endspielbogens: Extraktionssatz (BA1), Wand-Wörterbuch (BA2), Budget-Floor (BA3, bewiesen-mod-zitiert), Weyl-Split-Lemma und die Loop
+  - deps: round 131 secular + OFF recipe (v919, cited), round 162 GL anchors (v926: the FULLGAP/tlaw strings this ladder extends), round 166 note CDLXXV (the frozen probe), PRIME.DEPTHBLOCK.TRANSFER.01 (v928: the step built on BA1/BA3), PRIME.SIGMAFLOOR.FACTORIZATION.01 (v929: the anatomy consuming these enclosures)
+- **v928_depthblock_transfer_theorems** [E/O] `PRIME.DEPTHBLOCK.TRANSFER.01` — der Strukturkern des Endspielbogens: DT1 (bewiesen), DT2 (das ABGELEITETE Demand-Gesetz, per-Rezept bewiesen — die Entdeckung der Runde), das Zensus-3/2-Gesetz (sympy-exakt), der P
+  - deps: PRIME.BLOCKAVERAGE.SUBSTRATE.01 (v927: BA1-BA3, the substrate the step stands on), PRIME.WINDOW.INSTRUMENT.MECHANISM.01 (v930: the r167 last-atom mechanism this round generalized), PRIME.SIGMAFLOOR.FACTORIZATION.01 (v929: the named final coordinate factorized), round 131 OFF recipe (v919, cited), round 168 note CDLXXXIII (the frozen probe), round 122 NF-closure + round 128 Theorem R (v918, cited: the SEQ demand the cofinal hits supply)
+- **v929_sigmafloor_factorization** [E/C/O] `PRIME.SIGMAFLOOR.FACTORIZATION.01` — der offizielle Record der terminalen Koordinate des Endspiels: SIGMA-FLOOR exakt faktorisiert σ == (1−slop)·δ·DC (SF1, per-Term-Algebra, Identitäts-Devs ≤ 2e-60 an allen 25 Sprosse
+  - deps: PRIME.DEPTHBLOCK.TRANSFER.01 (v928: DT1/DT2 + the factorization target SIGMA-FLOOR), PRIME.BLOCKAVERAGE.SUBSTRATE.01 (v927: BA3 + the enclosures the block floors bridge through), round 131 Layer 1/2 + Landau pin + onsets (v919, cited), round 137 lock onsets (cited, 338/879 replicated), round 169 note CDLXXXIV (the frozen probe), round 162 quartic anchors (v926, cited)
+- **v930_window_instrument_mechanism** [E] `PRIME.WINDOW.INSTRUMENT.MECHANISM.01` — die bewiesenen Positivitäts-Transport-Instrumentensätze (WI1–WI6), die Stieltjes-Momenten-Refutation der dyadischen Slot-Leiter (im Lauf aus den gepinnten Slots nachgerechnet) und
+  - deps: PRIME.SPECTRAL.BALANCE.RAZOR.01 (v923: GF1-GF5 the theta chases compose with), PRIME.MOMENT.LAURENT.ROOTLADDER.01 (v924: the L1/PHI dictionary WI4 consumes), PRIME.DEPTHBLOCK.TRANSFER.01 (v928: the entry law generalized + re-confirmed, PROP assembled), round 160 instrument blocks + G82 typing (cited), round 167 note CDLXXXI (the frozen probe), round 136 minimizer + round 162 ladder (v926, cited)
+- **v931_jetmass_floor_theorems** [E/O] `PRIME.JETMASS.FLOOR.01` — der Jet-Masse-Floor (das in v929 benannte terminale λ-uniforme Residuum) erhält sein rigoroses Per-Sprossen-Theorem: F/A₀ ≥ (1 − c*/z)^{(1+κ)/c*} für alle z > c* aus der Zensus-Pro
+  - deps: PRIME.SIGMAFLOOR.FACTORIZATION.01 (v929: the jet-mass-floor naming + SF1-SF6, cited), PRIME.BLOCKAVERAGE.SUBSTRATE.01 (v927: BA3), PRIME.MOMENT.LAURENT.ROOTLADDER.01 (v924: the census/rootladder instrument), round 171 note CDLXXXVII (the frozen probe), PRIME.TOPROOT.THETA.01 (v932: the RATE leg downstream), PRIME.GONEK.PRICING.01 (v934: the WF pricing downstream), Bughunt VII round 176 note CDXCII (F3 applied here)
+- **v932_toproot_theta_statement** [E/O/X] `PRIME.TOPROOT.THETA.01` — die letzte λ-uniforme Kante auf EINE benannte Per-Sprossen-Hypothese gepinnt: TOPROOT(p, C) == y_t ≤ C·h^p mit exaktem SEQ-KOFINAL-Quantor und drei maschinengelockten Formen; das e
+  - deps: PRIME.JETMASS.FLOOR.01 (v931: PF/H1/H2 + the rate leg this round certifies), PRIME.FULLGAP.GROWTHLAW.THEOREMS.01 (v926: the theta window, cited), round 172 note CDLXXXVIII (the frozen probe), PRIME.H3.COFINAL.01 (v933: the cofinal adjudication downstream), Bughunt VII round 176 note CDXCII (F1 applied here)
+- **v933_h3_cofinal_adjudication** [E/C/O] `PRIME.H3.COFINAL.01` — die drei benannten Mechanismen mit Zahlen adjudiziert und die Zeugengrenze eine THEOREM-Grenze: die Sättigung ist REAL und gleich exakter Quartik-Konvergenz (p_loc → 4.024; θ_inf-B
+  - deps: PRIME.TOPROOT.THETA.01 (v932: the H3 statement + the cited record ladder), PRIME.BLOCKAVERAGE.SUBSTRATE.01 (v927: BA1-BA3, cited), PRIME.FULLGAP.GROWTHLAW.THEOREMS.01 (v926: the quartic law consumed ONLY as FLAGGED-MEASURED), round 173 note CDXC (the frozen probe), PRIME.THETAINF.PIN.01 (v935: the theta_inf attack downstream), Bughunt VII round 176 note CDXCII (F1 + F4 applied here)
+- **v934_gonek_pricing_unconditional** [E/C] `PRIME.GONEK.PRICING.01` — der Posten '{Gonek-Konstanten, zitierbare klassische Arbeit}' BEPREIST und VERLÄSST das Programmresiduum: [L] Landau 1912 und [G] Gonek 1985/1993 beide UNBEDINGT identifiziert; die
+  - deps: PRIME.SIGMAFLOOR.FACTORIZATION.01 (v929: the SF3 DC-leg typing this row prices), PRIME.JETMASS.FLOOR.01 (v931: the WF leg this row prices), round 174 note CDLXXXIX (the frozen probe), PRIME.THETAINF.PIN.01 (v935: the bridge consuming this machinery downstream), Bughunt VII round 176 note CDXCII (the external literature re-verification + F1 applied here)
+- **v935_thetainf_landau_bridge** [E/O] `PRIME.THETAINF.PIN.01` — der klassische Pin von θ_inf landet NICHT und die Runde beweist exakt warum, mit der ERSTEN LINEAREN PER-MODEN-KLASSISCHEN IDENTITÄT des Programms: der Primblock der Weltmatrix ist
+  - deps: PRIME.GONEK.PRICING.01 (v934: the unconditional Landau/Gonek machinery the bridge consumes), PRIME.H3.COFINAL.01 (v933: the theta_inf band + the DK instrument), PRIME.TOPROOT.THETA.01 (v932: the H3 statement + record ladders), round 175 note CDXCI (the frozen probe), Bughunt VII round 176 note CDXCII (F1 + F2 + F7 applied here)
+- **v936_manifold_invariance_exclusion** [E/C] `PRIME.MANIFOLD.INVARIANCE.01` — der BH7-F4-Scope-Gap innerhalb des Instruments beseitigt: der Ausschluss ist (i) ein tau-freier RICHTUNGS-UNIVERSALSATZ für h ≤ 13 an der gefrorenen 1e-25-Bar (gemessen bis h = 20)
+  - deps: PRIME.H3.COFINAL.01 (v933: the DK instrument + BH7-F4 scoping this round removes), PRIME.TOPROOT.THETA.01 (v932: H3), PRIME.FULLGAP.GROWTHLAW.THEOREMS.01 (v926: the quartic cap consumed ONLY as FLAGGED-MEASURED), round 177 note CDXCV (the frozen probe), Bughunt VIII round 183 note DI (F7 applied here)
+- **v937_l1wpd_closure_reduction** [E/O] `PRIME.L1WPD.CLOSURE.01` — WPDs λ-uniformer Gehalt IST die H-pin-Kante (AND-Fire an den deklarierten Kanten demonstriert): das Paar {L1, WPD} trägt EINE offene λ-uniforme Kante, nicht zwei; das dreiteilige B
+  - deps: PRIME.THETAINF.PIN.01 (v935: the bridge + the T_req wall, cited), PRIME.JETMASS.FLOOR.01 (v931: the jet currency adjudicated non-transferring), v925 edge cleanup closures (the all-x sharpening propagated here), round 178 note CDXCIV (the frozen probe), Bughunt VIII round 183 note DI (F2 numbering applied here)
+- **v938_dbn_heatflow_census** [E/C/O] `PRIME.DBN.HEATFLOW.01` — der EINE große klassische Import (de-Bruijn–Newman-Wärmefluss; Rodgers–Tao 2020 Λ ≥ 0, Polymath15 2019 Λ ≤ 0.22, beide UNBEDINGT zitiert) frontal gegen die Zensus-Observablen: der
+  - deps: PRIME.THETAINF.PIN.01 (v935: the bridge kernels FLOW-Z consumes), PRIME.GONEK.PRICING.01 (v934: the Landau/Gonek adjudication verbatim), PRIME.JETMASS.FLOOR.01 (v931: the census polynomial form), round 179 note CDXCVI (the frozen probe), Bughunt VIII round 183 note DI (factor-4 verified here)
+- **v939_cbj_frame_adjudication** [E/X] `PRIME.CBJ.CONFLUENT.FRAME.01` — die extern vorgeschlagene Review-Primärroute (COFINAL-BLOCK-JET via konfluentem Jet-Frame) vollständig instrumentiert: Schritte A/B/D landen EXAKT bzw. quellrein — SCHRITT A (δ_h =
+  - deps: PRIME.SIGMAFLOOR.FACTORIZATION.01 (v929: SF1/SF2/SF6 wiring), PRIME.WINDOW.INSTRUMENT.MECHANISM.01 (v930: the entry atoms the selector upgrades), PRIME.MOMENT.LAURENT.ROOTLADDER.01 (v924: L1) + v922 (the spacing product re-derived), round 180 note CDXCVII (the frozen probe), PRIME.CBJ.SUBDOF.BLOCKFLOOR.01 (v940: the sub-dof scoping downstream), Bughunt VIII round 183 note DI (dof/MV/Bertrand verified here)
+- **v940_cbj_subdof_blockfloor** [E/X] `PRIME.CBJ.SUBDOF.BLOCKFLOOR.01` — die blockweise SUB-DOF-GESCOPTE Floor-Aussage exakt gestellt, vollständig durchgetypt und am entscheidenden Messwert ehrlich GETÖTET: die Demand-Masse ist NICHT im wohlkonditionier
+  - deps: PRIME.CBJ.CONFLUENT.FRAME.01 (v939: step A, the selector, the gmin ladder, the SF2 margins this round scopes), PRIME.SIGMAFLOOR.FACTORIZATION.01 (v929: SF1/SF2/SF6), round 181 note CDXCIX (the frozen probe), PRIME.ALIGNMENT.LAW.01 (v941: the named missing ingredient downstream), Bughunt VIII round 183 note DI (A1 + OCS02 verified here)
+- **v941_alignment_law_factorization** [E/X] `PRIME.ALIGNMENT.LAW.01` — die schärfste unerklärte Regularität des Programms präzise vermessen, als TRIPEL eingefroren und im Mechanismus faktorisiert (nicht hergeleitet, ehrlich getypt): (F1) HALBPOTENZ-EI
+  - deps: PRIME.CBJ.CONFLUENT.FRAME.01 (v939: step A, the Gram, the selector margins), PRIME.CBJ.SUBDOF.BLOCKFLOOR.01 (v940: the kill mass this law explains), PRIME.THETAINF.PIN.01 (v935: the bridge, cited, the theta_inf class), PRIME.MANIFOLD.INVARIANCE.01 (v936: the alignment-sharing gap replicated exactly), round 182 note D + the correction note DII (the frozen probe + the correction of record), Bughunt VIII round 183 note DI (F1 MAJOR applied here)
+- **v942_pi_pattern_transfer_specificity** [E] `PI.PATTERN.SCAN.01` — die Prime-Front-Instrumente strukturell unverändert auf pi-Daten transferiert, mit BEWIESENER Transfer-Validität und dem erwarteten ehrlichen Null: ALLE fünf pi-Welten (Ziffern-Com
+  - deps: PRIME.ALIGNMENT.LAW.01 (v941: the mass-location recipe + anchor strings), PRIME.GONEK.PRICING.01 (v934: the Landau spike-instrument class), round 184 note DIV (the frozen probe), Bughunt IX round 193 note DXV (F3/K3 applied here), PRIME.MANGOLDT.ABLATION.01 (v943: the causal question this round poses, downstream)
+- **v943_mangoldt_ablation_localization** [E/X] `PRIME.MANGOLDT.ABLATION.01` — die additive Eigenschafts-Leiter W0 Zufall → W1 Cramer-Dichte → W2 +Log-Gewichte → W3 +Potenz-Grammatik → W4 +volle Beurling-Multiplikativität → W5 echtes Mangoldt: BEIDE arithmeti
+  - deps: PI.PATTERN.SCAN.01 (v942: the transferred instruments + the r184 anchor this round replicates), PRIME.ALIGNMENT.LAW.01 (v941: the alt-jet recipes), round 185 note DV (the frozen probe), Bughunt IX round 193 note DXV (the G07 adjudication applied here), PRIME.ZERO.CAUSAL.SYNTH.01 + PRIME.ZB.WIGGLE.STRAT.01 (v945: the causal demonstration downstream)
+- **v944_ground_residue_observability** [E] `PRIME.GROUND.RESIDUE.OBS.01` — der H3/A₀-Floor-Leg in EIGENVEKTOR-FREIEN Koordinaten auf Identitätsniveau: Res_{z=τ} R_h(z) = A₀²/||d||², an ALLEN 14 Sprossen ≤ 7.8e-45 gegattet; w'(τ) berechnet sich eigenvektor
+  - deps: PRIME.ALIGNMENT.LAW.01 (v941: the ray instruments), PRIME.LOEWNER.PICK.01 (v947: the exact dictionary that fixed the diagonal, downstream), round 186 note DVI (the frozen probe), Bughunt IX round 193 note DXV (F1 MAJOR/K1 applied here, the residue identity independently recomputed <= 1.2e-45 in fully own code)
+- **v945_zero_causal_stratification** [E] `PRIME.ZERO.CAUSAL.SYNTH.01, PRIME.ZB.WIGGLE.STRAT.01` — EIN gemeinsames Modul (r190 upgraded r187 PER REFERENZ, Haus-Stil): Comb-Welten mit KONTROLLIERTEN Nullstellen-Spektren, durch die r175-Brücke rückwärts synthetisiert, und die S2-S
+  - deps: PRIME.MANGOLDT.ABLATION.01 (v943: the r185 localization this round demonstrates causally), PRIME.THETAINF.PIN.01 (v935: the r175 bridge run backwards + the conditioning-wall prediction), PRIME.ZB.WIGGLE.STRAT.01 (v945: the r190 stratification upgrading this row BY REFERENCE), round 187 note DVIII (the frozen probe), Bughunt IX round 193 note DXV (the FAILs verified honest), PRIME.ZERO.CAUSAL.SYNTH.01 (v945: the r187 dose surface this round stratifies and upgrades BY REFERENCE, the r187 engine imported verbatim, identity-gated), round 190 note DXI (the frozen probe)
+- **v946_census_krein_pencil** [E] `PRIME.CENSUS.SPECTRAL.LIFT.01` — das Zensus-Polynom IST die Spektraldeterminante eines quellseitigen selbstadjungierten Pencils, aber eines KREIN-(indefinite-Metrik)-Pencils an jeder echten Sprosse: N_h(y) = (−1)^
+  - deps: PRIME.MOMENT.LAURENT.ROOTLADDER.01 (v924: the moment-Laurent -1 reproduced source-side), PRIME.TOPROOT.THETA.01 (v932: the toproot instrument tables), PRIME.KREIN.DEFINITIZER.01 (v948: the sign characteristic of exactly this pencil, downstream), round 188 note DIX (the frozen probe), Bughunt IX round 193 note DXV (the ladders/transfer/Weyl form independently recomputed exact)
+- **v947_loewner_pick_dictionary** [E/O/X] `PRIME.LOEWNER.PICK.01` — die Wand ist NICHT die kanonische Loewner-Matrix ihres Potentials, sondern eine DIAGONAL-VERSCHOBENE: Raw_h = L_f + diag(Δ) (M_h PSD <=> Raw_h PSD per exakter Sylvester-Kongruenz),
+  - deps: PRIME.GROUND.RESIDUE.OBS.01 (v944: the r186 off-diagonal law this round upgraded and diagonally completed -- the K1 rider cites THIS row's dictionary), round 189 note DX (the frozen probe), Bughunt IX round 193 note DXV (the cosine law independently recomputed <= 6.3e-61 + per-atom symbolic, X1: this record correct as written)
+- **v948_krein_sign_characteristic** [E/X] `PRIME.KREIN.DEFINITIZER.01` — der r188/v946-Upgrade-Pfad DURCH SATZ GESCHLOSSEN, nicht durch Suche: die gemessene GEMISCHTE Leiter tötet die GESAMTE W(y)>0-Kongruenzklasse AUF EINMAL (die Vorzeichen-Charakteris
+  - deps: PRIME.CENSUS.SPECTRAL.LIFT.01 (v946: the exact pencil whose sign characteristic this row is, the upgrade path this row closes), round 191 note DXIII (the frozen probe), Bughunt IX round 193 note DXV (the two-route eps/count/flip/scaffold/W-lemma/CH all independently recomputed, zero failures)
+- **v949_commensurability_mechanism** [E/X] `PRIME.COMMENSURABILITY.MECHANISM.01` — die dünne geometrische Hoffnung 'Inkommensurabilität speist Wandpositivität' SAUBER GETÖTET an der Marge, mit exakter Mechanismus-Aussage für die kanonische Vervollständigung**. IM
+  - deps: PRIME.LOEWNER.PICK.01 (v947: the commensurate-sampling mechanism this round makes exact and quantifies), round 192 note DXIV (the frozen probe), Bughunt X round 199 note DXXIII (the e|2fk machine content reproduced in own code, the LMN/Matveev/KR/Siegel citations web-verified verbatim, KE the only finding, instrument cosmetics)
+- **v950_zero_channel_capacity** [E] `PRIME.ZERO.CHANNEL.CAPACITY.01` — der r187/r190-(v945)-Write→Read-Bogen ALS KANAL charakterisiert, getypt EXPLORATORISCHE INSTRUMENT-CHARAKTERISIERUNG und als exakt das promoviert: KEIN Storage-Claim, KEINE arithme
+  - deps: PRIME.ZERO.CAUSAL.SYNTH.01 + PRIME.ZB.WIGGLE.STRAT.01 (v945: the engine imported verbatim + the noise model read as a channel), round 194 note DXVII (the frozen probe), Bughunt X round 199 note DXXIII (F6 the seed-reuse note with the null quantification, F7 the corollary typing -- both note-only, both adopted)
+- **v951_cancellation_functional** [E] `PRIME.CANCELLATION.FUNCTIONAL.01` — die Wand ist ein GESCHLOSSENES TRUNKIERTES WEIL-EXPLIZIT-FORMEL-FUNKTIONAL der positiv-definiten Testfunktion g_x, Pro-Atom-Positivität BEWEISBAR UNMÖGLICH (Wiener-Khinchin), PLUS
+  - deps: PRIME.LOEWNER.PICK.01 (v947: the two quadrature slots this round unifies into one ACF object), round 195 note DXVIII (the frozen probe), Bughunt X round 199 note DXXIII (X4: the ACF/pole/arch laws reproduced in fully own code <= 1e-61, c* exact, F4/KD the positive pin, note-only per note DXXIV)
+- **v952_turan_extremal** [E/X] `PRIME.TURAN.EXTREMAL.01` — Turán/Boas-Kac/Fejér mit exakten Zitaten importiert und zum ersten Mal in 196 Runden gegen die Wand gepreist, ZWEISEITIG: die klassische Kappe erfasst den Drain fast exakt, und Keg
+  - deps: PRIME.CANCELLATION.FUNCTIONAL.01 (v951: the ACF kernel and PD class this round prices classically), round 196 note DXXI (the frozen probe), Bughunt X round 199 note DXXIII (the Fejer cap RE-PROVED independently by a single-node dual route, F2/KB the attainment correction, citations web-verified verbatim)
+- **v953_fewatom_reduction** [E] `PRIME.FEWATOM.REDUCTION.01` — A_{v0} > 0 auf GANZ [0, L], keine Floats; die Bughunt-X-Zertifikationsklasse im Modul rekonstruiert; BH10 liefert h = 13, 20); DER EIN-ZEILEN-MECHANISMUS (A >= 0 ⟹ jedes ACF-Sample
+  - deps: PRIME.CANCELLATION.FUNCTIONAL.01 (v951: the ACF law and sign law this round mechanizes), round 197 note DXX (the frozen probe), Bughunt X round 199 note DXXIII (F1 MAJOR adjudicated THE HEADLINE IS TRUE with the stronger certification class -- the Sturm chains at h = 4, 5, 13, 20, F3/KC the un-normalized identification, X6 OBJECT-A the one new tractable target)
+- **v954_nodeless_pf** [E/O/X] `PRIME.NODELESS.PF.01` — die r197/v953-Kandidatenroute für OBJEKT-A voll adjudiziert: TOT IN DER MODEN-BASIS, die Obstruktion EXAKT LOKALISIERT (der Rang-1-POSITIV-Kern des Pols ist die EINZIGE Kegel-Obstr
+  - deps: PRIME.FEWATOM.REDUCTION.01 (v953: the OBJECT-A target whose candidate route this round adjudicates) + PRIME.CANCELLATION.FUNCTIONAL.01 (v951: the ACF law behind the attractive-hopping structure), round 198 note DXXII (the frozen probe), Bughunt X round 199 note DXXIII (F3/KC the r197/r198 consistency, all exact claims reproduced in own code)
+- **v955_tau_iiks_toda_dictionary** [E/O] `PRIME.PORT.TAU.FINITE.IIKS.01, PRIME.PORT.TAU.NOPOLE.COFINAL.01` — (1) TAU_IIKS_EXACT: die Wanddeterminante IST die exakte IIKS-Fredholm-Tau-Funktion — Sylvester als VOLLE charakteristische Identität det(I−sQ_state) = det(I−sE_node) auf dem ganzen
+  - deps: PRIME.PORT.TAU.01 (the executed umbrella), v881_carleson_port_geometry, v881 (port geometry + integrable class), v883 (the determinant chain), rounds 224-226 notes DL/DLI/DLII, v955_tau_iiks_toda_dictionary, v883_tau_chain_parametrix.py;v955_tau_iiks_toda_dictionary
+- **v956_signedmoment_halffilling_duality** [E/O] `PRIME.FREEMOMENT.JFRACTION.01, PRIME.JACOBI.DUAL.REVERSAL.01, PRIME.FREEMOMENT.POSITIVEPREFIX.01` — (1) HALF_FILLING_BOUNDARY: N_w = ceil(#supp(μ̃)/2) EXAKT auf allen fünf Fenstern — die Fensterkappe IST die Halbfüllung des Union-Supports; hinter der Kappe stirbt die Wand SOFORT
+  - deps: PRIME.PORT.TAU.FINITE.IIKS.01 (the r226 dictionary these rounds extend), v881 (the testing law), v955, rounds 228-230 notes DLIV/DLV/DLVI, PRIME.FREEMOMENT.JFRACTION.01 (the complement duality and four-path dictionary), rounds 230-231 notes DLVI/DLVII, v956_signedmoment_halffilling_duality, v955_tau_iiks_toda_dictionary
+- **v958_bordered_tau_readout_dictionary** [E] `PRIME.PORT.RHP.BORDERED.READOUT.01` — (1) das exakte Wörterbuch des gebordeten Endobjekts (gebordete PSD = Wand + Budget): die Uvarov-Border-Spalte trägt F_n als z^{-1}-Koeffizienten OHNE Orthogonalitäts-Cancellation;
+  - deps: PRIME.PORT.TAU.FINITE.IIKS.01 (the IIKS/Toda dictionary the bordered object extends), PRIME.FREEMOMENT.JFRACTION.01 (the half-filling/free-moment coordinates), v955, v956, rounds 244-253 notes DLXXIII-DLXXXIII
+- **v959_coupledtau_terminal_dictionary** [E/O] `PRIME.PORT.RHP.COUPLEDTAU.TERMINAL.01` — (1) die Positive-Prefix-Firewall + der exakte 2x2-Kausalzensus (r256): MAIN pmax = 184 = N mit null negativen Moden (der EINZIGE positive Prefix), Kontrollen 21/25/27 alle INDEFINI
+  - deps: PRIME.PORT.RHP.BORDERED.READOUT.01 (the certified bordered formulation these rounds consume), PRIME.FREEMOMENT.POSITIVEPREFIX.01 (the frozen micro-falsifier), v958, rounds 256-259 notes DLXXXVII-DXC
+- **v960_terminal_surface_closure** [E/O] `PRIME.PORT.COUPLEDTAU.SURFACE_CLOSURE.01` — DER MEILENSTEIN: der 42-Rungen-Oberflächen-Zensus q_N < 1 ist als ENDLICHER FAKT ZERTIFIZIERT auf ALLEN 42 Rungen — 41 mechanismus-zertifiziert target-blind (35 Cheap-Rungen via r2
+  - deps: PRIME.PORT.RHP.COUPLEDTAU.TERMINAL.01 (the certified telescope and coordinate these rounds consume), PRIME.PORT.COUPLEDTAU.TERMINAL_CROSSRATIO.01 (the contract whose surface this closes), PRIME.PORT.RHP.FULLSOURCE.BASEFIBER.01 (the campaign parent), v959, rounds 260-275 notes DXCII-DCIX
+- **v961_midpoint_orientation_dictionary** [E/O] `PRIME.PORT.RHP.MIDPOINT.ORIENTATION_DICTIONARY.01, PRIME.PORT.WALL.METRIC_FIREWALL.01` — (1) das Wronskian-Wörterbuch (r274, GO): Basis-Casoratian = h_n mit c' = 1 (alle Grade, 42 Rungen, Vorzeichen exakt); die rechte Lösung DREIFACH konstruiert mit exakter Koinzidenz
+  - deps: PRIME.PORT.RHP.COUPLEDTAU.TERMINAL.01 + PRIME.PORT.COUPLEDTAU.SURFACE_CLOSURE.01 (the coupled coordinate and the certified surface), PRIME.PORT.FULLSOURCE.PREFIX_RESUMMATION.01 (the base edge this orients), PRIME.JACOBI.DUAL.REVERSAL.01 + PRIME.FREEMOMENT.JFRACTION.01 (the v956 dual/midpoint geometry), v959, v960, rounds 274-278 notes DCVII-DCXI, PRIME.PORT.RHP.MIDPOINT.ORIENTATION_DICTIONARY.01 (the certified measurements and gradients), PRIME.FREEMOMENT.POSITIVEPREFIX.01 (the wall in free-moment coordinates)
+- **v962_halffilling_pinning_theory** [E/O] `PRIME.WALL.HALFFILLING_PINNING_THEORY.01` — (T1) der MOMENT-ZÄHLSATZ (r281): Pivot h_n konsumiert m_0..m_{2n}, die S freien Momente sind m_0..m_{S−1}, also sind die FREIEN Pivots exakt h_0..h_{N_w−1} und h_{N_w} ist der erst
+  - deps: PRIME.PORT.RHP.MIDPOINT.ORIENTED_THEOREM.01 (the contract rounds 279-281 ran on), PRIME.PORT.RHP.MIDPOINT.ORIENTATION_DICTIONARY.01 (the certified dictionary + Maslov census), PRIME.FREEMOMENT.POSITIVEPREFIX.01 + PRIME.PORT.SIGNEDMOMENT.HOLEDUAL.01 (the v956 half-filling frame), PRIME.PORT.RHP.FULLSOURCE.BASEFIBER.01 (the campaign parent), v961, rounds 279-281 notes DCXII/DCXIV/DCXV
+- **v963_lstar_reduction_dictionary** [E/O] `PRIME.LSTAR.REDUCTION_DICTIONARY.01` — die freie Fensterfrage in ihrer kanonischen Form (30/30 + 26/26 + 30/30 + 33/33, vier Probes byte-exakt eingebettet in ihrer versiegelten Smoke-Stufe, plus die modul-eigene Exaktse
+  - deps: PRIME.PORT.REPRESENTATION.CONTEST.01 (round 282 consumed), PRIME.PORT.RHP.FULLSOURCE.QUASIDEFINITENESS.01 (round 283 consumed), PRIME.WALL.HALFFILLING_PINNING_THEORY.01 (the T4 frame the reduction lands in), PRIME.PORT.RHP.FULLSOURCE.BASEFIBER.01 (the campaign parent), PRIME.LSTAR.SUBORDINATION.01 (the successor contract), v962, rounds 282-285 notes DCXVI/DCXVII/DCXIX/DCXXI, rh/problem/lstar_problem.tex (standalone document, external reference)
+- **v964_lstar_coherence_census** [E/O] `PRIME.LSTAR.COHERENCE_CENSUS.01, PRIME.PORT.L2.VDC_LEMMA.01` — die Margin-Skalierung geklärt, der exakte van-der-Corput-Satz für L2, die Trägerkarte der destruktiven Kohärenz und das METRIC_ONLY-Urteil (29/29 + 25/25 + 31/31 + 42/42, vier Prob
+  - deps: PRIME.LSTAR.SUBORDINATION.01 (the open contract whose state these rounds measure), PRIME.LSTAR.REDUCTION_DICTIONARY.01 (the canonical form consumed), PRIME.PORT.COUPLEDTAU.TERMINAL_CROSSRATIO.01 (the H5/L2 front served by the vdC candidate), PRIME.PORT.L2.VDC_LEMMA.01 (the successor contract registered by this census), PRIME.PORT.WALL.METRIC_FIREWALL.01 (the metric reading, sharpened: the firewall reads the fraction profile), PRIME.PORT.COUPLEDTAU.SURFACE_CLOSURE.01 (kz15 exact-finite), v963, rounds 286-289 notes DCXXIV/DCXXII/DCXXV/DCXXVI
+- **v965_lstar_curvature_arc** [E/O/X] `PRIME.LSTAR.CURVATURE_ARC.01` — die vermessene Geometrie der funktionierenden Menge im Profil-Raum, eingefroren zusammen mit den ehrlichen Negativen der Funktional-Suche (32/32 + 30/30 + 36/36 + 43/43 + 42/42 + 4
+  - deps: PRIME.LSTAR.COHERENCE_CENSUS.01 (the wave-7 predecessor: METRIC_ONLY posed the profile-functional question), PRIME.LSTAR.SUBORDINATION.01 (the open center the arc measures), PRIME.LSTAR.CLOSED_FUNCTIONAL.01 (the successor open contract), PRIME.PORT.WALL.BUDGET_LOCALIZATION.01 (the r280 ridge origin), PRIME.PORT.WALL.METRIC_STABILITY.01 (the r278 gradient channel), v963, v964, v965
+- **v966_l2_reduction_chain** [-] `(no ledger claim)` — die Lane-Schließung r296 und die Vier-Runden-Kette, die das δ′ > 0.21-Ziel der generischen Hälfte auf EINE Ungleichung reduziert (39/39 + 27/27 + 28/28 + 32/32 + 31/31, fünf Probes
+- **v967_l2_cascade_closure** [E/X] `PRIME.L2.CASCADE_CLOSURE.01` — die Welle-9-Restziele zu Ende exekutiert, das Reviewer-Regress-Audit, das die Reduktions-Kaskade retypisiert, und die Kurzreichweiten-Gesetz-Runde, deren versiegelter Stopp-Fall fe
+  - deps: PRIME.L2.REDUCTION_CHAIN.01 (the wave-9 chain this closure retypes), PRIME.L2.NEFF_TARGET.01 (the contract retyped to the stop state), PRIME.PORT.L2.VDC_LEMMA.01 (the parent contract, now documented stopped on the global-profile route), PRIME.PORT.COUPLEDTAU.TERMINAL_CROSSRATIO.01 (the H5/L2 parent front), PRIME.PORT.COUPLEDTAU.SURFACE_CLOSURE.01 (kz15 exact-finite), v964, v966, rounds 301-304 notes DCXL-DCXLIV
+- **v968_architecture_adjudication** [E/O] `PRIME.SOURCE.RANKONE.UPDATE.IDENTITY.01, PRIME.SOURCE.TENSOR.MECHANISM.01` — PD-Target im Spann mit erzwungenem negativem Generatorgewicht, strikt außerhalb des Kegels, ⟨Y,Q⟩ = −2 exakt: die Vorzeichenwand in Miniatur —, die zehn versiegelten Verdikt-Bars a
+  - deps: PRIME.LSTAR.ARCHITECTURE_ADJUDICATION.01 (the wave-11 adjudication registering the split), PRIME.SOURCE.TENSOR.MECHANISM.01 (the open mechanism successor), PRIME.PORT.RHP.BORDERED.READOUT.01 (the r244 border route the identities cross-check against), round 309 note DCLI, PRIME.SOURCE.RANKONE.UPDATE.IDENTITY.01 (the banked identity base), PRIME.LSTAR.ARCHITECTURE_ADJUDICATION.01 (the adjudication registering this contract), PRIME.L2.RENYI3.PROVENANCE.01 (the sibling fiber contract sharing the near-critical family), rounds 309/313/316 notes DCLI/DCLIII/DCLVII
+- **v969_forks_and_redteam** [-] `(no ledger claim)` — das Extraktionsketten-Red-Team, die Brücken-Reparatur und die zwei Forks, eingefroren (vier Probes byte-exakt eingebettet in ihrer versiegelten Smoke-Stufe: 38/38 + 25/25 + 39/39 +
+- **v970_extraction_and_composition** [E/O] `PRIME.EXTRACTION.ELEMENTWISE.01, PRIME.L2.RENYI3.MEASURED_COMPOSITION.01` — vier Probes byte-exakt eingebettet in ihrer versiegelten Smoke-Stufe (36/36 + 36/36 + 18/18 + 34/34 volle Rekorde; r324 importiert das eingebettete r324-pre, r327 das eingebettete
+  - deps: PRIME.REDTEAM.EXTRACTION_AUDIT.01 (the wave-12 audit whose repair set this row implements), PRIME.LSTAR.SUBORDINATION.01 (the open window-local center the premise quantifies over), rh/lean/RH/Elementwise.lean (the r326 implementation), rh/lean/RH/Source.lean (the opaque guard and the seam documentation), rounds 325/326 notes DCLXIX/DCLXXI, PRIME.L2.RENYI3.SLIDING_BOUND.01 (the parent theorem candidate whose provenance question this composition answers in the QMAX x M_2 decomposition), PRIME.L2.RENYI3.PROVENANCE.01 (the grandparent contract), PRIME.PORT.L2.VDC_LEMMA.01 (the vdC theorem the chain composes into)
+- **v978_terminal_density_martingale** [E] `PRIME.TERMINAL.DENSITY_MARTINGALE.01` — die Dichte pro verbleibendem Nachkommen X(v) = d(v)/d(root) ist ein nichtnegatives Martingal ALLEIN aus Massenerhaltung (symbolisch am generischen Knoten + bit-exakt in Fractions a
+  - deps: PRIME.L2.RENYI3.MEASURED_COMPOSITION.01 (the r324 end state the layer reformulates), v968_architecture_adjudication.py;v969_forks_and_redteam.py;v970_extraction_and_composition, PRIME.L2.COVER_GROWTH_K2.01 (the census-side successor), v978
+- **v979_cover_growth_k2** [E/O/X] `PRIME.L2.COVER_GROWTH_K2.01` — EXAKT: die FAB-Identität F_A·B == m·q_max/log m (Konstruktionsalgebra, Gauge-Mutant gefangen); die r321-Konzentrationsklammer q_max·ΦH1 ≤ ρ₂ ≤ ΦH1; die datenfreie K1-FORMEL R_ALG =
+  - deps: PRIME.L2.RENYI3.SLIDING_BOUND.01 (the third arm, retyped finite by r353), v970_extraction_and_composition, PRIME.TERMINAL.DENSITY_MARTINGALE.01 (the exact substrate), PRIME.WORLD.DIRICHLET_MATCHED_FRAME.01 (K2's third test), v979
+- **v980_lstar_margin_chain** [E] `PRIME.LSTAR.MARGIN_CHAIN.01` — EXAKT: die EIN-ZEILEN-IDENTITÄT m2′(p′+q′−m2′) == p′q′−c′² (Vieta, symbolisch); der ZWEI-LEVEL-SATZ p′₂ = m(g21·a₂²+b₂²)/Δt² usw. (exakte Inversion == Formeln == 121/250, 79/250, 7
+  - deps: PRIME.LSTAR.SUBORDINATION.01 (the open center the chain measures), v965_lstar_curvature_arc, v965_lstar_curvature_arc.py;v966_l2_reduction_chain.py;v968_architecture_adjudication, PRIME.LSTAR.DUAL_HOLE.01 (the successor reparametrization), v980
+- **v981_lstar_borodin_duality** [E] `PRIME.LSTAR.DUAL_HOLE.01` — die exakte Äquivalenz L* ⟺ R > ½·I bei Half-Filling** — EXAKT (keine Proben-Importe): die Borodin-Komplementation Π_N^u + G·Π_{N−1}^{u∨}·G⁻¹ == I bit-exakt am 5-Atom-Rationalmodell
+  - deps: PRIME.LSTAR.MARGIN_CHAIN.01 (the chain the duality reparametrizes), PRIME.LSTAR.SUBORDINATION.01 (the open center, unchanged), v981
+- **v982_dirichlet_matched_frame** [E] `PRIME.WORLD.DIRICHLET_MATCHED_FRAME.01` — EXAKT (keine Proben-Importe): die GRH-treue χ-Arch-Seite ABGELEITET, symbolisch aus Λ(s,χ) = (q/π)^{(s+a)/2}Γ((s+a)/2)L(s,χ): F_A^χ(ξ) == −log(π/q) + Re ψ((1+2a)/4 + iξ/2) für a =
+  - deps: PRIME.LSTAR.MARGIN_CHAIN.01 (the legislation the frame tests), PRIME.L2.COVER_GROWTH_K2.01 (K2's third test), PRIME.LSTAR.DUAL_HOLE.01 (the binding-regime reading), v982
+- **v1017_kernel_loewner_positivity** [E] `PRIME.RDAGGER.KERNEL_LOEWNER.01` — PRIME.RDAGGER.KERNEL_LOEWNER.01 [Numerical/certified] (2026-09-01, Runden 494/495): Kernel-Loewner-Positivitaet bei L=0.3 -- neu abgeleitet (keine Proben-Importe): Q_W(h) >= 2.1e-3
+  - deps: v1017
+- **v1021_all_place_tate_rank_audit** [E/C/O] `PRIME.ALLPLACE.TATE.INTERSECTION.01` — All-Place-Tate-/Finite-Carrier-/Rankin-Audit (2026-09-05): Tate-Projektor und lokale Tensor-/End-Splittings exakt; p=2-Tate-Linie inertiafest; vervollstaendigte Zeta von xi getrenn
+  - deps: E8.COXETER.EULER.COMPLETION.01, PRIME.WEIL.OPERATOR.01
+
+### `em` — Electromagnetic fixed point  (0 scripts)
+_The fine-structure constant as the unique root of the boundary U(1) Ward identity._
+
+
+### `flavor` — Flavor matrix & operators  (0 scripts)
+_The integer operator ladder (R, K, Q, L) and its spectral invariants — the flavor signature._
+
+
+### `masses` — Masses, leptons & quark ratios  (0 scripts)
+_The φ₀-ladder mass formula, the exact lepton coefficients, and the integer-Plücker quark ratios._
+
+
+### `neutrinos` — Neutrinos & the solar angle  (0 scripts)
+_The Majorana texture, the dual anchor, and the previously open solar angle from the seam._
+
+
+### `gravity` — Gravity, inflation & cosmology  (0 scripts)
+_The R + R² spectral-action shadow, the seam-fixed scalaron, and the cosmological readouts._
+
+
+### `horizon` — Horizon code & Origin Theory (self-consistency)  (0 scripts)
+_The seam as the universal horizon code, the order-30 Coxeter cycle, and the gapped unique attractor that makes parameter-freeness a theorem._
+
+
+### `uwall` — Open gate (U_wall) — the flavor wall  (0 scripts)
+_The parabolic wall-selection contract: the quark ratios are closed; only the absolute amplitude scale stays open._
+
+
+### `frontier` — Open gate (G_metric) & the frontier  (0 scripts)
+_The quantum-gravity measure contract, the audit ledger, the data scorecard, and the honestly-typed frontier items._
+
+
+### `registry` — Blind registry & red-team follow-ups (v84–v175)  (0 scripts)
+_The frozen prediction registry and the follow-up rounds: Target A merged to one residual, the CP residual quantified, N★ from reheating, the F_transfer gauge inputs cross-checked with an external RGE tool, and the AQFT closure round — net existence and full-cone reflection positivity discharged to [E], leaving the seam realisation as the single open premise. Every freeze machine-enforced._
+
+
+## Supersede map — do NOT reuse the left-hand claim
+
+- (none recorded)
+
+## Dependency overview
+
+**Most-depended-on claims** (the load-bearing roots): `v563`×210, `v755`×25, `v738`×19, `v591`×17, `v589`×17, `PRIME.FLOOR.RATIO.01`×17, `PRIME.FLOOR.PAIRCORR.01`×17, `v643`×16, `PRIME.RELATION.SKELETON.01`×16, `v618`×14, `v716`×14, `PRIME.KREIN.CONTRACTOR.01`×13, `v766`×12, `v866`×12, `v583`×11
+
+**Axiom/root claims with no dependencies:** 0 (e.g.  …)
+
+## Current frontier (highest-id scripts)
+
+- **v966_l2_reduction_chain** — `(no claim)`
+- **v967_l2_cascade_closure** — `PRIME.L2.CASCADE_CLOSURE.01`
+- **v968_architecture_adjudication** — `PRIME.SOURCE.RANKONE.UPDATE.IDENTITY.01, PRIME.SOURCE.TENSOR.MECHANISM.01`
+- **v969_forks_and_redteam** — `(no claim)`
+- **v970_extraction_and_composition** — `PRIME.EXTRACTION.ELEMENTWISE.01, PRIME.L2.RENYI3.MEASURED_COMPOSITION.01`
+- **v978_terminal_density_martingale** — `PRIME.TERMINAL.DENSITY_MARTINGALE.01`
+- **v979_cover_growth_k2** — `PRIME.L2.COVER_GROWTH_K2.01`
+- **v980_lstar_margin_chain** — `PRIME.LSTAR.MARGIN_CHAIN.01`
+- **v981_lstar_borodin_duality** — `PRIME.LSTAR.DUAL_HOLE.01`
+- **v982_dirichlet_matched_frame** — `PRIME.WORLD.DIRICHLET_MATCHED_FRAME.01`
+- **v1017_kernel_loewner_positivity** — `PRIME.RDAGGER.KERNEL_LOEWNER.01`
+- **v1021_all_place_tate_rank_audit** — `PRIME.ALLPLACE.TATE.INTERSECTION.01`
+
