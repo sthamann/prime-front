@@ -2576,5 +2576,6 @@
     "experiments/tfpt-discovery/tfpt_decagonal.py",
     "experiments/tfpt-discovery/theta_frame_selector_probe.py",
     "experiments/tfpt-discovery/two_qubit_clifford_probe.py"
-  ]
+  ],
+  "vendor_roots": []
 }
