@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   openGraph: {type:"website",siteName:"Prime Front",title:"Prime Front",description,url:SITE_URL,images:[{url:"/opengraph-image",width:1200,height:630,alt:"Prime Front · prime-number research"}]},
   twitter: {card:"summary_large_image",title:"Prime Front",description,images:["/opengraph-image"]},
   robots:{index:true,follow:true},
+  verification: { google: "ZTtQszlIYjghgliPExbZ-eTdqQ-NRQzxTdj3RY_aqMM" },
 };
 const nav = [["/research","Research diary"],["/publications","Publications"],["/verification","Verification"],["/method","Method"]];
 export default function RootLayout({children}:{children:React.ReactNode}) { return (
