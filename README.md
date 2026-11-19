@@ -72,3 +72,7 @@ in CI as well. For the finite/conditional formal support, use
 The separate `rh/lean/` research project in Prime Front retains its explicit
 open hypotheses and `sorry` declarations; its status is not merged into the
 sorry-free finite-support audit.
+
+## Author
+
+Built by [Stefan Hamann](https://stefan-hamann.de/), co-founder of Shopware and author of the handbook [Agentic Commerce](https://www.agentic-commerce.sh/).
